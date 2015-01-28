@@ -1,0 +1,45 @@
+---
+layout: page
+title: unforgotten
+
+---
+
+Fight against your forgetfulness with a small bash script!
+
+
+This script helps you remembering periodical dates like birthdays, (wedding) anniversary or anything like this. All you need is a configured mail server and the <a href="http://www.bsd.org/">BSD</a> tool <a href="http://www.freebsd.org/cgi/man.cgi?query=calendar&apropos=0&sektion=0&manpath=FreeBSD+8.1-RELEASE&format=html">calendar</a> (most likely installed on your system).
+Just set up a file with all your important dates (check out syntax restriction in man-page), here is a small example:
+
+
+
+{% highlight bash %}
+LANG=utf-8
+#include <calendar.german>
+
+01/01	happy new year
+10/17	uschy
+Oct 27	martin
+Nov. 28	anybody else
+{% endhighlight %}
+
+
+
+Now replace the contents of the variables in the script and create a cronjob that runs the file once a day. So you'll probably don't miss further birthdays anymore!
+
+<a href="/wp-content/uploads/pipapo/scripts/unforgotten.sh">Download it</a> directly from your terminal:
+
+
+{% highlight bash %}
+wget /wp-content/uploads/pipapo/scripts/unforgotten.sh
+{% endhighlight %}
+
+
+
+Here is the code:
+
+[cc lang="bash" file="pipapo/scripts/unforgotten.sh"][/cc]
+
+<div class="download"><strong>Download:</strong>
+Bash: <a href='/wp-content/uploads/pipapo/scripts/unforgotten.sh'>unforgotten</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

@@ -1,0 +1,27 @@
+---
+layout: page
+title: backup
+
+---
+
+Small script to generate fast backups of files and directories.
+
+If the first argument is a directory it creates a gzip'd tar archive of it with a name like  `filename_`date +"%F_%H-%M-%S"`.tgz` .
+Otherwise it copies the file to  `filename_`date +"%F_%H-%M-%S"`` .
+
+<a href='/wp-content/uploads/pipapo/scripts/backup'>Download it</a> directly from your terminal:
+
+
+{% highlight bash %}
+wget /wp-content/uploads/pipapo/scripts/backup
+{% endhighlight %}
+
+
+
+Here is the code:
+
+[cc lang="bash" file="pipapo/scripts/backup"][/cc]
+<div class="download"><strong>Download:</strong>
+Bash: <a href='/wp-content/uploads/pipapo/scripts/backup'>backup</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

@@ -1,0 +1,49 @@
+---
+layout: page
+title: unpack
+
+---
+
+Extracts various types of archives.
+
+A lot of people are still archiving hundreds of files directly to the root of an archive (wink to Rumpel :P). So if you extract them there is a lot of waste in your current directory and you don't know what comes from the extracted archive and what was there before!?
+This script first creates an directory before it extracts an archive into it.
+
+Supported file extensions:
+<ul>
+  <li>.tar.gz</li>
+  <li>.tgz</li>
+  <li>.tar.bz2</li>
+  <li>.tar.bzip2</li>
+  <li>.tar</li>
+  <li>.zip</li>
+  <li>.bz2</li>
+  <li>.gz</li>
+  <li>.lha</li>
+  <li>.ace</li>
+  <li>.rar</li>
+  <li>.cab</li>
+  <li>.xpi</li>
+  <li>.jar</li>
+  <li>.deb</li>
+  <li>.lzo</li>
+</ul>
+Of course it is just a wrapper and you need the specific tools that extracts the archives.
+
+<a href='/wp-content/uploads/pipapo/scripts/unpack'>Download it</a> directly from your terminal:
+
+
+{% highlight bash %}
+wget /wp-content/uploads/pipapo/scripts/unpack
+{% endhighlight %}
+
+
+
+Here is the code:
+
+[cc lang="bash" file="pipapo/scripts/unpack"][/cc]
+
+<div class="download"><strong>Download:</strong>
+Bash: <a href='/wp-content/uploads/pipapo/scripts/unpack'>unpack</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

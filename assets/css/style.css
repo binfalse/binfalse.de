@@ -1,0 +1,245 @@
+@import url(fonts.css);
+
+body{
+	color: #2c3e50;
+	font-family: "Open Sans",Helvetica,"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0px;
+	padding-top: 10%;
+	background-color: #3A608A;/*2c3e50;*/
+	color: #fff;
+}
+
+.sidebar-header {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.sidebar-header .title{
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.sidebar-header .title a{
+	text-decoration: none;
+	color: #fff;
+	border-bottom:none;
+}
+
+a.nav-link {
+	padding-bottom: 5px;
+	padding-top: 7px;
+	color: #aaa;
+}
+a.nav-link i{
+	font-size: 16px;
+}
+a.nav-link:hover { color: #777 }
+
+#bio {
+font-family: Consolas,"Lucida Console","DejaVu Sans Mono","Liberation Mono","Corier New",monospace;
+font-size: 11px;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+
+#contact-list li .fa,
+article .share .btn {
+	-o-transition:color .2s ease-out, background 1s ease-in;
+	-ms-transition:color .2s ease-out, background 1s ease-in;
+	-moz-transition:color .2s ease-out, background 1s ease-in;
+	-webkit-transition:color .2s ease-out, background 1s ease-in;
+	transition:color .2s ease-out, background 1s ease-in;
+}
+#contact-list li:hover .fa-twitter,
+article .share .twitter:hover {
+	color: #00ACEE;
+	border-color: #00ACEE;
+}
+#contact-list li:hover .fa-linkedin {
+color: #1D87BD;
+}
+#contact-list li:hover .fa-envelope {
+color: #E93E30;
+}
+#contact-list li:hover .fa-pinterest {
+color: #CC2127;
+}
+#contact-list li:hover .fa-rss {
+color: #e74c3c;
+}
+article .share .facebook:hover {
+	color: #43609C;
+	border-color: #43609C;
+}
+article .share .gplus:hover {
+	color: #C13929;
+	border-color: #C13929;
+}
+
+#contact-list-secondary {
+padding-bottom: 10px;
+}
+
+.page-header {
+	color: #DE7D40;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+article{
+	margin-bottom: 40px;
+}
+
+.article_body{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post-date {
+	text-transform: uppercase;
+	font-size: .8em;
+	letter-spacing: 3px;
+	color: #777;
+}
+
+article {
+	padding: 1em 5%;
+}
+
+/*article.home div a, article.home pre a { color: #2c3e50; }*/
+/*article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }*/
+article img { max-width: 100%; }
+
+h1,h2,h3,h4,h5,h6 { font-family: Alike,Georgia,"Bitstream Charter","Times New Roman",Times,serif;
+/*	color: #3A608A; */}
+article.home h1,
+article.home h2,
+article.home h3,
+article.home h4,
+article.home h5,
+article.home h6 {
+	/*color: #DE7D40;*/
+}
+
+article.home h1 a,
+article.home h2 a,
+article.home h3 a,
+article.home h4 a {
+	color: #DE7D40;
+}
+article.home h1 a:hover,
+article.home h2 a:hover,
+article.home h3 a:hover,
+article.home h4 a:hover {
+	color: #BD5D21;
+	text-decoration:none;
+	border-bottom: 1px solid #BD5D21;
+}
+
+.author .author-image {
+	float: left;
+	margin-right: 20px;
+}
+
+footer {
+	font-size: .8em;
+	color:#999;
+	padding-top: 15px;
+	/*font-family: Alike,Georgia,"Bitstream Charter","Times New Roman",Times,serif;;*/
+}
+
+/* nav-vertical-tabs component */
+.nav-tabs-vertical {
+	border-right: 1px solid #ddd;
+}
+
+.nav-tabs-vertical li {
+	margin-right: -1px;
+}
+
+.nav-tabs-vertical>li.active>a, .nav-tabs-vertical>li.active>a:hover, .nav-tabs-vertical>li.active>a:focus {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-right-color: transparent;
+}
+
+.nav-tabs-vertical>li>a {
+	line-height: 1.428571429;
+	border: 1px solid transparent;
+	border-radius: 4px 0 0 4px;
+}
+
+.badge { background: #CC4C41; }
+
+#nav-menu{
+position: fixed;
+top: 45px;
+right: 45px;
+z-index: 2000;
+}
+#nav-menu .dropdown-menu {
+left: inherit;
+right: 0px;
+}
+
+ul.dropdown-menu>li>a>i.fa {
+	width: 1.3em;
+}
+.img-circle
+{
+	max-width: 200px;
+}
+.author-image
+{
+	max-width: 70px;
+}
+
+a, a.active,a:visited
+{
+	color: #3A608A;
+}
+a:hover
+{
+	color: #DE7D40;
+	text-decoration:none;
+	border-bottom: 1px solid #DE7D40;
+}
+@media(max-width:767px) {
+.img-circle
+{
+	max-width: 35px;
+}
+}
+
+
+
+.image-wrapper {
+    text-align: center;
+border: 1px solid #aaa;
+padding: 5px;
+}
+.image-caption {
+    color: #777;
+    margin: 10px;
+}
+.alignright {
+float: right;
+}
+.alignleft {
+float: left;
+}
+
+#pagelist ul
+{
+ list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#pagelist li
+{
+display: inline;
+}

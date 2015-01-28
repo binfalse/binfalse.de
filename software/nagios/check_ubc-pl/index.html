@@ -1,0 +1,29 @@
+---
+layout: page
+title: check_UBC.pl
+
+---
+
+A <a href="http://www.nagios.com/">Nagios</a>-plugin to monitor fail-counts of <a href="http://wiki.openvz.org/Main_Page">OpenVZ</a> containers.
+
+OpenVZ containers may have limited resources, if they reach their maximum and try to request more of a single resource they produce a <em>fail-count</em> that is displayed in  `/proc/user_beancounters` . Maybe you want to get notified about that problem, this script monitors the file and alerts if any fail-counter increases.
+To reset the fail-counts you have to restart the container, but sometimes there isn't the chance to reboot a virtual machine. So this script copies the  `/proc/user_beancounters`  (at default the copy is located at  `/tmp/user_beancounters` ) and alerts about diffs. To disable the alert just delete the copy, the script will create a new copy when it is called the next time. So there won't be a diff anymore.
+
+To get read access to  `/proc/user_beancounters`  for the user  `nagios`  don't forget to set the  `s` -bit ( `chmod +s check_UBC.pl` ).
+
+<a href='/wp-content/uploads/pipapo/monitoring/check_UBC.pl'>Here is the code</a>:
+
+[cc lang="perl" file="pipapo/monitoring/check_UBC.pl"][/cc]
+
+<h2>Dependencies</h2>
+<ul>
+	<li>Expects the beancounters in  `/proc/user_beancounters` </li>
+	<li>Expects  `vzctl`  to be found in  `/usr/sbin/vzctl` </li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='/wp-content/uploads/pipapo/monitoring/check_UBC.pl'>check_UBC.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>
+

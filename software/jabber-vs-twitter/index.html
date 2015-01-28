@@ -1,0 +1,126 @@
+---
+layout: page
+title: 'Jabber -vs- Twitter'
+
+---
+
+Perl bot to interact with Twitter via Jabber.
+
+
+
+{% include image.html align="alignright" url="/wp-content/uploads/2011/01/jabber-vs-twitter.png" img="/wp-content/uploads/2011/01/jabber-vs-twitter-150x150.png" title="" caption="" %}
+
+This bot is sending you news from Twitter to your Jabber account and sending status updates from Jabber to Twitter. It's free, open source and after some setup it's very easy to use!
+A sample usage of interact with the bot from Gajim can be seen in figure 1.
+
+<h2>Dependencies</h2>
+The following Perl modules should be installed:
+<ul>
+<li>Net::Jabber::Bot</li>
+<li>Net::Twitter</li>
+<li>Date::Parse</li>
+<li>HTML::Entities</li>
+<li>DateTime::Format::Strptime</li>
+<li>Data::Dumper</li>
+	<li>Switch</li>
+	<li>URI::Find</li>
+</ul>
+
+On Debian based systems you may want use the following command line:
+
+
+
+{% highlight bash %}
+aptitude install libnet-jabber-bot-perl libnet-twitter-perl libtimedate-perl libdatetime-format-dateparse-perl libdatetime-format-strptime-perl libhtml-html5-entities-perl libhtml-entities-numbered-perl libdata-dump-perl libswitch-perl liburi-find-perl curl
+{% endhighlight %}
+
+
+
+If you cannot find these packages in your distribution's repository you'll have to install them manually. Example for installing  `Net::Jabber::Bot` :
+
+
+
+{% highlight bash %}
+perl -MCPAN -e shell
+cpan[1]> install  Net::Jabber::Bot
+{% endhighlight %}
+
+
+
+<h2>Configuration</h2>
+All configuration stuff is located in  `j-vs-t.conf` .
+
+<ol>
+	<li>copy  `src/j-vs-t.conf.sample`  to  `src/j-vs-t.conf` </li>
+	<li>Set up a Jabber account. Some popular servers can be found at <a href="http://www.jabberes.org/servers/">http://www.jabberes.org/servers/</a>.</li>
+	<li>Set up a Twtitter account at <a href="http://twitter.com/">http://twitter.com/</a></li>
+	<li>Fill in your Jabber credentials and serversettings in  `j-vs-t.conf` </li>
+	<li>Create a new Twitter App at <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a></li>
+	<li>Store in your access tokens in  `j-vs-t.conf` </li>
+	<li>Store your consumer key and secret in  `j-vs-t.pl`  in  `$APPKEY`  and  `$APPSECRET` </li>
+</ol>
+
+It's quiet obvious to me that the setup is more or less confusing. So don't be afraid to <a href="/contact/">ask me</a> for help.
+
+<h2>Usage</h2>
+Just run the script with
+
+
+
+{% highlight bash %}
+perl -w j-vs-t.pl
+{% endhighlight %}
+
+
+
+from wherever you want. All you need is Perl and a internet connection.
+
+For the first time you are asked to visit a website to authenticate. This website will offer a pin to you, provide it to this bot and see how fine it works.
+
+White the tool is running it sends status updates in your Twitter time line as messages to the authorized account. Replies and retweets are send separately. 
+
+Each message that arrives from the authorized user to the Jabber account the bot is listening on will be send to Twitter as status update. But keep in mind
+to leave them shorter than 140 chars, otherwise the bot won't send it and gives you an reply informing you about your failure.
+
+In addition you can send some command to the bot. These command start with an exclamation mark (!). Each message starting with ! is expected to be a command.
+
+The following commands are available:
+<dl>
+  <dt>!help</dt>
+  <dd>list of available commands</dd>
+  <dt>!follow [USER]</dt>
+  <dd>follow the user USER</dd>
+  <dt>!unfollow [USER]</dt>
+  <dd>stop following the user USER</dd>
+  <dt>!profile [USER]</dt>
+  <dd>print the profile of USER</dd>
+  <dt>!following</dt>
+  <dd>list the users you are following</dd>
+  <dt>!followers</dt>
+  <dd>list the users that follow you</dd>
+  <dt>!retweet [ID]</dt>
+  <dd>retweet message with id ID (last number in jabber message)</dd>
+  <dt>!favorite [ID]</dt>
+  <dd>favorite message with id ID (last number in jabber message)</dd>
+</dl>
+
+
+If the following error occurs you should check the credentials of the Jabber user:
+
+
+{% highlight bash %}
+Failed to re-connect: error
+{% endhighlight %}
+
+
+
+<h2>Download</h2>
+You can download this tool from <a href="https://github.com/binfalse/jabber-vs-twitter">GitHub</a>.
+The latest sources can be obtained from
+
+
+{% highlight bash %}
+git clone https://github.com/binfalse/jabber-vs-twitter.git
+{% endhighlight %}
+
+

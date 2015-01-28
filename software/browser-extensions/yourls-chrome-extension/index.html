@@ -1,0 +1,65 @@
+---
+layout: page
+title: 'YOURLS Chrome extension'
+
+---
+
+This is an extension for <a href="https://en.wikipedia.org/wiki/Chromium_%28web_browser%29">Chromium</a> (Google's web browser) to shorten URLs with your own <a href="http://yourls.org/">YOURLS</a> installation.
+
+
+
+<a href="/2011/06/private-url-shortener/">YOURLS is an URL shortener</a>, just like bit.ly or goo.gl, but it's open source and so you're able to install your own private instance. Thus, you can diminish the tracking of these big platforms ;-)
+This piece of software is an extension for the browser Chromium that let's you quickly shorten the URL of the website you are currently visiting. All you need is an installation of YOURLS. You can also find this plugin in <a href="https://chrome.google.com/webstore/detail/yourls/nddaaiojgkoldnhnmkoldmkeocbooken">Chrome's Web Store</a>.
+
+
+<h2>Installation</h2>
+
+{% include image.html align="alignright" url="/wp-content/uploads/2013/10/yourls-chrome-options.png" img="/wp-content/uploads/2013/10/yourls-chrome-options-227x300.png" title=" Figure 1: Options Page" caption=" Figure 1: Options Page" %}
+
+The extension is available from <a href="https://chrome.google.com/webstore/detail/yourls/nddaaiojgkoldnhnmkoldmkeocbooken">Googles</a>.
+To install the latest dev version just clone the <a href="https://github.com/binfalse/YOURLS-ChromeExtension">GitHub</a> repository and load this extension <em>unpacked</em> (read more at Googles <a href="http://developer.chrome.com/extensions/getstarted.html#unpacked">dev get-started-guide</a>).
+
+Before you can start shortening URLs you need to do some configuration. To open the configuration page right-click the icon next to your address bar and choose <em>Options</em>, or open  `chrome://extensions/`  and click the <em>Options</em> link of the YOURLS entry. You'll see a page similar to the screenshot in Figure 1.
+
+<dl>
+	<dt>API URL</dt>
+		<dd>Specify the URL to your YOURLS instance. Don't forget the leading  `http://` . For those of you familiar with YOURLS: <strong>don't</strong> include  `yourls-api.php` , I'll take care of it ;)</dd>
+	<dt>Signature</dt>
+		<dd>the signature is the secret for your YOURLS account, so you don't have to give anyone your credentials. You'll find the signature token of your account in the admin interface of your YOURLS installation.</dd>
+	<dt>How many seconds to wait for an answer?</dt>
+		<dd>when you try to shorten a URL the extension will send an  `XMLHTTPRequest`  to the webserver running the YOURLS instance. Depending on the performance of network and webserver it may take some time to get an answer. Configure the max time to wait before the extension assumes that the request failed. In this case you'll get an error message.</dd>
+	<dt>Ask for a keyword</dt>
+		<dd>check this box to provide a keyword for shortening. If it is checked you'll get a text field before the URL is sent to the webserver, otherwise the extensions shortens the URL immediately.</dd>
+</dl>
+
+If the form is filled correctly save your settings and give it a try!
+
+<h2>Usage</h2>
+
+The extension provides two different ways for interaction:
+
+<h3>The Icon in the Toolbar</h3>
+
+{% include image.html align="alignright" url="/wp-content/uploads/2013/10/yourls-chrome-popup.png" img="/wp-content/uploads/2013/10/yourls-chrome-popup-270x82.png" title=" Figure 2: The popup produced by the extension." caption=" Figure 2: The popup produced by the extension." %}
+
+Click the icon to shorten the URL of the web site you're currently visiting and a popup will appear. If you've configured the extension to ask for a keyword the popup will contain a textfield and a button. Just type the keyword into the field and press the button to start shortening. In case you didn't set the <em>Ask for a keyword</em> tick in the options page, the extension will shorten the URL immediately.
+
+
+<h3>The Context Menu</h3>
+
+{% include image.html align="alignright" url="/wp-content/uploads/2013/10/yourls-chrome-rightclick.png" img="/wp-content/uploads/2013/10/yourls-chrome-rightclick-270x115.png" title=" Figure 3: The resulting overlay after clicking the context menu." caption=" Figure 3: The resulting overlay after clicking the context menu." %}
+
+If you right-click a link on a page an entry in your context menu will appear saying <em>"Shorten Link"</em>. Klick this item to shorten the target of this link instead the URL of the current page.  
+Furthermore, if you right-click selected text in the current page the extension adds a context menu entry <em>"Shorten Page"</em> to shorten the page using the selected text as keyword. (The selection will just appear in the textfield for the keyword, you still have to press the button to start shortening.)  
+If you right-click a link while some other text is selected, the selected text will be used as keyword for shortening the link target.
+
+
+
+
+
+
+<div class="download"><strong>Download:</strong>
+Extension: <a href="https://chrome.google.com/webstore/detail/yourls/nddaaiojgkoldnhnmkoldmkeocbooken">in Google's Web Store</a>
+SourceCode: <a href="https://github.com/binfalse/YOURLS-ChromeExtension">at GitHub</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

@@ -1,0 +1,32 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+permalink: /:year/:month/:day/:title
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: binfalse
+
+title: binfalse
+description: stuff. just for the records.
+author:
+  name: Martin Scharm
+  github: binfalse
+  twitter: binfalse
+  linkedin: binfalse
+  bio: stuff. just for the records.
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+mypages: ["about", "contact", "man-page", "opt", "software"]
+
+BASE_PATH:

@@ -1,0 +1,43 @@
+---
+layout: page
+title: check_catalyst_load.pl
+
+---
+
+This script monitors the load of a <a href="http://www.cisco.com/">Cisco</a> catalyst via <a href="http://de.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP</a>.
+
+It requests some data of a catalyst via SNMP to analyze them and notifies you via Nagios if the load is getting to high. To learn how to enable SNMP in your catalyst's IOS scroll down.
+
+This script should be called with  `-s [SWITCHIP]` ,  `-C [COMMUNITYSTRING]` ,  `-w [WARNLEVEL]`  and  `-c [CRITLEVEL]` . For more information just run it with  `-h` .
+
+Tested with different IOS versions and SNMP protocol version 2c. If you want to use a different SNMP protocol version, just modify the  `Net::SNMP->session(...)`  call.
+
+<a href='/wp-content/uploads/pipapo/monitoring/check_catalyst_load.pl'>Here is the code</a>:
+
+
+
+{% highlight perl %}
+{% endhighlight %}
+
+<h4>How to enable SNMP in your catalyst's IOS</h4>
+
+To allow an server to access the IOS via SNMP you have to create an access list with the IP of your server. Afterwards define the access to the IOS's SNMP-server with an community string, similar like a passphrase. Here is an example configuration:
+{% highlight bash %}
+access-list 60 permit [IP-THAT-IS-ALLOWED-TO-REQUEST]
+snmp-server community [COMMUNITY-STRING] RO 60
+{% endhighlight %}
+
+
+For more information just ask one of these search engines out there.
+
+<h2>Dependencies</h2>
+<ul>
+	<li><a href="http://search.cpan.org/perldoc?Net::SNMP">Net::SNMP</a></li>
+	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='/wp-content/uploads/pipapo/monitoring/check_catalyst_load.pl'>check_catalyst_load.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

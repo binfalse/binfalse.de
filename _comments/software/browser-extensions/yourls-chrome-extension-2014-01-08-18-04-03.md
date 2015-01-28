@@ -1,0 +1,10 @@
+---
+name: 'Martin Scharm'
+link: 'http://binfalse.de'
+date: '2014-01-08 18:04:03'
+comment: "I'm not sure how you're going to deploy the extension automatically!? However, as far as i know you either:\n\n<ul>\n<li>need to configure each browser individually in order to setup URL and signature according to your YOURLS server (in that case it's not that much more effort to also tick the corresponding checkbox)</li>\n<li>or you need to modify the sources. This plugin is open source, feel free to clone/fork it from GitHub and include your defaults.</li>\n</ul>\n\nOne option to define defaults is substituting the function  `RestoreOptions`  (defined in <a href=\"https://github.com/binfalse/YOURLS-ChromeExtension/blob/master/js/options.js#L27\"> js/options.js</a>) with:\n\n\n\n{% highlight javascript %}\nfunction RestoreOptions ()\n{\n	var url   = document.getElementById ('url');\n	var secret = document.getElementById ('secret');\n	var keyword = document.getElementById ('keyword');\n	var wait = document.getElementById ('wait');\n	\n	if (typeof localStorage['yourls_url'] == 'undefined')\n		localStorage['yourls_url'] = \">>> default url <<<\";\n	if (typeof localStorage['yourls_secret'] == 'undefined')\n		localStorage['yourls_secret'] = \">>> default secret <<<\";\n	if (typeof localStorage['yourls_keyword'] == 'undefined')\n		localStorage['yourls_keyword'] = \">>> default use keyword <<<\"; // you probably want to set this to true\n	if (typeof localStorage['yourls_wait'] == 'undefined')\n		localStorage['yourls_wait'] = \">>> default wait time <<<\";\n	\n	wait.value = localStorage['yourls_wait'];\n	url.value   = localStorage['yourls_url'];\n	secret.value = localStorage['yourls_secret'];\n	keyword.checked = localStorage['yourls_keyword'] === \"true\";\n}\n{% endhighlight %}\n\n\n\nDoes this solve your problem? If you need help with building the extension I could modify the code and compile a customized extension just for you and your customers.!?"
+post_id: /software/browser-extensions/yourls-chrome-extension
+
+---
+
+

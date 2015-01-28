@@ -1,0 +1,65 @@
+---
+layout: page
+title: R.rc
+
+---
+
+Useful hints to personalize Gnu R.
+
+
+Most of you should know <a href="http://www.r-project.org/">Gnu R</a>, but only a few might heard about it's  `.rc` !
+
+Just create the file  `.R.rc`  in your home directory, and R will parse it if you run it.
+Some useful annotations:
+
+<ul>
+	<li>There are to variables:  `.First`  and  `.Last` . Assign a function to it and they are run at any start respectively quit of R.</li>
+	<li>On most screens R utilizes the width not effectively, either there is to much space left blank on the right side or the terminal breaks lines such that the output isn't readable anymore:
+
+
+{% highlight r %}
+# too much white space right:
+> 1:50
+ [1]  1  2  3  4  5  6  7  8  9 10
+[11] 11 12 13 14 15 16 17 18 19 20
+[21] 21 22 23 24 25 26 27 28 29 30
+[31] 31 32 33 34 35 36 37 38 39 40
+[41] 41 42 43 44 45 46 47 48 49 50
+# to long lines so the terminal breaks them:
+> 1:50
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+ 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 
+42 43 44
+[45] 45 46 47 48 49 50
+{% endhighlight %}
+
+
+So define the number of characters that can be presented in one line of your terminal at the start of R.:
+
+
+{% highlight r %}
+options(width=236)
+{% endhighlight %}
+
+
+</li>
+	<li>It's of course possible to define functions that you often need. I've two screens with different width, so I created two functions that readjust the line width if I move the terminal from one screen to the other:
+
+
+{% highlight r %}
+bigScreen <- function() options(width=236)
+smallScreen <- function() options(width=180)
+{% endhighlight %}
+
+
+</li>
+</ul>
+
+So here is a part of my  `.R.rc`  to give you an example:
+
+[cc lang="rsplus" file="pipapo/conf/R.rc"][/cc]
+
+<div class="download"><strong>Download:</strong>
+RC: <a href='/wp-content/uploads/pipapo/conf/R.rc'>.R.rc</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

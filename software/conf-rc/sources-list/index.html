@@ -1,0 +1,83 @@
+---
+layout: page
+title: sources.list
+
+---
+
+The  `sources.list`  is the file that tells your <a href="http://www.debian.org/">Debian</a>/<a href="http://www.ubuntu.com/">Ubuntu</a> where to search for software.
+
+
+
+<h2>File Description</h2>
+The file is located in  `/etc/apt/sources.list` , or might be split in multiple files stored in  `/etc/apt/sources.list.d/` . It has the format
+<code>TYPE LOCATION DIST COMPONENTS</code>
+The definition for these sections are:
+<dl>
+	<dt>TYPE</dt>
+		<dd>deb or deb-src</dd>
+	<dt>LOCATION</dt>
+		<dd>The link to the repository</dd>
+	<dt>DIST</dt>
+		<dd>Distribution you are using</dd>
+	<dt>COMPONENTS</dt>
+		<dd>List of components</dd>
+</dl>
+
+A sample of such an entry is:
+<code>deb http://ftp.de.debian.org/debian/ sid main contrib restricted universe multiverse non-free</code>
+
+The tools <a href="http://wiki.debian.org/apt-get">apt-get</a>/<a href="http://wiki.debian.org/Aptitude">aptitude</a>/<a href="http://wiki.debian.org/Synaptic">synaptic</a>/<a href="https://wiki.ubuntu.com/SoftwareCenter">SoftwareCenter</a> (or whatever you like to install software) will look at these files to search for updates and new packages.
+
+<h2>Some entries for Debian unstable</h2>
+Here are some entries from my configuration that might be of interest. I'm using <a href="http://www.debian.org/releases/sid/index.en.html">Debian:unstable</a>.
+
+<h4>Debian</h4>
+<code>
+deb http://ftp2.de.debian.org/debian/ sid main contrib non-free
+deb-src http://ftp2.de.debian.org/debian/ sid main contrib non-free
+
+deb http://ftp2.de.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp2.de.debian.org/debian/ testing main contrib non-free
+
+deb http://ftp2.de.debian.org/debian/ stable main contrib non-free
+deb-src http://ftp2.de.debian.org/debian/ stable main contrib non-free
+
+deb http://security.debian.org stable/updates main contrib non-free
+deb http://security.debian.org testing/updates main contrib non-free
+
+deb http://www.debian-multimedia.org/ stable main
+deb http://www.debian-multimedia.org/ testing main
+deb http://www.debian-multimedia.org/ unstable main
+
+deb http://ftp.de.debian.org/debian/ sid main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ sid main contrib non-free
+
+deb http://ftp.de.debian.org/debian/ testing main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ testing main contrib non-free
+
+deb http://ftp.de.debian.org/debian/ stable main contrib non-free
+deb-src http://ftp.de.debian.org/debian/ stable main contrib non-free
+deb http://ftp2.de.debian.org/debian/ experimental main
+
+deb http://ftp2.de.debian.org/debian/ oldstable main contrib non-free</code>
+
+<h4>Aptosid</h4>
+<a href="http://aptosid.com/">Aptosid</a> is a Debian fork, based on unstable:
+<code>deb ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main contrib fix.contrib non-free fix.non-free vdr
+deb-src ftp://ftp.spline.de/pub/aptosid/debian/ sid main fix.main contrib fix.contrib non-free fix.non-free vdr</code>
+
+<h4>GRML</h4>
+<a href="http://grml.org/">GRML</a> is based on Debian:unstable, and comes with some special tools for sysadmins and text tools users:
+<code>
+deb     http://deb.grml.org/ grml-stable main
+deb-src http://deb.grml.org/ grml-stable main</code>
+
+<h4>Opera</h4>
+If you want to use <a href="http://www.opera.com/">Opera</a>:
+<code>deb http://deb.opera.com/opera/ stable non-free #Opera Browser (final releases)
+deb http://deb.opera.com/opera-beta/ stable non-free #Opera Browser (beta releases)</code>
+
+<h4>R</h4>
+For those of you interested in the <a href="http://www.gnu.org/">GNU</a> <a href="http://www.r-project.org/">R-Project</a>:
+<code>deb http://ftp5.gwdg.de/pub/misc/cran/bin/linux/debian/ squeeze-cran/</code>
+

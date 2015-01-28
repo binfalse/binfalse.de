@@ -1,0 +1,73 @@
+---
+layout: page
+title: 'Plugin Setup Notes'
+
+---
+
+Some notes to setup my monitoring plugins.
+
+
+
+<h2>Dependencies</h2>
+My plugins come with some dependencies. I'm trying to list them on their website, but sometimes I forget something considered to be obvious. Please notify me if you run into trouble.
+Most of the plugins also expect to find the  `utils.pm`  and  `utils.sh`  in  `/usr/lib/nagios/plugins`  (Debian style). If these files are located somewhere else on your machine, you might need to adjust the path in the source. Feel free to <a href="/contact/">ping</a> me if you need some help!
+
+<h2>Embedding into Nagios/Icinga</h2>
+In the following I suppose you have Icinga or Nagios installed. Otherwise I recommend to read the instructions of the software you are using.
+<h3>Setup with NRPE</h3>
+On you monitoring server you need to create a service section like:
+
+
+
+{% highlight bash %}
+define service {
+	host_name			YOUR_CLIENT
+	service_description	YOUR_DESCRIPTION
+	check_command		check_nrpe!SAMPLE_COMMAND
+	use					generic-service
+}
+{% endhighlight %}
+
+
+
+On the client you also have to define the command  `SAMPLE_COMMAND` , for example:
+
+
+
+{% highlight bash %}
+command[SAMPLE_COMMAND]=/path/to/the/plugin arguments
+{% endhighlight %}
+
+
+
+<h3>Setup on the monitoring server itself</h3>
+If you want to run the plugin on your monitoring server itself, you need to create a command that executes the plugin:
+
+
+
+{% highlight bash %}
+define command {
+	command_name	SAMPLE_COMMAND
+	command_line	/path/to/the/plugin arguments
+}
+{% endhighlight %}
+
+
+
+And also create a service section like:
+
+
+
+{% highlight bash %}
+define service {
+	host_name			localhost
+	service_description	YOUR_DESCRIPTION
+	check_command		SAMPLE_COMMAND!ARGUMENTS
+	use					generic-service
+}
+{% endhighlight %}
+
+
+
+<h3>Disclamer</h3>
+These installation instructions are just for copy&paste supposes. If you've never heard about Icinga I recommend to read some <a href="https://wiki.icinga.org/">basic documents</a> ;-)

@@ -1,0 +1,141 @@
+---
+layout: page
+title: $SHELL
+
+---
+
+Here I collect some commands that I often need but always forget.
+
+
+
+<h3>Reconstruct standard permissions for directories and files in current directory</h3>
+
+
+{% highlight bash %}
+for i in `find .`; do [ -d $i ] && chmod 755 $i || chmod 644 $i; done
+{% endhighlight %}
+
+
+
+<h3>Find the command line of a program using a specific port</h3>
+
+
+{% highlight bash %}
+port=22
+pid=$(lsof -Pan -i tcp -i udp | grep ":$port"|tr -s " " | cut -d" " -f2)
+ps -Afe|grep "$pid"|grep --invert-match grep | sed "s/^\\([^ ]*[ ]*\\)\\{7\\}\\(.*\\)$/\\2/g"
+{% endhighlight %}
+
+
+
+<h3>Get the header of a website</h3>
+
+
+{% highlight bash %}
+curl -sI
+{% endhighlight %}
+
+
+
+<h3>Convert encoding of a file</h3>
+
+
+{% highlight bash %}
+iconv -f utf8 -t utf16 /path/to/file
+{% endhighlight %}
+
+
+
+<h3>Unmount all NFS-mounts</h3>
+
+
+{% highlight bash %}
+umount -a -t nfs
+{% endhighlight %}
+
+
+
+<h3>Speed up copying</h3>
+
+
+{% highlight bash %}
+( cd /olddir ; tar cf - * ) | ( cd /newdir ; tar xvf - )
+{% endhighlight %}
+
+
+
+<h3>Merge various PDF files</h3>
+
+
+{% highlight bash %}
+gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=output.pdf -dBATCH first.pdf second.pdf
+{% endhighlight %}
+
+
+
+<h3>Convert spaces in file names to underscores</h3>
+
+
+{% highlight bash %}
+rename 'y/ /_/' *
+{% endhighlight %}
+
+
+
+<h3>Boot another OS at next startup</h3>
+
+
+{% highlight bash %}
+echo "savedefault --default=2 --once" | grub --batch; sudo reboot
+{% endhighlight %}
+
+
+
+<h3>Convert .flv to .avi</h3>
+
+
+{% highlight bash %}
+mencoder input.flv -ovc lavc -oac mp3lame -o output.avi
+{% endhighlight %}
+
+
+
+<h3>Delete all Flash cookies</h3>
+
+
+{% highlight bash %}
+find $HOME -name '*.sol' -exec rm {} \\;
+{% endhighlight %}
+
+
+Delete all crappy adobe/flash stuff:
+
+
+{% highlight bash %}
+rm -rf $HOME/.adobe $HOME/.macromedia
+{% endhighlight %}
+
+
+
+<h3>Display some cert infos</h3>
+
+
+{% highlight bash %}
+openssl s_client -connect google.de:443 2>/dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | openssl x509 -noout -subject -issuer -dates -hash -fingerprint
+{% endhighlight %}
+
+
+Of course also applicable for other ports than  `HTTPS` .
+
+<h3>List connected LDAP clients</h3>
+
+
+{% highlight bash %}
+# Linux
+netstat -n inet | awk '/:636/{print $5}' | cut -f1 -d: | sort -u
+# Solaris
+netstat -n -f inet | awk '/\\.636/{print $2}' | cut -f1-4 -d. | sort -u
+{% endhighlight %}
+
+
+If you aren't using encrypted connections replace  `636`  with  `389` .

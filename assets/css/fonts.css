@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Alike';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alike'), local('Alike-Regular'), url(fonts/Alike/Alike-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(fonts/Open_Sans/OpenSans-Regular.woff) format('twoff');
+}

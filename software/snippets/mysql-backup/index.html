@@ -1,0 +1,39 @@
+---
+layout: page
+title: 'MySQL backup'
+
+---
+
+Create a backup of your <a href="http://www.mysql.de/">MySQL</a> databases. All in one file and/or one backup for each database.
+
+
+To backup your databases you need a user who is allowed to read all data. I strongly recommend to create a new user only for the backup system instead of using roots account, because you have to save the users password in the script and if anybody is able to take a short look to it he's able to own you database server!
+So create a new user, that must only have the following permissions:
+
+
+{% highlight mysql %}
+CREATE USER 'mrsmith'@'localhost' IDENTIFIED BY 'mr.smiths.girlfriend';
+GRANT SELECT, SHOW DATABASES, LOCK TABLES ON * . * TO 'mrsmith'@'localhost' IDENTIFIED BY 'mr.smiths.girlfriend';
+{% endhighlight %}
+
+
+Your new user is able to view all the necessary content, but not allowed to change anything!
+
+Now you just have to edit the variables of the script to match your criteria and run it. If you like the results you should install a cronjob that creates periodically backups of you databases.
+
+<a href='/wp-content/uploads/pipapo/scripts/mysqlbackup.sh'>Download it</a> directly from your terminal:
+
+
+{% highlight bash %}
+wget /wp-content/uploads/pipapo/scripts/mysqlbackup.sh
+{% endhighlight %}
+
+
+
+Here is the code:
+[cc lang="bash" file="pipapo/scripts/mysqlbackup.sh"][/cc]
+
+<div class="download"><strong>Download:</strong>
+Bash: <a href='/wp-content/uploads/pipapo/scripts/mysqlbackup.sh'>mysqlbackup</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

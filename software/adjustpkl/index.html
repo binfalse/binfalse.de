@@ -1,0 +1,38 @@
+---
+layout: page
+title: adjustPKL
+
+---
+
+Recalibrating PKL-Files derived from <abbr title="mass spectrometry">MS</abbr>-experiments.
+
+
+
+{% include image.html align="alignright" url="/wp-content/uploads/2011/01/adjustPKL.png" img="/wp-content/uploads/2011/01/adjustPKL-150x150.png" title="" caption="" %}
+
+As I just heard it often happens that the output of mass spectrometry experiments is shifted by a constant  `ppm`  value. That may happen if the room temperature changes (caused by a perverse air conditioner or one of your trainees again leaved the door open), what invalidates the calibration of a <a href="http://en.wikipedia.org/wiki/Time-of-flight">TOF</a> instrument. All further analysis will fail or bring wrong scores although you know the <em>m/z</em> values of all peaks should be shifted to the right by 55.2 ppm to get the correct values...
+Repeating the experiments is often very expensive and of course time consuming, but here is the solution!
+
+With this tool you can shift all m/z values of such an <a href="http://www.matrixscience.com/help/data_file_help.html#QTOF">PKL</a>-file. You can decide whether to shift all spectra or just a single one of the file! After shifting the data just save it as new PKL-file, so the original values are not lost.
+
+{% include image.html align="alignright" url="/wp-content/uploads/2011/01/adjustpkl-showcase.png" img="/wp-content/uploads/2011/01/adjustpkl-showcase-150x150.png" title="" caption="" %}
+
+There is also a small spectrum viewer to visually validate the resulting spectra. In figure 1 you can see a screen shot taken from an example PKL-file.
+
+Figure 2 displays a result of a <a href="http://www.matrixscience.com/search_form_select.html">Mascot</a> search before and after shifting of a spectrum. As you can see all scores increase more or less while the expects decrease, denoting a more secure hit.
+
+It's written in JAVA to have it <abbr title="operating system">OS</abbr> independent, all you need is a <abbr title="java runtime environment">JRE</abbr>, get it from <a href="http://www.java.com/">Java</a> (also free).
+
+For bugs or extension just send me a <a href="/contact/">ping</a> and I'll see what I can do..
+
+
+<h2>Download</h2>
+You can download this tool from <a href="https://sourceforge.net/projects/adjustpkl/files/latest">SourceForge</a>.
+The latest version can be found in the git repository at
+
+
+{% highlight bash %}
+git://adjustpkl.git.sourceforge.net/gitroot/adjustpkl/adjustpkl
+{% endhighlight %}
+
+

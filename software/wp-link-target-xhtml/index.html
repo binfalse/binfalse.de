@@ -1,0 +1,19 @@
+---
+layout: page
+title: 'WP Link target XHTML'
+
+---
+
+This a <a href="http://wordpress.org/">WordPress</a> plugin to open links in a new Window.
+
+
+By default WordPress adds  `target="_blank"`  to links, so the user that clicks the link will open a new window/tab. Unfortunately this behavior isn't valid for XHTML.
+I'm no friend of forcing the user to open new windows, but sometimes it might be necessary. 
+
+This plugin corrects the XHTML error by replacing  `target="_blank"`  with  `rel="external"` . A small JavaScript is added to the header, that will try to tell the users browser to open these links in a new window.
+
+The code is of course open source, licensed under <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> and can be accessed from <a href="https://github.com/binfalse/WP-Link-target-XHTML">github</a> and might also be available on WordPress.
+
+<div class="download"><strong>Download:</strong>
+WP-Plugin: <a href="https://github.com/downloads/binfalse/WP-Link-target-XHTML/link-target-xhtml-1.0.zip">link-target-xhtml-1.0.zip</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small></div>

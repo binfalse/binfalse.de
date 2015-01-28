@@ -1,0 +1,52 @@
+---
+layout: page
+title: check_url_shortener.pl
+
+---
+
+Check if an URL shortener does its job.
+
+
+
+There are different scenarios why you should check the functionality of your URL shortener. For example a new VirtualHost on your webserver or some DB-changes or own PHP-hacks or -patches might break the shortener. If you maintain lots of services it's likely that you forget to manually check the functionality of your software, so this plugin will help you!
+Of course you can also check foreign shorteners, whether some shortened URL's are still accessible.
+
+To check the shortener provide a shortened URL with  `--short` :
+
+
+
+{% highlight bash %}
+usr@srv % ./check_url_shortener.pl --short s.binfalse.de/1
+redirecting works perfectly: 301 -> /
+{% endhighlight %}
+
+
+
+You can also check if the redirection is as expected. Provide an expected target with  `--expect` :
+
+
+
+{% highlight bash %}
+usr@srv % ./check_url_shortener.pl --short s.binfalse.de/1 --expect /
+redirecting works perfectly: 301 -> /
+{% endhighlight %}
+
+
+
+To run this plugin you need to install curl! This plugin just downloads the header of the shortened URL and makes sure the response code is 301. If you provide an expectation it additionally compares it with the new location.
+
+<a href='/wp-content/uploads/pipapo/monitoring/check_url_shortener.pl'>Here is the code</a>:
+
+[cc lang="perl" file="pipapo/monitoring/check_url_shortener.pl"][/cc]
+
+<h2>Dependencies</h2>
+<ul>
+	<li><a href="http://curl.haxx.se/">Curl</a> in  `/usr/bin/curl` </li>
+	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='/wp-content/uploads/pipapo/monitoring/check_url_shortener.pl'>check_url_shortener.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

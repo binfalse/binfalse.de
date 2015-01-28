@@ -1,0 +1,75 @@
+---
+layout: page
+title: 'YOURLS Firefox extension'
+
+---
+
+Extension to shorten URLs from <a href="http://www.mozilla.com/en-US/firefox/new/">Firefox</a> with your own <a href="http://yourls.org/">YOURLS</a> installation.
+
+
+
+<a href="/2011/06/private-url-shortener/">YOURLS is an URL shortener</a>, just like bit.ly or goo.gl, but you are allowed to install your own private instance. So you can diminish the tracking of these big platforms ;-)
+This piece of software is an extension for the browser Firefox that let's you quickly shorten the URL of the website you are just visiting. All you need is a Firefox and an installation of YOURLS. You can also find this plugin at <a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/">Mozillas addon service platform</a>.
+
+<h2>Integration</h2>
+
+This add-on for the Firefox consists of three modifications of your browser overlay:
+<ol>
+	<li><strong>Toolbar</strong>-button: This button comes with a menu, you can shorten the current page or open a new window browsing to the admin page of your YOURLS API:
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-toolbar.png" img="/wp-content/uploads/2011/06/yourls-extension-toolbar.png" title="" caption="" %}
+</li>
+	<li><strong>Context-menu</strong>: A new entry is integrated in your browsers context menu, that will shorten the current page:
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-context.png" img="/wp-content/uploads/2011/06/yourls-extension-context-179x300.png" title="" caption="" %}
+You can also select some text on the website to give a hint about the keyword (works only if you setup the extension to ask for keywords):
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-context-selection.png" img="/wp-content/uploads/2011/06/yourls-extension-context-selection-300x136.png" title="" caption="" %}
+</li>
+	<li><strong>Statusbar</strong>-button: In addition a small button is placed into the add-ons status bar, a click shortens the current page:
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-statusbar.png" img="/wp-content/uploads/2011/06/yourls-extension-statusbar.png" title="" caption="" %}
+</li>
+</ol>
+
+The result of a shortening will be displayed in an alert box:
+
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-shortened-win.png" img="/wp-content/uploads/2011/06/yourls-extension-shortened-win.png" title="" caption="" %}
+
+
+<h2>Settings</h2>
+
+The setup can be done in the <em>Add-ons Manager</em> (browse to <em>about:addons</em>). Click on the Preferences button next to the <em>YOURLS shortener</em> entry and you'll see a window like this:
+
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-settings-window.png" img="/wp-content/uploads/2011/06/yourls-extension-settings-window.png" title="" caption="" %}
+
+
+
+Following values should be provided:
+
+<dl>
+	<dt>API URL</dt>
+		<dd>The URL to your YOURLS installation. In my case it's <a href="https://s.binfalse.de/">https://s.binfalse.de/</a></dd>
+	<dt>Signature</dt>
+		<dd>The signature of your account. You will find this string on the <em>Tools</em> page in the <em>Secure passwordless API call</em> section. This string is not required for public YOURLS installations.</dd>
+	<dt>Ask for a keyword?</dt>
+		<dd>Should the extension ask for a keyword before shortening? If this box is checked you'll always be asked like this:
+{% include image.html align="aligncenter" url="/wp-content/uploads/2011/06/yourls-extension-keyword.png" img="/wp-content/uploads/2011/06/yourls-extension-keyword-300x119.png" title="" caption="" %}
+Not providing such a keyword has the same effect as unchecking the box: The API will decide about the short URL.
+</dd>
+	<dt>Max wait time</dt>
+		<dd>How many seconds should we wait for an answer from the API before we give up?</dd>
+</dl>
+
+
+<h2>Download</h2>
+
+This extension is licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a> and has it's own project at <a href="https://sourceforge.net/projects/yourls-firefox/">SourceForge</a> and of course it's listed on <a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/"><abbr title="Addons.Mozilla.Org">AMO</abbr></a>.
+
+<div class="download"><strong>Download:</strong>
+Extension: <a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/">from AMO</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.5-rc1.xpi/download">1.5-rc1 from SourceForge</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.4.xpi/download">1.4 from SourceForge</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.3.xpi/download">1.3 from SourceForge</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.2.xpi/download">1.2 from SourceForge</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.1.xpi/download">1.1 from SourceForge</a>
+Extension: <a href="https://sourceforge.net/projects/yourls-firefox/files/yourls-shortener-1.0.xpi/download">1.0 from SourceForge</a>
+SourceCode: <a href="https://sourceforge.net/p/yourls-firefox/code/">from SourceForge</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

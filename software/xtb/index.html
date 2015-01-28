@@ -1,0 +1,130 @@
+---
+layout: page
+title: XTB
+
+---
+
+XTB stands for XMPP-Twitter-Bridge and connects Jabber and Twitter. It's written in Java.
+
+
+<a name="menu" id="menu"></a>
+<h4>Contents</h4>
+<ul>
+	<li><a href="#install">Install</a></li>
+	<li><a href="#how">How it works</a></li>
+	<li><a href="#tj">Twitter -> Jabber</a></li>
+	<li><a href="#jt">Jabber -> Twitter</a></li>
+	<li><a href="#dev">Development</a><a name="install" id="install" href="#menu"></a></li>
+</ul>
+
+<h2>Install</h2>
+If you want to install XTB you need to do the following steps:
+<ul>
+	<li>Create a directory, or choose an existing one, lets call it  `$DIR` </li>
+	<li>Download the latest version of XTB from <a href="https://github.com/binfalse/XTB/downloads">github</a></li>
+	<li>Create another directory  `$DIR/lib`  and download the following libraries and extract them to  `$DIR/lib` :
+<ul>	<li><a href="http://www.igniterealtime.org/projects/smack/index.jsp">Smack</a></li>
+	<li><a href="http://twitter4j.org/en/index.html">Twitter4J</a></li>
+	<li><a href="http://jsoup.org/download">jsoup</a></li>
+</ul></li>
+	<li> `$DIR/lib`  should now contain the following files:
+<ul>	<li>smack.jar</li>
+	<li>smackx-debug.jar</li>
+	<li>smackx.jar</li>
+	<li>smackx-jingle.jar</li>
+	<li>twitter4j-2.2.5.zip</li>
+	<li>twitter4j-core-2.2.5.jar</li>
+	<li>jsoup-1.6.1.jar</li>
+</ul></li>
+</ul>
+
+You also have to setup an additional Jabber account, let's call it  `$jabberbot` . You might want to add this new account to the roaster of your Jabber account.
+And of course you need to have a twitter account ;-)
+
+That is it. You are now able to run XTB:
+<code lang='bash'>
+cd $DIR
+java -jar xtb-*.jar
+</code>
+At the first launch you are asked some questions about your accounts.
+<code>
+which jabber server should i connect to?
+>> JABBER SERVER YOUR $jabberbot SHOULD CONNECT TO
+
+jabber login?
+>> LOGIN OF YOUR $jabberbot
+
+jabber password?
+>> PASSWORD OF YOUR $jabberbot
+
+jabber contact to speak to?
+>> YOUR JABBER ACCOUNT, ONLY THIS ACCOUNT WILL BE ABLE TO UPDATE TWITTER
+
+please authorize the app:
+http://api.twitter.com/oauth/authorize?oauth_token=SOMETOKEN
+paste the verification code:
+>> OPEN THE URL AND COPY THE NUMBERS
+</code>
+
+This information will be stored in  `$DIR/conf` , so you don't need to provide it at every restart.
+You can change the location of the config file with
+<code lang='bash'>
+java -jar xtb-*.jar -c CONFIGFILE
+</code>
+If you want to change your credentials just delete this file and restart XTB, you are free to pass  `--clearconf`  as argument and XTB will delete this file for you.
+To enable debugging mode call XTB with the  `-v`  option.
+
+An overview about available arguments is presented with  `-h` :
+<code>
+usr@srv % java -jar xtb-*.jar -h
+XTB Usage:
+        -l, --log FILE          log messages to FILE
+        -c, --config FILE       read config from FILE, defaults to ./conf
+        --clearconf             delete config and create a new one
+        -h, --help              print this help
+        -v                      enable debugging
+
+For more information visit /software/xtb/
+</code><a name="how" id="how" href="#menu"></a><a name="tj" id="tj" href="#menu"></a>
+
+<h2>How it works</h2>
+<h4>Twitter -> Jabber</h4>
+At each start the Jabber bot will send its Jabber contact the message  `"back!"`  and some recent updates from your Twitter stream. If this is done, XTB checks every 60s for news from Twitter and will send them immediately, so you'll stay informed ;-)
+
+Twitter updates will be sent in the following format:
+<code>
+TWEETID via /SOURCE/  at TIME
+*USER*: MESSAGE
+</code>
+The  `TWEETID`  can be used to retweed this entry.  `SOURCE`  is something like  `web`  or  `TweetDeck`  or  `binfalse-tools` . If you don't like the format, feel free to contact me, maybe I'll install different formats.
+
+I think it's a bad behavior, that Twitter shortens URL's to  `t.co/SMTH` . You have no chance to know where you'll end up, so XTB tries to unshort these URL's and to give you a taste of what to expect. You'll hopefully see no  `t.co`  links ;-)<a name="jt" id="jt" href="#menu"></a>
+
+<h4>Jabber -> Twitter</h4>
+You are also able to interact with Twitter through XTB. You can send several commands via Jabber to the bot and it will process it. All available commands start with an exclamation mark ( `!` ) and will be listed if you send  `!help` :
+
+<code>
+following commands are available:
+!help -> show this message
+!follow [USER] -> follow USER
+!unfollow [USER] -> unfollow USER
+!profile [USER] -> display profile information of USER
+!latest [USER] -> display latest statuses of USER
+!following -> display list of people you are following
+!followers -> display list of your followers
+!rt [ID] -> retweet message with id ID
+!location [LAT,LONG] -> set location for next tweet(s), without data geolocation will be disabled
+</code>
+
+So if you send  `!follow binfalse`  you'll follow me on twitter. The latest tweets from my time line are shown with  `!latest binfalse` .
+If you want twitter to believe you're playing golf in in <a href="http://maps.google.com/maps?q=3.036383,101.717248">Kuala Lumpur</a> send  `!location 3.036383,101.717248`  to the bot. To delete the location just send  `!location`  without an argument.
+
+Every message not starting with an exclamation mark is supposed to be an update and will be posted to Twitter and hopefully appear in your stream ;-)<a name="dev" id="dev" href="#menu"></a>
+
+<h2>Development</h2>
+This is an open source project, licensed under <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>. The sources of XTB are available at <a href="https://github.com/binfalse/XTB">github</a>. The API is documented with <a href="/wp-content/uploads/xtb/doc/" title="JavaDoc">JavaDoc</a>.
+
+<div class="download"><strong>Download:</strong>
+JAR: <a href="https://github.com/downloads/binfalse/XTB/xtb-1.0.1.jar">xtb-1.0.1.jar</a>
+JAR: <a href="https://github.com/downloads/binfalse/XTB/xtb-1.0.jar">xtb-1.0.jar</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small></div>

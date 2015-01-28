@@ -1,0 +1,90 @@
+; VARIOUS PREPROCESSING OPTIONS
+; Preprocessor information: use cpp syntax.
+; e.g.: -I/home/joe/doe -I/home/mary/hoe
+include                  = 
+; e.g.: -DI_Want_Cookies -DMe_Too
+define                   = 
+
+; RUN CONTROL PARAMETERS
+integrator               = md
+tinit                    = 0
+dt                       = 0.002
+nsteps                   = 500000
+simulation_part          = 1
+init_step                = 0
+comm_mode                = linear
+nstcomm                  = 1
+comm_grps                = System
+
+; OUTPUT CONTROL OPTIONS
+; Output frequency for coords (x), velocities (v) and forces (f)
+nstxout                  = 50000
+nstvout                  = 50000
+nstfout                  = 50000
+nstlog                   = 1000
+nstenergy                = 500
+nstxtcout                = 500
+xtc-precision            = 1000
+xtc-grps                 = 
+energygrps               = 
+
+; NEIGHBORSEARCHING PARAMETERS
+; nblist update frequency
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+periodic_molecules       = no
+rlist                    = 1.49
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+; Method for doing electrostatics
+coulombtype              = PME
+rcoulomb-switch          = 0
+rcoulomb                 = 1.49
+epsilon_r                = 1
+epsilon_rf               = 1
+vdwtype                  = switch
+rvdw_switch              = 1.3
+rvdw                     = 1.4
+DispCorr                 = no
+table-extension          = 1
+energygrp_table          = 
+fourierspacing           = 0.15
+fourier_nx               = 0
+fourier_ny               = 0
+fourier_nz               = 0
+pme_order                = 4
+ewald_rtol               = 1e-05
+ewald_geometry           = 3d
+epsilon_surface          = 0
+optimize_fft             = no
+
+; OPTIONS FOR WEAK COUPLING ALGORITHMS
+; Temperature coupling  
+tcoupl                   = v-rescale
+tc_grps                  = System
+tau_t                    = 0.1
+ref_t                    = 293.0
+Pcoupl                   = Berendsen
+Pcoupltype               = Isotropic
+tau_p                    = 4.0
+compressibility          = 4.5e-5
+ref_p                    = 1
+refcoord_scaling         = no
+ld_seed                  = 815131
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = yes
+gen_temp                 = 293
+gen_seed                 = 879429
+
+; OPTIONS FOR BONDS    
+constraints              = hbonds
+constraint_algorithm     = lincs
+continuation             = no
+Shake-SOR                = no
+shake_tol                = 0.0001
+lincs-order              = 4
+lincs-iter               = 1
+lincs-warnangle          = 30
+morse                    = no

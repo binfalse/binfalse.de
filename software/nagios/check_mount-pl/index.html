@@ -1,0 +1,36 @@
+---
+layout: page
+title: check_mount.pl
+
+---
+
+A <a href="http://www.nagios.com/">Nagios</a>-plugin to check if a device is mounted.
+
+Those of you that have a bigger NFS infrastructure may know the problem, that some shares may unmount itself or won't be mount correctly after reboot. This plugin checks whether a device a mounted on a specific mount point.
+
+To run it just give it the mount point you're looking for:
+
+
+{% highlight bash %}
+USAGE: ./check_mount.pl
+        -m MOUNTPOINT   wich mountpoint to check
+        [-t TYPE]       optionally check whether it's this kind of fs-type
+{% endhighlight %}
+
+
+If you additionally define which mount type you expect, this plugin will check whether your expectation matches. Just try it out ;)
+Maybe you have to modify the location of your  `utils.pm`  by updating the  `lib` -path in line 13.
+
+<a href='/wp-content/uploads/pipapo/monitoring/check_mount.pl'>Here is the code</a>:
+[cc lang="perl" file="pipapo/monitoring/check_mount.pl"][/cc]
+
+<h2>Dependencies</h2>
+<ul>
+	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='/wp-content/uploads/pipapo/monitoring/check_mount.pl'>check_mount.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

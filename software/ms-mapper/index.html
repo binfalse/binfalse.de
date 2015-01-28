@@ -1,0 +1,29 @@
+---
+layout: page
+title: MS-Mapper
+
+---
+
+MS-Mapper is a Java application, designed to create 2D-heatmaps of mass spectrometry data.
+
+
+
+{% include image.html align="alignright" url="/wp-content/uploads/2011/08/msmapper-sample-heat.png" img="/wp-content/uploads/2011/08/msmapper-sample-heat-150x150.png" title="" caption="" %}
+
+The current version just understands <a href="http://tools.proteomecenter.org/wiki/index.php?title=Formats:mzXML">MZXML</a> data, so you might need to convert your proprietary file formats first.
+You can choose between different color maps, e.g. <strong>heat</strong> colors or a <strong>gray</strong> scale. It also supports various scaling: <strong>logarithmic</strong> scale, scale by <strong>square root</strong> and no scaling at all. In addition the figure can be surrounded by a <strong>legend</strong>. At the moment only images in PNG format are supported, if you are interested in different image formats feel free to file a feature request. Image dimensions are determined by the user.
+A resulting image with heat colors, a logarithm scale and surrounded legends is displayed in figure 1.
+
+{% include image.html align="alignright" url="/wp-content/uploads/2011/08/msmapper.png" img="/wp-content/uploads/2011/08/msmapper-150x150.png" title="" caption="" %}
+
+The graphical user interface should be easy to understand, a screen-shot is attached in figure 2. If you anyway need help feel free to <a href="/contact/">ping</a> me.
+All you need to run it is a Java runtime environment, you can get one for free from <a href="http://java.com/">java.com</a>.
+
+This tool is a by-product of my diploma thesis in cooperation with my supervisor <a href="http://elastin-forschung.de/">Dr. rer. nat. Christian Schmelzer</a>. It is licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>, sources are available at <a href="https://sourceforge.net/projects/ms-mapper/">SourceForge</a>.
+
+
+<div class="download"><strong>Download:</strong>
+Java Binary: <a href="http://sourceforge.net/projects/ms-mapper/files/ms-mapper.jar/download">ms-mapper.jar</a>
+Java Sources: <a href="http://ms-mapper.git.sourceforge.net/git/gitweb.cgi?p=ms-mapper/ms-mapper;a=tree">at SourceForge</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>

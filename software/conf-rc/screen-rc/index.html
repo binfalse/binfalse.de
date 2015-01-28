@@ -1,0 +1,106 @@
+---
+layout: page
+title: screen.rc
+
+---
+
+A userfriendly  `screen.rc` .
+
+
+<a href="http://www.gnu.org/software/screen/">Gnu Screen</a> is a terminal multiplexer. With it you can mange multiple virtual terminals in one terminal session and discard them to background (all running scripts on virtual terminals continue running) to reactivate it later. So it's possible to open various shells in one single <a href="http://www.openssh.com/">SSH</a> session.
+But I don't want to go to much into detail, if you are interested more information about it visit <a href="http://www.gnu.org/software/screen/">their website</a> or use any search engine out there!
+
+To install it on any Debian/Ubuntu derivative:
+
+
+{% highlight bash %}
+aptitude install screen
+{% endhighlight %}
+
+
+
+Here are the most useful commands:
+<dl>
+  <dt>Ctrl+a c</dt>
+    <dd>create a new virtual terminal</dd>
+  <dt>Ctrl+a SPACE</dt>
+    <dd>change to next terminal</dd>
+  <dt>Ctrl+a BACKSPACE</dt>
+    <dd>change to previous terminal</dd>
+  <dt>Ctrl+a [NUM]</dt>
+    <dd>change to screen number NUM</dd>
+  <dt>Ctrl+a Ctrl+a</dt>
+    <dd>change to last used terminal</dd>
+  <dt>Ctrl+a w</dt>
+    <dd>display titel of all terminals</dd>
+  <dt>Ctrl+a d</dt>
+    <dd>detach screen, all terms continue running in background until you re-attach them</dd>
+  <dt>Ctrl+a k</dt>
+    <dd>kill one single terminal</dd>
+  <dt>Ctrl+a \\</dt>
+    <dd>quit screen</dd>
+  <dt>Ctrl+a A</dt>
+    <dd>change the title of the actual terminal</dd>
+  <dt>Ctrl+a [</dt>
+    <dd>enable copy mode, you can browse through the terminal with the cursor</dd>
+  <dt>Ctrl+a ?</dt>
+    <dd>overview about all keys</dd>
+  <dt>Ctrl+a a</dt>
+    <dd>send Ctrl+a to the terminal, otherwise screen will capture the Ctrl+a</dd>
+</dl>
+
+To get an overview of all deattached sessions just run
+
+
+{% highlight bash %}
+screen -ls
+{% endhighlight %}
+
+
+
+A detached session can be re-attached on your bash prompt with
+
+
+{% highlight bash %}
+screen -r [OPT-IDENTIFIER]
+{% endhighlight %}
+
+
+
+<h2>My Screen.rc</h2>
+The original look and feel of screen is very ugly. It's hard to keep track of all the virtual terminals and it's nasty that you're not able to scroll within the screen.
+
+{% include image.html align="alignright" url="/wp-content/uploads/2010/11/screenrc.png" img="/wp-content/uploads/2010/11/screenrc-150x150.png" title="" caption="" %}
+
+Just save the following file to  `$HOME/.screenrc`  and your screen-session will look like figure 1.
+This configuration allows you among others to <strong>scroll within the screen</strong> and enables some more <strong>key-bindings</strong>:
+<dl>
+  <dt>F2</dt>
+    <dd>create a new screen</dd>
+  <dt>F3</dt>
+    <dd>change to previous terminal</dd>
+  <dt>F4</dt>
+    <dd>change to next terminal</dd>
+  <dt>F5</dt>
+    <dd>enable copy-mode</dd>
+  <dt>F6</dt>
+    <dd>change titel of the terminal</dd>
+  <dt>F7</dt>
+    <dd>deattach the screen</dd>
+  <dt>F8</dt>
+    <dd>quit</dd>
+</dl>
+
+<a href='/wp-content/uploads/pipapo/conf/screen.rc'>Download it</a> directly from your terminal:
+
+
+{% highlight bash %}
+wget -O $HOME/.screenrc /wp-content/uploads/pipapo/conf/screen.rc
+{% endhighlight %}
+
+
+
+<div class="download"><strong>Download:</strong>
+RC: <a href='/wp-content/uploads/pipapo/conf/screen.rc'>.screenrc</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>
