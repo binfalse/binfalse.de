@@ -243,3 +243,15 @@ padding: 0;
 {
 display: inline;
 }
+
+
+figure
+{
+    display: table;
+}
+figcaption
+{
+    display: table-caption;
+    caption-side:bottom;
+}
+
