@@ -22,11 +22,15 @@
 			</p>
 		</div>
 	{% endfor %}
-	<!-- <h1>Post a comment</h1>
+	 <h1>Post a comment</h1>
 	<p style="font-style: italic">
-		All comments are held for moderation; basic HTML formatting accepted.
+<ul>
+        <li><a href="/contact/">send me an email</a></li>
+        <li><a href="http://fb.binfalse.de/?text=Comment for">submit a comment</a> (anonymously)</li>
+</ul>
+
 	</p>
-	<form id="commentform" method="POST" action="{{site.url}}/commentsubmit.php">
+	<!--<form id="commentform" method="POST" action="{{site.url}}/commentsubmit.php">
 		<input type="hidden" name="post_id" value="{{page.id}}" />
 		<input type="hidden" name="return_url" value="{{site.url}}{{page.url}}" />
 		<table>
