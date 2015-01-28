@@ -221,6 +221,7 @@ a:hover
     text-align: center;
 border: 1px solid #aaa;
 padding: 5px;
+background-color: #fff;
 }
 .image-caption {
     color: #777;
