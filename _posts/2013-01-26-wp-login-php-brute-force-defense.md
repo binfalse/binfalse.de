@@ -105,7 +105,7 @@ HTTP/1.1 200 OK
 
 Great, everything's fine :D
 
-<h2>More Security</h3>
+<h2>More Security</h2>
 Of course you can add similar rules for other web sites or scripts. For example to restrict the access to the whole admin interface of WordPress add another restriction to the  `vhost` / `.htaccess` :
 
 
