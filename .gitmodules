@@ -1,0 +1,9 @@
+[submodule "assets/media/wp-content/uploads/stuff"]
+	path = assets/media/wp-content/uploads/stuff
+	url = git@github.com:binfalse/stuff.git
+[submodule "assets/resources/MathJax"]
+	path = assets/resources/MathJax
+	url = https://github.com/mathjax/MathJax.git
+[submodule "assets/media/wp-content/uploads/xtb"]
+	path = assets/media/wp-content/uploads/xtb
+	url = git@github.com:binfalse/XTB.git
