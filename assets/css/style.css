@@ -256,4 +256,9 @@ figcaption
     color: #777;
     margin: 8px;
 }
-
+.download
+{
+	padding: 6px 9px;
+	background: none repeat scroll 0% 0% #E7F7D3;
+	border: 1px solid #6C3;
+}
