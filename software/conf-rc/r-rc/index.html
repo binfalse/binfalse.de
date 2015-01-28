@@ -57,7 +57,54 @@ smallScreen <- function() options(width=180)
 
 So here is a part of my  `.R.rc`  to give you an example:
 
-[cc lang="rsplus" file="pipapo/conf/R.rc"][/cc]
+{% highlight r %}
+###################################
+#
+# R.rc by Martin Scharm
+#   copy to $HOME/.R.rc
+#
+# for more informations visit:
+#          http://binfalse.de
+#
+###################################
+
+
+options (width=236, digits=7, show.error.messages="TRUE", warn=1)
+
+# freq used libs
+library(ggplot2)
+library(plyr)
+
+# aliases
+s <- base::summary;
+h <- utils::head;
+n <- base::names;
+
+# executed at startup and quit
+.First <- function () cat ("\n   Hey nice Guy! Have Fun!\n\n")
+.Last <- function ()  cat ("\n   Goodbye!\n\n")
+
+# adjust line length depending on screen width
+bigScreen <- function () options (width=236)
+smallScreen <- function () options (width=180)
+
+# shorten quit ("yes")
+bye <- function () quit ("yes")
+
+
+##################################
+# some frequently used functions #
+##################################
+
+# calc faculty with f() and faculty()
+f = faculty = function (x) gamma (x + 1)
+
+# find nth biggest element of a vector
+biggest = function (data, x=1) which (data == sort (data)[length(data)-x+1])
+
+# find nth smallest element of a vector
+smallest = function (data, x=1) which (data == sort (data)[x])
+{% endhighlight %}
 
 <div class="download"><strong>Download:</strong>
 RC: <a href='/wp-content/uploads/pipapo/conf/R.rc'>.R.rc</a>
