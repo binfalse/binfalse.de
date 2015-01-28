@@ -253,5 +253,7 @@ figcaption
 {
     display: table-caption;
     caption-side:bottom;
+    color: #777;
+    margin: 8px;
 }
 
