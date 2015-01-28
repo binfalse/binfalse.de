@@ -9,33 +9,39 @@ title: Firefox
 
 <h2>Installation</h2>
 <a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a>/<a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a> can be found in the repository:
-<code>aptitude install iceweasel</code>
+
+    aptitude install iceweasel
+
 The version of Iceweasel in the repository is far too old, the stable branch (<a href="http://www.debian.org/releases/squeeze/amd64/release-notes/index.en.html">squeeze</a>) for example serves  `3.5.16`  while Mozilla actually calls  `11.0`  stable. But there is a group of people building more recent versions of Iceweasel for you. This project can be found at <a href="http://mozilla.debian.net/">mozilla.debian.net</a>. You just need to add the following line to your sources.list:
-<code>deb http://mozilla.debian.net/ squeeze-backports iceweasel-release</code>
+
+    deb http://mozilla.debian.net/ squeeze-backports iceweasel-release
+
 If this is done, you need to install the keyring of the project (see <a href="http://mozilla.debian.net/">here</a>) an afterwards you are able to install Iceweasel with:
-<code>apt-get update
-apt-get install -t squeeze-backports iceweasel</code>
+
+    apt-get update
+    apt-get install -t squeeze-backports iceweasel
+
 
 <h2>Configuration</h2>
 The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:config` . The following configuration reflect my preferences:
-<ul>
-	<li>Insert a <strong>new tab always at the end of the tab bar</strong>: Set  `browser.tabs.insertRelatedAfterCurrent`  to  `false` .</li>
-	<li>Just store the <strong>latest 20 closed tabs in history</strong>: Set  `browser.sessionstore.max_tabs_undo`  to  `20` .</li>
-	<li>Resume the <strong>previous browser session</strong>: Set  `browser.startup.page`  to  `3` </li>
-	<li>Display only one <strong>close button at the end of the tab bar</strong>: Set  `browser.tabs.closebuttons`  to  `3` .</li>
-</ul>
+
+* Insert a **new tab always at the end of the tab bar**: Set  `browser.tabs.insertRelatedAfterCurrent`  to  `false` .
+* Just store the **latest 20 closed tabs in history**: Set  `browser.sessionstore.max_tabs_undo`  to  `20` .
+* Resume the **previous browser session**: Set  `browser.startup.page`  to  `3` .
+* Display only one **close button at the end of the tab bar**: Set  `browser.tabs.closebuttons`  to  `3` .
+
 
 
 <h2>Plugins</h2>
 Here is a list of useful plugins. I highlighted the ones which I consider essential. Most of them are available from the repository:
 <h4>General</h4>
 <ul>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/" rel="external"><strong>Classic Theme Restorer</strong></a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/" rel="external">**Classic Theme Restorer**</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/cookies-manager-plus/" rel="external">Cookies Manager</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/domain-details/" rel="external">Domain Details</a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/flashblock/" rel="external"><strong>Flashblock</strong></a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" rel="external"><strong>FoxyProxy</strong></a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/its-all-text/" rel="external"><strong>It's All Text!</strong></a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/flashblock/" rel="external">**Flashblock**</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" rel="external">**FoxyProxy**</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/its-all-text/" rel="external">**It's All Text!**</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/refreshblocker/" rel="external">RefreshBlocker</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tab-counter/" rel="external">Tab Counter</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/" rel="external">YOURLS shortener</a></li>
@@ -45,13 +51,13 @@ Here is a list of useful plugins. I highlighted the ones which I consider essent
 
 <h4>Privacy</h4>
 <ul>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/" rel="external"><strong>Adblock Edge</strong></a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/elemhidehelper/" rel="external">Element Hiding Helper</a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-whitelist-with-buttons/" rel="external"><strong>Cookie Whitelist</strong></a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/disconnect/" rel="external"><strong>Disconnect</strong></a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/ghostery/" rel="external"><strong>Ghostery</strong></a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/" rel="external">**Adblock Edge**</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/elemhidehelper/" rel="external">Element Hiding Helper</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-whitelist-with-buttons/" rel="external">**Cookie Whitelist**</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/disconnect/" rel="external">**Disconnect**</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/ghostery/" rel="external">**Ghostery**</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/https://www.eff.org/https-everywhere/" rel="external">HTTPS Everywhere</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/" rel="external">NoScript</a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/requestpolicy/" rel="external"><strong>RequestPolicy</strong></a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/requestpolicy/" rel="external">**RequestPolicy**</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/selectivecookiedelete/" rel="external">selectivecookiedelete</a></li>
 </ul>
 
@@ -61,7 +67,7 @@ Here is a list of useful plugins. I highlighted the ones which I consider essent
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/javascript-deobfuscator/" rel="external">JavaScript Deobfuscator</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/header-spy/" rel="external">Header Spy</a></li>
 	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/" rel="external">Live HTTP headers</a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/modify-headers/" rel="external"><strong>Modify Headers</strong></a></li>
-	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tamper-data/" rel="external"><strong>Tamper Data</strong></a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/modify-headers/" rel="external">**Modify Headers**</a></li>
+	<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tamper-data/" rel="external">**Tamper Data**</a></li>
 </ul>
 

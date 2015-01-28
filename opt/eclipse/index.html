@@ -7,13 +7,13 @@ title: Eclipse
 <a href="http://www.eclipse.org/">Eclipse</a> is an <a href="http://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> for <a href="http://java.com/en/">Java</a> developers.
  
 
-<h2>Installation</h2>
+## Installation
 Eclipse can be found within the <a href="http://www.debian.org/">Debian</a> repository:
 <code>aptitude install eclipse</code>
 But since I often run into trouble with the version from <a href="http://www.debian.org/releases/sid/index.en.html">Debian:unstable</a> I recommend to install Eclipse from their <a href="http://www.eclipse.org/downloads/">website</a>.
 
-<h2>Configuration</h2>
-<h3>Editor Style</h2>
+## Configuration
+### Editor Style
 Changing the editor style is unfortunately not very simple. You need to <a href="http://eclipsecolorthemes.org/?view=firsttheme">create your own theme</a> or download an existing theme (e.g. at <a href="http://eclipsecolorthemes.org/">eclipsecolorthemes.org/</a>).
 If you just want to have some small changes to the default theme, something like the font size, you may want to modify the theme. The <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> descriptions can be found in  `$ECLIPSE_HOME/plugins/org.eclipse.platform_4.2.0.v201206081400/css/` . For example to modify the font size of the tabs, having eclipse installed to  `/opt/eclipse/eclipse-jee-juno-linux-gtk-x86_64/`  and using the <a href="http://en.wikipedia.org/wiki/GTK%2B">GTK</a> theme you should update the following part in  `/opt/eclipse/eclipse-jee-juno-linux-gtk-x86_64/plugins/org.eclipse.platform_4.2.0.v201206081400/css/e4_default_gtk.css` :
 
@@ -29,11 +29,11 @@ If you just want to have some small changes to the default theme, something like
 
 
 
-<h3>Source Format</h2>
+### Source Format
 To change the layout of the source files (font size etc.) open <em>Window->Preferences</em>, go to <em>General->Appearance->Colors and Fonts</em> and update for example <em>Java->Java Editor Text Font</em>.
 The preferred code style (white space, new lines, line breaks etc.) can be changed in <em>Window->Preferences</em> at <em>Java->Code Style->Formatter</em>. Here you can find my favorite Java code style description: <a href='/wp-content/uploads/2012/03/eclipse-format.xml'>eclipse-format.xml</a>
-<h2>Supp</h2>
-<h3>Change name in newly generated files</h3>
+## Supp
+### Change name in newly generated files
 If you create a new file eclipse will produce a structure based on a template:
 
 
