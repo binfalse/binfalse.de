@@ -2,7 +2,7 @@
 <div class="image-wrapper {{ include.align }}" >
     <figure>
     {% if include.url %}
-    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank" data-lightbox="{{include.url}}" data-title="{{include.caption}}">
     {% endif %}
         <img src="{{ include.img }}" alt="{{ include.title }}"/>
     {% if include.url %}
