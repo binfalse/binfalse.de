@@ -12,16 +12,13 @@ This script should be called with  `-s [SWITCHIP]`  and  `-C [COMMUNITYSTRING]` 
 
 Tested with different IOS versions and SNMP protocol version 2c. If you want to use a different SNMP protocol version, just modify the  `Net::SNMP->session(...)`  call.
 
-<a href='/wp-content/uploads/pipapo/monitoring/check_catalyst_fans.pl'>Here is the code</a>:
+<a href='/wp-content/uploads/pipapo/monitoring/check_catalyst_fans.pl'>Here is the code</a>.
 
-
-
-{% highlight perl %}
-{% endhighlight %}
 
 <h4>How to enable SNMP in your catalyst's IOS</h4>
 
 To allow an server to access the IOS via SNMP you have to create an access list with the IP of your server. Afterwards define the access to the IOS's SNMP-server with an community string, similar like a passphrase. Here is an example configuration:
+
 {% highlight bash %}
 access-list 60 permit [IP-THAT-IS-ALLOWED-TO-REQUEST]
 snmp-server community [COMMUNITY-STRING] RO 60

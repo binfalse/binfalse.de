@@ -29,16 +29,15 @@ By default all checks are performed, but some of them might not be supported on 
 
 The current version doesn't support fan-checks until HP tells me how to read the output (read more at the <a href="/2011/08/installing-an-hp-proliant/">article</a>), so you will have to run this plugin at least with  `--no-check-fans` .
 
-<a href='/wp-content/uploads/pipapo/monitoring/check_hp_health.pl'>Here is the code</a>:
+<a href='/wp-content/uploads/pipapo/monitoring/check_hp_health.pl'>Here is the code</a>.
 
-[cc lang="perl" file="pipapo/monitoring/check_hp_health.pl"][/cc]
 
 <h2>Dependencies</h2>
-<ul>
-	<li><a href="http://h18013.www1.hp.com/products/servers/management/psp/index.html">hpasmcli</a> in  `/sbin/hpasmcli` </li>
-	<li><a href="http://h18013.www1.hp.com/products/servers/management/psp/index.html">hpacucli</a> in  `/usr/sbin/hpacucli` </li>
-	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
-</ul>
+
+* [hpasmcli](http://h18013.www1.hp.com/products/servers/management/psp/index.html) in  `/sbin/hpasmcli` 
+* [http://h18013.www1.hp.com/products/servers/management/psp/index.html](hpacucli) in  `/usr/sbin/hpacucli` 
+* [Getopt::Long](http://search.cpan.org/perldoc?Getopt::Long)
+
 Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
 
 <div class="download"><strong>Download:</strong>

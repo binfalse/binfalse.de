@@ -9,9 +9,16 @@ Monitoring the WordPress up-to-date status.
 
 
 This script checks whether there are updates for your WordPress installation. It's written in PHP to use the WordPress code itself, we don't need to to reinvent the wheel ;-)
-There are two types of checks:
 
-<strong>Web-based checks:</strong> If you are not allowed or however not able to setup Nagios/Icinga (or whatever monitoring solution you're using) on the web-server you can check the <em>WP-core-version</em> remotely. The plugin will download your website and compares the version in the header with the lastes version provided by the WordPress-API. It's only working if you don't suppress the header field  `<meta name="generator" content="WordPress 3.2" />` , e.g. with plugins like <a href="http://wordpress.org/extend/plugins/secure-wordpress/" title="Secure WordPress">Secure WordPress</a>. Just pass your domain together with  `--web`  to the plugin:
+There are two options to check your WordPress installation:
+
+* **Web-based checks:** access the WordPress installation trough an HTTP connection (no need to have access to the actual files)
+* **Local installation checks:** check the files in the actual installation directory
+
+
+## Web-based checks
+
+If you are not allowed or however not able to setup Nagios/Icinga (or whatever monitoring solution you're using) on the web-server you can check the <em>WP-core-version</em> remotely. The plugin will download your website and compares the version in the header with the lastes version provided by the WordPress-API. It's only working if you don't suppress the header field  `<meta name="generator" content="WordPress 3.2" />` , e.g. with plugins like <a href="http://wordpress.org/extend/plugins/secure-wordpress/" title="Secure WordPress">Secure WordPress</a>. Just pass your domain together with  `--web`  to the plugin:
 
 
 
@@ -33,7 +40,9 @@ check_wp.php --insec-cert --web https://blog.3dfxatwork.de
 
 Executing the script with  `--web`  will just try to check the WP-core version. There is no chance to check for plugin or theme updates via web. So the more compfortable way might be to check local installations.
 
-<strong>Local installation checks:</strong> If your monitoring solution has access to your installation files you should provide this path along with  `--dir` :
+## Local installation checks
+
+If your monitoring solution has access to your installation files you should provide this path along with  `--dir` :
 
 
 
@@ -45,11 +54,10 @@ check_wp.php --dir /dir/to/your/installation
 
 This execution will check for updates of your <em>WP-core</em>, your <em>plugins</em> and your <em>themes</em>. Of course some of these checks can be disabled with  `--no-core` ,  `--no-plugins`  or  `--no-theme` . If you have a <a href="http://codex.wordpress.org/Create_A_Network">mutli-site</a> installation you can provide the domain to check with  `--domain` .
 
-Web-based checks and local installation checks are distinct, you can't do both variants in one call. If you want to do so, just set up two different monotoring service definitions.
+## Use
+Web-based checks and local installation checks are disjoint, you can't do both variants in one call. If you want to do so, just set up two different monotoring service definitions.
 
-<a href="/wp-content/uploads/pipapo/monitoring/check_wp.PHP" title="Here is the code:">Here is the code:</a>
-
-[cc lang="php" file="pipapo/monitoring/check_wp.PHP"][/cc]
+<a href="/wp-content/uploads/pipapo/monitoring/check_wp.PHP" title="Here is the code:">Here is the code</a>.
 
 <h2>Dependencies</h2>
 <ul>
