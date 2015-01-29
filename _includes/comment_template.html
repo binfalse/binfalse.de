@@ -8,18 +8,30 @@
 	{% endcase %}
 	{% for c in page.comments %}
 		<div class="comment {% cycle 'odd', 'even' %}">
-			<p class="comment_header">
-				From: {% if c.link and c.link != '' %}
-					<a href="{{c.link}}">{{c.name}}</a>
-				{% else %}
-					{{c.name}}
-				{% endif %}
-				<br />
+			{% assign comment_id = c.date | url_encode%}
+			<a name="comment_{{comment_id}}"></a> 
+                
+			<div class="comment_header">
+				<cite>
+					{% if c.link and c.link != '' %}
+						<a href="{{c.link}}">{{c.name}}</a>
+					{% else %}
+						{{c.name}}
+					{% endif %}
+				</cite>
+				
+				|
+				<a class="comment_permalink" href="{{site.url}}{{page.url}}#comment_{{comment_id}}" title="Permalink to this comment">Permalink</a>
+				|
 				<span class="comment_date">{{c.date}}</span>
-			</p>
-			<p>
+			</div>
+			
+			
+			<div class="comment_body">
 				{{c.comment | newline_to_br | markdownify}}
-			</p>
+			</div>
+			
+			
 		</div>
 	{% endfor %}
 	 <h1>Post a comment</h1>
