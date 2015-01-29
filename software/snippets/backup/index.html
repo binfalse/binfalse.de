@@ -6,8 +6,8 @@ title: backup
 
 Small script to generate fast backups of files and directories.
 
-If the first argument is a directory it creates a gzip'd tar archive of it with a name like  `filename_\`date +"%F_%H-%M-%S"\`.tgz` .  
-Otherwise it copies the file to  `filename_\`date +"%F_%H-%M-%S"\`` .
+If the first argument is a directory it creates a gzip'd tar archive of it with a name like  `filename_$(date +"%F_%H-%M-%S").tgz` .  
+Otherwise it copies the file to  `filename_$(date +"%F_%H-%M-%S")` .
 
 <a href='/wp-content/uploads/pipapo/scripts/backup'>Download it</a> directly from your terminal:
 
