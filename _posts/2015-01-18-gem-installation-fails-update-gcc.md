@@ -73,4 +73,3 @@ Results logged to /var/lib/gems/2.1.0/extensions/x86_64-linux/2.1.0/ffi-1.9.6/ge
 
 Especially line 35 drove me insane: <em>You have to install development tools first.</em> That made me think I need to install more <em>*-dev</em> stuff.
 Took me some time to <a href="https://stackoverflow.com/a/26870276/723540">find out</a> that there was a problem with gcc! Turns out that  `gcc version 4.8.3 (Debian 4.8.3-13)`  (gcc -v) wasn't able to build the package for me. <strong>So I installed  `gcc version 4.9.1 (Debian 4.9.1-19)`  and everything worked like a charm. :)</strong>
-
