@@ -106,11 +106,11 @@ Next task is to adjust the library-path. Right-click on your project and choose 
 The third step is a little tricky. As far as I know there is no way to change the environment from within Netbeans, so you can't create the variable  `R_HOME`  after Netbeans is started. In my opinion you have two options:
 
 1. Export the variable before starting Netbeans:
-  {% highlight bash %}
-  usr@srv $ export R_HOME=/usr/lib64/R
-  usr@srv $ netbeans
-  {% endhighlight %}
-  you might want to write a wrapper script that does this step for you, or include the export in any of the resource files that are called before Netbeans starts (e.g. your  `.bashrc` ).
+   {% highlight bash %}
+   usr@srv $ export R_HOME=/usr/lib64/R
+   usr@srv $ netbeans
+   {% endhighlight %}
+   you might want to write a wrapper script that does this step for you, or include the export in any of the resource files that are called before Netbeans starts (e.g. your  `.bashrc` ).
 2. Change the environment from within your project. At <a href="http://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java">stackoverflow</a> you can find a workaround, but I think this is a very lousy solution..
 
 If you have further suggestions please let me know!

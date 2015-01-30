@@ -28,11 +28,9 @@ The new year just started and I wanted to check what I produced the last year in
 First I thought about parsing the database-content, but at least I decided to check the real content as it is available to all of you. The easiest way to do something like this is doing it with Perl, at least for me.
 The following task were to do for each site of my blog:
 
-<ul>
-	<li>Check if W3C likes the site</li>
-	<li>For each link to external resources: Check if they respond with  `200 OK` </li>
-	<li>For each internal link: Check this site too if not already checked</li>
-</ul>
+* Check if W3C likes the site
+* For each link to external resources: Check if they respond with  `200 OK`
+* For each internal link: Check this site too if not already checked
 
 While I'm checking each site I also saved the number of leaving links to a file to get an overview.
 Here is the code:
