@@ -208,14 +208,14 @@ a:hover
 	text-decoration:none;
 	border-bottom: 1px solid #DE7D40;
 }
-@media(max-width:767px) {
+@media(max-width:926px) {
 	.img-circle
 	{
 		max-width: 35px;
 	}
 }
 
-@media(min-width:767px) {
+@media(min-width:927px) {
 	.col-sm-10
 	{
 		width:auto;
