@@ -38,4 +38,3 @@ In general I don't care. It was just some lines of PHP that send me an email in 
 Thus, if you arrive here feel free to apply for a job! I guess all of my readers, even if they didn't solve this challenge, are perfect fellows...
 
 If you nevertheless want to give it a try you can <a href="/wp-content/uploads/2013/11/challenge-sems.pdf">download the challenge</a>.
-

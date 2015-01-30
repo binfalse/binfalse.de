@@ -236,6 +236,7 @@ a:hover
 border: 1px solid #aaa;
 padding: 5px;
 background-color: #fff;
+margin:8px;
 }
 .image-caption {
     color: #777;

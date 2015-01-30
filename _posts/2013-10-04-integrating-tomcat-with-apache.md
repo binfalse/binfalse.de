@@ -85,11 +85,10 @@ Here I'll show you how to setup a <a href="https://en.wikipedia.org/wiki/Virtual
 
 
 Ok, let me shortly explain what I did there.
-<ol>
-	<li>Everything that arrives at this vhost gets forwarded to our previously defined AJP worker (<strong>line 9</strong>)</li>
-	<li>I assume your Tomcat webapp is running on  `server:8080/YourApp` , therefor I configured a substitution of the URL to insert  `/YourApp`  (<strong>line 7</strong>). Of course you need to have  `mod_rewrite`  installed and enabled. (You may skip this line if you're fine with having  `/YourApp`  in all your URLs)</li>
-	<li>The rest should be clear. The vhost is available at  `http://yourapp.yourserver.tld` , as well as at  `http://ya.yourserver.tld`  (<strong>lines 3&4</strong>). You can also use SSL, just configure <strong>line 1</strong> to listen at  `*:433`  and add the SSL stuff to the body of your vhost. (<a href="https://wiki.apache.org/httpd/NameBasedSSLVHosts">SSL exmaple</a>)</li>
-</ol>
+
+1. Everything that arrives at this vhost gets forwarded to our previously defined AJP worker (**line 9**)
+2. I assume your Tomcat webapp is running on  `server:8080/YourApp` , therefor I configured a substitution of the URL to insert  `/YourApp`  (**line 7**). Of course you need to have  `mod_rewrite`  installed and enabled. (You may skip this line if you're fine with having  `/YourApp`  in all your URLs)
+3. The rest should be clear. The vhost is available at  `http://yourapp.yourserver.tld` , as well as at  `http://ya.yourserver.tld`  (**lines 3&4**). You can also use SSL, just configure **line 1** to listen at  `*:433`  and add the SSL stuff to the body of your vhost. ([SSL exmaple](https://wiki.apache.org/httpd/NameBasedSSLVHosts))
 
 Afterwards, enable the vhost to populate it:
 
@@ -114,5 +113,3 @@ service apache2 restart
 
 
 Now Apache forwards all requests to  `http://yourapp.yourserver.tld`  to your Tomcat webapp at  `http://yourserver.tld:8080/YourApp` .
-
-

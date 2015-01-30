@@ -44,6 +44,6 @@ gnome-web-photo --timeout=60 --mode=thumbnail  binfalse-thumb.png
 
 
 
-Afaik, there is no option to generate a larger thumb, but you could just pass  `--width=`  without the  `--mode=thumbnail` . And then crop the pic yourself (e.g. using imagemagick). However, you need to run X and you need to have GTK, if I understand correctly. Nevertheless, I like that solution.
+Afaik, there is no option to generate a larger thumb, but you could just pass  `--width=`  without the  `--mode=thumbnail` . And then crop the pic yourself (e.g. using [imagemagick](http://imagemagick.org/)). However, you need to run [X][06021576] and you need to have [GTK](http://www.gtk.org/), if I understand correctly. Nevertheless, I like that solution.
 
-
+  [06021576]: http://www.x.org/ "X Window System"
