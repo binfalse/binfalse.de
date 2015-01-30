@@ -320,6 +320,10 @@ cite
 
 
 
-
+blockquote p
+{
+	font-size: 100%;
+	font: inherit;
+}
 
 
