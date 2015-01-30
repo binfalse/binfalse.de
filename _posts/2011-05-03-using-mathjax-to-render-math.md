@@ -34,7 +34,7 @@ Different images have different baselines: <img src="/wp-content/latex/185/18560
 
 Here is the same Text rendered with MathJax (you need to have JavaScript enabled so see a difference)
 
-$$a^2+b^2&=c^2\\a^2&=c^2\,$$
+$$\begin{align*}a^2+b^2&=c^2\\a^2&=c^2\end{align*}$$
 
 There are some disadvantages, for example you can't align a number of lines by the equal sign. And also the integration into continuous text is terrible, as you can see in the following sum: $$\sum i = 5$$.
 Different images have different baselines: $$i=\circ$$ vs $$p=\circ$$. This will destroy any line spacings and it depends on the browser what you see if you zoom into the website.
@@ -58,7 +58,7 @@ Since the MathJax library contains very much <acronym title="JavaScript">JS</acr
 
 
 
-{% highlight html %}
+{% highlight php %}
 function wp_head() {
 	if ( !$this->options['css'] )
 		return;
@@ -193,7 +193,7 @@ Btw. even if it sounds like I'm arguing about this image variant, I'm not! It's 
 
 Here is a nice last example, based on the sample of WP-LaTeX:
 
-$$\displaystyle P_\nu^{-\mu}(z)&=\frac{\left(z^2-1\right)^{\frac{\mu}{2}}}{2^\mu \sqrt{\pi}\Gamma\left(\mu+\frac{1}{2}\right)}\int_{-1}^1\frac{\left(1-t^2\right)^{\mu -\frac{1}{2}}}{\left(z+t\sqrt{z^2-1}\right)^{\mu-\nu}}dt\\&=a^2+\pi\cdot x_\infty\\&\approx42\,$$
+$$\begin{align*}\displaystyle P_\nu^{-\mu}(z)&=\frac{\left(z^2-1\right)^{\frac{\mu}{2}}}{2^\mu \sqrt{\pi}\Gamma\left(\mu+\frac{1}{2}\right)}\int_{-1}^1\frac{\left(1-t^2\right)^{\mu -\frac{1}{2}}}{\left(z+t\sqrt{z^2-1}\right)^{\mu-\nu}}dt\\&=a^2+\pi\cdot x_\infty\\&\approx42\end{align*}$$
 
 Here is the code for the above formula:
 
