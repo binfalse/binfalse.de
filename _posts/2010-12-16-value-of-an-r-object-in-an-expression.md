@@ -29,7 +29,7 @@ Each single goal is easy to reach, for example to combine a value of an R object
 
 
 
-To have a plot title with an $$\\alpha_1$$ you can use  `expression` :
+To have a plot title with an $$\alpha_1$$ you can use  `expression` :
 
 
 
