@@ -26,7 +26,10 @@ The new interface slimmed a bit and is more lightweight, but I'm arguing about t
 
 First I thought I'll get used to it, but now I decided to change it on my own. So I created a small user script for the Firefox extension Greasemonkey. Here you see the difference (click the images for larger versions):
 
-[caption id="attachment_4416" align="alignleft" width="270" caption="Reader w/o modification"]<a href="/wp-content/uploads/2011/11/greader-wo-userscript.png"><img src="/wp-content/uploads/2011/11/greader-wo-userscript-300x218.png" alt="Reader w/o modification" title="Reader w/o modification" width="270" height="196" class="size-medium wp-image-4416" /></a>[/caption] {% include image.html align="alignleft" url="/wp-content/uploads/2011/11/greader-w-userscript.png" img="/wp-content/uploads/2011/11/greader-w-userscript-300x218.png" title="" caption="" %}
+{% include image.html align="alignleft" url="/wp-content/uploads/2011/11/greader-wo-userscript.png" img="/wp-content/uploads/2011/11/greader-wo-userscript-300x218.png" title="Reader w/o modification" caption="Reader w/o modification" %}
+
+{% include image.html align="alignleft" url="/wp-content/uploads/2011/11/greader-w-userscript.png" img="/wp-content/uploads/2011/11/greader-w-userscript-300x218.png" title="Reader w/ modification" caption="Reader w/ modification" %}
+
 <div style="clear:both"> </div>
 
 So you see, there is less space at the top of the page and single entries got closer together. The script is available in the download section, all you need is the browser <a href="http://www.mozilla.org/en-US/firefox/">Firefox</a> and its extension <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Greasemonkey</a>. If you have both installed just click the following link to the download and Greasemonky will ask you to install my short script. That's it for the moment ;-)
