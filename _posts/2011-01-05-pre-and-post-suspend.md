@@ -87,11 +87,9 @@ Next step is telling Gajim to change its status. Unfortunately the  `gajim-remot
 Your DBus session address within an X-session is set in your environment in  `$DBUS_SESSION_BUS_ADDRESS`  ( `echo $DBUS_SESSION_BUS_ADDRESS` ).
 So what are your options to get this address for your  `.suspend`  script?
 
-<ul>
-	<li>You can export your  `env`  to a file when you login (maybe automatically via  `.xinitrc` ) to parse it</li>
-	<li>All addresses are saved in  `$HOME/.dbus/session-bus/` , so try to find the right one..</li>
-	<li>Get it from a process environment</li>
-</ul>
+* You can export your  `env`  to a file when you login (maybe automatically via  `.xinitrc` ) to parse it
+* All addresses are saved in  `$HOME/.dbus/session-bus/` , so try to find the right one..
+* Get it from a process environment
 
 The last possibility is of course the nicest one. So check if Gajim is running and extract the  `DBUS_SESSION_BUS_ADDRESS`  from  `/proc/GAJIM_PID/environ` ! Here is how it can be done:
 
@@ -108,12 +106,12 @@ gajim_logout ()
     # is gajim running
     gajim_pid=$(/bin/ps -f --user $(whoami) | /bin/grep [g]ajim.py | /usr/bin/awk '{print $2}')
     [ -f /proc/$gajim_pid/environ ] || return 1
-    
+
     # get the dbus address
     DBUS_SESSION_BUS_ADDRESS=$(/bin/cat /proc/$gajim_pid/environ | /bin/grep -z DBUS_SESSION_BUS_ADDRESS | /bin/sed 's/^[^=]*=//')
     [ -n $DBUS_SESSION_BUS_ADDRESS ] || return 1
     export DBUS_SESSION_BUS_ADDRESS
-    
+
     # now gajim is ready to go offline ;-)
     /usr/bin/gajim-remote change_status offline >> /dev/null
 }
@@ -128,4 +126,3 @@ exit 0
 That's it, great work! Save this file in  `$HOME/.suspend`  and give it the right for execution. You can also write a similar script for  `$HOME/.awake`  to reconnect to your Jabber server, but you eventually don't want to reconnect each time you open the lid..
 
 So the next time I close my laptops lid Gajim disconnects immediately! No annoyed friends anymore :P
-

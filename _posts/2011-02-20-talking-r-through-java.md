@@ -111,6 +111,7 @@ The third step is a little tricky. As far as I know there is no way to change th
    usr@srv $ netbeans
    {% endhighlight %}
    you might want to write a wrapper script that does this step for you, or include the export in any of the resource files that are called before Netbeans starts (e.g. your  `.bashrc` ).
+
 2. Change the environment from within your project. At <a href="http://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java">stackoverflow</a> you can find a workaround, but I think this is a very lousy solution..
 
 If you have further suggestions please let me know!
