@@ -248,6 +248,12 @@ float: right;
 .alignleft {
 float: left;
 }
+.aligncenter figure
+{
+	display:block;
+	margin:0 auto 21px auto;
+}
+
 
 #pagelist ul
 {
