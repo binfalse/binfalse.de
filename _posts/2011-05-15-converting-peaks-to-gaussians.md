@@ -34,22 +34,22 @@ $$\mathcal{N}(\mu,\,\sigma^2) = e^{ -\frac{(x-\mu)^2}{2\sigma^2} }\,$$
 with its maximum of 1 at $$\mu$$.
 As you know $$\sigma$$ isn't affected if we move all data points by a distinct value, so let's move them by $$-\mu$$. Now the distribution has its mean at 0. The equation we have to solve is:
 
-$$
+$$\begin{align*}
 e^{ -\frac{x^2}{2\sigma^2} } &= \frac{1}{2}\\
 -\frac{x^2}{2\sigma^2}&=\ln\left(\frac{1}{2}\right)\\
 x^2 &= 2\sigma^2\ln2\\
 x_{1,2} &= \pm\sigma\sqrt{2\ln2}
-$$
+\end{align*}$$
 
 You see, the half-maximum is at $$\pm\sigma\sqrt{2\ln2}$$, with $$FWHM=2\sigma\sqrt{2\ln2}$$.
 Reverse, given the $$FWHM$$ we can calculate $$\sigma$$ of the normal distribution with:
 
-$$\sigma&=\frac{1}{2}FWHM\cdot\left(2\ln2\right)^{-\frac{1}{2}}\\
-&\approx 2.35482 \cdot FWHM\,$$
+$$\begin{align*}\sigma&=\frac{1}{2}FWHM\cdot\left(2\ln2\right)^{-\frac{1}{2}}\\
+&\approx 2.35482 \cdot FWHM\end{align*}$$
 
 Combining everything, a peak at <em>m/z</em> in an instrument with resolution $$R$$ can be approximated with a normal distribution $$\mathcal{N}(\mu,\,\sigma^2)$$ with parameters:
 
-$$\mu &= m/z\\
-\sigma&= \frac{m/z}{R \cdot 2\sqrt{2\ln2}}\,$$
+$$\begin{align*}\mu &= m/z\\
+\sigma&= \frac{m/z}{R \cdot 2\sqrt{2\ln2}}\,\end{align*}$$
 
 You see, the higher the <em>m/z</em> the bigger is $$\sigma$$.
