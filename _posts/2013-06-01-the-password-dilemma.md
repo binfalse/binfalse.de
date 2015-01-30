@@ -29,12 +29,13 @@ Unfortunately, this solution also comes with some drawbacks. Since you cannot re
 
 <h2>Using a Password System</h2>
 The second idea is using a system to generate passwords for each account. You have to choose a very strong password $$p$$, and a function $$f$$ that creates a unique password $$u$$ for every account using $$p$$ and the (domain) name $$n$$ of the related service: $$u = f (p, n)$$.
-You just need to remember this very good $$p$$ and $$f$$. Depending on your paranoia and your mind capabilities there are many options to choose $$f$$. An easy $$f_1$$ might just put the 3<sup>rd</sup> and last letters of $$n$$ at the 8<sup>th</sup> and 2<sup>nd</sup> pos in $$p$$ (see example below). More paranoid mathematicians might choose an $$f_2$$ that ASCII-adds the 3<sup>rd</sup> letter of $$n$$ to the 8<sup>th</sup> position of $$p$$, puts the $$\\lfloor\\sqrt{n} * 10\\rceil/10$$ at the 2<sup>nd</sup> position in $$p$$, and appends the <a href="http://en.wikipedia.org/wiki/Base64">base64</a> representation of the <a href="http://en.wikipedia.org/wiki/Multiplicative_digital_root">multiplicative digital root</a> of the int values of the ASCII letters of $$n$$ to $$p$$. Here you can see the examples:
+You just need to remember this very good $$p$$ and $$f$$. Depending on your paranoia and your mind capabilities there are many options to choose $$f$$. An easy $$f_1$$ might just put the 3<sup>rd</sup> and last letters of $$n$$ at the 8<sup>th</sup> and 2<sup>nd</sup> pos in $$p$$ (see example below). More paranoid mathematicians might choose an $$f_2$$ that ASCII-adds the 3<sup>rd</sup> letter of $$n$$ to the 8<sup>th</sup> position of $$p$$, puts the $$\lfloor\sqrt{n} * 10\rceil/10$$ at the 2<sup>nd</sup> position in $$p$$, and appends the <a href="http://en.wikipedia.org/wiki/Base64">base64</a> representation of the <a href="http://en.wikipedia.org/wiki/Multiplicative_digital_root">multiplicative digital root</a> of the int values of the ASCII letters of $$n$$ to $$p$$. Here you can see the examples:
 
-<table><tr><th>$$p$$</th><th>$$n$$</th><th>$$f_1 (p, n)$$</th><th>$$f_2 (p, n)$$</th></tr>
-<tr><td> `u:M~a{em0` </td><td> `twitter` </td><td> `ur:M~a{eim0` </td><td> `u2.6:M~a{eW0Mi4yNDU2MjFlKzE0Cg==` </td></tr>
-<tr><td> `u:M~a{em0` </td><td> `google` </td><td> `ue:M~a{eom0` </td><td> `u2.4:M~a{e]0MS40MjU4MjNlKzEyCg==` </td></tr>
-</table>
+ $$p$$ | $$n$$ | $$f_1 (p, n)$$ | $$f_2 (p, n)$$
+-|-|-|-
+`u:M~a{em0` | `twitter` | `ur:M~a{eim0` | `u2.6:M~a{eW0Mi4yNDU2MjFlKzE0Cg==`
+  `u:M~a{em0` | `google` | `ue:M~a{eom0` | `u2.4:M~a{e]0MS40MjU4MjNlKzEyCg==`
+
 
 So, you see if the password for twitter gets known the hacker isn't able to log into your google account. To be honest, I guess that nobody will choose $$f_2$$, but I think even $$f_1$$ is quite good and leaves some space for simple improvements.
 
@@ -47,33 +48,42 @@ However, we are discussing on a very high level. The mentioned scenarios are mor
 <h2>Supp: The Conversation</h2>
 just for the logs (in twitter chronology: new -> old):
 
-<blockquote>
-<strong>Pedro Mendes</strong> <small>@gepasi at 1:13 PM - 30 May 13</small>
-@binfalse I agree, but using 30 character completely random ones seems to be the best.
-<strong>martin scharm</strong> <small>@binfalse at 5:40 PM - 29 May 13</small>
-@gepasi either using a password safe (which also has drawbacks) or a system with a strong p and a complex f.
-<strong>martin scharm</strong> <small>@binfalse at 5:39 PM - 29 May 13</small>
-@gepasi however, i support the attitude seeing every pw as compromised. so the most important rule is using unique pws for every service.
-<strong>martin scharm</strong> <small>@binfalse at 5:39 PM - 29 May 13</small>
-@gepasi even after reading this article i'd say that ur:M~a{eim0 is quite strong and i'd expect to find it within the 10% uncracked.
-<strong>Pedro Mendes</strong> <small>@gepasi at 1:18 PM - 29 May 13</small>
-@binfalse but thanks for the tip on KeePassX
-<strong>Pedro Mendes</strong> <small>@gepasi at 1:18 PM - 29 May 13</small>
-@binfalse a system is not recommended. Anything a human can remember is broken within 24h. Read http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/
-<strong>martin scharm</strong> <small>@binfalse at 1:03 PM - 29 May 13</small>
-@gepasi and even if someone breaks into twitter, your google passphrase ("ue:M~a{eom0") isn't compromised.
-<strong>martin scharm</strong> <small>@binfalse at 1:03 PM - 29 May 13</small>
-@gepasi quite easy to remember (when you know p), very hard to guess and brute-forcing the related hash really takes some time.
-<strong>martin scharm</strong> <small>@binfalse at 1:03 PM - 29 May 13</small>
-@gepasi e.g. p="u:M~a{em0" and n="twitter" would result in "ur:M~a{eim0" as a password for twitter.
-<strong>martin scharm</strong> <small>@binfalse at 1:02 PM - 29 May 13</small>
-@gepasi you just need to remember p and f, which may put the 3rd and last letter of n at the 8th and 2nd pos in p.
-<strong>martin scharm</strong> <small>@binfalse at 1:02 PM - 29 May 13</small>
-@gepasi choose a password p (as strong as possible) and a function f(p,n) that creates a unique password from p and a (domain) name n.
-<strong>martin scharm</strong> <small>@binfalse at 1:02 PM - 29 May 13</small>
-@gepasi afaik KeePassX is a good one. but i recommend to use a system!
-<strong>Pedro Mendes</strong> <small>@gepasi at 9:07 AM - 29 May 13</small>
-I need suggestions for a good password manager. Ideally only local storage (ie no cloud storage)
-</blockquote>
 
-
+> **Pedro Mendes** *@gepasi at 1:13 PM - 30 May 13*  
+> @binfalse I agree, but using 30 character completely random ones seems to be the best.
+>
+> **martin scharm** *@binfalse at 5:40 PM - 29 May 13*  
+> @gepasi either using a password safe (which also has drawbacks) or a system with a strong p and a complex f.
+>
+> **martin scharm** *@binfalse at 5:39 PM - 29 May 13*  
+> @gepasi however, i support the attitude seeing every pw as compromised. so the most important rule is using unique pws for every service.
+>
+> **martin scharm** *@binfalse at 5:39 PM - 29 May 13*  
+> @gepasi even after reading this article i'd say that ur:M~a{eim0 is quite strong and i'd expect to find it within the 10% uncracked.
+>
+> **Pedro Mendes** *@gepasi at 1:18 PM - 29 May 13*  
+> @binfalse but thanks for the tip on KeePassX
+>
+> **Pedro Mendes** *@gepasi at 1:18 PM - 29 May 13*  
+> @binfalse a system is not recommended. Anything a human can remember is broken within 24h. Read http://arstechnica.com/security/2013/05/how-crackers-make-minced-meat-out-of-your-passwords/
+>
+> **martin scharm** *@binfalse at 1:03 PM - 29 May 13*  
+> @gepasi and even if someone breaks into twitter, your google passphrase ("ue:M~a{eom0") isn't compromised.
+>
+> **martin scharm** *@binfalse at 1:03 PM - 29 May 13*  
+> @gepasi quite easy to remember (when you know p), very hard to guess and brute-forcing the related hash really takes some time.
+>
+> **martin scharm** *@binfalse at 1:03 PM - 29 May 13*  
+> @gepasi e.g. p="u:M~a{em0" and n="twitter" would result in "ur:M~a{eim0" as a password for twitter.
+>
+> **martin scharm** *@binfalse at 1:02 PM - 29 May 13*  
+> @gepasi you just need to remember p and f, which may put the 3rd and last letter of n at the 8th and 2nd pos in p.
+>
+> **martin scharm** *@binfalse at 1:02 PM - 29 May 13*  
+> @gepasi choose a password p (as strong as possible) and a function f(p,n) that creates a unique password from p and a (domain) name n.
+>
+> **martin scharm** *@binfalse at 1:02 PM - 29 May 13*  
+> @gepasi afaik KeePassX is a good one. but i recommend to use a system!
+>
+> **Pedro Mendes** *@gepasi at 9:07 AM - 29 May 13*  
+> I need suggestions for a good password manager. Ideally only local storage (ie no cloud storage)
