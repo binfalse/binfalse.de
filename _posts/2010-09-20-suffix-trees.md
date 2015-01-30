@@ -21,13 +21,6 @@ categories:
 Suffix trees are an application to particularly fast implement many important string operations like searching for a pattern or finding the longest common substring.
 
 
-<h2>Contents</h2>
-<ul>
-	<li><a href="/2010/09/suffix-trees/">Introduction and definitions</a></li>
-	<li><a href="/2010/09/suffix-trees/2/">Building suffix trees: Write only top down</a></li>
-	<li><a href="/2010/09/suffix-trees/3/">Applications</a></li>
-	<li><a href="/2010/09/suffix-trees/4/">Implementation</a></li>
-</ul>
 
 <h2>Introduction and definitions</h2>
 I already introduced the <a href="/2010/09/advanced-searching-via-z-algorithm/">Z-Algorithm</a> which optimizes the searching for a pattern by preprocessing the pattern. It is very useful if you have to search for one single pattern in a large number of words. But often you'll try to find many patterns in a single text. So the preprocessing of each pattern is ineffective. Suffix trees come up with a preprocessing of the text, to speed up the search for any pattern.
@@ -40,13 +33,13 @@ The concatenation of all edge labels on a path from root to a leaf with index $$
 
 <strong>Definition 1</strong>:
 For each node $$n$$:
-<ul>
-<li>The path from root to $$n$$ is called $$p$$</li>
-<li>The union of the labels at all edges on $$p$$ is $$\alpha\in\tilde{\Sigma}^*$$</li>
-<li>$$\alpha$$ is <em>label of path $$p$$</em> ($$\alpha=\text{label}(p)$$)</li>
-<li>$$\alpha$$ is <em>path label to $$n$$</em> ($$\alpha=\text{pathlabel}(n)$$)</li>
-<li>instead of $$n$$ we can call this node $$\overline \alpha$$</li>
-</ul>
+
+The path from root to $$n$$ is called $$p$$
+* The union of the labels at all edges on $$p$$ is $$\alpha\in\tilde{\Sigma}^*$$
+* $$\alpha$$ is <em>label of path $$p$$</em> ($$\alpha=\text{label}(p)$$)
+* $$\alpha$$ is <em>path label to $$n$$</em> ($$\alpha=\text{pathlabel}(n)$$)
+* instead of $$n$$ we can call this node $$\overline \alpha$$
+
 
 <strong>Definition 2</strong>:
 A pattern $$\alpha\in\Sigma^*$$ exists in suffix tree of $$S\in\Sigma^+$$ (further called $$ST(S)$$) if and only if there is a $$\beta\in\tilde{\Sigma}^*$$, so that $$ST(S)$$ contains a node $$n$$ with $$\alpha\beta=\text{pathlabel}(n)$$ ($$n=\overline{\alpha\beta}$$).
@@ -70,14 +63,6 @@ Learn how to build a suffix tree on the <a href="/2010/09/suffix-trees/2/">next 
 
 
 
-<!--nextpage-->
-<h2>Contents</h2>
-<ul>
-	<li><a href="/2010/09/suffix-trees/">Introduction and definitions</a></li>
-	<li><a href="/2010/09/suffix-trees/2/">Building suffix trees: Write only top down</a></li>
-	<li><a href="/2010/09/suffix-trees/3/">Applications</a></li>
-	<li><a href="/2010/09/suffix-trees/4/">Implementation</a></li>
-</ul>
 
 <h2>Building suffix trees: Write only top down</h2>
 The <em>write-only, top-down</em> (<acronym title="write-only, top-down">WOTD</acronym>) algorithm constructs the suffix tree in a top-down fashion.
@@ -85,7 +70,7 @@ The <em>write-only, top-down</em> (<acronym title="write-only, top-down">WOTD</a
 <h3>Algorithm</h3>
 Let $$\overline \alpha$$ be a node in $$ST(S)$$, then $$\alpha$$ denotes the concatenation of all edge labels on the path to $$\overline \alpha$$ ($$\alpha=\text{pathlabel}(\overline \alpha)$$). Each node $$\overline \alpha$$ in the suffix tree represents the set of all suffixes that have the prefix $$\alpha$$. So the set of pathlabels to leafs below $$\overline \alpha$$ can be written as $$R(\overline \alpha)=\{\beta|\beta \in \tilde{\Sigma}^* \wedge \alpha\beta \text{ is suffix of }S\}$$ (all suffixes of the set of suffixes that start with $$\alpha$$).
 
-This set is splitted in equivalence classes for each symbol $$c$$ with $$G(\overline \alpha, c)=\{c\beta|c\in \tilde{\Sigma}\wedge c\beta \in R(\overline \alpha)\}$$ is the $$c$$-group of $$R(\overline \alpha)$$.
+This set is splitted in equivalence classes for each symbol $$c$$ with $$G(\overline \alpha, c)=\{c\beta\|c\in \tilde{\Sigma}\wedge c\beta \in R(\overline \alpha)\}$$ is the $$c$$-group of $$R(\overline \alpha)$$.
 
 <strong>Case 1:</strong>
 For groups $$G(\overline \alpha, c)$$ that contain only one suffix $$\beta$$ we create a leaf $$\overline{\alpha\beta}$$ with the index $$|S| - |\alpha\beta|$$ and connect it to $$\overline \alpha$$ with an edge containing label $$\beta$$.
@@ -101,14 +86,6 @@ Continue reading about applications on the <a href="/2010/09/suffix-trees/3/">ne
 
 
 
-<!--nextpage-->
-<h2>Contents</h2>
-<ul>
-	<li><a href="/2010/09/suffix-trees/">Introduction and definitions</a></li>
-	<li><a href="/2010/09/suffix-trees/2/">Building suffix trees: Write only top down</a></li>
-	<li><a href="/2010/09/suffix-trees/3/">Applications</a></li>
-	<li><a href="/2010/09/suffix-trees/4/">Implementation</a></li>
-</ul>
 
 <h2>Applications</h2>
 
@@ -129,9 +106,9 @@ A <em>maximal pair</em> is a tuple $$(p_1,p_2,l)$$, so that $$S[p_1\dots p_1 + l
 If $$\alpha$$ is a maximal repeat there is a node $$\overline\alpha$$ in $$ST(S)$$.
 To find the maximal repeats do a <acronym title="depth-first search ">DFS</acronym> on the tree. Label each leaf with the left character of the suffix that it represents. For each internal node:
 <ul>
-<li>If at least one child is labeled with c, then label it with c</li>
-<li>Else if its children's labels are diverse, label with c.</li>
-<li>Else then all children have same label, copy it to current node.</li>
+* If at least one child is labeled with c, then label it with c
+* Else if its children's labels are diverse, label with c.
+* Else then all children have same label, copy it to current node.
 </ul>
 Path labels to left-diverse nodes are maximal repeats.
 
@@ -153,14 +130,6 @@ Continue reading about my implementation on the <a href="/2010/09/suffix-trees/4
 
 
 
-<!--nextpage-->
-<h2>Contents</h2>
-<ul>
-	<li><a href="/2010/09/suffix-trees/">Introduction and definitions</a></li>
-	<li><a href="/2010/09/suffix-trees/2/">Building suffix trees: Write only top down</a></li>
-	<li><a href="/2010/09/suffix-trees/3/">Applications</a></li>
-	<li><a href="/2010/09/suffix-trees/4/">Implementation</a></li>
-</ul>
 
 <h2>Implementation</h2>
 I've implemented a suffix tree in Java. The tree is constructed via WOTD and finds maximal repeats and minimal unique substrings. I also wanted pictures for this post, thus, I added a functionality that prints <a href="http://www.graphviz.org/">GraphViz</a> code that represents the tree.
