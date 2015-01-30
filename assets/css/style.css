@@ -209,16 +209,24 @@ a:hover
 	border-bottom: 1px solid #DE7D40;
 }
 @media(max-width:767px) {
-.img-circle
-{
-	max-width: 35px;
+	.img-circle
+	{
+		max-width: 35px;
+	}
 }
+
+@media(min-width:767px) {
+	.col-sm-10
+	{
+		width:auto;
+	}
 }
+
 @media(min-width:1300px) {
-.col-sm-9
-{
-max-width: 900px
-}
+	.col-sm-9
+	{
+		max-width:900px;
+	}
 }
 
 
