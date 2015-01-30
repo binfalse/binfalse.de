@@ -54,8 +54,6 @@ A edge to a leaf is called leaf-edge.
 
 The tree $$ST(ababc)$$ contains all suffixes of the word $$ababc$$ extended with $$\$$$. This tree is visualized in figure 1.
 
-Learn how to build a suffix tree on the <a href="/2010/09/suffix-trees/2/">next page</a>.
-
 
 
 
@@ -76,8 +74,6 @@ This set is splitted in equivalence classes for each symbol $$c$$ with $$G(\over
 For groups $$G(\overline \alpha, c)$$ that contain only one suffix $$\beta$$ we create a leaf $$\overline{\alpha\beta}$$ with the index $$|S| - |\alpha\beta|$$ and connect it to $$\overline \alpha$$ with an edge containing label $$\beta$$.
 <strong>Case 2:</strong>
 In groups $$G(\overline \alpha, c)$$ with a size of at least two we compute their longest common prefix $$\gamma$$ that starts with $$c$$ and create a node $$\overline{\alpha\gamma}$$. The connecting edge between $$\overline \alpha$$ and $$\overline{\alpha\gamma}$$ gets the label $$\gamma$$ and we continue recursively with this algorithm in node $$\overline{\alpha\gamma}$$ with $$R(\overline{\alpha\gamma})=\{\beta|\beta \in \tilde{\Sigma}^* \wedge \alpha\gamma\beta \text{ is suffix of }S\}=\{\beta|\gamma\beta\in R(\overline \alpha)\}$$
-
-Continue reading about applications on the <a href="/2010/09/suffix-trees/3/">next page</a>.
 
 
 
@@ -105,11 +101,11 @@ To find such a minimal unique substring walk through the tree to nodes $$\overli
 A <em>maximal pair</em> is a tuple $$(p_1,p_2,l)$$, so that $$S[p_1\dots p_1 + l - 1] = S[p_2\dots p_2 + l - 1]$$, but $$S[p_1-1] \neq S[p_2-1]$$ and $$S[p_1+l] \neq S[p_2+l]$$. A <em>maximal repeat</em> is the string represented by such tuple.
 If $$\alpha$$ is a maximal repeat there is a node $$\overline\alpha$$ in $$ST(S)$$.
 To find the maximal repeats do a <acronym title="depth-first search ">DFS</acronym> on the tree. Label each leaf with the left character of the suffix that it represents. For each internal node:
-<ul>
+
 * If at least one child is labeled with c, then label it with c
 * Else if its children's labels are diverse, label with c.
 * Else then all children have same label, copy it to current node.
-</ul>
+
 Path labels to left-diverse nodes are maximal repeats.
 
 <h3>Generalized suffix trees</h3>
@@ -120,7 +116,6 @@ A generalized suffix tree is printed in figure 2 of page one.
 <h3>Further applications</h3>
 There are a lot of other applications for a suffix tree structure. For example finding palindromes, search for regular expressions, faster computing of the <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a>, data compression and so on...
 
-Continue reading about my implementation on the <a href="/2010/09/suffix-trees/4/">next page</a>.
 
 
 
