@@ -79,7 +79,7 @@ try
 		Class fileMgr = Class.forName ("com.apple.eio.FileManager");
 		java.lang.reflect.Method openURL = fileMgr.getDeclaredMethod ("openURL", new Class[] {String.class});
 		openURL.invoke (null, new Object[] {url});
-	} 
+	}
 	else
 	{
 		//check for $BROWSER
@@ -89,7 +89,7 @@ try
 			Runtime.getRuntime ().exec (env.get ("BROWSER") + " " + url);
 			return;
 		}
-		
+
 		//check for common browsers
 		String[] browsers = { "firefox", "iceweasel", "chrome", "opera", "konqueror", "epiphany", "mozilla", "netscape" };
 		String browser = null;
@@ -113,9 +113,7 @@ catch (Exception e)
 
 
 
-Combining these solutions, one could create a browse function. Extending the  `javax.swing.JLabel`  class, implementing  `java.awt.event.MouseListener`  and adding some more features (such as blue text, overloading some functions...) I developed a new class Link:
-
-[cc lang="java" file="pipapo/java/Link.java"][/cc]
+Combining these solutions, one could create a browse function. Extending the  `javax.swing.JLabel`  class, implementing  `java.awt.event.MouseListener`  and adding some more features (such as blue text, overloading some functions...) I developed a new class Link, see attachment.
 
 Of course it is also attached, so feel free to use it on your own ;)
 
