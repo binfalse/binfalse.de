@@ -94,9 +94,9 @@ Each button is loaded from foreign webservers. I hardly can see any benefit for 
 There is no protection, power off all your electronics and go back to the stone age! (Or get <a href="http://en.wikipedia.org/wiki/Amish">amish</a>)
 Ok, that's hard and somewhat impossible these days. But there are some possibilities to minimize the tracking.
 
-For example some Firefox extensions like <a href="http://noscript.net/">NoScript</a> prevent your browser loading scripts from foreign servers (see Google-Analytics). 
+For example some Firefox extensions like <a href="http://noscript.net/">NoScript</a> prevent your browser loading scripts from foreign servers (see Google-Analytics).
 But you'll also load these buttons and iframes, because this is simple HTML. Here you need another extension like <a href="http://adblockplus.org/en/">AdBlockPlus</a>. This allows you to define rules for blocking specific content, e.g. everything that comes from facebook. But keep in mind that these companies own different domains, like <em>facebook.com</em>, <em>facebook.net</em> or <em>fbcdn.net</em>. And even if you think you got all of them, there are a lot more. There is also a filter list for social media stuff available at <a href="http://chromeadblock.org/extensions/block-facebook-tracking/">Chrome Adblock</a> (yes, comes from Google, but does its job...).
-If you are not running Firefox or you don't want to install a bunch of plugins, you can also send these request to <a href="http://en.wikipedia.org/wiki/Nirvana">nirvana</a>. For example unix-guys might add lines like this to your  `/etc/hosts` :
+If you are not running Firefox or you don't want to install a bunch of plugins, you can also send these request to <a href="http://en.wikipedia.org/wiki/Nirvana">nirvana</a>. For example unix-guys might add lines like this to their  `/etc/hosts` :
 
 
 
