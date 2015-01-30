@@ -25,16 +25,14 @@ The project about <a href="http://www.opennicproject.org/">itself</a>:
 <blockquote>OpenNIC (a.k.a. "The OpenNIC Project") is an organization of hobbyists who run an alternative DNS network. [...] Our goal is to provide you with quick and reliable DNS services and access to domains not administered by ICANN.</blockquote>
 
 Ok, I gave it a try and implemented a Perl-script that checks the speed. It throws a dice to call one of my often used domains and <a name="dig" href="#dig-foot">digs<sup>1</sup></a> each of my predefined DNS servers to save the query time. I tested the following DNS server:
-<ul>
-	<li> `178.63.26.173` : one server of the OpenNIC project, located in Germany</li>
-	<li> `217.79.186.148` : one server of the OpenNIC project, located in Germany (NRW)</li>
-	<li> `8.8.8.8` : Google's public DNS server, proven to be <a href="http://blog.fefe.de/?ts=b5e7d15b">fast</a> and reliable</li>
-	<li> `172.16.20.53` : my ISP's server</li>
-	<li> `141.48.3.3` : name server of our university</li>
-</ul>
 
-Here is the Perl code:
-[cc lang="perl" file="pipapo/scripts/dns-bench.pl"][/cc]
+* `178.63.26.173` : one server of the OpenNIC project, located in Germany
+* `217.79.186.148` : one server of the OpenNIC project, located in Germany (NRW)
+* `8.8.8.8` : Google's public DNS server, proven to be <a href="http://blog.fefe.de/?ts=b5e7d15b">fast</a> and reliable
+* `172.16.20.53` : my ISP's server
+* `141.48.3.3` : name server of our university
+
+Find the Perl code attached.
 
 And here are the results after 10000 qeuries:
 
