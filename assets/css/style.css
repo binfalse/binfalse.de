@@ -324,8 +324,25 @@ blockquote p
 {
 	font-size: 100%;
 	font: inherit;
+	line-height: 1.25;
 }
 th
 {
 background: none repeat scroll 0% 0% #EEE;
+}
+th, td
+{
+	border-bottom: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	padding: 3px 6px;
+}
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-bottom: 21px;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
 }
