@@ -65,9 +65,6 @@ catch (SAXException e)
 
 
 
-Here you can find my implementation:
-
-[cc lang='java' file='pipapo/java/XMLValidator.java'][/cc]
 
 <div class="download"><strong>Download:</strong>
 JAVA: <a href="/wp-content/uploads/pipapo/java/XMLValidator.java">XMLValidator.java</a>
