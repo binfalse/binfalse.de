@@ -85,16 +85,54 @@ There is a nice Perl module to implement this easily:  `Net::Proxy` .
 
 First of all both applications need to be configured to not use the open port. Without loss of generality let's assume port  `443`  is opened by the firewall, SSH listens on it's default port  `22`  and your webserver is configured to listen on  `8080` . The following piece of code will split the requests:
 
-[cc lang="perl" file="pipapo/scripts/dual-proxy.pl"][/cc]
+{% highlight perl %}
+#!/usr/bin/perl -w
+###############################
+#
+#   Creating a dual proxy w Perl
+#
+#   written by Martin Scharm
+#     see http://binfalse.de
+#
+###############################
+
+use warnings;
+use strict;
+use Net::Proxy;
+
+# for debugging set verbosity => dumping to stderr
+# Net::Proxy->set_verbosity (1);
+
+my $proxy = Net::Proxy->new (
+	{
+		in =>
+		{
+			# listen on 443
+			type => 'dual', host => '0.0.0.0', port => 443,
+			# if client asks for something direct to port 8080
+			client_first => { type => 'tcp', port => 8080 },
+			# if client waits for greetings direct to port 22
+			server_first => { type => 'tcp', port => 22 },
+			# wait for 2 seconds for questions by clients
+			timeout => 2
+		},
+		# we don't use out...
+		out => { type => 'dummy' }
+	}
+);
+
+$proxy->register ();
+Net::Proxy->mainloop ();
+{% endhighlight %}
+
 
 Some notes:
-<ul>
-	<li>To listen on ports &lt; 1024 you need to be root!</li>
-	<li>Debians need to install  `libnet-proxy-perl` .</li>
-	<li>Some protocols that wait for the client: HTTP, HTTPS</li>
-	<li>Some protocols that greets the clients: SSH, <a href="http://en.wikipedia.org/wiki/Post_Office_Protocol">POP3</a>, <a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP</a>, <a href="http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a></li>
 
-</ul>
+* To listen on ports &lt; 1024 you need to be root!
+* Debians need to install  `libnet-proxy-perl` .
+* Some protocols that wait for the client: HTTP, HTTPS
+* Some protocols that greets the clients: SSH, <a href="http://en.wikipedia.org/wiki/Post_Office_Protocol">POP3</a>, <a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol">IMAP</a>, <a href="http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>
+
 
 
 

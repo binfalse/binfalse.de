@@ -88,23 +88,23 @@ Als Argument einfach die gewünschte Haltestelle angeben:
 usr@srv % ./havag.pl Straßburger Weg
 Frage http://83.221.237.42:20010/init/rtpi nach geplanten Stops für 'Straßburger Weg'...
 
- Zeit   Linie   Richtung       
-15:33       4   Kröllwitz     
+ Zeit   Linie   Richtung
+15:33       4   Kröllwitz
 15:36       5   Bad Dürrenberg
-15:42       5   Kröllwitz     
-15:44       S   Sonderfahrt    
-15:45       4   Hauptbahnhof   
-15:48       4   Kröllwitz     
-15:51       5   Ammendorf      
-15:57       5   Kröllwitz     
-16:00       4   Hauptbahnhof   
-16:03       4   Kröllwitz     
+15:42       5   Kröllwitz
+15:44       S   Sonderfahrt
+15:45       4   Hauptbahnhof
+15:48       4   Kröllwitz
+15:51       5   Ammendorf
+15:57       5   Kröllwitz
+16:00       4   Hauptbahnhof
+16:03       4   Kröllwitz
 16:06       5   Bad Dürrenberg
-16:12       5   Kröllwitz     
-16:15       4   Hauptbahnhof   
-16:18       4   Kröllwitz     
-16:21       5   Ammendorf      
-16:27       5   Kröllwitz     
+16:12       5   Kröllwitz
+16:15       4   Hauptbahnhof
+16:18       4   Kröllwitz
+16:21       5   Ammendorf
+16:27       5   Kröllwitz
 16:30       4   Hauptbahnhof
 {% endhighlight %}
 
@@ -169,8 +169,8 @@ Das boolsche  `N`  gibt an, ob es sich um eine Niederflur-Straßenbahn handelt. 
 
 Meine Beschreibungen sind natürlich alles andere als komplett, für die Korrektheit kann ich auch nicht garantieren. Vielleicht gehört das x00 vor der Längen-Kodierung auch mit zur Längenangabe und ist bei den kurzen Zeichenketten nur immer 0? Wer weiß, in der Praxis funktioniert mein Gehacktes aber (mindestens für mich) ;-)
 
-<div class="note"><strong>Update:</strong>
-Wird  `getDeparturesForStop`  ohne Argumente gesendet, bekommt man eine Antwort mit allen Verfügbaren Stopps. (via <a href="https://twitter.com/#!/michas/status/101554674859130880">@michas</a>)</div>
+<strong>Update:</strong>
+Wird  `getDeparturesForStop`  ohne Argumente gesendet, bekommt man eine Antwort mit allen Verfügbaren Stopps. (via <a href="https://twitter.com/#!/michas/status/101554674859130880">@michas</a>)
 
 Damit ist also der Weg für coole neue Apps geebnet. Vielleicht hat ja jemand von euch eines dieser Smartphones (oder es findet sich ein Sponsor der mir eines zur Verfügung stellt)?
 
