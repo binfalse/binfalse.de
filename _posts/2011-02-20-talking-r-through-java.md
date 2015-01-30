@@ -104,28 +104,47 @@ Two of these three parts are also straight forward in <a href="http://netbeans.o
 First publish the location of the jar's. Right-click on your project and choose <em>Properties > Libraries</em>. In the <em>Compile</em>-tab click <em>Add JAR/Folder</em> and search for the jar files.
 Next task is to adjust the library-path. Right-click on your project and choose <em>Properties > Run</em>. Add  `-Djava.library.path=.:/usr/lib/R/site-library/rJava/jri/`  to the <em>VM Options</em> (modify the path to match your criteria).
 The third step is a little tricky. As far as I know there is no way to change the environment from within Netbeans, so you can't create the variable  `R_HOME`  after Netbeans is started. In my opinion you have two options:
-<ol>
-	<li>Export the variable before starting Netbeans:
 
-
+1. Export the variable before starting Netbeans:
 {% highlight bash %}
-usr@srv $ export R_HOME=/usr/lib64/R 
+usr@srv $ export R_HOME=/usr/lib64/R
 usr@srv $ netbeans
 {% endhighlight %}
-
-
 you might want to write a wrapper script that does this step for you, or include the export in any of the resource files that are called before Netbeans starts (e.g. your  `.bashrc` ).
+2. Change the environment from within your project. At <a href="http://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java">stackoverflow</a> you can find a workaround, but I think this is a very lousy solution..
 
-</li>
-	<li>Change the environment from within your project. At <a href="http://stackoverflow.com/questions/318239/how-do-i-set-environment-variables-from-java">stackoverflow</a> you can find a workaround, but I think this is a very lousy solution..</li>
-</ol>
 If you have further suggestions please let me know!
 Meanwhile <a href="http://sharpstatistics.co.uk/">George Bull</a> published a <a href="http://sharpstatistics.co.uk/r/using-jri-to-connect-java-to-r/">setup guide for Netbeans on Windows</a> hosts. Seems to be worthy to take a look at it ;-)
 
 <h2>Testcase</h2>
 If you defined your environment properly, you should be able to utilize the <a href="http://www.rforge.net/org/docs/org/rosuda/JRI/Rengine.html">REngine</a>. I have a small script for you to test whether all things are fine:
 
-[cc lang="java" file="pipapo/java/JRItest.java"][/cc]
+{% highlight java %}
+package de.binfalse.martin;
+
+import org.rosuda.JRI.Rengine;
+
+public class JRItest
+{
+  public static void main (String[] args)
+  {
+    // new R-engine
+    Rengine re=new Rengine (new String [] {"--vanilla"}, false, null);
+    if (!re.waitForR())
+    {
+      System.out.println ("Cannot load R");
+      return;
+    }
+
+    // print a random number from uniform distribution
+    System.out.println (re.eval ("runif(1)").asDouble ());
+
+    // done...
+    re.end();
+  }
+
+}
+{% endhighlight %}
 
 You should be able to compile and run it, afterwards you'll see a random number from an uniform distribution. Congratulations, well done :-P
 
@@ -135,4 +154,3 @@ For more information see the <a href="http://www.rforge.net/JRI/">JRI</a> and <a
 Java: <a href='/wp-content/uploads/pipapo/java/JRItest.java'>JRItest.java</a>
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
 </div>
-
