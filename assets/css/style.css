@@ -325,5 +325,7 @@ blockquote p
 	font-size: 100%;
 	font: inherit;
 }
-
-
+th
+{
+background: none repeat scroll 0% 0% #EEE;
+}
