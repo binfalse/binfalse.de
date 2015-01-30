@@ -56,13 +56,13 @@ They had big problems to install the 2D-LC, the <strong>peaks still look freaky 
 
 Ok, so far, all is not lost if we can operate now! But can we?
 
-For calibration you need exact masses. Calculating masses of molecules isn't a problem for waters, but adding a proton (H<sup>+</sup>) is! Instead of a proton they add a hydrogen (H<sup>+</sup> + e<sup>-</sup>)!? Assume you want to calibrate with Leucine Enkephaline (Leu-Enk). Leu-Enk is a peptide whose sequence is Tyr-Gly-Gly-Phe-Leu (C<sub>28</sub>H<sub>37</sub>N<sub>5</sub>O<sub>7</sub>) with a mass of $$555.269297\\text{u}$$.
+For calibration you need exact masses. Calculating masses of molecules isn't a problem for waters, but adding a proton (H<sup>+</sup>) is! Instead of a proton they add a hydrogen (H<sup>+</sup> + e<sup>-</sup>)!? Assume you want to calibrate with Leucine Enkephaline (Leu-Enk). Leu-Enk is a peptide whose sequence is Tyr-Gly-Gly-Phe-Leu (C<sub>28</sub>H<sub>37</sub>N<sub>5</sub>O<sub>7</sub>) with a mass of $$555.269297\text{u}$$.
 Adding a proton results in a single charged ion with a mass of (Adam Ries told us!):
-$$555.269297\\text{u} + 1.007276\\text{u} = 556.276573\\text{u}$$
+$$555.269297\text{u} + 1.007276\text{u} = 556.276573\text{u}$$
 When they add a hydrogen their mass becomes:
-$$555.269297\\text{u} + 1.007825\\text{u} = 556.277122\\text{u}$$,
-that's a diff of $$0.000549\\text{u}$$ (it's the mass of an electron). Seems to be small, but think in <abbr title="parts per million">ppm</abbr>:
-$$\\frac{0.000549\\text{u} \\cdot 10^6 }{555.269297\\text{u}} \\approx 0.9887\\text{ppm}$$.
+$$555.269297\text{u} + 1.007825\text{u} = 556.277122\text{u}$$,
+that's a diff of $$0.000549\text{u}$$ (it's the mass of an electron). Seems to be small, but think in <abbr title="parts per million">ppm</abbr>:
+$$\frac{0.000549\text{u} \cdot 10^6 }{555.269297\text{u}} \approx 0.9887\text{ppm}$$.
 <strong>A systematic discrepancy of almost 1 ppm for an instrument specified for 1 ppm precision.</strong> Just because of a calculation error! And things become even worse at higher charge states, compare to the green part of figure 4. Do we (stupid scientists) really have to help them (MS specialists) summing up?
 
 Playing a bit with the machine we figured out, that it is not constructed for static measurements. We had to be creative to get some backpreasure. You also have to unmount the whole static source block to load the needle with sample. Yes, they have these fluidics, but we have samples of few &#956;l.
@@ -73,5 +73,3 @@ Last but not least, they are not very cooperative when we call to tell them thei
 
 If the policy of their company doesn't change I don't believe that we buy further instruments from Waters...
 Looking at the price for the machine I think buying some big cars to impress the girls would have been a much better investment ;-)
-
-Special thanks to my boss <a href="http://twitter.com/chschmelzer">Christian Schmelzer</a> and all my co-workers!

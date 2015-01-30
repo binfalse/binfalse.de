@@ -27,23 +27,14 @@ Except for the web interface (looks much more professional) every feels like Nag
 
 Here are some things I had to do:
 
-<ul>
-<li>First of all I changed the credentials for the web interface:
 
-
-
+* First of all I changed the credentials for the web interface:
 {% highlight bash %}
 /etc/icinga % mv htpasswd.users htpasswd.users-org
 /etc/icinga % htpasswd -c -s htpasswd.users NewUser
 {% endhighlight %}
-
-
-</li>
-<li>This new user needs also authorizations, so you need to edit  `/etc/icinga/cgi.cfg`  and replace  `icingaadmin`  with  `NewUser` .</li>
-<li> The rights in  `/var/lib/icinga/rw/`  were wrong,  `www-data`  wasn't able to access the directory. So I wasn't able to schedule manual checks via web. When I changed the permissions everything was fine:
-
-
-
+* This new user needs also authorizations, so you need to edit  `/etc/icinga/cgi.cfg`  and replace  `icingaadmin`  with  `NewUser` .
+* The rights in  `/var/lib/icinga/rw/`  were wrong,  `www-data`  wasn't able to access the directory. So I wasn't able to schedule manual checks via web. When I changed the permissions everything was fine:
 {% highlight bash %}
 /etc/icinga % l /var/lib/icinga/rw/
 total 8.0K
@@ -52,64 +43,27 @@ drwxr-xr-x 4 nagios nagios   4.0K Apr 18 01:02 ..
 prw-rw---- 1 nagios nagios      0 Apr 18 01:02 icinga.cmd
 /etc/icinga % chmod 750 /var/lib/icinga/rw/
 {% endhighlight %}
-
-
-
-</li>
-<li>I added the following into the  `DirectoryMatch`  directive of  `/etc/icinga/apache2.conf` , to force me to use SSL encryption:
-
-
-
+* I added the following into the  `DirectoryMatch`  directive of  `/etc/icinga/apache2.conf` , to force me to use SSL encryption:
 {% highlight bash %}
 SSLOptions +StrictRequire
 SSLRequireSSL
 {% endhighlight %}
-
-
-
-</li>
-<li>I shortened the mail subject of the notifications. By default the subject looks like:
-
-
-
+* I shortened the mail subject of the notifications. By default the subject looks like:
 {% highlight bash %}
 ** PROBLEM Service Alert: localhost/Aptitude-Updates is WARNING **
 {% endhighlight %}
-
-
-
 But I'm just interested in the important parts, so I changed the following in  `/etc/icinga/commands.cfg` :
-
-
-
 {% highlight bash %}
 [...] /usr/bin/mail -s "** $NOTIFICATIONTYPE$ Service Alert: $HOSTALIAS$/$SERVICEDESC$ is $SERVICESTATE$ **" [...]
 {% endhighlight %}
-
-
-
 to:
-
-
-
 {% highlight bash %}
 [...] /usr/bin/mail -s "** $HOSTALIAS$/$SERVICEDESC$ is $SERVICESTATE$ **" [...]
 {% endhighlight %}
-
-
-
 the the notifications now come with a subject like this:
-
-
-
 {% highlight bash %}
 ** localhost/Aptitude-Updates is WARNING **
 {% endhighlight %}
-
-
-
-</li>
-</ul>
 
 All in all I'm glad that I gave Icinga this chance and recommend to test it if you are still using Nagios.
 Maybe I'll test some further Icinga features and maybe we'll migrate at the university..
