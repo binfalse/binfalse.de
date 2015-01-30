@@ -135,7 +135,16 @@ Browsing to <a href="http://localhost/R/test">localhost/R/test</a> you should se
 
 To create a graphic you need to change the content type to an image type. A small example might give you an idea:
 
-[cc lang="rsplus" file="pipapo/R/web-image.R"][/cc]
+{% highlight r %}
+setContentType ("image/png")
+temp <- tempfile ()
+y = rnorm (100)
+png (temp, type="cairo")
+plot (1:100, y, t='l')
+dev.off ()
+sendBin (readBin (temp, 'raw', n=file.info(temp)$size))
+unlink (temp)
+{% endhighlight %}
 
 Reload the page and you'll see a more or less nice plot :-P
 That's it for the moment, for a more interactive interface take a look at the <a href="http://www.stat.ucla.edu/~jeroen/ggplot2/">ggplot2 mod</a>.
