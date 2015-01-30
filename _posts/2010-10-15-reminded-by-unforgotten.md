@@ -29,6 +29,8 @@ Today I found some time to implement a small bash script that sends mails based 
 On the <a href="/software/snippets/unforgotten/">software page for this script</a> you can learn how to use it. It is more than simple ;-)
 
 Now I need to collect all important dates, so if YOU want me to wish you all the best at your birthday you have to leave a comment or write me an email!
+
+
 <div class="download"><strong>Download:</strong>
 Bash: <a href='/wp-content/uploads/pipapo/scripts/unforgotten.sh'>unforgotten</a>
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>

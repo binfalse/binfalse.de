@@ -14,7 +14,7 @@ categories:
 
 ---
 
-We often use <a href="http://www.r-project.org/">Gnu R</a> to work on different things and to solve various exercises. It's always a disgusting job to export e.g. a matrix with probabilities to a $$\\LaTeX$$ document to send it to our supervisors, but Rumpel just gave me a little hint.
+We often use <a href="http://www.r-project.org/">Gnu R</a> to work on different things and to solve various exercises. It's always a disgusting job to export e.g. a matrix with probabilities to a $$\LaTeX$$ document to send it to our supervisors, but Rumpel just gave me a little hint.
 
 
 The trick is called <a href="http://cran.r-project.org/web/packages/xtable/">xtable</a> and it can be found in the deb repository:
@@ -44,21 +44,21 @@ It's an add on for R and does right that what I need:
 > xtable(m)
 % latex table generated in R 2.11.1 by xtable 1.5-6 package
 % Tue Oct 12 11:35:50 2010
-\\begin{table}[ht]
-\\begin{center}
-\\begin{tabular}{rrrrrr}
-  \\hline
- & 1 & 2 & 3 & 4 & 5 \\\\ 
-  \\hline
-1 & 5.22 & 4.92 & 4.78 & 5.25 & 5.00 \\\\ 
-  2 & 5.11 & 6.76 & 5.56 & 5.69 & 3.86 \\\\ 
-  3 & 3.87 & 3.76 & 5.97 & 4.24 & 4.33 \\\\ 
-  4 & 5.01 & 4.62 & 7.37 & 3.84 & 4.89 \\\\ 
-  5 & 4.92 & 5.24 & 5.34 & 5.26 & 3.13 \\\\ 
-   \\hline
-\\end{tabular}
-\\end{center}
-\\end{table}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{rrrrrr}
+  \hline
+ & 1 & 2 & 3 & 4 & 5 \\
+  \hline
+1 & 5.22 & 4.92 & 4.78 & 5.25 & 5.00 \\
+  2 & 5.11 & 6.76 & 5.56 & 5.69 & 3.86 \\
+  3 & 3.87 & 3.76 & 5.97 & 4.24 & 4.33 \\
+  4 & 5.01 & 4.62 & 7.37 & 3.84 & 4.89 \\
+  5 & 4.92 & 5.24 & 5.34 & 5.26 & 3.13 \\
+   \hline
+\end{tabular}
+\end{center}
+\end{table}
 {% endhighlight %}
 
 
