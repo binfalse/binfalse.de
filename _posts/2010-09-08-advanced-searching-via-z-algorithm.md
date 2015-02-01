@@ -72,7 +72,7 @@ In the following $$i$$ will denote the actual position we are looking for, $$l$$
 First of all we set the values $$l$$ and $$r$$ to zero because we haven't found any Z-Box yet.
 $$Z_2$$ of our text $$S$$ is according to Definition 2 the length of the longest prefix of $$S[2\dots]$$ that is also prefix of $$S$$ itself. If $$Z_2>0$$ we found a first Z-Box and update the limits to $$l=2$$ and $$r=2+Z_2-1$$.
 
-Now we have to run through the word $$S$$, so $$i=3\dots |S|$$ with $$|S|$$ defines the length of $$S$$.
+Now we have to run through the word $$S$$, so $$i=3\dots \|S\|$$ with $$\|S\|$$ defines the length of $$S$$.
 
 <strong>Case 1:</strong> Let's assume position $$i$$ is outside of the last found Z-Box or we didn't find any Z-Box yet ($$i>r$$). We find $$Z_i$$ by comparing the prefixes of $$S$$ and $$S[i\dots]$$. If $$Z_i>0$$ we've found a new Z-Box and need to update the limits to $$l=i$$ and $$r=i+Z_i-1$$.
 
@@ -80,7 +80,7 @@ Now we have to run through the word $$S$$, so $$i=3\dots |S|$$ with $$|S|$$ defi
 <strong>Case 2a:</strong> If we don't break out of the current Z-Box by creating another Z-Box with the length of the box at position $$k$$ ($$Z_k<r-i+1$$, so position $$i+Z_k$$ is not behind position $$r$$), we can simply apply this Z-Box to the current position and $$Z_i=Z_k$$.
 <strong>Case 2b:</strong> Otherwise, if we would leave the actual Z-Box ($$i + Z_k>r$$) we have to recheck the prefix conditions of $$S[i\dots]$$ and $$S$$. We know that $$S[i\dots r]$$ equals $$S[1\dots r-i+1]$$, so we only have to find the length of the longest prefix $$p$$ of $$S[r-i+2\dots]$$ that equals the prefix of $$S[r+1\dots]$$. Now we can apply the new Z-Box such that $$Z_i=r-i+1+p$$ and of course we update the Z-Box limits to $$l=i$$ and $$r=i+Z_i-1$$.
 
-If we reached the end of $$S$$ all Z-Boxes are found in $$\Theta(|S|)$$.
+If we reached the end of $$S$$ all Z-Boxes are found in $$\Theta(\|S\|)$$.
 
 <h2>Pseudo code</h2>
 

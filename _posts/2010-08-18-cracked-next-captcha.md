@@ -43,11 +43,16 @@ But Micha bets three beer that I'm not able. <em>So no chance to quit!</em>
 In my last post I had another idea to crack the captcha: Parse the formula.
 Ok, I wrote about parsing the URI to the external server that produces the picture, of course it's much easier to parse the  `title` - or  `alt` -tag of the image! These fields are human readable to get the site handicapped accessible. Of course worthy that he provides this fields!
 So, after some reloads I had a small idea with what kind of problems I have to deal with:
-<dl>
-	<dt>Simple calculations</dt><dd>something like: $$\\sqrt{49} + 24 - 4^2$$, just calculate the solution</dd>
-	<dt>Convertings</dt><dd>like $$x + 82 = 192$$, first convert the formula before calculating the solution</dd>
-	<dt>Sums</dt><dd>for example $$\\displaystyle\\sum^{4}_{n=1} (2 \\cdot n + 1)$$, first rewrite the sum-symbol, than calculate the solution</dd>
-</dl>
+
+Simple calculations
+: something like: $$\sqrt{49} + 24 - 4^2$$, just calculate the solution
+
+Convertings
+: like $$x + 82 = 192$$, first convert the formula before calculating the solution
+
+Sums
+: for example $$\displaystyle\sum^{4}_{n=1} (2 \cdot n + 1)$$, first rewrite the sum-symbol, than calculate the solution
+
 That's the theory, the code is this time a little bit longer:
 
 
@@ -78,13 +83,13 @@ if (capt_field)
 	{
 		var problem = img.title;
 		// parse simple math operations
-		problem = problem.replace (/\\\\cos\\s*0/, " 1 ");
-		problem = problem.replace ("\\\\div", " / ");
-		problem = problem.replace ("\\\\cdot", " * ");
-		problem = problem.replace (/\\\\sin\\s*\\\\frac\\s*{\\s*\\\\pi\\s*}\\s*{\\s*2\\s*}/, " 1 ");
-		problem = problem.replace (/\\\\frac\\s*{(.+?)}{(.+?)}/, "($1) / ($2)");
-		problem = problem.replace (/\\\\sqrt\\s*{(.+?)}/, " Math.sqrt ($1) ");
-		problem = problem.replace (/([^m ]+)\\s*\\^\\s*{(.+?)}/, " Math.pow ($1, $2) ");
+		problem = problem.replace (/\\cos\s*0/, " 1 ");
+		problem = problem.replace ("\\div", " / ");
+		problem = problem.replace ("\\cdot", " * ");
+		problem = problem.replace (/\\sin\s*\\frac\s*{\s*\\pi\s*}\s*{\s*2\s*}/, " 1 ");
+		problem = problem.replace (/\\frac\s*{(.+?)}{(.+?)}/, "($1) / ($2)");
+		problem = problem.replace (/\\sqrt\s*{(.+?)}/, " Math.sqrt ($1) ");
+		problem = problem.replace (/([^m ]+)\s*\^\s*{(.+?)}/, " Math.pow ($1, $2) ");
 		
 		if (problem.indexOf ("=") < 0)
 		{

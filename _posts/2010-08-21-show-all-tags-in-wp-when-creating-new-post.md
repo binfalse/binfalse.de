@@ -57,34 +57,34 @@ I hope this could help some of you. With the next WordPress update these changes
 
 <h3>Update for WordPress 3.6</h3>
 You need to edit:
-<ul>
-	<li> `wordpress/wp-admin/includes/ajax-actions.php`  line 666</li>
-	<li> `wordpress/wp-admin/includes/meta-boxes.php` </li>
-</ul>
+
+* `wordpress/wp-admin/includes/ajax-actions.php`  line 666
+* `wordpress/wp-admin/includes/meta-boxes.php` 
+
 (thanks to <a href="/2010/08/show-all-tags-in-wp-when-creating-new-post/comment-page-1/#comment-1093">Gustavo Barreto</a>)
 
 
 <h3>Update for WordPress 3.8.1</h3>
 You need to edit:
-<ul>
-	<li> `wordpress/wp-admin/includes/ajax-actions.php`  line 691</li>
-	<li> `wordpress/wp-admin/includes/meta-boxes.php`  line 381</li>
-</ul>
+
+* `wordpress/wp-admin/includes/ajax-actions.php`  line 691
+* `wordpress/wp-admin/includes/meta-boxes.php`  line 381
+
 (thanks to <a href="/2010/08/show-all-tags-in-wp-when-creating-new-post/comment-page-1/#comment-1146">August</a> for reminder)
 
 
 <h3>Update for WordPress 3.9.1</h3>
 You need to edit:
-<ul>
-	<li> `wordpress/wp-admin/includes/ajax-actions.php`  line 702</li>
-	<li> `wordpress/wp-admin/includes/meta-boxes.php`  line 410</li>
-</ul>
+
+* `wordpress/wp-admin/includes/ajax-actions.php`  line 702
+* `wordpress/wp-admin/includes/meta-boxes.php`  line 410
+
 
 
 <h3>Update for WordPress 4.1</h3>
 You need to edit:
-<ul>
-	<li> `wordpress/wp-admin/includes/ajax-actions.php`  line 836</li>
-	<li> `wordpress/wp-admin/includes/meta-boxes.php`  line 431</li>
-</ul>
+
+* `wordpress/wp-admin/includes/ajax-actions.php`  line 836
+* `wordpress/wp-admin/includes/meta-boxes.php`  line 431
+
 

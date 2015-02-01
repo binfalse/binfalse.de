@@ -28,13 +28,13 @@ But the new methods of API calls are more complicated (called <a href="https://a
 If you now want to interact with the twitter API, you have to register your tool as <a href="http://dev.twitter.com/apps/new">new twitter tool</a>. Don't ask me why, but you have to choose an unique name (all over the twitter world) for your application and get some random strings. For example for a Perl script you need the ones called <em>Consumer key</em> and <em>Consumer secret</em>.
 
 If you want to interact with twitter, you have to do the following:
-<ul>
-	<li>send the combination of <em>Consumer key</em> and <em>Consumer secret</em> to the server</li>
-	<li>receive an URL from the server where the user itself can find a pin code (when (s)he is logged into twitter)</li>
-	<li>send this code to the server again and the user is verified</li>
-	<li>receive some more authentication information from the server, store it for the next time, so the user don't have to authenticate again</li>
 
-</ul>
+	<li>send the combination of <em>Consumer key</em> and <em>Consumer secret</em> to the server
+	<li>receive an URL from the server where the user itself can find a pin code (when (s)he is logged into twitter)
+	<li>send this code to the server again and the user is verified
+	<li>receive some more authentication information from the server, store it for the next time, so the user don't have to authenticate again
+
+
 Very annoying method, but there is no alternative method and at least your account is more save against hijacker.
 
 By the way I found a Perl module called <a href="http://search.cpan.org/perldoc?Net::Twitter">Net::Twitter</a> that helps a lot.
@@ -79,10 +79,10 @@ Ok, you see it's not impossible to solve this problem. And there is another adva
 Here is <a href='/wp-content/uploads/2010/09/tweet-v2.pl'>the script to tweet from command line </a> and <a href='/wp-content/uploads/2010/09/twitstat-v2.pl'>this script dumps the actual news</a> to the console.
 
 To use my tools just download them to your machine, rename them as you want and then just run it:
-<ul>
-	<li>To tweet something call  `tweet-v2.pl`  with your status message as argument.</li>
-	<li>To get latest informations from the people you are following just call  `twitstat-v2.pl`  with an optional argument defining the maximal number of messages you want to see.</li>
-</ul>
+
+* To tweet something call  `tweet-v2.pl`  with your status message as argument.
+* To get latest informations from the people you are following just call  `twitstat-v2.pl`  with an optional argument defining the maximal number of messages you want to see.
+
 For the first time you'll see a link where you'll get your pin (open the link with your browser), after wards the tools will store your credentials in  `[toolname].credentials` . Just try it, won't (hopefully) break anything :P
 
 <div class="download"><strong>Download:</strong>
