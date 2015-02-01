@@ -24,5 +24,6 @@ We cycled a lot of km's, climbed on trees, swum in the Baltic Sea, took sunbathe
 And I've prepared a funny animated gif of an interesting evening ;)
 
 So, if you ever have the chance to go to Usedom: Do it!!
+
 <table style="width:194px;"><tr><td align="center" style="height:194px;background:url(http://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left"><a href="http://picasaweb.google.com/112431550889230353995/UsedomAug2010?feat=embedwebsite"><img src="http://lh4.ggpht.com/_nNALf2yjtoI/TGf1il03oTE/AAAAAAAAARA/aV56M9HIIDc/s160-c/UsedomAug2010.jpg" width="160" height="160" style="margin:1px 0 0 4px;" alt="Usedom - Aug 2010"/></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="http://picasaweb.google.com/112431550889230353995/UsedomAug2010?feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">Usedom - Aug 2010</a></td></tr></table>
 

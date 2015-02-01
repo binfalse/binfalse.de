@@ -352,3 +352,12 @@ table
 	border-top: 1px solid #CCC;
 	border-left: 1px solid #CCC;
 }
+
+table caption
+{
+	caption-side: bottom;
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: right;
+	padding: 0.5em 0;
+}

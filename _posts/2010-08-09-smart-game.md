@@ -48,6 +48,7 @@ USAGE:
 
 
 If anybody knows the strategy, feel free to tell me!
+
 <div class="download"><strong>Download:</strong>
 C++: <a href='/wp-content/uploads/pipapo/c-cpp/nim.cpp'>NIM - the game</a>
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>

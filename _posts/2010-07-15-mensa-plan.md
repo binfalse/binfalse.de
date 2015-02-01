@@ -20,7 +20,32 @@ My initial idea was to read the website, parse the XML code and print the meals.
 
 How ever, XML parsing fails, solving the bugs also fails, to much of it... So I'm now just grabbing the HTML-code, to extract the interesting content, with a more or less ugly regex, and print them to console... Here is the code:
 
-[cc lang="perl" file="pipapo/scripts/essen.pl"][/cc]
+{% highlight perl %}
+#!/usr/bin/perl -w
+
+use warnings;
+use strict;
+use LWP::UserAgent;
+
+binmode STDOUT, ":utf8";
+
+my $url = "http://meine-mensa.de/speiseplan_iframe";
+my $mensa = 5;
+
+my $browser = LWP::UserAgent->new(parse_head => 0);
+$browser->timeout(10);
+
+my $response = $browser->post ($url, ["selected_locations[]" => $mensa]);
+my $content = $response->decoded_content ();
+$content =~ s/\n//g;
+
+while ($content =~ /<span style="font-weight: normal; font-size: 12px" class="counter_name">(.+?)<\/span>.+?<span.+?>(.+?)<\//gi)
+{
+	print $1.":\t".$2."\n";
+}
+{% endhighlight %}
+
+
 
 So if somebody is also joining the Mensa Weinberg, you can copy this code or <a href='/wp-content/uploads/2010/07/essen.pl'>download it</a>.
 The other canteens are also available, just change the value of the variable  `$mensa`  to your preferred one. The numbers can be found in the source code of this stupid website. Ok, to save you from trouble here are the numbers:
