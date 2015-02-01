@@ -13,28 +13,34 @@ categories:
 
 ---
 
-<p>In one of our current exercises we have to prove different properties belonging to distance matrices as base of binary trees. Additionally I tried to develop an algorithm for creating such a tree, given a distance matrix.</p>
-<p>A distance matrix $$D \\in \\mathbb{R}^{N,N}$$ represents the dissimilarity of $$N$$ samples (for example genes), so that the number in the i-th row j-th column is the distance between element i and j. To generate a tree of it, it is necessary to determine some attributes of the distance $$d(x,y):\\mathbb{R}^n \\times \\mathbb{R}^n \\rightarrow \\mathbb{R}$$ between two elements so that it is a metric:</p>
-<ol>
-<li>$$d(x, y) \\ge 0$$ (distances are positive)</li>
-<li>$$d(x, y) = 0 \\Leftrightarrow x = y$$ (elements with distance 0 are identical, dissimilar elements have distances greater than 0)</li>
-<li>$$d(x, y) = d(y, x)$$ (symmetry)</li>
-<li>$$d(x, z) \\le d(x, y) + d(y, z)$$ (triangle inequality)</li>
-</ol>
-<p>Examples for valid metrics are the <a href="http://en.wikipedia.org/wiki/Euclidean_distance">euclidean distance</a> $$\\sqrt{\\sum_{i=1}^n (x_i-y_i)^2}$$, or the <a href="http://en.wikipedia.org/wiki/Manhattan_distance">manhattan distance</a> $$\\sum_{i=1}^n |x_i-y_i|$$.</p>
-<p>The following procedure is called hierarchical clustering, we try to combine single objects to cluster. At the beginning we start with $$N$$ cluster, each of them containing only one element, the intersection of this set is empty and the union contains all elements that should be clustered.</p>
-<p>The algorithm now searches for the smallest distance in $$D$$ that is not 0 and merges the associated clusters to a new one containing all elements of both. After that step the distance matrix should be adjusted, because two elements are removed and a new one is added. The distances of the new cluster to all others can be computed with the following formula:</p>
-<p style="text-align: center;">$$d(R, [X+Y]) = \\alpha \\cdot d(R,X) + \\beta \\cdot d(R,Y) + \\gamma \\cdot d(X,Y) + \\delta \\cdot |d(R,X)-d(R,Y)|$$</p>
-<p style="text-align: left;">$$X, Y$$ are two clusters that should be merged, $$R$$ represents another cluster. The constants $$\\alpha, \\beta, \\gamma, \\delta$$ depend on the cluster method to use, shown in table 1.</p>
+In one of our current exercises we have to prove different properties belonging to distance matrices as base of binary trees. Additionally I tried to develop an algorithm for creating such a tree, given a distance matrix.
+
+A distance matrix $$D \in \mathbb{R}^{N,N}$$ represents the dissimilarity of $$N$$ samples (for example genes), so that the number in the i-th row j-th column is the distance between element i and j. To generate a tree of it, it is necessary to determine some attributes of the distance $$d(x,y):\mathbb{R}^n \times \mathbb{R}^n \rightarrow \mathbb{R}$$ between two elements so that it is a metric:
+
+1. $$d(x, y) \ge 0$$ (distances are positive)
+1. $$d(x, y) = 0 \Leftrightarrow x = y$$ (elements with distance 0 are identical, dissimilar elements have distances greater than 0)
+1. $$d(x, y) = d(y, x)$$ (symmetry)
+1. $$d(x, z) \le d(x, y) + d(y, z)$$ (triangle inequality)
+
+Examples for valid metrics are the <a href="http://en.wikipedia.org/wiki/Euclidean_distance">euclidean distance</a> $$\sqrt{\sum_{i=1}^n (x_i-y_i)^2}$$, or the <a href="http://en.wikipedia.org/wiki/Manhattan_distance">manhattan distance</a> $$\sum_{i=1}^n \|x_i-y_i\|$$.
+
+The following procedure is called hierarchical clustering, we try to combine single objects to cluster. At the beginning we start with $$N$$ cluster, each of them containing only one element, the intersection of this set is empty and the union contains all elements that should be clustered.
+
+The algorithm now searches for the smallest distance in $$D$$ that is not 0 and merges the associated clusters to a new one containing all elements of both. After that step the distance matrix should be adjusted, because two elements are removed and a new one is added. The distances of the new cluster to all others can be computed with the following formula:
+
+$$d(R, [X+Y]) = \alpha \cdot d(R,X) + \beta \cdot d(R,Y) + \gamma \cdot d(X,Y) + \delta \cdot |d(R,X)-d(R,Y)|$$
+
+$$X, Y$$ are two clusters that should be merged, $$R$$ represents another cluster. The constants $$\alpha, \beta, \gamma, \delta$$ depend on the cluster method to use, shown in table 1.
+
 <table>
 <caption>Table 1: Different cluster methods</caption>
 <tbody>
 <tr>
 <th>Method</th>
-<th class="cen">[latex background="EEEEEE"]\\alpha$$</th>
-<th class="cen">[latex background="EEEEEE"]\\beta$$</th>
-<th class="cen">[latex background="EEEEEE"]\\gamma$$</th>
-<th class="cen">[latex background="EEEEEE"]\\delta$$</th>
+<th class="cen">$$\alpha$$</th>
+<th class="cen">$$\beta$$</th>
+<th class="cen">$$\gamma$$</th>
+<th class="cen">$$\delta$$</th>
 </tr>
 <tr>
 <td>Single linkage</td>
@@ -59,16 +65,16 @@ categories:
 </tr>
 <tr>
 <td>Average linkage (weighted)</td>
-<td class="cen">$$\\frac{|X|}{|X| + |Y|}$$</td>
-<td class="cen">$$\\frac{|Y|}{|X| + |Y|}$$</td>
+<td class="cen">$$\frac{|X|}{|X| + |Y|}$$</td>
+<td class="cen">$$\frac{|Y|}{|X| + |Y|}$$</td>
 <td class="cen">0</td>
 <td class="cen">0</td>
 </tr>
 <tr>
 <td>Centroid</td>
-<td class="cen">$$\\frac{|X|}{|X| + |Y|}$$</td>
-<td class="cen">$$\\frac{|Y|}{|X| + |Y|}$$</td>
-<td class="cen">$$-\\frac{|X|\\cdot|Y|}{(|X| + |Y|)^2}$$</td>
+<td class="cen">$$\frac{|X|}{|X| + |Y|}$$</td>
+<td class="cen">$$\frac{|Y|}{|X| + |Y|}$$</td>
+<td class="cen">$$-\frac{|X|\cdot|Y|}{(|X| + |Y|)^2}$$</td>
 <td class="cen">0</td>
 </tr>
 <tr>
@@ -80,11 +86,15 @@ categories:
 </tr>
 </tbody>
 </table>
-<p>Here $$|X|$$ denotes the number of elements in cluster $$X$$.</p>
-<p>The algorithm continues with searching for the smallest distance in the new distance matrix and will merge the next two similar elements until just one element is remaining.<br />
- Merging of two clusters in tree-view means the construction of a parent node with both clusters as children. The first clusters containing just one element are leafs, the last node is the root of the tree.</p>
+
+Here $$\|X\|$$ denotes the number of elements in cluster $$X$$.
+
+The algorithm continues with searching for the smallest distance in the new distance matrix and will merge the next two similar elements until just one element is remaining.  
+Merging of two clusters in tree-view means the construction of a parent node with both clusters as children. The first clusters containing just one element are leafs, the last node is the root of the tree.
+
 <h2>Small example</h2>
-<p>Let's create a small example from the distance matrix containing 5 clusters, see table 2.</p>
+Let's create a small example from the distance matrix containing 5 clusters, see table 2.
+
 <table>
 <caption>Table 2: Start distances</caption>
 <tbody>
@@ -138,11 +148,15 @@ categories:
 </tr>
 </tbody>
 </table>
-<p>A and D are obviously the most similar elements in this matrix, so we merge them. To make the calculation easier we take the average linkage method to compute the new distances to other clusters:</p>
-<p>$$d(B,[A+D]) = \\frac{d(B, A) + d(B, D)}{2} = \\frac{5 + 4}{2} = 4.5$$<br />
- $$d(C,[A+D]) = \\frac{d(C, A) + d(C, D)}{2} = \\frac{2 + 1.5}{2} = 1.75$$<br />
- $$d(E,[A+D]) = \\frac{d(E, A) + d(E, D)}{2} = \\frac{6 + 5}{2} = 5.5$$</p>
-<p>With these values we are able to construct the new distance matrix of 4 remaining clusters, shown in table 3.</p>
+
+A and D are obviously the most similar elements in this matrix, so we merge them. To make the calculation easier we take the average linkage method to compute the new distances to other clusters:
+
+$$d(B,[A+D]) = \frac{d(B, A) + d(B, D)}{2} = \frac{5 + 4}{2} = 4.5$$  
+$$d(C,[A+D]) = \frac{d(C, A) + d(C, D)}{2} = \frac{2 + 1.5}{2} = 1.75$$  
+$$d(E,[A+D]) = \frac{d(E, A) + d(E, D)}{2} = \frac{6 + 5}{2} = 5.5$$
+
+With these values we are able to construct the new distance matrix of 4 remaining clusters, shown in table 3.
+
 <table>
 <caption>Table 3: Cluster after 1st iter.</caption>
 <tbody>
@@ -183,10 +197,14 @@ categories:
 </tr>
 </tbody>
 </table>
-<p>This matrix gives us the next candidates for clustring, B and E with a distance of 1.5.</p>
-<p>$$d([A+D], [B+E]) = \\frac{d([A+D], B) + d([A+D], E)}{2} = \\frac{4.5 + 5.5}{2} = 5$$<br />
- $$d(C,[B+E]) = \\frac{d(C, B) + d(C, E)}{2} = \\frac{3 + 4}{2} = 3.5$$</p>
-<p>With the appropriate distance matrix of table 4.</p>
+
+This matrix gives us the next candidates for clustring, B and E with a distance of 1.5.
+
+$$d([A+D], [B+E]) = \frac{d([A+D], B) + d([A+D], E)}{2} = \frac{4.5 + 5.5}{2} = 5$$  
+$$d(C,[B+E]) = \frac{d(C, B) + d(C, E)}{2} = \frac{3 + 4}{2} = 3.5$$
+
+With the appropriate distance matrix of table 4.
+
 <table>
 <caption>Table 4: After 2nd iter.</caption>
 <tbody>
@@ -216,9 +234,13 @@ categories:
 </tr>
 </tbody>
 </table>
-<p>Easy to see, now we cluster [A+D] with C:</p>
-<p>$$d([B+E], [A+C+D]) = \\frac{d([B+E],C) + d([B+E],[A+D])}{2} = \\frac{3.5+5}{2} = 4.25$$</p>
-<p>and obtain a last distance matrix with table 5.</p>
+
+Easy to see, now we cluster [A+D] with C:
+
+$$d([B+E], [A+C+D]) = \frac{d([B+E],C) + d([B+E],[A+D])}{2} = \frac{3.5+5}{2} = 4.25$$
+
+and obtain a last distance matrix with table 5.
+
 <table>
 <caption>Table 4: Final matrix</caption>
 <tbody>
@@ -239,12 +261,14 @@ categories:
 </tr>
 </tbody>
 </table>
-<p><br class="spacer_" /></p>
-<p>{% include image.html align="alignright" url="/wp-content/uploads/2010/04/tree.png" img="/wp-content/uploads/2010/04/tree-150x150.png" title="" caption="" %}</p>
-<p><br class="spacer_" /></p>
-<p>Needless to say, further calculations are trivial. There are only to clusters left and the combination of them gives us the final cluster containing all elements and the root of the desired tree.<br />
- The final tree is shown in figure 1. You see, it is not that difficult as expected and ends in a beautiful image!</p>
+
+{% include image.html align="alignright" url="/wp-content/uploads/2010/04/tree.png" img="/wp-content/uploads/2010/04/tree-150x150.png" title="" caption="" %}
+
+
+Needless to say, further calculations are trivial. There are only to clusters left and the combination of them gives us the final cluster containing all elements and the root of the desired tree.  
+The final tree is shown in figure 1. You see, it is not that difficult as expected and ends in a beautiful image!
+
 <h2>Remarks</h2>
-<p>If $$D$$ is defined as above there is no guarantee that edge weights reflect correct distances! When you calculate the weights in my little example you'll see what I mean. If this property is desired the distance function $$d(x,y)$$ has to comply with the condition of ultrametric inequality: $$d(x, z) \\le \\max {d(x, y),d(y, z)}$$.</p>
+If $$D$$ is defined as above there is no guarantee that edge weights reflect correct distances! When you calculate the weights in my little example you'll see what I mean. If this property is desired the distance function $$d(x,y)$$ has to comply with the condition of ultrametric inequality: $$d(x, z) \le \max {d(x, y),d(y, z)}$$.
 
 The method described above is formally known as  <strong>agglomerative clustering</strong>, merging smaller clusters to a bigger one. There is another procedure that splits bigger clusters into smaller ones, starting with a cluster that contains all samples. This method is called <strong>divisive clustering</strong>.
