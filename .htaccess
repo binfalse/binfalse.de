@@ -1,5 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine on
+RewriteRule ^feed/(.*)$ /feed.xml [R=301,NC]
 RewriteRule ^wp-content/uploads/pipapo/(.*)$ /assets/media/wp-content/uploads/stuff/$1 [R=301,NC]
 RewriteRule ^wp-content/(.*)$ /assets/media/wp-content/$1 [R=301,NC]
 RewriteRule 2010/04/n3rd-goes-mainstream(.*) /2010/04/17/n3rd-goes-mainstream$1 [R=301,NC]
