@@ -63,10 +63,8 @@ A bit trickier than installing: You need to think.. ;-)
 Posts go to `_posts` and should always be named `YYYY-MM-DD-identifier.md`. They always have a preamble (so-called [front matter](http://jekyllrb.com/docs/frontmatter/)) which looks like:
 
 ~~~~~
----
 layout: post
 title: Your title goes here.
----
 ~~~~~
 
 But that's it. Now you can start writing. Read [more about posting](http://jekyllrb.com/docs/posts/).
