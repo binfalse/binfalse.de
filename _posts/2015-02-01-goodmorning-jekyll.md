@@ -2,12 +2,21 @@
 layout: post
 title: Goodmorning jekyll!
 tags:
-  - fail
+  - blog
+  - media
+  - private
+  - wordpress
+  - jekyll
+  - explained
+  - simplification
 categories:
-  - CC
-  - Debian
+  - Website
+  - Web
   - Ruby
   - Software
+  - Private
+  - Html
+  - HowTo
 
 ---
 
@@ -76,10 +85,35 @@ After a few commits the converter now exports posts, pages, and comments. It als
 
 ### Comments
 
-You're right. Comments on a static page are a bit contradictory. But not impossible.. ;-)
-
+You're right. Comments on a static page is a bit contradictory. But not impossible.. ;-)  
 I saw some blogs using the crap of Disqus and Facebook and stuff. Not my world, obviously..
 
-But there is also a [static comment pluglin](http://www.hezmatt.org/~mpalmer/blog/2011/07/19/static-comments-in-jekyll.html) for jekyll.
-https://github.com/binfalse/jekyll-static-comments
+But there is also a [static comment pluglin](http://www.hezmatt.org/~mpalmer/blog/2011/07/19/static-comments-in-jekyll.html) for jekyll. I [forked it](https://github.com/binfalse/jekyll-static-comments) to implement my changes. I do not need the PHP stuff, to submit a comment for my blog you can use one of the following three options. I will then decide whether I'm going to include the comment in my blog. I guess that is the ultimate way to fight Spam..
 
+#### Submit a comment
+
+* **[Send me an email](/contact/) with your comment.** Do not forget to mention the article you want to comment. And optionally include a website and a name to *sign* the comment.
+* I am maintaining a [feedback site](fb.binfalse.de/). It is meant to receive feedback in general, for presentations, for my work, code, for the coffee that I serve to guests. Stuff, precisely. It is also available [through the TOR network](http://3djgibyu5osi4na5.onion/), so you can make sure you're really anonymously. You can use this website to also create comments. Every page contains a link **submit a comment through the feedback page**, which brings you to that page. Just make sure to mention the article, and if you want me to give you the credits also add include your name and a mail address; and optionally a website.
+* You can simply **fork [the blog's repository](https://github.com/binfalse/binfalse.de)** and create a comment yourself in the `_comments` directory. Just have a look at the other comments. Send me a pull request and I'll have a look at it :)
+
+### Images
+
+Converting images from WordPress was a bit trickier.
+There they use code similar to this:
+
+{% highlight html %}
+[caption id="attachment_XXX" align="alignXXX" width="XXX" caption="XXX"]<a href="XXX"><img src="XXX" alt="XXX" title="XXX" width="XXX" height="XXX" class="size-thumbnail wp-image-XXX" /></a> XXX[/caption]
+{% endhighlight %}
+
+However, in jekyll you do not have the whole environment by default.
+After some searching I stumbled across a [solution](http://codingtips.kanishkkunal.in/image-caption-jekyll/).
+Eventually, my [wordpress-to-jekyll converter](https://github.com/binfalse/wordpress-to-jekyll) substitues these environments with
+
+{% highlight html %}
+{ % include image.html align="alignXXX" url="XXX" img="XXX" title="XXX" caption="XXX" % }
+{% endhighlight %}
+
+
+and `_includes/image.html` (see [GitHub](https://github.com/binfalse/binfalse.de/blob/master/_includes/image.html)) creates something that's similar to the caption environment of WordPress. Some more CSS and everything worked like a charm! :)
+
+I think that's it for the moment. Moving to jekyll was not that difficult. And I now have a static website that's hopefully changing from time to time...
