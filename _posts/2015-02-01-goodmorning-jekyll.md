@@ -2,10 +2,10 @@
 layout: post
 title: Goodmorning jekyll!
 tags:
-  - blog
-  - media
-  - private
-  - wordpress
+  - Blog
+  - Media
+  - Private
+  - Wordpress
   - jekyll
   - explained
   - simplification
