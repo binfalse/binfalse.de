@@ -37,7 +37,7 @@ $ dpkg -L nodejs
 [...]
 ~~~~~~~~~~~
 
-Thus, on my system the NodeJS binary is called `nodjs`, not `node` (as assumed by the tool I wanted to install).
+You see, on my system the NodeJS binary is called `nodjs`, not `node` (as assumed by the tool I wanted to install).
 Easy to work around this problem: Just create a link to `nodejs` and call it `node`:
 
 ~~~~~~ bash
