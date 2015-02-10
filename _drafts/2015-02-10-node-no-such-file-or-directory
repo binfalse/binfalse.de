@@ -2,7 +2,15 @@
 layout: post
 title: 'node? No such file or directory..'
 categories:
+  - Software
+  - Javascript
+  - Administration
+  - Debian
+tags:
+  - Debian
   - Junk
+  - Programming
+  - aptitude
 
 ---
 
@@ -37,4 +45,3 @@ ln -s /usr/bin/nodejs /usr/local/bin/node
 ~~~~~~~~
 
 I install the link to `/usr/local/bin/node` because that's also in my `$PATH` and won't conflict with other software that might provide `/usr/bin/node`..
-
