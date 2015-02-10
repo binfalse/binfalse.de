@@ -44,4 +44,4 @@ Easy to work around this problem: Just create a link to `nodejs` and call it `no
 ln -s /usr/bin/nodejs /usr/local/bin/node
 ~~~~~~~~
 
-I install the link to `/usr/local/bin/node` because that's also in my `$PATH` and won't conflict with other software that might provide `/usr/bin/node`..
+I installed the link to `/usr/local/bin/node` because that's also in my `$PATH` and won't conflict with other software that might provide `/usr/bin/node`..
