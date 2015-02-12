@@ -1,0 +1,17 @@
+---
+layout: page
+title: Apt-Repo
+
+---
+
+I'm maintaining an apt repo (using [reprepro](https://mirrorer.alioth.debian.org/)).
+Just create a file `/etc/apt/sources.list.d/binfalse.list`
+containing the following:
+
+    deb http://apt.binfalse.de binfalse main
+
+For those as lazy as me:
+
+    sudo echo "deb http://apt.binfalse.de binfalse main" > /etc/apt/sources.list.d/binfalse.list
+
+All packages I provide are prefixed with `bf-`.
