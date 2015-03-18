@@ -37,3 +37,13 @@ git config --global alias.u "push origin master"
 # diff two commits using meld
 git config --global alias.meld "difftool -d -t meld"
 ~~~~~~~~
+
+
+
+## Further Resources
+
+Learn about branching/merging/rebasing/detaching/etc in an interactive tutorial from (pcottle)[https://pcottle.github.io/learnGitBranching/].
+
+Learn about [undoing things](http://www.git-scm.com/book/en/v2/Git-Basics-Undoing-Things) in git, including redoing a commit, resetting a `git add` and unmodifying a file.
+
+
