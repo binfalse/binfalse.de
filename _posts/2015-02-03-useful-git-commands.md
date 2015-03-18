@@ -99,8 +99,7 @@ Of course, your commit hashes are a bit more complex than `c6` and `db4`, but I 
 
 ## Further Resources
 
-Learn about branching/merging/rebasing/detaching/etc in an interactive tutorial from (pcottle)[https://pcottle.github.io/learnGitBranching/].
-
-Learn about [undoing things](http://www.git-scm.com/book/en/v2/Git-Basics-Undoing-Things) in git, including redoing a commit, resetting a `git add` and unmodifying a file.
+* Learn about branching/merging/rebasing/detaching/etc in an interactive tutorial from [pcottle](https://pcottle.github.io/learnGitBranching/).
+* Learn about [undoing things](http://www.git-scm.com/book/en/v2/Git-Basics-Undoing-Things) in git, including redoing a commit, resetting a `git add` and unmodifying a file.
 
 
