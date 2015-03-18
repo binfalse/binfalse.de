@@ -51,6 +51,7 @@ git config --global alias.meld "difftool -d -t meld"
   * `git checkout master^^` get the third last commit on branch master
 
 
+
 ## Move a branch
 
 If you want the branch `mybranch` to point to `target` you just need to call the following command:
@@ -59,7 +60,11 @@ If you want the branch `mybranch` to point to `target` you just need to call the
 git branch -f mybranch target
 ~~~~~~~~
 
-You *forced* `mybranch` to point to `target`. `target` may be a commit hash or a branch name.
+You *forced* `mybranch` to point to `target`. `target` may be a commit hash or a branch name (any ref git can resolve into a commit).
+
+
+
+
 
 
 ## Track down a bug using cherry-pick
