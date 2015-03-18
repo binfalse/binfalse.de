@@ -39,6 +39,46 @@ git config --global alias.meld "difftool -d -t meld"
 ~~~~~~~~
 
 
+## Track down a bug
+
+Let's assume you have a history such as
+
+~~~~~~~ bash
+master: init -> c1 -> ... -> c6
+~~~~~~~~
+
+and you discovered a bug in commit `c6`, you would probably intruduce a lot of `echo`s/`prinln`s/etc to detect the bug. Afterwars you need to get rid of all these debugging things and commit just the fix.
+
+But it's ways easier using cherry-pick. Just create a `bugfix` branch. Do all your debugging stuff in there, find the bug and do another commit (commits `db1` to `db3`). Finally, fix the bug and commit it with `db4`:
+
+
+~~~~~~~ bash
+master: init -> c1 -> ... -> c6
+                              \
+                               \
+bugfix*:                       db1 -> db2 -> db3 -> db4
+                                ^add echo/println    ^bug fixed
+~~~~~~~~
+
+You can then simply checkout the master and append the commit `db4` to it, which fixes the bug in the master branch without all the debugging stuff. Here are the git commands:
+
+
+~~~~~~~ bash
+git checkout master
+git cherry-pick db4
+~~~~~~~~
+
+And your final graph would look like:
+
+~~~~~~~ bash
+master*: init -> c1 -> ... -> c6 ------------------------> db4'
+                               \                        /
+                                \                      /
+bugfix:                         db1 -> db2 -> db3 -> db4
+                                 ^add echo/println    ^bug fixed
+~~~~~~~~
+
+Of course, your commit hashes are a bit more complex than `c6` and `db4`, but I hope you got the idea :)
 
 ## Further Resources
 
