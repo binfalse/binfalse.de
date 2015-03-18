@@ -46,6 +46,9 @@ git config --global alias.meld "difftool -d -t meld"
 * `HEAD` always points to you current position in the tree.
 * You can always checkout old commits or branches using `git checkout XXX`, with `XXX` being a commit hash or a branch name
 * Branch names are pointers to commits. If you've checked out a branch and do a commit the branch pointer will move on to your new commit.
+* You can address commits relatively using `^` (go one up in tree) and `~X` (go `X` up in tree), eg.
+  * `git checkout master~2 Makefile` checkout the file `Makefile` from the second last commit before `master`
+  * `git checkout master^^` get the third last commit on branch master
 
 
 ## Track down a bug using cherry-pick
