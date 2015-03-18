@@ -51,6 +51,17 @@ git config --global alias.meld "difftool -d -t meld"
   * `git checkout master^^` get the third last commit on branch master
 
 
+## Move a branch
+
+If you want the branch `mybranch` to point to `target` you just need to call the following command:
+
+~~~~~~~ bash
+git branch -f mybranch target
+~~~~~~~~
+
+You *forced* `mybranch` to point to `target`. `target` may be a commit hash or a branch name.
+
+
 ## Track down a bug using cherry-pick
 
 Let's assume you have a history such as
@@ -72,7 +83,9 @@ bugfix*:                       db1 -> db2 -> db3 -> db4
                                 ^add echo/println    ^bug fixed
 ~~~~~~~~
 
-You can then simply checkout the master and append the commit `db4` to it, which fixes the bug in the master branch without all the debugging stuff. Here are the git commands:
+You can then simply checkout the master and use `cherry-pick` to append the commit `db4` to it, which fixes the bug in the master branch without all the debugging stuff.
+Git's `cherry-pick` will apply commits from anywhere in the tree onto `HEAD` (as long as that commit isn't an ancestor of `HEAD`).
+Here are the git commands:
 
 
 ~~~~~~~ bash
@@ -123,6 +136,13 @@ Finally, just reorder the last two commits using `git rebase -i HEAD^^ --aboveAl
 ~~~~~~~ bash
 master: c4 -> c5' -> c6
 ~~~~~~~~
+
+
+You can achieve the same with less reordering using git's `cherry-pick`. Just checkout the commit `c` to modify and modify it to `c'` (using `--amend`). Afterwards, you can `cherry-pick` all commits that came after `c`.
+
+
+
+
 
 
 
