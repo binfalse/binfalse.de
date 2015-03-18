@@ -39,7 +39,16 @@ git config --global alias.meld "difftool -d -t meld"
 ~~~~~~~~
 
 
-## Track down a bug
+
+
+## Jump around the git tree
+
+* `HEAD` always points to you current position in the tree.
+* You can always checkout old commits or branches using `git checkout XXX`, with `XXX` being a commit hash or a branch name
+* Branch names are pointers to commits. If you've checked out a branch and do a commit the branch pointer will move on to your new commit.
+
+
+## Track down a bug using cherry-pick
 
 Let's assume you have a history such as
 
@@ -79,6 +88,11 @@ bugfix:                         db1 -> db2 -> db3 -> db4
 ~~~~~~~~
 
 Of course, your commit hashes are a bit more complex than `c6` and `db4`, but I hope you got the idea :)
+
+
+
+
+
 
 ## Further Resources
 
