@@ -94,6 +94,35 @@ Of course, your commit hashes are a bit more complex than `c6` and `db4`, but I 
 
 
 
+## Modifying an old commit
+
+
+Let's assume you have a history such as
+
+~~~~~~~ bash
+master: c4 -> c5 -> c6
+~~~~~~~~
+
+and you forgot to do something in `c5`. Then you can reorder the last two commits using `git rebase -i HEAD^^ --aboveAll` to receive the following:
+
+~~~~~~~ bash
+master: c4 -> c6 -> c5
+~~~~~~~~
+
+now change the last commit using `git commit --amend` and you'll end up with:
+
+~~~~~~~ bash
+master: c4 -> c6 -> c5'
+               \
+                \
+                 c5
+~~~~~~~~
+
+Finally, just reorder the last two commits using `git rebase -i HEAD^^ --aboveAll`:
+
+~~~~~~~ bash
+master: c4 -> c5' -> c6
+~~~~~~~~
 
 
 
