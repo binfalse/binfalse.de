@@ -11,6 +11,27 @@ tags:
   - Programming
 ---
 
+## Setup
+
+Configure some stuff before you can get started:
+
+~~~~~~~ bash
+# which name do you want to see in your commits?
+git config --global user.name "Martin Scharm"
+
+# which email do you want to use
+git config --global user.email martin@dev
+
+# tell git which gpg key to use by default
+git config --global user.signingkey E81BC3078D2DD9BD
+
+# always push all branches and all tags
+git config --global --add remote.origin.push '+refs/heads/*:refs/heads/*'
+git config --global --add remote.origin.push '+refs/tags/*:refs/tags/*'
+~~~~~~~~
+
+
+
 ## Aliases
 
 Global aliases are stored in `~/.gitconfig`.
@@ -24,14 +45,17 @@ git config --global alias.lg "log --all --pretty=format:'%x09%C(bold blue)%an%Cr
 git config --global alias.search "log --all --pretty=format:'%x09%C(bold blue)%an%Creset%x09%Cred%h%Creset %Cgreen%ad%Creset%x09%s%d' --graph --date=short -m -i -G"
 
 # shortcut for the status
-git config --global alias.s "status"
+git config --global alias.s "status -s"
 
 # shortcut for commiting
 git config --global alias.c "commit -a"
 
+# shortcut for checkout
+git config --global alias.co "checkout"
+
 # shortcut for pulling and pushing
-git config --global alias.d "pull"
-git config --global alias.u "push origin master"
+git config --global alias.d "pull origin --all --tags"
+git config --global alias.u "push origin --all --tags"
 
 
 # diff two commits using meld
