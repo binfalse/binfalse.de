@@ -4,7 +4,11 @@
     {% if include.url %}
     <a href="{{ include.url }}" title="{{ include.title }}" target="_blank" data-lightbox="{{post_id}}{{page.id}}{{page.url}}" data-title="{{include.caption}}">
     {% endif %}
-        <img src="{{ include.img }}" alt="{{ include.title }}"/>
+        <img src="{{ include.img }}" alt="{{ include.title }}"
+				{% if include.maxwidth %}
+					style="max-width:{{ include.maxwidth }}"
+				{% endif %}
+				/>
     {% if include.url %}
     </a>
     {% endif %}
