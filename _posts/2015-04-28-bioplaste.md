@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "organic plastic"
+title: "Organic Plastic"
 tags:
   - organic
   - food
@@ -23,7 +23,7 @@ However, that was just the easy part. For some things we did not find a good sol
 * Same for toilet paper: always in plastic wrappings. I do not have a solution..
 * No IKEA, no Amazon, no non-local stuff in general.
 
-Ah, and did i say *no instance food*? It is not allowed to go and get some Chinese food or a kebab. So... yes.. it's been a hard time.
+Ah, and did i say *no take-away*? It is not allowed to go and get some Chinese food or a kebab, as that usually involves buying plastic. So... yes.. it's been a hard time.
 
 
 All the more I am happy that this issues already arrived at the [higher](http://www.bmbf.de/en/1024.php) [layers](http://www.europarl.europa.eu/news/en/news-room/content/20150328STO38904/html/EU-restricts-the-use-of-plastic-bags-to-protect-the-environment) and there are efforts to produce organic plastic, which is bio-degradable and made from renewable resources, such as [starch](https://en.wikipedia.org/wiki/Starch), [lignocellulose](https://en.wikipedia.org/wiki/Lignocellulosic_biomass), or [polylactic acid](https://en.wikipedia.org/wiki/Polylactic_acid).
