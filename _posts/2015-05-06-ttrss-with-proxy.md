@@ -44,9 +44,9 @@ Now, the TT-RSS traffic will go through the proxy at `:8123`, which might tunnel
 
 By default, TT-RSS will not cache the images in feeds. That means, if there is an image in an article, you get redirected to load the image from the foreign server. That's obviously something I'd like to avoid, especially because there are plenty of ads or tracking pixels which shouldn't know about my surf habits and times. But there is an alternative: TT-RSS is able to cache images. It will download the images to your machine and send you the cached versions instead of sending you to somewhere else.
 
-Unfortunately, that is not the default. If you want that functionality you need to configure every single feed (Edit Feed -> Options -> Cache images locally). And you must not forget to do so for every new feed that will be added in 15 months...
+Unfortunately, that is not the default. If you want that functionality you need to configure every single feed (*Edit Feed* &rarr; *Options* &rarr; *Cache images locally*). And you must not forget to do so for every new feed that will be added in 15 months...
 
-To avoid that you can simply open the database that TT-RSS is using (e.g. using [phpMyAdmin](http://www.phpmyadmin.net/)), got to the table `ttrss_feeds` and modify the default value of the column `cache_images` from `0` to `1`. If that is done, the images of every new feed will be cached by default.
+To avoid that you can simply open the database that TT-RSS is using (e.g. using [phpMyAdmin](http://www.phpmyadmin.net/)), go to the table `ttrss_feeds` and modify the default value of the column `cache_images` from `0` to `1`. If that is done, the images of every new feed will be cached by default.
 
 If you're too lazy to manually update the feeds that are already there you can simply run the following SQL query:
 
