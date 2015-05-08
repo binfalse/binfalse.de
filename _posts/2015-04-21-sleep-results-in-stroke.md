@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Those who sleep longer die ealier."
+title: "Those who sleep longer die earlier."
 tags:
   - neuro
   - sleep
