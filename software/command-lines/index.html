@@ -32,7 +32,38 @@ ps -Afe|grep "$pid"|grep --invert-match grep | sed "s/^\\([^ ]*[ ]*\\)\\{7\\}\\(
 
 
 {% highlight bash %}
-curl -sI
+curl -sI $URL
+{% endhighlight %}
+
+
+
+<h3>Get your current public IP address</h3>
+
+
+{% highlight bash %}
+curl ip.binfalse.de
+{% endhighlight %}
+
+
+
+<h3>Discover running Hosts in a Network</h3>
+
+{% highlight bash %}
+nmap -sP 192.168.1.*
+{% endhighlight %}
+
+
+<h3>Find large files recursively</h3>
+
+{% highlight bash %}
+find . -type f -size +50M -exec du -h {} \; | sort -n
+{% endhighlight %}
+
+
+<h3>Find files that have been modified in the past 60 minutes</h3>
+
+{% highlight bash %}
+find . -mmin 60 -type f
 {% endhighlight %}
 
 
