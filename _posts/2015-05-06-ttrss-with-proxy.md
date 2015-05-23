@@ -2,7 +2,14 @@
 layout: post
 title: 'Tunneling TinyTinyRSS traffic through a Proxy'
 categories:
-  - Junk
+  - web
+  - media
+  - administration
+  - howto
+tags:
+  - network
+  - security
+  - remote
 
 ---
 [TinyTinyRSS](http://tt-rss.org/) (TT-RSS) is something like the Google reader wanted to be and Feedly still wants to be. Just better! :)
