@@ -109,3 +109,21 @@ deb http://apt.binfalse.de binfalse main
 {% endhighlight %}
 
 
+<h2>NO_PUBKEY</h2>
+For some repository you need to have special GPG keys in your keyring, otherwise you'll see an error such as:
+
+{% highlight bash %}
+$ aptitude update
+[...]
+W: GPG error: http://apt.binfalse.de binfalse InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY E81BC3078D2DD9BD
+{% endhighlight %}
+
+In that case you can usually add these keys to your keyring by executing the following to command:
+
+{% highlight bash %}
+key=E81BC3078D2DD9BD
+gpg --keyserver pgpkeys.mit.edu --recv-key $key
+gpg -a --export $key | sudo apt-key add -
+{% endhighlight %}
+
+Just replace the contents of the `$key` variable with the corresponding key id.
