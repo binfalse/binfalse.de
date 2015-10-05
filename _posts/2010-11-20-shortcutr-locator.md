@@ -2,14 +2,14 @@
 layout: post
 title: 'ShortCut[R]: locator'
 tags:
-  - GNU
-  - Programming
-  - ShortCut
+  - gnu
+  - programming
+  - shortcut
   - trick
   - userinteraction
 categories:
-  - R
-  - ShortCut
+  - r
+  - shortcut
 
 ---
 

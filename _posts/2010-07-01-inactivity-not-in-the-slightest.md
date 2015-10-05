@@ -2,19 +2,19 @@
 layout: post
 title: 'Inactivity? Not in the slightest...'
 tags:
-  - Halle
-  - Java
-  - Media
-  - Programming
+  - halle
+  - java
+  - media
+  - programming
   - spaughts
-  - SUNSpot
-  - University
+  - sunspot
+  - university
 categories:
-  - Hardware
-  - Java
-  - Media
-  - Software
-  - University
+  - hardware
+  - java
+  - media
+  - software
+  - university
 
 ---
 

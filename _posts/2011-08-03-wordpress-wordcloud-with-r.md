@@ -2,18 +2,18 @@
 layout: post
 title: 'WordPress WordCloud with R'
 tags:
-  - Blog
-  - GNU
-  - Media
-  - Programming
+  - blog
+  - gnu
+  - media
+  - programming
   - trick
-  - Wordpress
+  - wordpress
 categories:
-  - Media
-  - Private
-  - R
-  - Software
-  - Wordpress
+  - media
+  - private
+  - r
+  - software
+  - wordpress
 
 ---
 

@@ -2,18 +2,18 @@
 layout: post
 title: 'Which country is the most stupid'
 tags:
-  - Bioinformatics
-  - Clustering
-  - Halle
-  - Microarrays
-  - Private
-  - University
+  - bioinformatics
+  - clustering
+  - halle
+  - microarrays
+  - private
+  - university
 categories:
-  - Bioinformatics
-  - Hardware
-  - Private
-  - University
-  - Web
+  - bioinformatics
+  - hardware
+  - private
+  - university
+  - web
 
 ---
 

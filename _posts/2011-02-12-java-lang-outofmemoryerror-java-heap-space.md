@@ -3,14 +3,14 @@ layout: post
 title: 'java.lang.OutOfMemoryError: Java heap space'
 tags:
   - explained
-  - Java
-  - Media
-  - Programming
+  - java
+  - media
+  - programming
   - virtual
 categories:
-  - Java
-  - Media
-  - Software
+  - java
+  - media
+  - software
 
 ---
 

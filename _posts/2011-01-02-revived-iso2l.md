@@ -2,18 +2,18 @@
 layout: post
 title: 'Revived iso2l'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - explained
-  - Java
-  - Programming
-  - Rumpel
-  - Tree
+  - java
+  - programming
+  - rumpel
+  - tree
 categories:
-  - Bioinformatics
-  - Java
-  - Junk
-  - Software
-  - University
+  - bioinformatics
+  - java
+  - junk
+  - software
+  - university
 
 ---
 

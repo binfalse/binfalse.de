@@ -2,14 +2,14 @@
 layout: post
 title: 'R progress indicators'
 tags:
-  - Bioinformatics
-  - GNU
-  - Programming
+  - bioinformatics
+  - gnu
+  - programming
   - trick
-  - X
+  - x
 categories:
-  - R
-  - Software
+  - r
+  - software
 
 ---
 

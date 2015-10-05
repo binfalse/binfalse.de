@@ -2,16 +2,16 @@
 layout: post
 title: 'Boot messages to service console'
 tags:
-  - GNU
+  - gnu
   - kernel
   - keyboard
-  - Network
-  - University
+  - network
+  - university
   - userinteraction
 categories:
-  - Network
-  - Software
-  - University
+  - network
+  - software
+  - university
 
 ---
 

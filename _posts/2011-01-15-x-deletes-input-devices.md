@@ -6,15 +6,15 @@ tags:
   - grml
   - hacked
   - kernel
-  - Notebook
-  - Private
+  - notebook
+  - private
   - remote
-  - Sid
+  - sid
   - ugly
-  - X
+  - x
 categories:
-  - Debian
-  - Media
+  - debian
+  - media
 
 ---
 

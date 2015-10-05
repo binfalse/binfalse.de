@@ -2,19 +2,19 @@
 layout: post
 title: 'Cracked next Captcha'
 tags:
-  - Blog
+  - blog
   - hacked
-  - LaTeX
-  - Programming
-  - Security
+  - latex
+  - programming
+  - security
   - userscript
-  - Wordpress
+  - wordpress
 categories:
-  - JavaScript
-  - Junk
-  - Security
-  - Software
-  - Wordpress
+  - javascript
+  - junk
+  - security
+  - software
+  - wordpress
 
 ---
 

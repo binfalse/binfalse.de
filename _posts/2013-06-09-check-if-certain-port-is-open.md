@@ -3,13 +3,13 @@ layout: post
 title: 'Check if certain Port is Open'
 tags:
   - hacked
-  - Network
-  - Programming
-  - Snippet
+  - network
+  - programming
+  - snippet
 categories:
-  - Network
-  - Perl
-  - Software
+  - network
+  - perl
+  - software
 
 ---
 

@@ -3,13 +3,13 @@ layout: post
 title: 'Git repository hosting with Debian'
 tags:
   - git
-  - Media
-  - Network
-  - University
+  - media
+  - network
+  - university
 categories:
-  - Network
-  - Software
-  - Web
+  - network
+  - software
+  - web
 
 ---
 

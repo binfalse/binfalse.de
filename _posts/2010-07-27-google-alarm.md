@@ -2,15 +2,15 @@
 layout: post
 title: Google-alarm
 tags:
-  - Firefox
-  - Google
-  - Junk
-  - Media
+  - firefox
+  - google
+  - junk
+  - media
   - ugly
 categories:
-  - Media
-  - Software
-  - Web
+  - media
+  - software
+  - web
 
 ---
 

@@ -4,16 +4,16 @@ title: 'Created an AI for a contest'
 tags:
   - contest
   - game
-  - GNU
-  - Java
+  - gnu
+  - java
   - journals
-  - Network
-  - Programming
+  - network
+  - programming
 categories:
-  - Java
-  - Network
-  - Software
-  - Web
+  - java
+  - network
+  - software
+  - web
 
 ---
 

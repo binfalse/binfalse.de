@@ -2,20 +2,20 @@
 layout: post
 title: 'Stretching @YOKOFAKUN'
 tags:
-  - Bioinformatics
-  - Firefox
-  - Media
-  - Programming
+  - bioinformatics
+  - firefox
+  - media
+  - programming
   - trick
   - twitter
   - userinteraction
   - userscript
 categories:
-  - Bioinformatics
-  - JavaScript
-  - Media
-  - Software
-  - Web
+  - bioinformatics
+  - javascript
+  - media
+  - software
+  - web
 
 ---
 

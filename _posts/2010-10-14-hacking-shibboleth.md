@@ -4,16 +4,16 @@ title: 'Hacking Shibboleth'
 tags:
   - explained
   - hacked
-  - Network
-  - Security
+  - network
+  - security
   - ugly
-  - University
+  - university
   - userinteraction
 categories:
-  - Network
-  - Security
-  - Software
-  - University
+  - network
+  - security
+  - software
+  - university
 
 ---
 

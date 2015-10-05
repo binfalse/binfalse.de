@@ -2,13 +2,13 @@
 layout: post
 title: 'Lost my gitosis'' post-update'
 tags:
-  - Debian
+  - debian
   - git
   - hacked
   - remote
   - ugly
 categories:
-  - Administration
+  - administration
 
 ---
 

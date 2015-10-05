@@ -3,13 +3,13 @@ layout: post
 title: 'Validating XML files'
 tags:
   - explained
-  - Java
-  - Programming
-  - Snippet
+  - java
+  - programming
+  - snippet
 categories:
-  - Java
-  - Snippet
-  - Software
+  - java
+  - snippet
+  - software
 
 ---
 

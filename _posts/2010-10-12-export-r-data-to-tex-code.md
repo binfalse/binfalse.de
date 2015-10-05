@@ -2,15 +2,15 @@
 layout: post
 title: 'Export R data to tex code'
 tags:
-  - Bioinformatics
-  - GNU
-  - LaTeX
-  - Programming
-  - Rumpel
+  - bioinformatics
+  - gnu
+  - latex
+  - programming
+  - rumpel
 categories:
-  - Bioinformatics
-  - R
-  - University
+  - bioinformatics
+  - r
+  - university
 
 ---
 

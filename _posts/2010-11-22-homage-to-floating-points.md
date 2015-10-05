@@ -3,15 +3,15 @@ layout: post
 title: 'Homage to floating points'
 tags:
   - explained
-  - GNU
-  - Junk
-  - Programming
+  - gnu
+  - junk
+  - programming
   - trick
   - ugly
 categories:
-  - Junk
-  - R
-  - Software
+  - junk
+  - r
+  - software
 
 ---
 

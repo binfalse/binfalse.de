@@ -2,15 +2,15 @@
 layout: post
 title: 'MySQL upgrade failed'
 tags:
-  - Debian
+  - debian
   - fail
-  - MySQL
+  - mysql
   - trick
-  - University
+  - university
 categories:
-  - Debian
-  - Software
-  - University
+  - debian
+  - software
+  - university
 
 ---
 

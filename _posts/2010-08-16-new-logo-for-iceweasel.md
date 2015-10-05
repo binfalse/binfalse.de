@@ -2,13 +2,13 @@
 layout: post
 title: 'New logo for Iceweasel'
 tags:
-  - Iceweasel
-  - Junk
-  - LaTeX
-  - Thunderbird
+  - iceweasel
+  - junk
+  - latex
+  - thunderbird
   - ugly
 categories:
-  - Junk
+  - junk
   - tex
 
 ---

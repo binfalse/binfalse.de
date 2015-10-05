@@ -4,11 +4,11 @@ title: 'Yeah, Top Ten!'
 tags:
   - contest
   - journals
-  - Programming
+  - programming
 categories:
-  - Private
-  - Programming
-  - Software
+  - private
+  - programming
+  - software
 
 ---
 

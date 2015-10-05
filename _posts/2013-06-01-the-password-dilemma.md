@@ -5,13 +5,13 @@ tags:
   - analyzed
   - cloud
   - hacked
-  - Private
-  - Security
+  - private
+  - security
 categories:
-  - Junk
-  - Security
-  - Software
-  - Web
+  - junk
+  - security
+  - software
+  - web
 
 ---
 

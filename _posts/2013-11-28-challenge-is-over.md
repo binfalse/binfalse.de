@@ -4,14 +4,14 @@ title: 'Challenge is over.'
 tags:
   - contest
   - job
-  - Private
+  - private
   - puzzle
-  - University
+  - university
 categories:
-  - Junk
-  - Private
-  - University
-  - Web
+  - junk
+  - private
+  - university
+  - web
 
 ---
 

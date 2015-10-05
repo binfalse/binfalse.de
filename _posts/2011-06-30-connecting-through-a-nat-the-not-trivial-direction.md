@@ -5,20 +5,20 @@ tags:
   - analyzed
   - explained
   - hacked
-  - NAT
-  - Network
-  - Private
+  - nat
+  - network
+  - private
   - remote
-  - Security
-  - SSH
+  - security
+  - ssh
   - trick
   - ugly
 categories:
-  - Network
-  - Operatingsystem
-  - Shell
-  - Software
-  - Web
+  - network
+  - operatingsystem
+  - shell
+  - software
+  - web
 
 ---
 

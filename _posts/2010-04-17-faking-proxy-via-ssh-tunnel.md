@@ -3,14 +3,14 @@ layout: post
 title: 'Faking proxy via SSH tunnel'
 tags:
   - journals
-  - Network
-  - Proxy
-  - SSH
-  - University
+  - network
+  - proxy
+  - ssh
+  - university
 categories:
-  - Network
-  - Shell
-  - University
+  - network
+  - shell
+  - university
 
 ---
 

@@ -5,17 +5,17 @@ tags:
   - analyzed
   - aptitude
   - crazy
-  - Debian
+  - debian
   - explained
   - hacked
-  - Network
+  - network
   - remote
   - trick
 categories:
-  - Network
-  - Programming
-  - Software
-  - Web
+  - network
+  - programming
+  - software
+  - web
 
 ---
 

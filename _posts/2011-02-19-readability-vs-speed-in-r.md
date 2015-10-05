@@ -3,12 +3,12 @@ layout: post
 title: 'Readability vs speed in R'
 tags:
   - analyzed
-  - GNU
-  - Programming
+  - gnu
+  - programming
   - trick
 categories:
-  - R
-  - Software
+  - r
+  - software
 
 ---
 

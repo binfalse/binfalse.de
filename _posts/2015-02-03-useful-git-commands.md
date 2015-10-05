@@ -2,13 +2,13 @@
 layout: post
 title: 'Useful git stuff'
 categories:
-  - Software
-  - Programming
+  - software
+  - programming
 tags:
   - simplification
   - log
   - git
-  - Programming
+  - programming
 ---
 
 ## Setup

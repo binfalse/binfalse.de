@@ -2,16 +2,16 @@
 layout: post
 title: 'Show all tags in WP when creating new post'
 tags:
-  - Ajax
-  - Blog
-  - Media
-  - Programming
-  - Wordpress
+  - ajax
+  - blog
+  - media
+  - programming
+  - wordpress
 categories:
-  - JavaScript
-  - PHP
-  - Software
-  - Wordpress
+  - javascript
+  - php
+  - software
+  - wordpress
 
 ---
 

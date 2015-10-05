@@ -3,18 +3,18 @@ layout: post
 title: 'Gajim idling error'
 tags:
   - bug
-  - Debian
+  - debian
   - fix
   - gajim
-  - Jabber
-  - Network
-  - Programming
-  - Snippet
+  - jabber
+  - network
+  - programming
+  - snippet
 categories:
-  - Network
-  - Private
-  - Python
-  - Software
+  - network
+  - private
+  - python
+  - software
 
 ---
 

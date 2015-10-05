@@ -5,13 +5,13 @@ tags:
   - aptitude
   - fail
   - grml
-  - Junk
+  - junk
   - kernel
-  - Sid
+  - sid
 categories:
-  - Debian
-  - Software
-  - University
+  - debian
+  - software
+  - university
 
 ---
 
