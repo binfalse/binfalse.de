@@ -2,7 +2,14 @@
 layout: post
 title: 'Tunneling TinyTinyRSS traffic through a Proxy'
 categories:
-  - Junk
+  - web
+  - media
+  - administration
+  - howto
+tags:
+  - network
+  - security
+  - remote
 
 ---
 {% include image.html align="alignright" url="/assets/media/pics/2015/tt-rss-screenshot.png" img="/assets/media/pics/2015/tt-rss-screenshot.png" title="TT-RSS screenshot" caption="Screenshot of TinyTinyRSS" maxwidth="300px" %}
