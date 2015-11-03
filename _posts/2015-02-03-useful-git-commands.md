@@ -53,6 +53,9 @@ git config --global alias.c "commit -a"
 # shortcut for checkout
 git config --global alias.co "checkout"
 
+# shortcut for checkout
+git config --global alias.co "checkout"
+
 # shortcut for pulling and pushing
 git config --global alias.d "pull origin --all --tags"
 git config --global alias.u "push origin --all --tags"
