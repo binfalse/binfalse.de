@@ -25,7 +25,7 @@ For the lazy: Get a root shell (eg. [ssh](https://en.wikipedia.org/wiki/Secure_S
 
 {% highlight bash %}
 mount -o remount,rw /system
-mv /system/media/audio/ui/camera_click.ogg /system/media/audio/ui/camera_click.ogg.backup                                    <
+mv /system/media/audio/ui/camera_click.ogg /system/media/audio/ui/camera_click.ogg.backup
 mv /system/media/audio/ui/camera_focus.ogg /system/media/audio/ui/camera_focus.ogg.backup
 mount -o remount,ro /system
 {% endhighlight %}
