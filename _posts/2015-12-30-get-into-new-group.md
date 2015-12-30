@@ -2,9 +2,13 @@
 layout: post
 title: 'Getting into a new group'
 categories:
-  - 
+  - linuxunix
+  - administration
 tags:
-  - 
+  - docker
+  - debian
+  - ubuntu
+  - private
 ---
 
 You know, ... you just got this new floppy disk with very important material but you cannot access it because you're not in the system's `floppy` group and, thus, you're not allowed to access the floppy device. Solution is easy: add your current user to the `floppy` group! Sounds easy, doesn't it? The annoying thing is that those changes won't take affect in the current session. You need to log out and log in again -- quite annoying, especially if you're into something with lots of windows and stuff. Just happened to me with docker again..
