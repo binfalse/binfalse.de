@@ -3,11 +3,11 @@ layout: post
 title: 'Inspecting Java startups'
 tags:
   - analyzed
-  - Java
-  - Programming
+  - java
+  - programming
 categories:
-  - Java
-  - Software
+  - java
+  - software
 
 ---
 

@@ -2,16 +2,16 @@
 layout: post
 title: 'SSH escape sequences'
 tags:
-  - Bash
-  - Debian
-  - Network
+  - bash
+  - debian
+  - network
   - remote
-  - Security
-  - SSH
+  - security
+  - ssh
 categories:
-  - Network
-  - Operatingsystem
-  - Software
+  - network
+  - operatingsystem
+  - software
 
 ---
 

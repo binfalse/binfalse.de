@@ -2,17 +2,17 @@
 layout: post
 title: 'Pre- and Post-suspend'
 tags:
-  - DBus
+  - dbus
   - explained
-  - Jabber
-  - Network
-  - Notebook
+  - jabber
+  - network
+  - notebook
   - trick
   - userinteraction
 categories:
-  - Media
-  - Network
-  - Web
+  - media
+  - network
+  - web
 
 ---
 

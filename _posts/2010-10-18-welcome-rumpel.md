@@ -2,17 +2,17 @@
 layout: post
 title: 'Welcome Rumpel!'
 tags:
-  - Blog
-  - Clustering
-  - Halle
-  - Junk
-  - Private
-  - Rumpel
-  - Wordpress
+  - blog
+  - clustering
+  - halle
+  - junk
+  - private
+  - rumpel
+  - wordpress
 categories:
-  - Private
-  - R
-  - Web
+  - private
+  - r
+  - web
 
 ---
 

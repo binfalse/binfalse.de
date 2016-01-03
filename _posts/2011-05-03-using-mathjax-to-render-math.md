@@ -2,23 +2,23 @@
 layout: post
 title: 'Using MathJax to render math'
 tags:
-  - Blog
+  - blog
   - crazy
-  - Firefox
+  - firefox
   - hacked
-  - LaTeX
-  - Media
-  - Programming
+  - latex
+  - media
+  - programming
   - trick
   - userinteraction
 categories:
-  - JavaScript
-  - Media
-  - PHP
-  - Software
-  - Web
-  - Website
-  - Wordpress
+  - javascript
+  - media
+  - php
+  - software
+  - web
+  - website
+  - wordpress
 
 ---
 

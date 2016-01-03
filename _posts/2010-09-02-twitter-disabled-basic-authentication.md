@@ -3,19 +3,19 @@ layout: post
 title: 'Twitter disabled Basic Authentication'
 tags:
   - hacked
-  - Media
-  - Network
-  - Programming
-  - Security
+  - media
+  - network
+  - programming
+  - security
   - twitter
   - ugly
   - userinteraction
 categories:
-  - Network
-  - Perl
-  - Security
-  - Software
-  - Web
+  - network
+  - perl
+  - security
+  - software
+  - web
 
 ---
 

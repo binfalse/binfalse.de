@@ -4,18 +4,18 @@ title: 'Apache not parsing PHP files'
 tags:
   - apache
   - aptitude
-  - Debian
+  - debian
   - fail
-  - Network
-  - Security
+  - network
+  - security
   - ugly
-  - University
+  - university
 categories:
-  - Debian
-  - PHP
-  - Security
-  - Software
-  - Web
+  - debian
+  - php
+  - security
+  - software
+  - web
 
 ---
 

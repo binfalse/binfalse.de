@@ -2,17 +2,17 @@
 layout: post
 title: 'Talking R through Java'
 tags:
-  - Debian
-  - GNU
-  - Java
-  - Programming
+  - debian
+  - gnu
+  - java
+  - programming
   - trick
-  - Ubuntu
+  - ubuntu
 categories:
-  - Debian
-  - Java
-  - R
-  - Software
+  - debian
+  - java
+  - r
+  - software
 
 ---
 

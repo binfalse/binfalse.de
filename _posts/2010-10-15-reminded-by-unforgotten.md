@@ -2,20 +2,20 @@
 layout: post
 title: 'Reminded by unforgotten'
 tags:
-  - Bash
-  - Mail
-  - Media
-  - Network
-  - Programming
+  - bash
+  - mail
+  - media
+  - network
+  - programming
   - remote
   - simplification
   - wife
 categories:
-  - LinuxUnix
-  - Mail
-  - Shell
-  - Software
-  - Unix
+  - linuxunix
+  - mail
+  - shell
+  - software
+  - unix
 
 ---
 

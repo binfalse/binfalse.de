@@ -2,18 +2,18 @@
 layout: post
 title: 'A Synapt - or something like that...'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - explained
   - fail
-  - MS
+  - ms
   - ugly
-  - University
-  - Waters
+  - university
+  - waters
 categories:
-  - Bioinformatics
-  - Hardware
-  - Software
-  - University
+  - bioinformatics
+  - hardware
+  - software
+  - university
 
 ---
 

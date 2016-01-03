@@ -2,14 +2,14 @@
 layout: post
 title: 'New GPG Key'
 tags:
-  - GNU
+  - gnu
   - gpg
-  - Private
-  - Security
+  - private
+  - security
 categories:
-  - Private
-  - Security
-  - Web
+  - private
+  - security
+  - web
 
 ---
 

@@ -2,14 +2,14 @@
 layout: post
 title: 'HowTo Debug Bash Scripts'
 tags:
-  - Bash
+  - bash
   - debug
   - explained
-  - Programming
+  - programming
 categories:
-  - HowTo
-  - Shell
-  - Software
+  - howto
+  - shell
+  - software
 
 ---
 

@@ -3,18 +3,18 @@ layout: post
 title: 'Presentation using two screens'
 tags:
   - keyboard
-  - Media
-  - Notebook
-  - Rumpel
+  - media
+  - notebook
+  - rumpel
   - trick
-  - University
-  - X
+  - university
+  - x
 categories:
-  - LinuxUnix
-  - Media
-  - Software
-  - University
-  - Unix
+  - linuxunix
+  - media
+  - software
+  - university
+  - unix
 
 ---
 

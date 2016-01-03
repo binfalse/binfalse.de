@@ -5,15 +5,15 @@ tags:
   - analyzed
   - explained
   - grml
-  - Media
-  - Network
+  - media
+  - network
 categories:
-  - Mail
-  - Media
-  - Network
-  - R
-  - Software
-  - Web
+  - mail
+  - media
+  - network
+  - r
+  - software
+  - web
 
 ---
 

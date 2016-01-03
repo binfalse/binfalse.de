@@ -2,18 +2,18 @@
 layout: post
 title: 'Java network connection on Debian:SID'
 tags:
-  - Debian
-  - Java
-  - Network
-  - Programming
-  - Sid
-  - Sidux
+  - debian
+  - java
+  - network
+  - programming
+  - sid
+  - sidux
 categories:
-  - Debian
-  - Java
-  - Network
-  - Software
-  - Web
+  - debian
+  - java
+  - network
+  - software
+  - web
 
 ---
 

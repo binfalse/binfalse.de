@@ -2,14 +2,14 @@
 layout: post
 title: 'Journey to Usedom'
 tags:
-  - BalticSea
-  - Poland
-  - Private
-  - Rumpel
-  - Trip
-  - Usedom
+  - balticsea
+  - poland
+  - private
+  - rumpel
+  - trip
+  - usedom
 categories:
-  - Private
+  - private
 
 ---
 

@@ -2,19 +2,19 @@
 layout: post
 title: 'Private URL shortener'
 tags:
-  - Blog
-  - Media
-  - Network
+  - blog
+  - media
+  - network
   - simplification
   - userinteraction
 categories:
-  - Media
-  - Network
-  - PHP
-  - Private
-  - Software
-  - Web
-  - Website
+  - media
+  - network
+  - php
+  - private
+  - software
+  - web
+  - website
 
 ---
 

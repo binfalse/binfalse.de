@@ -2,14 +2,14 @@
 layout: post
 title: 'Reassembling logical operations on boolean vectors in Gnu R'
 tags:
-  - GNU
+  - gnu
   - hacked
-  - Programming
-  - Rumpel
+  - programming
+  - rumpel
   - simplification
 categories:
-  - Junk
-  - R
+  - junk
+  - r
 
 ---
 

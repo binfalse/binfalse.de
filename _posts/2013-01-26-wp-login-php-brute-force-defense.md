@@ -4,21 +4,21 @@ title: 'wp-login.php Brute Force Defense'
 tags:
   - apache
   - curl
-  - NAT
-  - Network
-  - Private
-  - Proxy
-  - Security
-  - SSH
+  - nat
+  - network
+  - private
+  - proxy
+  - security
+  - ssh
   - trick
-  - Wordpress
+  - wordpress
 categories:
-  - Media
-  - Network
-  - Security
-  - Software
-  - Web
-  - Wordpress
+  - media
+  - network
+  - security
+  - software
+  - web
+  - wordpress
 
 ---
 

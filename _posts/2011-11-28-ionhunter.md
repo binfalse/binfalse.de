@@ -2,20 +2,20 @@
 layout: post
 title: IonHunter
 tags:
-  - Bioinformatics
+  - bioinformatics
   - crazy
-  - Java
-  - MS
-  - Programming
-  - University
+  - java
+  - ms
+  - programming
+  - university
 categories:
-  - Bioinformatics
-  - Java
-  - Operatingsystem
-  - Private
-  - Software
-  - University
-  - Web
+  - bioinformatics
+  - java
+  - operatingsystem
+  - private
+  - software
+  - university
+  - web
 
 ---
 

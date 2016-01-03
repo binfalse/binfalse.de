@@ -2,15 +2,15 @@
 layout: post
 title: 'Similar to ...'
 tags:
-  - Junk
-  - Media
-  - Network
+  - junk
+  - media
+  - network
   - twitter
 categories:
-  - Junk
-  - Private
-  - Unix
-  - Web
+  - junk
+  - private
+  - unix
+  - web
 
 ---
 

@@ -3,16 +3,16 @@ layout: post
 title: 'Closer look to Triwave and MSE'
 tags:
   - analyzed
-  - Bioinformatics
+  - bioinformatics
   - crazy
   - explained
-  - MS
-  - University
-  - Waters
+  - ms
+  - university
+  - waters
 categories:
-  - Bioinformatics
-  - Hardware
-  - University
+  - bioinformatics
+  - hardware
+  - university
 
 ---
 

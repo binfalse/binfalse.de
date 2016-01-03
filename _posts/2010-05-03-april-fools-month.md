@@ -2,15 +2,15 @@
 layout: post
 title: 'April fools month'
 tags:
-  - Bash
-  - Junk
-  - Media
-  - Rumpel
-  - University
+  - bash
+  - junk
+  - media
+  - rumpel
+  - university
 categories:
-  - Administration
-  - Junk
-  - Shell
+  - administration
+  - junk
+  - shell
 
 ---
 

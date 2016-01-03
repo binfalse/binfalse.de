@@ -2,17 +2,17 @@
 layout: post
 title: 'Benefit of standardization: OPSIN'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - crazy
-  - Java
+  - java
   - journals
-  - Media
-  - Programming
+  - media
+  - programming
 categories:
-  - Bioinformatics
-  - Java
-  - Media
-  - Web
+  - bioinformatics
+  - java
+  - media
+  - web
 
 ---
 

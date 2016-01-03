@@ -2,14 +2,14 @@
 layout: post
 title: 'Little quickie through Germany'
 tags:
-  - Bonn
-  - Halle
-  - Private
-  - Rumpel
-  - SIGINT
-  - Trip
+  - bonn
+  - halle
+  - private
+  - rumpel
+  - sigint
+  - trip
 categories:
-  - Private
+  - private
 
 ---
 

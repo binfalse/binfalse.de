@@ -4,15 +4,15 @@ title: 'R for the web'
 tags:
   - apache
   - aptitude
-  - GNU
-  - Media
-  - Programming
+  - gnu
+  - media
+  - programming
   - trick
 categories:
-  - Media
-  - R
-  - Software
-  - Web
+  - media
+  - r
+  - software
+  - web
 
 ---
 

@@ -4,10 +4,10 @@ title: 'gem installation fails? update gcc!'
 tags:
   - fail
 categories:
-  - CC
-  - Debian
-  - Ruby
-  - Software
+  - cc
+  - debian
+  - ruby
+  - software
 
 ---
 

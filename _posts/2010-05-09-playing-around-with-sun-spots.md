@@ -2,17 +2,17 @@
 layout: post
 title: 'Playing around with SUN Spots'
 tags:
-  - Media
-  - Programming
+  - media
+  - programming
   - spaughts
-  - SUNSpot
-  - University
+  - sunspot
+  - university
 categories:
-  - Hardware
-  - Java
-  - Media
-  - Software
-  - University
+  - hardware
+  - java
+  - media
+  - software
+  - university
 
 ---
 

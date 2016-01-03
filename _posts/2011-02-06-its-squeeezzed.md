@@ -2,16 +2,16 @@
 layout: post
 title: 'It''s squeeezzed'
 tags:
-  - Debian
-  - Media
-  - Security
+  - debian
+  - media
+  - security
   - twitter
 categories:
-  - Debian
-  - Security
-  - Software
-  - University
-  - Web
+  - debian
+  - security
+  - software
+  - university
+  - web
 
 ---
 

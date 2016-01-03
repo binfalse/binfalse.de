@@ -3,13 +3,13 @@ layout: post
 title: 'Humanizing atan2'
 tags:
   - c
-  - Java
-  - Programming
+  - java
+  - programming
   - simplification
   - trick
 categories:
-  - Programming
-  - Software
+  - programming
+  - software
 
 ---
 

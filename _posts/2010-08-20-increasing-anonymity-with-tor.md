@@ -2,20 +2,20 @@
 layout: post
 title: 'Increasing anonymity with Tor'
 tags:
-  - Debian
-  - Firefox
-  - GNU
-  - Iceweasel
-  - Network
-  - Proxy
-  - Sid
-  - Sidux
-  - SSL
+  - debian
+  - firefox
+  - gnu
+  - iceweasel
+  - network
+  - proxy
+  - sid
+  - sidux
+  - ssl
 categories:
-  - Network
-  - Security
-  - Software
-  - Web
+  - network
+  - security
+  - software
+  - web
 
 ---
 
