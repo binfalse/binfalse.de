@@ -4,10 +4,10 @@ title: "denyhosts: remove!"
 tags:
   - fail
 categories:
-  - CC
-  - Debian
-  - Ruby
-  - Software
+  - cc
+  - debian
+  - ruby
+  - software
 
 ---
 Anyone of you using [denyhosts](https://en.wikipedia.org/wiki/DenyHosts)?

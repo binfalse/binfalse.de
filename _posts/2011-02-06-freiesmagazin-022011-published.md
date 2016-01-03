@@ -4,11 +4,11 @@ title: 'freiesMagazin 02/2011 published'
 tags:
   - contest
   - journals
-  - Media
+  - media
 categories:
-  - Media
-  - Private
-  - Web
+  - media
+  - private
+  - web
 
 ---
 

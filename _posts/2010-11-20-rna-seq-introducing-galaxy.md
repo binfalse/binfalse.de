@@ -2,17 +2,17 @@
 layout: post
 title: 'RNA-Seq - introducing Galaxy'
 tags:
-  - Bioinformatics
-  - NGS
-  - Programming
-  - University
+  - bioinformatics
+  - ngs
+  - programming
+  - university
   - userscript
 categories:
-  - Bioinformatics
-  - JavaScript
-  - Software
-  - University
-  - Web
+  - bioinformatics
+  - javascript
+  - software
+  - university
+  - web
 
 ---
 

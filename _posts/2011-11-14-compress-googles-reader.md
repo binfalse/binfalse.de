@@ -2,20 +2,20 @@
 layout: post
 title: 'Compress Google''s Reader'
 tags:
-  - CSS
-  - Firefox
-  - Google
-  - Iceweasel
-  - Media
-  - Network
-  - Programming
+  - css
+  - firefox
+  - google
+  - iceweasel
+  - media
+  - network
+  - programming
   - trick
   - userscript
 categories:
-  - JavaScript
-  - Media
-  - Software
-  - Web
+  - javascript
+  - media
+  - software
+  - web
 
 ---
 

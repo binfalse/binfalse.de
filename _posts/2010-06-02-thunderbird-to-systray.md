@@ -2,16 +2,16 @@
 layout: post
 title: 'Thunderbird to systray'
 tags:
-  - Debian
-  - Mail
-  - Media
-  - Network
-  - Notebook
-  - Thunderbird
+  - debian
+  - mail
+  - media
+  - network
+  - notebook
+  - thunderbird
 categories:
-  - Debian
-  - Mail
-  - Software
+  - debian
+  - mail
+  - software
 
 ---
 

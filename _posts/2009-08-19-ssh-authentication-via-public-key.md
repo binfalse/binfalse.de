@@ -2,14 +2,14 @@
 layout: post
 title: 'SSH authentication via public key'
 tags:
-  - Network
-  - Security
-  - SSH
+  - network
+  - security
+  - ssh
   - trick
 categories:
-  - Network
-  - Security
-  - Software
+  - network
+  - security
+  - software
 
 ---
 

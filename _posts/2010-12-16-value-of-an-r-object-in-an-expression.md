@@ -2,15 +2,15 @@
 layout: post
 title: 'Value of an R object in an expression'
 tags:
-  - Bioinformatics
-  - GNU
+  - bioinformatics
+  - gnu
   - hacked
-  - Programming
+  - programming
   - trick
 categories:
-  - Bioinformatics
-  - R
-  - Software
+  - bioinformatics
+  - r
+  - software
 
 ---
 

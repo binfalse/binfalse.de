@@ -3,12 +3,12 @@ layout: post
 title: 'Installing an HP ProLiant'
 tags:
   - aptitude
-  - Debian
-  - University
+  - debian
+  - university
 categories:
-  - Hardware
-  - Software
-  - University
+  - hardware
+  - software
+  - university
 
 ---
 

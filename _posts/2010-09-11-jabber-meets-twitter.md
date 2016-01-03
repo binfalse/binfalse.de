@@ -2,18 +2,18 @@
 layout: post
 title: 'Jabber meets Twitter'
 tags:
-  - Jabber
-  - Media
-  - Network
-  - Programming
+  - jabber
+  - media
+  - network
+  - programming
   - twitter
   - userinteraction
 categories:
-  - Media
-  - Network
-  - Perl
-  - Software
-  - Web
+  - media
+  - network
+  - perl
+  - software
+  - web
 
 ---
 

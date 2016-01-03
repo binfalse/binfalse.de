@@ -3,19 +3,19 @@ layout: post
 title: 'ShortCut[proprietary]: NVIDIA update'
 tags:
   - fail
-  - Flash
+  - flash
   - kernel
-  - ShortCut
+  - shortcut
   - simplification
   - trick
   - ugly
-  - X
+  - x
 categories:
-  - Media
-  - Operatingsystem
-  - ShortCut
-  - Software
-  - Web
+  - media
+  - operatingsystem
+  - shortcut
+  - software
+  - web
 
 ---
 

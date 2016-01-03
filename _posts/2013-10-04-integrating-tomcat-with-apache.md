@@ -3,17 +3,17 @@ layout: post
 title: 'Integrating Tomcat with Apache'
 tags:
   - apache
-  - Network
-  - Servlet
-  - Snippet
+  - network
+  - servlet
+  - snippet
   - tomcat
-  - University
+  - university
 categories:
-  - HowTo
-  - Network
-  - Software
-  - University
-  - Web
+  - howto
+  - network
+  - software
+  - university
+  - web
 
 ---
 

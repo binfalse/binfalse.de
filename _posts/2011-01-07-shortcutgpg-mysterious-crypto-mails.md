@@ -3,18 +3,18 @@ layout: post
 title: 'ShortCut[GPG]: Mysterious crypto mails'
 tags:
   - explained
-  - GNU
-  - Mail
-  - Network
-  - Security
-  - ShortCut
-  - Thunderbird
+  - gnu
+  - mail
+  - network
+  - security
+  - shortcut
+  - thunderbird
   - ugly
 categories:
-  - Mail
-  - Security
-  - ShortCut
-  - Web
+  - mail
+  - security
+  - shortcut
+  - web
 
 ---
 

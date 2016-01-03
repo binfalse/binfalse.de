@@ -2,14 +2,14 @@
 layout: post
 title: 'node? No such file or directory..'
 categories:
-  - Software
-  - Javascript
-  - Administration
-  - Debian
+  - software
+  - javascript
+  - administration
+  - debian
 tags:
-  - Debian
-  - Junk
-  - Programming
+  - debian
+  - junk
+  - programming
   - aptitude
 
 ---

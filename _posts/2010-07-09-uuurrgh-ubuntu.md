@@ -2,13 +2,13 @@
 layout: post
 title: 'uuurrgh... Ubuntu'
 tags:
-  - Security
-  - Ubuntu
+  - security
+  - ubuntu
   - ugly
 categories:
-  - LinuxUnix
-  - Security
-  - Software
+  - linuxunix
+  - security
+  - software
 
 ---
 

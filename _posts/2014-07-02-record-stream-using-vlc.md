@@ -2,15 +2,15 @@
 layout: post
 title: 'Record Stream Using VLC'
 tags:
-  - Media
-  - Network
+  - media
+  - network
   - trick
 categories:
-  - HowTo
-  - Media
-  - Network
-  - Software
-  - Web
+  - howto
+  - media
+  - network
+  - software
+  - web
 
 ---
 

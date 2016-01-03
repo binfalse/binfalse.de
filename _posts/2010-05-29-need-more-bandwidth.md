@@ -2,22 +2,22 @@
 layout: post
 title: 'Need more bandwidth!'
 tags:
-  - Bash
-  - Debian
-  - GNU
-  - Lenovo
-  - Media
-  - Network
-  - Notebook
-  - Private
-  - Sidux
+  - bash
+  - debian
+  - gnu
+  - lenovo
+  - media
+  - network
+  - notebook
+  - private
+  - sidux
   - sshfs
-  - Windows
+  - windows
 categories:
-  - Debian
-  - Hardware
-  - Network
-  - Private
+  - debian
+  - hardware
+  - network
+  - private
 
 ---
 

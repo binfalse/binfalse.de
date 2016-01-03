@@ -2,12 +2,12 @@
 layout: post
 title: 'Expiration dates of hash functions!?'
 tags:
-  - Junk
-  - Network
-  - Security
+  - junk
+  - network
+  - security
 categories:
-  - Junk
-  - Security
+  - junk
+  - security
 
 ---
 

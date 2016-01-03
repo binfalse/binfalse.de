@@ -2,14 +2,14 @@
 layout: post
 title: 'Serv local printer'
 tags:
-  - Cups
-  - Media
-  - Network
-  - Notebook
-  - Printer
+  - cups
+  - media
+  - network
+  - notebook
+  - printer
 categories:
-  - Hardware
-  - Network
+  - hardware
+  - network
 
 ---
 

@@ -3,16 +3,16 @@ layout: post
 title: 'Bye sidux - welcome aptosid!'
 tags:
   - aptosid
-  - Debian
+  - debian
   - grml
   - kernel
-  - Notebook
-  - Sid
-  - Sidux
+  - notebook
+  - sid
+  - sidux
 categories:
-  - Debian
-  - Private
-  - Software
+  - debian
+  - private
+  - software
 
 ---
 

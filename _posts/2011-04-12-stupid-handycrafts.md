@@ -3,14 +3,14 @@ layout: post
 title: 'Stupid handycrafts'
 tags:
   - fail
-  - Junk
-  - NGS
+  - junk
+  - ngs
   - ugly
-  - University
+  - university
 categories:
-  - Hardware
-  - Junk
-  - University
+  - hardware
+  - junk
+  - university
 
 ---
 

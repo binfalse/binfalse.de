@@ -2,15 +2,15 @@
 layout: post
 title: 'Mensa plan'
 tags:
-  - Halle
+  - halle
   - mensa
-  - Programming
+  - programming
   - ugly
 categories:
-  - Perl
-  - Software
-  - University
-  - Web
+  - perl
+  - software
+  - university
+  - web
 
 ---
 

@@ -4,15 +4,15 @@ title: 'ShortCut[RegEx]: x-modifier'
 tags:
   - explained
   - pattern
-  - Programming
-  - ShortCut
+  - programming
+  - shortcut
   - simplification
   - trick
 categories:
-  - Perl
-  - Programming
-  - ShortCut
-  - Software
+  - perl
+  - programming
+  - shortcut
+  - software
 
 ---
 

@@ -2,19 +2,19 @@
 layout: post
 title: 'Sharing a Wifi connection'
 tags:
-  - Debian
-  - NAT
-  - Network
-  - Notebook
+  - debian
+  - nat
+  - network
+  - notebook
   - trick
-  - Ubuntu
+  - ubuntu
 categories:
-  - LinuxUnix
-  - Network
-  - Private
-  - Software
-  - Unix
-  - Web
+  - linuxunix
+  - network
+  - private
+  - software
+  - unix
+  - web
 
 ---
 

@@ -3,17 +3,17 @@ layout: post
 title: 'Adding a hyperlink to Java Swing GUI'
 tags:
   - hacked
-  - Iceweasel
-  - Java
-  - Network
+  - iceweasel
+  - java
+  - network
   - trick
   - userinteraction
-  - X
+  - x
 categories:
-  - Java
-  - Media
-  - Software
-  - Web
+  - java
+  - media
+  - software
+  - web
 
 ---
 

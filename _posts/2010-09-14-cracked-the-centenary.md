@@ -3,13 +3,13 @@ layout: post
 title: 'Cracked the centenary!'
 tags:
   - aptosid
-  - Debian
-  - Junk
+  - debian
+  - junk
   - kernel
-  - Sid
+  - sid
 categories:
-  - Debian
-  - Private
+  - debian
+  - private
 
 ---
 

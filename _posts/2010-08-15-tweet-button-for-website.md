@@ -2,17 +2,17 @@
 layout: post
 title: 'Tweet-button for website'
 tags:
-  - Blog
-  - Media
-  - Programming
+  - blog
+  - media
+  - programming
   - twitter
-  - Wordpress
+  - wordpress
 categories:
-  - Media
-  - Network
-  - PHP
-  - Software
-  - Web
+  - media
+  - network
+  - php
+  - software
+  - web
 
 ---
 

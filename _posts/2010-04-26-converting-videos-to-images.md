@@ -2,12 +2,12 @@
 layout: post
 title: 'Converting videos to images'
 tags:
-  - Media
-  - OpenCV
-  - Programming
+  - media
+  - opencv
+  - programming
 categories:
-  - CC
-  - Media
+  - cc
+  - media
 
 ---
 

@@ -2,15 +2,15 @@
 layout: post
 title: 'MTP and some workarounds'
 tags:
-  - Debian
-  - Media
-  - MTP
+  - debian
+  - media
+  - mtp
   - ugly
-  - Zen
+  - zen
 categories:
-  - Hardware
-  - Media
-  - Software
+  - hardware
+  - media
+  - software
 
 ---
 

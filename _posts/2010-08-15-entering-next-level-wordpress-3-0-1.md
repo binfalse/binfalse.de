@@ -2,13 +2,13 @@
 layout: post
 title: 'Entering next level: Wordpress 3.0.1'
 tags:
-  - Blog
-  - Media
-  - Wordpress
+  - blog
+  - media
+  - wordpress
 categories:
-  - Private
-  - Software
-  - Wordpress
+  - private
+  - software
+  - wordpress
 
 ---
 

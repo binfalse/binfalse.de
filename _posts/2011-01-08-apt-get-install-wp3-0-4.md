@@ -2,17 +2,17 @@
 layout: post
 title: 'apt-get install WP'
 tags:
-  - Blog
+  - blog
   - hacked
-  - Private
-  - Rumpel
-  - Wordpress
+  - private
+  - rumpel
+  - wordpress
 categories:
-  - Junk
-  - Private
-  - Software
-  - Website
-  - Wordpress
+  - junk
+  - private
+  - software
+  - website
+  - wordpress
 
 ---
 

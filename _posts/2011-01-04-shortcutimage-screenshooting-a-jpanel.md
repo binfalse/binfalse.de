@@ -2,15 +2,15 @@
 layout: post
 title: 'ShortCut[image]: ScreenShooting a JPanel'
 tags:
-  - Java
-  - Programming
-  - ShortCut
+  - java
+  - programming
+  - shortcut
   - trick
   - userinteraction
 categories:
-  - Java
-  - ShortCut
-  - Software
+  - java
+  - shortcut
+  - software
 
 ---
 

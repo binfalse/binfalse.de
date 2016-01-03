@@ -2,17 +2,17 @@
 layout: post
 title: 'Find all Text Files, recursively'
 tags:
-  - Bash
+  - bash
   - hacked
-  - Programming
-  - ShortCut
+  - programming
+  - shortcut
   - simplification
-  - Snippet
+  - snippet
 categories:
-  - LinuxUnix
-  - Shell
-  - Software
-  - Unix
+  - linuxunix
+  - shell
+  - software
+  - unix
 
 ---
 

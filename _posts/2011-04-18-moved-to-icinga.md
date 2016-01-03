@@ -3,18 +3,18 @@ layout: post
 title: 'Moved to Icinga'
 tags:
   - apache
-  - Network
+  - network
   - remote
-  - Security
+  - security
   - trick
-  - University
+  - university
 categories:
-  - Network
-  - Operatingsystem
-  - Security
-  - Software
-  - University
-  - Web
+  - network
+  - operatingsystem
+  - security
+  - software
+  - university
+  - web
 
 ---
 

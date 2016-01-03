@@ -3,12 +3,12 @@ layout: post
 title: 'Damn scoping in R'
 tags:
   - fail
-  - Junk
-  - Programming
+  - junk
+  - programming
   - ugly
 categories:
-  - R
-  - Software
+  - r
+  - software
 
 ---
 

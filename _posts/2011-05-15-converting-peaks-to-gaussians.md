@@ -3,14 +3,14 @@ layout: post
 title: 'Converting peaks to Gaussians'
 tags:
   - analyzed
-  - Bioinformatics
-  - MS
+  - bioinformatics
+  - ms
   - trick
 categories:
-  - Bioinformatics
-  - Junk
-  - Private
-  - University
+  - bioinformatics
+  - junk
+  - private
+  - university
 
 ---
 

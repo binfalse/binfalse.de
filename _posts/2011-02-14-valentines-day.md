@@ -3,13 +3,13 @@ layout: post
 title: 'Valentine''s Day'
 tags:
   - fail
-  - Junk
-  - Private
+  - junk
+  - private
   - ugly
   - wife
 categories:
-  - Junk
-  - Private
+  - junk
+  - private
 
 ---
 

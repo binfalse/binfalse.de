@@ -2,15 +2,15 @@
 layout: post
 title: 'Open Research Computation'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - journals
-  - Programming
-  - University
+  - programming
+  - university
 categories:
-  - Bioinformatics
-  - Programming
-  - Software
-  - Web
+  - bioinformatics
+  - programming
+  - software
+  - web
 
 ---
 

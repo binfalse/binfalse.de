@@ -4,21 +4,21 @@ title: 'Crypto off'
 tags:
   - explained
   - hacked
-  - Network
-  - Private
-  - Programming
-  - Security
-  - SSL
+  - network
+  - private
+  - programming
+  - security
+  - ssl
   - ugly
   - userinteraction
-  - Wordpress
+  - wordpress
 categories:
-  - Network
-  - Private
-  - Programming
-  - Security
-  - Website
-  - Wordpress
+  - network
+  - private
+  - programming
+  - security
+  - website
+  - wordpress
 
 ---
 

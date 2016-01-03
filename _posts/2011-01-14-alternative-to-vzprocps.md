@@ -2,17 +2,17 @@
 layout: post
 title: 'Alternative to vzprocps'
 tags:
-  - Bash
+  - bash
   - fail
   - hacked
   - trick
   - ugly
   - virtual
 categories:
-  - Operatingsystem
-  - Shell
-  - Software
-  - University
+  - operatingsystem
+  - shell
+  - software
+  - university
 
 ---
 

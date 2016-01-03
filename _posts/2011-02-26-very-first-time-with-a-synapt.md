@@ -2,17 +2,17 @@
 layout: post
 title: 'Very first time with a Synapt'
 tags:
-  - Bioinformatics
-  - Halle
-  - MS
-  - Private
-  - University
-  - Waters
+  - bioinformatics
+  - halle
+  - ms
+  - private
+  - university
+  - waters
 categories:
-  - Bioinformatics
-  - Hardware
-  - Private
-  - University
+  - bioinformatics
+  - hardware
+  - private
+  - university
 
 ---
 

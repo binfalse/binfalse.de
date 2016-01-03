@@ -2,13 +2,13 @@
 layout: post
 title: 'Open Source DNA'
 tags:
-  - Bioinformatics
-  - DNA
-  - NGS
-  - Security
+  - bioinformatics
+  - dna
+  - ngs
+  - security
 categories:
-  - Bioinformatics
-  - Web
+  - bioinformatics
+  - web
 
 ---
 

@@ -2,17 +2,17 @@
 layout: post
 title: 'Microscope puzzle'
 tags:
-  - Debian
-  - Media
+  - debian
+  - media
   - microscope
-  - Private
+  - private
   - puzzle
-  - Rumpel
+  - rumpel
 categories:
-  - Hardware
-  - Media
-  - Private
-  - Software
+  - hardware
+  - media
+  - private
+  - software
 
 ---
 

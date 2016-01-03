@@ -2,18 +2,18 @@
 layout: post
 title: 'Absolute Path of a Servlet Installation'
 tags:
-  - Java
-  - Network
-  - Programming
-  - Servlet
-  - Snippet
+  - java
+  - network
+  - programming
+  - servlet
+  - snippet
 categories:
-  - Java
-  - Network
-  - Snippet
-  - Software
-  - University
-  - Web
+  - java
+  - network
+  - snippet
+  - software
+  - university
+  - web
 
 ---
 

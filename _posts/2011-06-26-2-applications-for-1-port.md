@@ -3,21 +3,21 @@ layout: post
 title: '2 applications for 1 port'
 tags:
   - apache
-  - Media
-  - Network
-  - Programming
-  - Proxy
+  - media
+  - network
+  - programming
+  - proxy
   - remote
-  - Security
-  - SSH
-  - SSL
+  - security
+  - ssh
+  - ssl
   - trick
 categories:
-  - Media
-  - Network
-  - Perl
-  - Software
-  - Web
+  - media
+  - network
+  - perl
+  - software
+  - web
 
 ---
 

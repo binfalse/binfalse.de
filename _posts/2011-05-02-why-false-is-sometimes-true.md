@@ -3,19 +3,19 @@ layout: post
 title: 'Why false is sometimes true'
 tags:
   - analyzed
-  - Debian
+  - debian
   - debug
   - fail
-  - Junk
-  - LDAP
+  - junk
+  - ldap
   - ugly
-  - University
+  - university
 categories:
-  - Administration
-  - PHP
-  - Software
-  - University
-  - Web
+  - administration
+  - php
+  - software
+  - university
+  - web
 
 ---
 

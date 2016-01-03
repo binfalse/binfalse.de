@@ -4,21 +4,21 @@ title: 'encfs: transparent crypto overlay'
 tags:
   - cloud
   - crypt
-  - Debian
+  - debian
   - explained
-  - Media
+  - media
   - pam
-  - Security
+  - security
   - share
   - sync
 categories:
-  - LinuxUnix
-  - Media
-  - Network
-  - Security
-  - Software
-  - Unix
-  - Web
+  - linuxunix
+  - media
+  - network
+  - security
+  - software
+  - unix
+  - web
 
 ---
 

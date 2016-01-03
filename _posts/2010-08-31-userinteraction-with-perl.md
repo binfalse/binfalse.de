@@ -2,14 +2,14 @@
 layout: post
 title: 'Userinteraction with Perl'
 tags:
-  - Bash
+  - bash
   - hacked
-  - Programming
+  - programming
   - simplification
   - userinteraction
 categories:
-  - Perl
-  - Software
+  - perl
+  - software
 
 ---
 

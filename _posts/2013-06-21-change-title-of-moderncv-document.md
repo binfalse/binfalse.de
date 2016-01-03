@@ -4,14 +4,14 @@ title: 'Change Title of moderncv Document'
 tags:
   - analyzed
   - explained
-  - LaTeX
+  - latex
   - okular
-  - Snippet
+  - snippet
   - trick
 categories:
-  - Software
+  - software
   - tex
-  - University
+  - university
 
 ---
 

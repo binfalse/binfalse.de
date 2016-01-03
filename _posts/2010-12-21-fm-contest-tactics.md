@@ -5,11 +5,11 @@ tags:
   - contest
   - explained
   - journals
-  - Programming
+  - programming
   - trick
 categories:
-  - Programming
-  - Software
+  - programming
+  - software
 
 ---
 
