@@ -2,11 +2,11 @@
 layout: post
 title: 'n3rd goes mainstream'
 tags:
-  - Blog
-  - Wordpress
+  - blog
+  - wordpress
 categories:
-  - Website
-  - Wordpress
+  - website
+  - wordpress
 
 ---
 

@@ -4,12 +4,12 @@ title: 'Git merging showcase'
 tags:
   - explained
   - git
-  - Network
-  - Rumpel
+  - network
+  - rumpel
   - userinteraction
 categories:
-  - Network
-  - Software
+  - network
+  - software
 
 ---
 

@@ -3,18 +3,18 @@ layout: post
 title: 'Too much at once'
 tags:
   - aptitude
-  - Debian
+  - debian
   - fail
   - grml
-  - Junk
-  - Sid
+  - junk
+  - sid
   - trick
   - ugly
-  - University
+  - university
 categories:
-  - Debian
-  - Software
-  - University
+  - debian
+  - software
+  - university
 
 ---
 

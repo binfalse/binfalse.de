@@ -2,14 +2,14 @@
 layout: post
 title: 'Now I''m R-Blogging'
 tags:
-  - Bioinformatics
-  - Blog
-  - GNU
-  - Network
+  - bioinformatics
+  - blog
+  - gnu
+  - network
 categories:
-  - R
-  - Software
-  - Web
+  - r
+  - software
+  - web
 
 ---
 

@@ -3,20 +3,20 @@ layout: post
 title: 'Resort search results in SquirrelMail'
 tags:
   - hacked
-  - Mail
-  - Network
-  - Programming
-  - Thunderbird
+  - mail
+  - network
+  - programming
+  - thunderbird
   - ugly
-  - University
+  - university
   - userscript
 categories:
-  - JavaScript
-  - Mail
-  - Network
-  - Software
-  - University
-  - Web
+  - javascript
+  - mail
+  - network
+  - software
+  - university
+  - web
 
 ---
 

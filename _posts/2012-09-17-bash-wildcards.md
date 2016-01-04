@@ -2,11 +2,11 @@
 layout: post
 title: 'Bash Wildcards'
 tags:
-  - Bash
+  - bash
   - explained
 categories:
-  - Shell
-  - Software
+  - shell
+  - software
 
 ---
 

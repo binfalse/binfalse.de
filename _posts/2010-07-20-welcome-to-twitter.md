@@ -2,18 +2,18 @@
 layout: post
 title: 'Welcome to twitter'
 tags:
-  - Bash
+  - bash
   - curl
-  - Media
-  - Network
-  - Programming
+  - media
+  - network
+  - programming
   - twitter
 categories:
-  - Media
-  - Perl
-  - Shell
-  - Software
-  - Web
+  - media
+  - perl
+  - shell
+  - software
+  - web
 
 ---
 

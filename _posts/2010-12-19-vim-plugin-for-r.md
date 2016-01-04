@@ -2,16 +2,16 @@
 layout: post
 title: 'Vim plugin for R'
 tags:
-  - Bioinformatics
-  - GNU
-  - Programming
+  - bioinformatics
+  - gnu
+  - programming
   - trick
   - userinteraction
   - vim
 categories:
-  - Bioinformatics
-  - R
-  - Software
+  - bioinformatics
+  - r
+  - software
 
 ---
 

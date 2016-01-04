@@ -2,14 +2,14 @@
 layout: post
 title: 'From distance matrix to binary tree'
 tags:
-  - Bioinformatics
-  - Clustering
+  - bioinformatics
+  - clustering
   - explained
-  - Tree
-  - University
+  - tree
+  - university
 categories:
-  - Bioinformatics
-  - University
+  - bioinformatics
+  - university
 
 ---
 

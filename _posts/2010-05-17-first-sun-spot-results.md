@@ -2,18 +2,18 @@
 layout: post
 title: 'First SUN Spot results'
 tags:
-  - Java
-  - Media
-  - Programming
+  - java
+  - media
+  - programming
   - spaughts
-  - SUNSpot
-  - University
+  - sunspot
+  - university
 categories:
-  - Hardware
-  - Java
-  - Media
-  - Software
-  - University
+  - hardware
+  - java
+  - media
+  - software
+  - university
 
 ---
 

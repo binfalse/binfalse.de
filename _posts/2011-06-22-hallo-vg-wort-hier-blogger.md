@@ -4,16 +4,16 @@ title: 'Hallo VG WORT - hier Blogger'
 tags:
   - explained
   - journals
-  - Media
-  - Network
-  - Private
+  - media
+  - network
+  - private
   - trick
   - wort
 categories:
-  - Media
-  - Network
-  - Private
-  - Website
+  - media
+  - network
+  - private
+  - website
 
 ---
 

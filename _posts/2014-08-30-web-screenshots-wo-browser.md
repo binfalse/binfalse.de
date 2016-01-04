@@ -2,11 +2,11 @@
 layout: post
 title: 'Web Screenshots. W/O browser!'
 categories:
-  - Media
-  - Network
-  - Private
-  - Software
-  - Web
+  - media
+  - network
+  - private
+  - software
+  - web
 
 ---
 

@@ -10,8 +10,13 @@ containing the following:
 
     deb http://apt.binfalse.de binfalse main
 
+Packages are signed with my [GPG key 8D2DD9BD](http://binfalse.de/wp-content/uploads/2010/04/MartinScharm-8D2DD9BD.asc).
+
 For those as lazy as me:
 
-    sudo echo "deb http://apt.binfalse.de binfalse main" > /etc/apt/sources.list.d/binfalse.list
+    echo "deb http://apt.binfalse.de binfalse main" > /etc/apt/sources.list.d/binfalse.list
+    gpg --recv-keys 8D2DD9BD --keyserver pgp.mit.edu
+    gpg --export 8D2DD9BD | apt-key add -
+    aptitude update
 
 All packages I provide are prefixed with `bf-`.

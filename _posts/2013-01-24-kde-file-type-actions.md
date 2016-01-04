@@ -3,14 +3,14 @@ layout: post
 title: 'KDE file type actions'
 tags:
   - kde
-  - Media
+  - media
   - okular
   - userinteraction
 categories:
-  - Media
-  - Network
-  - Software
-  - Web
+  - media
+  - network
+  - software
+  - web
 
 ---
 

@@ -3,20 +3,20 @@ layout: post
 title: 'J-vs-T goes Java'
 tags:
   - hacked
-  - Jabber
-  - Java
-  - Media
-  - Network
-  - Programming
+  - jabber
+  - java
+  - media
+  - network
+  - programming
   - simplification
   - twitter
   - userinteraction
 categories:
-  - Java
-  - Media
-  - Network
-  - Software
-  - Web
+  - java
+  - media
+  - network
+  - software
+  - web
 
 ---
 

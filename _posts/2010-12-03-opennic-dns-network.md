@@ -2,17 +2,17 @@
 layout: post
 title: 'OpenNIC DNS network'
 tags:
-  - DNS
-  - Google
-  - Network
-  - Programming
-  - Security
-  - University
+  - dns
+  - google
+  - network
+  - programming
+  - security
+  - university
 categories:
-  - Network
-  - Perl
-  - University
-  - Web
+  - network
+  - perl
+  - university
+  - web
 
 ---
 

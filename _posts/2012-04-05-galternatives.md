@@ -3,15 +3,15 @@ layout: post
 title: galternatives
 tags:
   - aptitude
-  - Debian
+  - debian
   - simplification
   - trick
-  - Ubuntu
+  - ubuntu
   - userinteraction
 categories:
-  - Debian
-  - Media
-  - Software
+  - debian
+  - media
+  - software
 
 ---
 

@@ -2,23 +2,23 @@
 layout: post
 title: 'Sync the clock w/o NTP'
 tags:
-  - Debian
+  - debian
   - fail
-  - Network
+  - network
   - remote
-  - Security
+  - security
   - time
   - trick
-  - Ubuntu
+  - ubuntu
   - ugly
-  - University
+  - university
 categories:
-  - Administration
-  - Debian
-  - LinuxUnix
-  - Network
-  - Security
-  - University
+  - administration
+  - debian
+  - linuxunix
+  - network
+  - security
+  - university
 
 ---
 

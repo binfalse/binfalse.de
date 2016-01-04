@@ -4,16 +4,16 @@ title: 'YEAH - second in fM contest'
 tags:
   - contest
   - journals
-  - Media
-  - Network
-  - Private
-  - Programming
+  - media
+  - network
+  - private
+  - programming
 categories:
-  - Java
-  - Network
-  - Private
-  - Software
-  - Web
+  - java
+  - network
+  - private
+  - software
+  - web
 
 ---
 

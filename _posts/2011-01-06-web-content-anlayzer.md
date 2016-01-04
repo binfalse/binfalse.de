@@ -3,21 +3,21 @@ layout: post
 title: 'web content anlayzer'
 tags:
   - analyzed
-  - Blog
-  - Clustering
-  - GNU
-  - Media
-  - Network
-  - Private
-  - Programming
+  - blog
+  - clustering
+  - gnu
+  - media
+  - network
+  - private
+  - programming
 categories:
-  - Media
-  - Network
-  - Perl
-  - Private
-  - R
-  - Software
-  - Website
+  - media
+  - network
+  - perl
+  - private
+  - r
+  - software
+  - website
 
 ---
 

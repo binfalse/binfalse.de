@@ -2,7 +2,7 @@
 layout: post
 title: 'Extended MyTinyTodo'
 categories:
-  - Junk
+  - junk
 
 ---
 

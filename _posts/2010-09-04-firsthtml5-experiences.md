@@ -2,16 +2,16 @@
 layout: post
 title: 'First HTML5 experiences'
 tags:
-  - Firefox
-  - Iceweasel
-  - Media
-  - Programming
+  - firefox
+  - iceweasel
+  - media
+  - programming
 categories:
-  - HTML
-  - JavaScript
-  - Media
-  - Software
-  - Web
+  - html
+  - javascript
+  - media
+  - software
+  - web
 
 ---
 

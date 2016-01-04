@@ -2,13 +2,13 @@
 layout: post
 title: 'Useful git stuff'
 categories:
-  - Software
-  - Programming
+  - software
+  - programming
 tags:
   - simplification
   - log
   - git
-  - Programming
+  - programming
 ---
 
 ## Setup
@@ -49,6 +49,9 @@ git config --global alias.s "status -s"
 
 # shortcut for commiting
 git config --global alias.c "commit -a"
+
+# shortcut for checkout
+git config --global alias.co "checkout"
 
 # shortcut for checkout
 git config --global alias.co "checkout"

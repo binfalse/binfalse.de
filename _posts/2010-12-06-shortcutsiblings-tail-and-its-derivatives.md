@@ -2,15 +2,15 @@
 layout: post
 title: 'ShortCut[siblings]: tail and its derivatives'
 tags:
-  - GNU
+  - gnu
   - log
-  - Network
-  - ShortCut
+  - network
+  - shortcut
   - userinteraction
 categories:
-  - Operatingsystem
-  - ShortCut
-  - Software
+  - operatingsystem
+  - shortcut
+  - software
 
 ---
 

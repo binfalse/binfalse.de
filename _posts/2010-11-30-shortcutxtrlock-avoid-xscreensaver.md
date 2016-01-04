@@ -2,16 +2,16 @@
 layout: post
 title: 'ShortCut[xtrlock]: Avoid Xscreensaver'
 tags:
-  - Bash
+  - bash
   - hacked
-  - Media
-  - ShortCut
+  - media
+  - shortcut
   - trick
   - userinteraction
 categories:
-  - Media
-  - ShortCut
-  - Software
+  - media
+  - shortcut
+  - software
 
 ---
 

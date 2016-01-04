@@ -4,18 +4,18 @@ title: 'Auth issues'
 tags:
   - analyzed
   - c
-  - Debian
-  - GNU
-  - Google
+  - debian
+  - gnu
+  - google
   - log
-  - Sid
-  - SSH
+  - sid
+  - ssh
   - trick
 categories:
-  - CC
-  - Junk
-  - LinuxUnix
-  - Software
+  - cc
+  - junk
+  - linuxunix
+  - software
 
 ---
 

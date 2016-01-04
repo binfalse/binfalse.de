@@ -3,14 +3,14 @@ layout: post
 title: 'Conditionally autoscroll a JScrollPane'
 tags:
   - explained
-  - Java
-  - Programming
+  - java
+  - programming
   - trick
   - userinteraction
 categories:
-  - Java
-  - Media
-  - Software
+  - java
+  - media
+  - software
 
 ---
 

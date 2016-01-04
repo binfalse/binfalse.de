@@ -4,18 +4,18 @@ title: 'They are following you!'
 tags:
   - analyzed
   - explained
-  - Firefox
-  - Google
-  - Media
-  - Network
+  - firefox
+  - google
+  - media
+  - network
   - twitter
   - ugly
   - userinteraction
 categories:
-  - Network
-  - Private
-  - Software
-  - Web
+  - network
+  - private
+  - software
+  - web
 
 ---
 

@@ -2,18 +2,18 @@
 layout: post
 title: 'Advanced searching via Z-Algorithm'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - explained
-  - Java
+  - java
   - pattern
-  - Programming
+  - programming
   - search
-  - University
+  - university
 categories:
-  - Bioinformatics
-  - Java
-  - Software
-  - University
+  - bioinformatics
+  - java
+  - software
+  - university
 
 ---
 

@@ -2,17 +2,17 @@
 layout: post
 title: 'YOURLS Firefox Extension Version 1.4'
 tags:
-  - Firefox
-  - Iceweasel
-  - Media
-  - Network
-  - Programming
+  - firefox
+  - iceweasel
+  - media
+  - network
+  - programming
   - userinteraction
 categories:
-  - JavaScript
-  - Media
-  - Network
-  - Web
+  - javascript
+  - media
+  - network
+  - web
 
 ---
 

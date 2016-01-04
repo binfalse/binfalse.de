@@ -8,20 +8,20 @@ tags:
   - debug
   - explained
   - hacked
-  - Halle
-  - Java
-  - Media
-  - Network
-  - Programming
+  - halle
+  - java
+  - media
+  - network
+  - programming
   - simplification
   - trick
 categories:
-  - Java
-  - Media
-  - Network
-  - Perl
-  - Software
-  - Web
+  - java
+  - media
+  - network
+  - perl
+  - software
+  - web
 
 ---
 

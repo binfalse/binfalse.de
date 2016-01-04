@@ -3,13 +3,13 @@ layout: post
 title: 'Umlauts on English keyboards'
 tags:
   - hacked
-  - Junk
+  - junk
   - keyboard
-  - Media
+  - media
   - userinteraction
 categories:
-  - Junk
-  - Media
+  - junk
+  - media
 
 ---
 

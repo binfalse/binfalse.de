@@ -4,11 +4,11 @@ title: 'Smart game'
 tags:
   - c
   - game
-  - Programming
+  - programming
   - puzzle
 categories:
-  - CC
-  - Software
+  - cc
+  - software
 
 ---
 

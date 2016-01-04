@@ -2,19 +2,19 @@
 layout: post
 title: 'Suffix trees'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - explained
-  - Java
+  - java
   - pattern
-  - Programming
+  - programming
   - search
-  - Tree
-  - University
+  - tree
+  - university
 categories:
-  - Bioinformatics
-  - Java
-  - Software
-  - University
+  - bioinformatics
+  - java
+  - software
+  - university
 
 ---
 

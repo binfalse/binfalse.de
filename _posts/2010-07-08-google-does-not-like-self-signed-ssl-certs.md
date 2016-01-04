@@ -3,15 +3,15 @@ layout: post
 title: 'Google does not like self-signed SSL certs'
 tags:
   - apache
-  - Blog
-  - Google
-  - Security
-  - SSL
+  - blog
+  - google
+  - security
+  - ssl
   - ugly
 categories:
-  - Network
-  - Security
-  - Web
+  - network
+  - security
+  - web
 
 ---
 

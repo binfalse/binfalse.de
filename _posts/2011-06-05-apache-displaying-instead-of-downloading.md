@@ -4,15 +4,15 @@ title: 'Apache: displaying instead of downloading'
 tags:
   - apache
   - explained
-  - Firefox
-  - Media
+  - firefox
+  - media
   - trick
   - userinteraction
-  - Wordpress
+  - wordpress
 categories:
-  - Media
-  - Software
-  - Web
+  - media
+  - software
+  - web
 
 ---
 

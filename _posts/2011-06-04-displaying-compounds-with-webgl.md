@@ -2,19 +2,19 @@
 layout: post
 title: 'Displaying compounds with WebGL'
 tags:
-  - Bioinformatics
+  - bioinformatics
   - chemistry
   - crazy
-  - Media
-  - Programming
+  - media
+  - programming
   - trick
 categories:
-  - Bioinformatics
-  - HTML
-  - JavaScript
-  - Media
-  - Software
-  - Web
+  - bioinformatics
+  - html
+  - javascript
+  - media
+  - software
+  - web
 
 ---
 

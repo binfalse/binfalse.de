@@ -2,17 +2,17 @@
 layout: post
 title: 'You don''t know the flash-trick?'
 tags:
-  - Flash
-  - Junk
-  - Media
-  - Network
-  - SunRay
-  - University
+  - flash
+  - junk
+  - media
+  - network
+  - sunray
+  - university
 categories:
-  - Junk
-  - Software
-  - Unix
-  - Web
+  - junk
+  - software
+  - unix
+  - web
 
 ---
 

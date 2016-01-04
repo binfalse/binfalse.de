@@ -3,14 +3,14 @@ layout: post
 title: 'Plotting w/o X'
 tags:
   - crazy
-  - GNU
+  - gnu
   - remote
   - simplification
   - trick
-  - X
+  - x
 categories:
-  - Media
-  - Software
+  - media
+  - software
 
 ---
 
