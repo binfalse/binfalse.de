@@ -4,9 +4,21 @@ layout: post
 published: true
 date: 2016-01-04 16:51:37 +0100
 categories:
-  - uncategorized
+  - network
+  - security
+  - software
+  - administration
 tags:
-  - untagged
+  - debian
+  - docker
+  - job
+  - network
+  - privacy
+  - proxy
+  - remote
+  - ssh
+  - x
+  - social
 ---
 
 As I'm now permanently installed at our University (***yeah!***) I probably need to use skype more often than desired. However, I still try to avoid proprietary software, and skype is the worst of all. Skype is a 
