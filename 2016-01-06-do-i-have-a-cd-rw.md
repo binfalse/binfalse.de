@@ -20,7 +20,7 @@ tags:
   - trick
 ---
 
-Don't know whether the CD drive on your machine is able to burn CDs? And too lazy to go off with your head under your table? Or you're remote on the machine?
+Don't know whether the CD drive on your machine is able to burn CDs? And too lazy to go off with your head under your table? Or you're remote on the machine? Then that's your command line:
 
 ~~~~~~~ bash
 $ cat /proc/sys/dev/cdrom/info                                                                                                                                       martin@gauss pts/6
@@ -48,4 +48,4 @@ Can write MRW:          1
 Can write RAM:          1
 ~~~~~~~
 
-Works on Debian based systems :)
+Works on [Debian](https://www.debian.org/) [based](http://www.ubuntu.com/) [systems](http://linuxmint.com/) :)
