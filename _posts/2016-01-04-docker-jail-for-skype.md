@@ -23,7 +23,7 @@ tags:
 
 {% include image.html align="alignright" url="/assets/media/pics/2016/docker-skype-jail.png" img="/assets/media/pics/2016/docker-skype-jail.png" title="A jail for skype powered by Docker!" caption="A jail for skype powered by Docker!" maxwidth="300px" %}
 
-As I'm now permanently installed at our University (***yeah!***) I probably need to use skype more often than desired. However, I still try to avoid proprietary software, and skype is the worst of all. Skype is a 
+As I'm now permanently installed at our University (***yeah!***) I probably need to use skype more often than desired. However, I still try to avoid proprietary software, and skype is the worst of all. Skype is an 
 
 > [obfuscated](http://www.oklabs.net/skype-reverse-engineering-the-long-journey/) [malicious](http://linux.slashdot.org/story/07/08/26/1312256/skype-linux-reads-password-and-firefox-profile) binary blob with network capabilities
 
@@ -109,7 +109,3 @@ The script is also available from my [apt repo](/software/conf-rc/sources-list/)
 echo "deb http://apt.binfalse.de binfalse main" > /etc/apt/sources.list.d/binfalse.list
 apt-get update && apt-get install bf-skype-on-docker
 ~~~~~~~~
-
-
-
-
