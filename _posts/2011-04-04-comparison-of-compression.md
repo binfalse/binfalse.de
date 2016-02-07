@@ -32,22 +32,15 @@ This is nothing scientific! I just took standard parameters, you might optimize 
 
 I've chosen some usual compression methods, here is a short digest (more or less copy&paste from the man pages):
 
-<dl>
-<dt>gzip</dt>
-<dd>uses Lempel-Ziv coding (LZ77), cmd:  `tar czf $1.pack.tar.gz $1` </dd>
-<dt>bzip2</dt>
-<dd>uses the Burrows-Wheeler block sorting text compression algorithm and Huffman coding, cmd:  `tar cjf $1.pack.tar.bz2 $1` </dd>
-<dt>zip</dt>
-<dd>analogous to a combination of the Unix commands tar(1) and compress(1) and is compatible with PKZIP (Phil Katz's ZIP for MSDOS systems), cmd:  `zip -r $1.pack.zip $1` </dd>
-<dt>rar</dt>
-<dd>proprietary archive file format, cmd:  `rar a  $1.pack.rar $1` </dd>
-<dt>lha</dt>
-<dd>based on Lempel-Ziv-Storer-Szymanski-Algorithm (LZSS) and Huffman coding, cmd:  `lha a $1.pack.lha $1` </dd>
-<dt>lzma</dt>
-<dd>Lempel-Ziv-Markov chain algorithm, cmd:  `tar --lzma -cf $1.pack.tar.lzma $1` </dd>
-<dt>lzop</dt>
-<dd>imilar to gzip but favors speed over compression ratio, cmd:  `tar --lzop -cf $1.pack.tar.lzop $1` </dd>
-</dl>
+
+* **gzip:** uses Lempel-Ziv coding (LZ77), cmd:  `tar czf $1.pack.tar.gz $1` 
+* **bzip2:** uses the Burrows-Wheeler block sorting text compression algorithm and Huffman coding, cmd:  `tar cjf $1.pack.tar.bz2 $1` 
+* **zip:** analogous to a combination of the Unix commands tar(1) and compress(1) and is compatible with PKZIP (Phil Katz's ZIP for MSDOS systems), cmd:  `zip -r $1.pack.zip $1` 
+* **rar:** proprietary archive file format, cmd:  `rar a  $1.pack.rar $1` 
+* **lha:** based on Lempel-Ziv-Storer-Szymanski-Algorithm (LZSS) and Huffman coding, cmd:  `lha a $1.pack.lha $1` 
+* **lzma:** Lempel-Ziv-Markov chain algorithm, cmd:  `tar --lzma -cf $1.pack.tar.lzma $1` 
+* **lzop:** imilar to gzip but favors speed over compression ratio, cmd:  `tar --lzop -cf $1.pack.tar.lzop $1` 
+
 
 All times are user times, measured by the unix time command. To visualize the results I plotted them using R, compression efficiency at X vs. time at Y. The best results are of course located near to the origin.
 
