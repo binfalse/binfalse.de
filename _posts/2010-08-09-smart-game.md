@@ -12,9 +12,9 @@ categories:
 
 ---
 
-Yesterday, while waiting in traffic jam, I implemented a small game. I read about this game in a book and before I was even annoying about the waiting time I opened the lid of my laptop and wrote this game. This morning I completed it with some usual stuff to increase the usability..
+Yesterday, while waiting in a traffic jam, I implemented a small game. I read about this game in a book and to not get too annoyed about the waiting time I opened the lid of my laptop and wrote this game. This morning I completed it with some usual stuff to increase the usability..
 
-It's written in C++ and you can play against the CPU. There is a strategy that makes you win in almost every case! This game is a classic in game theory, but when I give you it's original name it is to easy for you to solve the problem with help from Wikipedia or something like that.
+It's written in C++ and you can play against the CPU. There is a strategy that makes you win in almost every case! This game is a classic in game theory, but if I provide you with it's original name it'll too easy for you to solve the problem with help from Wikipedia or something like that.
 So just try it on you own ;)
 
 The aim of the game is to clear all the stacks that are filled with  `o` 's. The stacks may look like this:
@@ -32,11 +32,11 @@ stack   size
 {% endhighlight %}
 
 
-Now it is your turn to choose one of these stacks and remove some or all  `o` 's of it. Please notice that you have to remove at least one of them and you can only remove  `o` 's from <strong>one</strong> single stack!
-After your turn, the <em>artificial intelligence</em> will do the same. Afterward it's again your turn, until all stacks are cleared. Winner is the one who cleared the last stack, so try to get the last  `o`  ;)
+Now it is your turn to choose one of these stacks and remove some or all  `o`'s of it. Notice that **you have to** remove at least one of them and you can only remove  `o`'s from **one** single stack!
+After your turn, the *artificial intelligence* will do the same. Afterwards it's again your turn, until all stacks are cleared. Winner is the one who cleared the last stack, so try to get the last  `o`  ;)
 <a href='/wp-content/uploads/pipapo/c-cpp/nim.cpp'>Here is the download</a>.
 
-The number of stacks and the maximum number of  `o` 's a stack can carry you can choose by your own:
+You can choose the number of stacks and the maximum number of  `o`'s a stack can carry:
 
 
 {% highlight bash %}

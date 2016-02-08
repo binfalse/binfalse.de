@@ -37,6 +37,6 @@ It's taking part that counts! ;-)
 I attached my bot, it's licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>. In some further articles I'll explain some smart details of my code, I think some of them are quiet nice to know.
 
 <div class="download"><strong>Download:</strong>
-Java: <a href='http://pipapo.git.sourceforge.net/git/gitweb.cgi?p=pipapo/pipapo;a=tree;f=java/fm-contest;hb=HEAD'>Repository @ SourceForge</a>
+Java: <a href='https://github.com/binfalse/stuff/tree/master/java/fm-contest'>Repository @ GitHub</a>
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
 </div>
