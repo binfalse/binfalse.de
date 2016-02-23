@@ -11,9 +11,9 @@ categories:
 
 ---
 
-I just wanted to split a video file in each single frame and did not find a program that solves this problem. A colleague recommended <a href="http://sourceforge.net/projects/virtualdub/">videodub</a>, but when I see DLL's or .exe I get insane! I already worked a little bit with <a href="http://opencv.willowgarage.com/wiki/">OpenCV</a> and coded my own solution, containing only a few lines.
+I just wanted to split a video file in each single frame and did not find a program that solves this problem. A colleague recommended <a href="http://sourceforge.net/projects/virtualdub/">videodub</a>, but when I see DLL's or a `.exe` I get insane! I've been working a little bit with <a href="http://opencv.willowgarage.com/wiki/">OpenCV</a> before and coded my own solution, containing only a few lines.
 
-The heart of my program consists of the following 13 lines:
+The heart of my solution consists of the following 13 lines:
 
 
 
@@ -35,7 +35,7 @@ cvReleaseCapture( &capture );
 
 <!--wordpress parser is not able to recognize shifts in c, comment debugs ;) -->
 
-It just queries each frame of the AVI and writes it to an image file. It's not a big deal.
+It just queries each frame of the AVI and writes it to an image file. Thus, not a big deal.
 
 The complete code can be <a href='/wp-content/uploads/2010/04/vidsplit.cpp'>downloaded here</a>.
 All you need is <a href="http://opencv.willowgarage.com/wiki/">OpenCV</a> and a C++ compiler:
