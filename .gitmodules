@@ -4,9 +4,6 @@
 [submodule "assets/resources/MathJax"]
 	path = assets/resources/MathJax
 	url = https://github.com/mathjax/MathJax.git
-[submodule "assets/media/wp-content/uploads/xtb"]
-	path = assets/media/wp-content/uploads/xtb
-	url = git@github.com:binfalse/XTB.git
 [submodule "assets/resources/lightbox2"]
 	path = assets/resources/lightbox2
 	url = https://github.com/lokesh/lightbox2/
