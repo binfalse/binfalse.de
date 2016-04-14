@@ -1,1 +1,36 @@
-check_extreme_fdb.pl
+---
+layout: page
+title: check_extreme_fdb.pl
+
+---
+
+This script monitors the FDB table of an [**<span style="color:#472E8D">Extreme Networks</span>**](http://www.extremenetworks.com/) device via <a href="http://de.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP</a>.
+
+[**>>>> There is an extra article dedicated for this script.**](/2016/02/05/monitoring-of-xos-devices)
+
+It accepts the following arguments:
+
+* `-s <SWITCH>` the switch's hostname or ip address
+* `-C <COMMUNITY-STRING>` the community string as configured on the switch
+* `-T <TIMEOUT>` optionally provide a timeout in seconds. This timeout defaults to the value configured in `/usr/lib/nagios/plugins/utils.pm` (usually something around 15 seconds).
+* `-e <EXPECTED>` expected entries: if those mac addresses appear they are expected to be in that vlan and on that port
+* `-P` or `--print` displays fdb, you can use this as a template for the `<EXPECTED>` file
+* `-W` or `--warn` warn if an expected entry wasn't found
+* `-h` show the help.
+
+Tested with different XOS versions and SNMP protocol version 2c. If you want to use a different SNMP protocol version, just modify the  `Net::SNMP->session(...)`  call.
+
+<a href='https://github.com/binfalse/stuff/blob/master/monitoring/check_extreme_fdb.pl'>Here is the code</a>.
+
+<h2>Dependencies</h2>
+<ul>
+	<li><a href="http://search.cpan.org/perldoc?Net::SNMP">Net::SNMP</a></li>
+	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='https://github.com/binfalse/stuff/raw/master/monitoring/check_extreme_fdb.pl'>check_catalyst_fans.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>
+
