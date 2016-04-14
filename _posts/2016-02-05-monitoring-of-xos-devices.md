@@ -37,3 +37,68 @@ A bit more logic for a warning/critical switch and the plugin is done.
 ## The Feature: Monitoring of the FDB
 
 But I would probably not write about that basic stuff if there was not an extra feature!
+I implemented a script to also monitor the FDB.
+FDB is and abbreviation for forwarding databases: The switch maintains a forwarding database (FDB) of all MAC addresses received on all of its ports. It, for example, uses the information in this database to decide whether a frame should be forwarded or filtered. Each entry consists of
+
+* the MAC address of the device behind the port
+* the associated VLAN
+* the age of the entry -- depending on the configuration the entries age out of the table
+* some flags -- e.g. is the entry dynamic or static
+* the port
+
+The table may look like the following:
+
+~~~~~~bash
+> show fdb
+Mac                     Vlan       Age  Flags         Port / Virtual Port List
+------------------------------------------------------------------------------
+01:23:45:67:89:ab    worknet(0060) 0056 n m           9
+01:23:42:67:89:ab     mobnet(0040) 0001 n m           21
+
+Flags : d - Dynamic, s - Static, p - Permanent, n - NetLogin, m - MAC, i - IP,
+        x - IPX, l - lockdown MAC, L - lockdown-timeout MAC, M- Mirror, B - Egress Blackhole,
+        b - Ingress Blackhole, v - MAC-Based VLAN, P - Private VLAN, T - VLAN translation,
+        D - drop packet, h - Hardware Aging, o - IEEE 802.1ah Backbone MAC,
+        S - Software Controlled Deletion, r - MSRP
+~~~~~~
+
+As soon as the switch gets a frame on one port it learns the corresponding MAC address, port number, etc. into this table. So if a frame for this MAC address arrives it know where to send it to.
+
+However, that content of a networking class.
+All we need to know is that a switch can tell you <s>which device</s> which MAC address is is connected to which port.
+And that's the idea of [`check_extreme_fdb.pl`](/software/nagios/check_extreme_fdb-pl/)! It compares the entries of the FDB with some expected entries in an CSV file. The CSV is supposed to contain three coloumns:
+
+~~~~~~bash
+mac,port,vlan
+~~~~~~
+
+If a MAC address in the FDB matches the MAC address in the CSV file it checks the ports and vlans.
+If those do not match, it will raise an error.
+
+For the CSV: Feel free to leave port or vlan empty if you do not care about this detail.
+That means, if you just want to make sure that the device with the MAC `01:23:45:67:89:ab` is in vlan `worknet` you add an entry such as:
+
+~~~~~~bash
+01:23:45:67:89:ab,,worknet
+~~~~~~
+
+Use `-e <FILE>` to pass the CSV file containing expected entry to the program and call it like beckham:
+
+~~~~~~bash
+perl -w check_extreme_fdb.pl -s <SWITCH> -C <COMMUNITY-STRING> -e <EXPECTED>
+~~~~~~
+
+Here, `SWITCH` being the switch's address and `COMMUNITY-STRING` beeing the SNMP "passphrase". You may also want to add `-w` to raise a warning if one of the entries in the CSV file wasn't found in the FDB. To create a sample CSV file that matches the current FDB you can call it with `--print`.
+
+To get the script have a look at [the `check_extreme_fdb.pl` software page](/software/nagios/check_extreme_fdb-pl/).
+
+
+## More Extreme Stuff
+
+In addition there are some other scripts to monitor [**<span style="color:#472E8D">Extreme Networks</span>**](http://www.extremenetworks.com/) devices:
+
+* [check_extreme_fans.pl](/software/nagios/check_extreme_fans-pl/)
+* [check_extreme_fdb.pl](/software/nagios/check_extreme_fdb-pl/)
+* [check_extreme_mem.pl](/software/nagios/check_extreme_mem-pl/)
+* [check_extreme_powersupply.pl](/software/nagios/check_extreme_powersupply-pl/)
+* [check_extreme_temp.pl](/software/nagios/check_extreme_temp-pl/)
