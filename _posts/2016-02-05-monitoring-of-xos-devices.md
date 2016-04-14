@@ -9,7 +9,7 @@ tags:
   - untagged
 ---
 
-{% include image.html align="alignright" url="assets/media/pics/2016/no-move-pc.png" img="assets/media/pics/2016/no-move-pc.png" title="Monitor Relocation of Hardware" caption="Monitor Relocation of Hardware" maxwidth="200px" %}
+{% include image.html align="alignright" url="/assets/media/pics/2016/no-move-pc.png" img="/assets/media/pics/2016/no-move-pc.png" title="Monitor Relocation of Hardware" caption="Monitor Relocation of Hardware" maxwidth="200px" %}
 
 This week I developed some plugins for Nagios/Icinga to monitor network devices of the vendor [**<span style="color:#472E8D">Extreme Networks</span>**](http://www.extremenetworks.com/). All these plugins receive status information of, eg. switches, via SNMP.
 
