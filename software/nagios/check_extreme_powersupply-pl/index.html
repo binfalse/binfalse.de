@@ -1,0 +1,31 @@
+---
+layout: page
+title: check_extreme_powersupply.pl
+
+---
+
+This script monitors the power supply of an [**<span style="color:#472E8D">Extreme Networks</span>**](http://www.extremenetworks.com/) device via <a href="http://de.wikipedia.org/wiki/Simple_Network_Management_Protocol">SNMP</a>.
+
+It accepts the following arguments:
+
+* `-s <SWITCH>` the switch's hostname or ip address
+* `-C <COMMUNITY-STRING>` the community string as configured on the switch
+* `-T <TIMEOUT>` optionally provide a timeout in seconds. This timeout defaults to the value configured in `/usr/lib/nagios/plugins/utils.pm` (usually something around 15 seconds).
+* `-h` show the help.
+
+Tested with different XOS versions and SNMP protocol version 2c. If you want to use a different SNMP protocol version, just modify the  `Net::SNMP->session(...)`  call.
+
+<a href='https://github.com/binfalse/stuff/blob/master/monitoring/check_extreme_powersupply.pl'>Here is the code</a>.
+
+<h2>Dependencies</h2>
+<ul>
+	<li><a href="http://search.cpan.org/perldoc?Net::SNMP">Net::SNMP</a></li>
+	<li><a href="http://search.cpan.org/perldoc?Getopt::Long">Getopt::Long</a></li>
+</ul>
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Perl: <a href='https://github.com/binfalse/stuff/raw/master/monitoring/check_extreme_powersupply.pl'>check_catalyst_fans.pl</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>
+
