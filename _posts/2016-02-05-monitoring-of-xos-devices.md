@@ -15,7 +15,7 @@ This week I developed some plugins for Nagios/Icinga to monitor network devices 
 
 ## The Basic: Check Mem, CPU, and Fans
 
-Checking for free memory, for CPU load, and for fan states is quite straight forward. You just ask the switch for the values of a few OIDs, evaluate the answer, and tell Nagios/Icinga what to do.
+Checking for [available memory](/software/nagios/check_extreme_mem-pl/), for the [device's temperature](/software/nagios/check_extreme_temp-pl/), for the [power supplies](/software/nagios/check_extreme_powersupply-pl/), and for [fan states](/software/nagios/check_extreme_fans-pl/) is quite straight forward. You just ask the switch for the values of a few OIDs, evaluate the answer, and tell Nagios/Icinga what to do.
 
 The [Simple Network Management Protocol](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) (SNMP) is actually a very easy to use protocol. There is an SNMP server, such as a router or a switch, which exposes management data through the SNMP protocol. To access these data you just send an [object identify](https://en.wikipedia.org/wiki/Object_identifier) (OID) to an SNMP server and receive the corresponding value. So called [management information bases](https://en.wikipedia.org/wiki/Management_information_base) (MIB) can tell you what a certain OID stands for.
 
