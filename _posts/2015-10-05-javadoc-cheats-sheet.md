@@ -63,7 +63,6 @@ tags:
  * <p>
  * We directly operate on the ZIP file, which will be kept open. Therefore, do
  * not forget to finally close the CombineArchive when you're finished.
- * </p>
  * 
  * @see <a href="https://sems.uni-rostock.de/projects/combinearchive/">
  *      sems.uni-rostock.de/projects/combinearchive</a>

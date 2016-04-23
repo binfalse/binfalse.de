@@ -3,9 +3,10 @@
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
+gems: ["jekyll-paginate"]
 highlighter: pygments
 markdown: kramdown
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title/
 
 defaults:
   -

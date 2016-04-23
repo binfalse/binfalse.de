@@ -130,6 +130,6 @@ There are a lot of other applications for a suffix tree structure. For example f
 I've implemented a suffix tree in Java. The tree is constructed via WOTD and finds maximal repeats and minimal unique substrings. I also wanted pictures for this post, thus, I added a functionality that prints <a href="http://www.graphviz.org/">GraphViz</a> code that represents the tree.
 
 <div class="download"><strong>Download:</strong>
-Java: <a href="http://pipapo.git.sourceforge.net/git/gitweb.cgi?p=pipapo/pipapo;a=tree;f=java/SuffixTree-WOTD;hb=HEAD">Code from Sourceforge</a>
+Java: <a href="https://github.com/binfalse/stuff/tree/master/java/SuffixTree-WOTD/de/binfalse/martin">Code from GitHub</a>
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
 </div>
