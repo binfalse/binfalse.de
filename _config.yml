@@ -25,8 +25,8 @@ author:
   bio: stuff. just for the records.
 
 rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
+categories_path: categories/
+tags_path: tags/
 
 mypages: ["about", "contact", "man-page", "opt", "software"]
 
