@@ -4,9 +4,16 @@ layout: post
 published: true
 date: 2016-02-05 22:38:30 +0100
 categories:
-  - uncategorized
+  - network
+  - administration
+  - monitoring
 tags:
-  - untagged
+  - job
+  - network
+  - monitoring
+  - icinga
+  - nagios
+  - programming
 ---
 
 {% include image.html align="alignright" url="/assets/media/pics/2016/no-move-pc.png" img="/assets/media/pics/2016/no-move-pc.png" title="Monitor Relocation of Hardware" caption="Monitor Relocation of Hardware" maxwidth="200px" %}
