@@ -1,7 +1,7 @@
 ---
 title: "Do I have a CD-RW?"
 layout: post
-published: false
+published: true
 date: 2016-01-06 22:05:05 +0100
 categories:
   - network
