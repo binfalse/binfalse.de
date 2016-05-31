@@ -17,7 +17,7 @@ tags:
   - bives
 ---
 
-{% include image.html align='alignright' url='/assets/media/pics/2016/mvn-docker.svg' img='/assets/media/pics/2016/mvn-docker.svg' title='Maven conjures Docker images' caption='Maven conjures Docker images' maxwidth='300px' %}
+{% include image.html align='alignright' url='/assets/media/pics/2016/mvn-docker.svg' img='/assets/media/pics/2016/mvn-docker.jpg' title='Maven conjures Docker images' caption='Maven conjures Docker images' maxwidth='300px' %}
 Having a Docker image of your software projects may make things easier for you, but will for sure lower the barrier for users to use your tools &mdash; at least in many cases ;-)
 
 
