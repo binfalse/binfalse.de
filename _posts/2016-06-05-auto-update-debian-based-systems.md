@@ -4,9 +4,18 @@ layout: post
 published: true
 date: 2016-06-05 21:23:13 +0200
 categories:
-  - uncategorized
+  - security
+  - software
+  - administration
+  - debian
+  - operatingsystem
 tags:
-  - untagged
+  - aptitude
+  - debian
+  - job
+  - security
+  - simplification
+  - ubuntu
 ---
 
 {% include image.html align='alignright' url='/assets/media/pics/2016/automatic-os-update.svg' img='/assets/media/pics/2016/automatic-os-update.png' title='Updating System: automatically fixing security issues and installing latest features' caption='SysUpdate in Progress' maxwidth='300px' %}
@@ -21,7 +30,7 @@ aptitude upgrade
 Usually, nothing interesting happens, you just need to wait for the command to finish.
 
 ## The Problem
-The potential consequences in the 1% cases lets us usually swallow the bitter pill and play the monkey. The Problem is, that in some cases there is a an update that includes a modification of some configuration files that you adjusted. Let's say you configured a daemon to listen at a specific port of your server, but in the new version they changed the syntax of the config file. That can hardly be automatised. Leaving the old version of the config will break the software, deploying the new version will dispose your settings. Thus, human interaction is required...
+The potential consequences in the 1% cases lets us usually swallow the bitter pill and play the monkey. The Problem is, that in some cases there is a an update that involves a modification of some configuration file that contains some adjustments of you. Let's say you configured a daemon to listen at a specific port of your server, but in the new version they changed the syntax of the config file. That can hardly be automatised. Leaving the old version of the config will break the software, deploying the new version will dispose your settings. Thus, human interaction is required...
 
 At least I do not dare to think about a solution on how to automatise that. But we could ...
 
@@ -95,12 +104,23 @@ done
 Now we should have everything we need to compile it into a script that we can give to cron :)
 
 ## The safe-upgrade script
-I developed a tiny script that can be downloaded
-https://github.com/binfalse/deb-safeautoupgrade
+I developed a [tiny tool that can be downloaded from GitHub.](https://github.com/binfalse/deb-safeautoupgrade). It consists of two files:
+
+* `/etc/cron.daily/safeupdatescript.sh` is the actual acript that does the update and safe-upgrade of the system.
+* `/etc/default/deb-safeupgrade` can be used to overwrite the settings (hostname, mail address of the admin, etc) for a system. If it exists, the other script will `source` it.
+
+In addition, there is a Debian package available from my apt-repository. Just install it with:
+
+{% highlight bash %}
+aptitude install bf-safeupgrade
+{% endhighlight %}
+
+and let me know if there are any issues.
+
 
 ## Disclaimer
-*
-* 99% is just a guess and vary. It strongly depends on your system, version, and software installed ;-)
+
+The mentioned figure `99%` is just a guess and may vary. It strongly depends on your operating system, version, and the software installed ;-)
 
 
 ## References
@@ -110,14 +130,3 @@ https://github.com/binfalse/deb-safeautoupgrade
 * [A short introduction to cron-apt](https://debian-administration.org/article/162/A_short_introduction_to_cron-apt) by [Joe Topjian](https://debian-administration.org/users/joe)
 
 
-{% include image.html align='alignright' url='/assets/media/pics/2016/' img='/assets/media/pics/2016/' title='ALT' caption='CAPTION' maxwidth='300px' %}
-
-{% highlight bash %}
-some code
-{% endhighlight %}
-
-*italics*
-
-**strong**
-
-[link](url)
