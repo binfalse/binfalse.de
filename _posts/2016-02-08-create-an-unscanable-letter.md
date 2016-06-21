@@ -5,8 +5,13 @@ published: true
 date: 2016-02-08 14:32:38 +0100
 categories:
   - tex
+  - junk
 tags:
-  - untagged
+  - LaTeX
+  - pdf
+  - trick
+  - privacy
+  - junk
 ---
 
 {% include image.html align='alignright' url='/assets/media/wp-content/uploads/stuff/tex/eurion/preview.png' img='/assets/media/wp-content/uploads/stuff/tex/eurion/preview.png' title="The EURion constallation on a letter" caption="The EURion constallation on a letter" maxwidth=300px %}
