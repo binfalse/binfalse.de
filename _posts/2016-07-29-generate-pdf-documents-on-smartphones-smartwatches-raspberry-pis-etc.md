@@ -4,9 +4,21 @@ layout: post
 published: true
 date: 2016-07-29 22:56:49 +0200
 categories:
-  - uncategorized
+  - network
+  - software
+  - web
+  - php
+  - publication
+  - linuxunix
 tags:
-  - untagged
+  - LaTeX
+  - docker
+  - latex
+  - media
+  - network
+  - pdf
+  - remote
+  - smartwhatever
 ---
 
 
