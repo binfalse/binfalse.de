@@ -96,6 +96,10 @@ curl -F project=@/tmp/zipfile.zip -F filename=somedir/example.tex http://localho
 The resulting PDF document can then be found in `/tmp/pdffile.pdf`.
 
 
+### More Examples
+
+The GIT project over at [GitHub contains some more examples for different programming languages.](https://github.com/binfalse/TEXPILE/tree/master/example) It also comes with some sample projects, so you can give it a try without much hassle...
+
 
 ## Error Control
 
@@ -112,4 +116,11 @@ Depending on how far it has come with it's job, you'll find some error messages 
 Using TEXPILE it is super easy to generate PDF document from every device with network access.
 You can for example export some sensor data as a nice table from your smartwatch, or some medic information as graphs and formulas from you fitbit, or create [tikz](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)-images on a raspberry pi, you can even instantly generate new versions of an [EULA](https://en.wikipedia.org/wiki/End-user_license_agreement) on your google glasses...
 
+TEXPILE is free software and I am always super-happy when people contribute to open tools! Thus, go ahead and
 
+* Send comments, issues, and feature requests by creating a new ticket
+* Spread the tool: Tell your friends, share your thoughts in your blog, etc.
+* Propose new modifications: fork the repo -- add your changes -- send a pull request
+* Contribute more example code for other languages
+
+No matter if it's actual code extensions, more examples, bug fixes, typo corrections, artwork/icons: Everything is welcome!!
