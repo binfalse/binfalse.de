@@ -38,8 +38,8 @@ In most cases the controls consist of a single keyword that tells PAM what to do
 
 * **required:** if a 'required' module is not successful, the operation will ultimately fail. **BUT** only after the modules below are done! That is because an attacker shouldn't know which or when a module fails. So all modules will be invoked even if the first on fails, giving less information to the bad guys. Just note, that a single failure of a 'required' module will cause the whole thing to fail, even if everything else succeeds.
 * **requisite:** similar to required, but the whole thing will fail immediately and the following modules won't be invoked.
-* **sufficient:**a successful 'sufficient' module is enough to satisfy the requirements in that realm. That means, the following 'sufficient' won't be invoked! However, sufficient modules are only sufficient, that means (i) they may fail but the realm may still be satisfied by something else, and (ii) they may all succeed but the realm may fail because a required module failed.
-* **optional:** man pam.conf says "the success or failure of this module is only important if it is the only module in the stack associated with this service+type."
+* **sufficient:** a successful 'sufficient' module is enough to satisfy the requirements in that realm. That means, the following 'sufficient' won't be invoked! However, sufficient modules are only sufficient, that means (i) they may fail but the realm may still be satisfied by something else, and (ii) they may all succeed but the realm may fail because a required module failed.
+* **optional:** optional modules may fail or not, PAM actually doesn't care. PAM only cares if there are only optional modules in a certain stack for realm. In that case at least one of them needs to succeed.
 
 
 
