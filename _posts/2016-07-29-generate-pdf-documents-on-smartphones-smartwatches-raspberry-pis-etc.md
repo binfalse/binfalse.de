@@ -22,7 +22,7 @@ tags:
 ---
 
 
-{% include image.html align='alignright' url='/assets/media/pics/2016/TEXPILE.svg' img='/assets/media/pics/2016/TEXPILE.jpg' title='TEXPILE -- compiling LaTeX projects online' caption='TEXPILE -- compiling LaTeX projects online' maxwidth='300px' %}
+{% include image.html align='alignright' url='/assets/media/pics/2016/TEXPILE.svg' img='/assets/media/pics/2016/TEXPILE.jpg' title='TEXPILE  &#8211; compiling LaTeX projects online' caption='TEXPILE  &#8211; compiling LaTeX projects online' maxwidth='300px' %}
 
 I recently wanted to create a PDF file with a table of data on a device that did neither have much computational power nor disk space or any other available resources. So what are the options? Installing Word plus various add-ons? Or some Adobe-bloat? Pah.. that's not even running on big machines...  
 The best option is of course LaTeX. Generating a tex document is neither storage nor time intensive. But to get proper LaTeX support you need some gigabytes of disk space available and compiling a tex document requires quite some computational time... So basically also no option for *all* devices..
