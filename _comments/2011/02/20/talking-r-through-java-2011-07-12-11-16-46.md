@@ -1,10 +1,25 @@
 ---
-name: 'Martin Scharm'
-link: 'http://blog.binfalse.de'
 date: '2011-07-12 11:16:46'
-comment: "Hi Sergio,\nloading libraries works at least for me:\n\n\n{% highlight java %}\nre.eval (\"library(datasets)\");\nSystem.out.println (re.eval (\"beaver1[1,1]\").asDouble ());\n{% endhighlight %}\n\n\nMaybe your library can't be found by R itself? Where is it located? Could you please tell me the thrown error!?\nMaybe changing the R library search path might help you:\n\n\n{% highlight java %}\nre.parseAndEval(\".libPaths(/DIR/OF/YOUR/LIB/)\");\n{% endhighlight %}\n\n"
+link: http://blog.binfalse.de
+name: Martin Scharm
 post_id: /2011/02/20/talking-r-through-java
-
 ---
 
+Hi Sergio,
+loading libraries works at least for me:
+
+
+{% highlight java %}
+re.eval ("library(datasets)");
+System.out.println (re.eval ("beaver1[1,1]").asDouble ());
+{% endhighlight %}
+
+
+Maybe your library can't be found by R itself? Where is it located? Could you please tell me the thrown error!?
+Maybe changing the R library search path might help you:
+
+
+{% highlight java %}
+re.parseAndEval(".libPaths(/DIR/OF/YOUR/LIB/)");
+{% endhighlight %}
 

@@ -1,8 +1,8 @@
 ---
-name: 'binfalse'
 date: '2016-09-07 16:33:08'
-link: 'https://binfalse.de'
-post_id: "/2016/06/21/forget-the-at-use-curl-file-create"
+link: https://binfalse.de
+name: binfalse
+post_id: /2016/06/21/forget-the-at-use-curl-file-create
 ---
 
 Hi Frank,

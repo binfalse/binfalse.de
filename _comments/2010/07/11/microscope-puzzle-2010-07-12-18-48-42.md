@@ -1,10 +1,8 @@
 ---
-name: Maria
-link: ''
 date: '2010-07-12 18:48:42'
-comment: 'Q - battery'
+link: ''
+name: Maria
 post_id: /2010/07/11/microscope-puzzle
-
 ---
 
-
+Q - battery
