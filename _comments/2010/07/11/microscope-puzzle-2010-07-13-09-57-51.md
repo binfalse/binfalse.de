@@ -5,5 +5,5 @@ name: Michael Rennecke
 post_id: /2010/07/11/microscope-puzzle
 ---
 
-3: paring
-O: fish -&gt; Bad Fischau-Brunn
+* 3: paring
+* O: fish -&gt; Bad Fischau-Brunn

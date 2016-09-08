@@ -5,10 +5,10 @@ name: Norman
 post_id: /2010/07/11/microscope-puzzle
 ---
 
-K - calculator
-M - screw
-O - Ice
-Q - Arrowbutton
-zoom 3 - bread or a cake or a picture from a scoped picture
+* K - calculator
+* M - screw
+* O - Ice
+* Q - Arrowbutton
+* zoom 3 - bread or a cake or a picture from a scoped picture
 
 <strong>One hit, one beer! Six beer left, so hurry up!</strong>

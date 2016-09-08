@@ -7,8 +7,8 @@ post_id: /2010/07/11/microscope-puzzle
 
 hoping to break the record......
 
-V - pencil
-L - sugar (could also be salt, but than it would be unfair ^^)
+* V - pencil
+* L - sugar (could also be salt, but than it would be unfair ^^)
 
 all of other pics i am not allowed to solve :(
 
