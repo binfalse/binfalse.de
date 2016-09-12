@@ -60,9 +60,11 @@ git config --global alias.co "checkout"
 git config --global alias.d "pull origin --all --tags"
 git config --global alias.u "push origin --all --tags"
 
-
 # diff two commits using meld
 git config --global alias.meld "difftool -d -t meld"
+
+# show ignored files
+git config --global alias.i "clean -ndX"
 ~~~~~~~~
 
 
