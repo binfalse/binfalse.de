@@ -7,7 +7,7 @@ gems: ["jekyll-paginate", "jekyll-sitemap"]
 highlighter: pygments
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-
+url: https://binfalse.de
 defaults:
   -
     scope:
