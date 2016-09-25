@@ -9,6 +9,7 @@ tags:
   - security
   - shortcut
   - thunderbird
+  - icedove
   - ugly
 categories:
   - mail

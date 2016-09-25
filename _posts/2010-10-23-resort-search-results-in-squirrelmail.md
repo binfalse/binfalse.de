@@ -7,6 +7,7 @@ tags:
   - network
   - programming
   - thunderbird
+  - icedove
   - ugly
   - university
   - userscript
