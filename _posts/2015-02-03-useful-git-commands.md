@@ -41,7 +41,7 @@ I'm using the following aliases:
 # beautify the log: list actions of last 14 days in a tree like view
 git config --global alias.lg "log --all --pretty=format:'%x09%C(bold blue)%an%Creset%x09%Cred%h%Creset %Cgreen%ad%Creset%x09%s%d' --graph --date=short  --since='14 days ago'"
 
-# serach for a particular thing in the history
+# search for a particular thing in the history
 git config --global alias.search "log --all --pretty=format:'%x09%C(bold blue)%an%Creset%x09%Cred%h%Creset %Cgreen%ad%Creset%x09%s%d' --graph --date=short -m -i -G"
 
 # shortcut for the status

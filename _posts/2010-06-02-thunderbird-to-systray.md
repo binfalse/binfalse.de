@@ -8,6 +8,7 @@ tags:
   - network
   - notebook
   - thunderbird
+  - icedove
 categories:
   - debian
   - mail

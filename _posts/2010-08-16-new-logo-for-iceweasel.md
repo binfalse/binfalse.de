@@ -6,6 +6,7 @@ tags:
   - junk
   - latex
   - thunderbird
+  - icedove
   - ugly
 categories:
   - junk
