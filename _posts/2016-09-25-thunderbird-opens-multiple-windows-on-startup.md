@@ -25,6 +25,7 @@ That's of course a bit annoying.
 The preferences dialog doesn't seem to offer a button for that.
 I've been looking for a solution on the internet, but wasn't able to find something.
 And unfortunately, there is an easy workaround: Just close the second window after startup...
+The other window will appear again with the next start of Icedove/Thunderbird, but that's the problem of future-me.
 These nasty easy workarounds!
 You won't fix the problem and it tends to bug you a little harder with every appearance.
 
@@ -113,4 +114,22 @@ However, it seems to be stable now.
 And if it ever happens again I'll know how to fix it.
 
 Easy solution, should have fixed that immediately!
+
+
+## Update
+
+{% include image.html align='alignright' url='/assets/media/pics/2016/thunderbird-attention-firetray-options.png' img='/assets/media/pics/2016/thunderbird-attention-firetray-options.png' title='Fix the settings in FireTray' caption='Fix the settings in FireTray (version 0.6.1)' maxwidth='300px' %}
+
+I found out what caused the problem: It is [FireTray](https://addons.mozilla.org/en-US/thunderbird/addon/firetray/) -- an extension that I'm using to have a systray notification icon.
+This extension sits in the systray and changes its icon when a new mail arrives.
+That's super useful, but...
+**by default it doesn't close windows but just hides them to systray!**
+That means you can restore them in the context menu of the systray icon...
+And that means that the windows aren't really closed and will appear again with the next start of the application.
+
+
+To change that behaviour just right-click the icon and click *Preferences.*
+A dialog window will pop up and you just need to unselect the *Closing window hides to systray.*
+Compare the screenshot.
+You may also go for *Only last window can be hidden.*
 
