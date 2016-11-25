@@ -25,6 +25,8 @@ tags:
   - ssl
 ---
 
+{% include image.html align="alignright" url="/assets/media/pics/2016/docker-mail-delivery.svg" img="/assets/media/pics/2016/docker-mail-delivery.png" title="Sending Mails from within a Docker Container" caption="Sending Mails from within a Docker Container" maxwidth="300px" %}
+
 Dockerizing everything is fun and gives rise to sooo many ideas and opportunities.
 However, sometimes it's also annoying as ....
 For example, I just tried to use a Docker container for a PHP application that sends emails.
