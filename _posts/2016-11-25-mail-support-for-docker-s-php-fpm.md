@@ -39,7 +39,9 @@ That means the PHP container doesn't know anything about emailing.
 Even worse, the configuration tool that comes with PHP tries configuring the `sendmail_path` to something like `$SENDMAILBINARY -t -i`.
 That obviously fails, because there is no sendmail binary and `$SENDMAILBINARY` remains empty, thus the actual setting becomes:
 
-    sendmail_path = " -t -i"
+{% highlight bash %}
+sendmail_path = " -t -i"
+{% endhighlight %}
 
 That, in turn, leads to absurd messages in your log files, because there is no such binary as `-t`:
 
@@ -57,15 +59,17 @@ Afterwards I needed to configure the sSMTP as well as the PHP mail setup.
 
 Nothing easier than that, just create a Dockerfile based on php:fpm and install sSMTP through apt:
 
-	FROM php:fpm
-	MAINTAINER martin scharm <https://binfalse.de>
-	
-	# Install sSMTP for mail support
-	RUN apt-get update \
-		&& apt-get install -y -q --no-install-recommends \
-			ssmtp \
-		&& apt-get clean \
-		&& rm -r /var/lib/apt/lists/*
+{% highlight dockerfile %}
+FROM php:fpm
+MAINTAINER martin scharm <https://binfalse.de>
+
+# Install sSMTP for mail support
+RUN apt-get update \
+	&& apt-get install -y -q --no-install-recommends \
+		ssmtp \
+	&& apt-get clean \
+	&& rm -r /var/lib/apt/lists/*
+{% endhighlight %}
 
 Docker-build that image either through command line or using [Docker Compose](https://www.docker.com/products/docker-compose) or whatever is your workflow.
 For this example, let's call this image [binfalse/php-fpm-extended](https://hub.docker.com/r/binfalse/php-fpm-extended/).
@@ -80,11 +84,11 @@ And last but not least I allowed the applications to overwrite of the *From* fie
 Finally, your full configuration may look like:
 
 {% highlight bash %}
-	FromLineOverride=YES
-	mailhub=mail.server.tld
-	hostname=php-fpm.yourdomain.tld
-	UseTLS=YES
-	UseSTARTTLS=YES
+FromLineOverride=YES
+mailhub=mail.server.tld
+hostname=php-fpm.yourdomain.tld
+UseTLS=YES
+UseSTARTTLS=YES
 {% endhighlight %}
 
 Just store that in a file, e.g. `/path/to/ssmtp.conf`. We'll mount that into the container later on.
@@ -94,8 +98,10 @@ Just store that in a file, e.g. `/path/to/ssmtp.conf`. We'll mount that into the
 Even if we installed the sSMTP the PHP configuration is still invalid, we need to set the `sendmail_path` correctly.
 That's actually super easy, just create a file containing the following lines:
 
-	[mail function]
-	sendmail_path = "/usr/sbin/ssmtp -t"
+{% highlight bash %}
+[mail function]
+sendmail_path = "/usr/sbin/ssmtp -t"
+{% endhighlight %}
 
 Save it as `/path/to/php-mail.conf` to mount it into the container later on.
 
@@ -110,19 +116,21 @@ To run it, you would need to mount the following things:
 
 Thus a Docker Compose configuration may look like:
 
-    fpm:
-        restart: always
-        image: binfalse/php-fpm-extended
-        volumes:
-            # CONFIG
-            - /path/to/ssmtp.conf:/etc/ssmtp/ssmtp.conf:ro
-            - /path/to/php-mail.conf:/usr/local/etc/php/conf.d/mail.ini:ro
-            # PHP scripts
-            - /path/to/scripts:/scripts/:ro
-        logging:
-            driver: syslog
-            options:
-                tag: docker/fpm
+{% highlight bash %}
+fpm:
+	restart: always
+	image: binfalse/php-fpm-extended
+	volumes:
+		# CONFIG
+		- /path/to/ssmtp.conf:/etc/ssmtp/ssmtp.conf:ro
+		- /path/to/php-mail.conf:/usr/local/etc/php/conf.d/mail.ini:ro
+		# PHP scripts
+		- /path/to/scripts:/scripts/:ro
+	logging:
+		driver: syslog
+		options:
+			tag: docker/fpm
+{% endhighlight %}
 
 Give it a try and let me know if that doesn't work!
 
