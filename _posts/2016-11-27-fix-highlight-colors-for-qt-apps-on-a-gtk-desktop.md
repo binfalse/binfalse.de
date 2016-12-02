@@ -36,7 +36,7 @@ Just install it (here for Qt4 applications):
 aptitude install qt4-qtconfig
 {% endhighlight %}
 
-When you then run `qt4-qtconfig` a window will pop up, as you can see in the figure on the right:
+When you run `qt4-qtconfig` a window will pop up, as you can see in the figure on the right:
 
 1. Select a *GUI Style* that is **not** *Desktop Settings (Default)*, e.g. *Cleanlooks*.
 2. Then you can click the *Tune Palette...* button in the *Build Palette* section.
