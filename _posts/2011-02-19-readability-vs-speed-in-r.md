@@ -33,7 +33,7 @@ He worked out, that parentheses in mathematical expression slow down the run-tim
 > 
 > # in contrast with curly brackets
 > h <- function (n) for (i in 1:n) 1/{1*{1+x}}
-> i <- function (n) for (i in 1:n) {{{1/{{{1*{{{1+x}}}}}}}}}
+{% raw  %}> i <- function (n) for (i in 1:n) {{{1/{{{1*{{{1+x}}}}}}}}}{% endraw %}
 > system.time(h(10^6))
    user  system elapsed 
   1.974   0.000   1.974 
