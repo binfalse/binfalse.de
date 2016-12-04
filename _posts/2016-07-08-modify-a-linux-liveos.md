@@ -3,9 +3,19 @@ title: "Modify a linux LiveOS"
 layout: post
 date: 2016-07-08 14:31:17 +0200
 categories:
-  - uncategorized
+  - software
+  - university
+  - administration
+  - debian
+  - linuxunix
+  - howto
 tags:
-  - untagged
+  - squashfs
+  - debian
+  - explained
+  - extension
+  - network
+  - trick 
 ---
 
 By default I'm using GRML when I need a live operating system. I installed it to one of my USB pen drives and (almost) always carry it with me.
