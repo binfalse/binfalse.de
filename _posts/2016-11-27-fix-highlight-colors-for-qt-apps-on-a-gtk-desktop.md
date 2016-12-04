@@ -4,9 +4,20 @@ layout: post
 published: true
 date: 2016-11-27 20:14:42 +0100
 categories:
-  - uncategorized
+  - software
+  - junk
+  - linuxunix
+  - howto
 tags:
-  - untagged
+  - config
+  - fix
+  - media
+  - okular
+  - pdf
+  - private
+  - trick
+  - userinteraction
+  - x
 ---
 
 {% include image.html align='alignright' url='/assets/media/pics/2016/okular-highlight-default.png' img='/assets/media/pics/2016/okular-highlight-default.png' title='Okular: highlighted text is hardly readable' caption='Okular: highlighted text is hardly readable' maxwidth='300px' %}
