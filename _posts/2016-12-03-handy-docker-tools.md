@@ -4,9 +4,19 @@ layout: post
 published: true
 date: 2016-12-03 23:13:53 +0100
 categories:
-  - uncategorized
+  - software
+  - shell
+  - administration
+  - linuxunix
+  - shortcut
 tags:
-  - untagged
+  - bash
+  - docker
+  - git
+  - private
+  - shortcut
+  - simplification
+  - virtual
 ---
 
 
