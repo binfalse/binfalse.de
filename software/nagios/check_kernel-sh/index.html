@@ -1,0 +1,36 @@
+---
+layout: page
+title: check_mount.pl
+
+---
+
+A <a href="http://www.nagios.com/">Nagios</a>-plugin to check if a machine is running the latest kernel.
+
+It basically compares the output of `uname -r` with available `/boot/vmlinuz-*` files, so it should be somewhat generic and is supposed to work for most linux based systems. Let me know if it's not working for you.
+The script doesn't expect any arguments.
+
+<a href='/wp-content/uploads/pipapo/monitoring/check_kernel.sh'>Here is the code</a>:
+
+{% highlight bash %}
+current_kernel=$(uname -r)
+latest_kernel=$(find /boot/ -name vmlinuz-* | sort -V | tail -1 | sed 's/.*vmlinuz-//')
+
+if [ "$current_kernel" = "$latest_kernel" ]
+then
+    echo "running kernel is $current_kernel"
+    exit ${STATE_OK}
+else
+    echo "your kernel $current_kernel is outdated, please boot into $latest_kernel"
+    exit ${STATE_WARNING}
+fi
+{% endhighlight %}
+
+<small>(this is just an excerpt of the actual monitoring script -- please look into the file <a href='/wp-content/uploads/pipapo/monitoring/check_kernel.sh'>check_kernel.sh</a>)</small>
+
+
+Please consider to take a look at my <a href="/software/nagios/plugin-setup-notes/">general setup notes</a>.
+
+<div class="download"><strong>Download:</strong>
+Shell: <a href='/wp-content/uploads/pipapo/monitoring/check_kernel.sh'>check_kernel.sh</a>
+<small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://bt.binfalse.de/">bugs and feature requests</a>.)</small>
+</div>
