@@ -74,7 +74,7 @@ If you now have a look into the `/mnt/mountain/usb/` directory you will see the 
 Fortunately, the `syslinux` tool is able to install it to your pen drive:
 
 {% highlight bash %}
-syslinux /dev/sdg1
+syslinux /dev/sdX1
 {% endhighlight %}
 
 The syslinux bootloader still need some configuration, but GRML alreay contains them. Just copy them from the USB's`/boot/isolinux/` into the *root* of the pen drive:
