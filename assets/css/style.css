@@ -361,3 +361,13 @@ table caption
 	text-align: right;
 	padding: 0.5em 0;
 }
+
+
+
+
+
+a.link-noborder:hover
+{
+    border: none
+}
+

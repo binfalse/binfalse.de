@@ -2,7 +2,7 @@
 <div class="image-wrapper {{ include.align }}" >
     <figure>
     {% if include.url %}
-    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank" data-lightbox="{{post_id}}{{page.id}}{{page.url}}" data-title="{{include.caption}}">
+    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank" data-lightbox="{{post_id}}{{page.id}}{{page.url}}" data-title="{{include.caption}}" class="link-noborder">
     {% endif %}
         <img src="{{ include.img }}" alt="{{ include.title }}"
 				{% if include.maxwidth %}
