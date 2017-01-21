@@ -4,9 +4,20 @@ layout: post
 published: true
 date: 2017-01-21 15:58:31 +0100
 categories:
-  - uncategorized
+  - network
+  - administration
+  - unix
+  - operatingsystem
+  - howto
 tags:
-  - untagged
+  - ssh
+  - rsync
+  - zfs
+  - freebsd
+  - recovery
+  - fail
+  - network
+  - remote
 ---
 
 {% include image.html align='alignright' url='/assets/media/pics/2017/freebsd-boot.png' img='/assets/media/pics/2017/freebsd-boot.png' title='Booting into FreeBSD' caption='Booting into FreeBSD' maxwidth='300px' %}
