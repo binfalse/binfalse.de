@@ -15,7 +15,8 @@ tags:
   - explained
   - extension
   - network
-  - trick 
+  - trick
+  - rsync
 ---
 
 By default I'm using GRML when I need a live operating system. I installed it to one of my USB pen drives and (almost) always carry it with me.
@@ -110,6 +111,7 @@ As I said, the image of the file system can be found in `/live/grml64-full/grml6
 In the following I will just use the 64bit version in `/live/grml64-full/grml64-full.squashfs`, but it can be applied to the 32bit version euqivalently -- just update the paths.
 
 As the SquashFS is read-only you need to mount it and copy all the data to a location on a read-write file system.
+To copy the stuff preserving all attributes I recommend using [the `rsync` tool](https://rsync.samba.org/).
 Let's assume your pen drive is again mounted to `/mnt/mountain/usb` and `/storage/modified-livecd` is mounted as RW:
 
 {% highlight bash %}
