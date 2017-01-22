@@ -9,7 +9,7 @@ group: navigation
 {% assign tag_words = site_tags | split:',' | sort %}
 
 
-<div class="col-sm-3 col-xs-6">
+<div id="ctlist" class="col-sm-3 col-xs-6">
     <ul class="nav nav-tabs-vertical">
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
       {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}

@@ -5,7 +5,7 @@ header: Posts By Category
 group: navigation
 ---
 
-<div class="col-sm-3 col-xs-6">
+<div id="ctlist" class="col-sm-3 col-xs-6">
     <ul class="nav nav-tabs-vertical">
       {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}

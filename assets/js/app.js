@@ -13,4 +13,15 @@ $( document ).ready(function() {
 	
 	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
 
+    if ($('#ctlist').length)
+    {
+        $('#ctlist').css('height', $(document).height() - 250);
+        if(window.location.hash)
+        {
+            var hash = window.location.hash;
+            if ($(hash).length)
+                $(hash).addClass ("active");
+        }
+    }
+
 });
