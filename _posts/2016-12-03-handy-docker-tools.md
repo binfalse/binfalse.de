@@ -99,10 +99,10 @@ Similarly, you can pass `-s` to enable *silent mode* and suppress messages about
 
 Installing the tools is very easy:
 Just clone the [Docker-Tools git repository at GitHub](https://github.com/binfalse/docker-tools).
-If you're using Debian based systems you may also install the tools [through my apt-repository](/software/apt-repo/):
+If you're using a Debian based system you may also install the tools [through my apt-repository](/software/apt-repo/):
 
 {% highlight bash %}
 aptitude install bf-docker-tools
 {% endhighlight %}
 
-This way, you'll always stay up-to-date with bug fixes etc.
+This way, you'll stay up-to-date with bug fixes etc.
