@@ -17,12 +17,13 @@ tags:
   - shortcut
   - simplification
   - virtual
+  - update
 ---
 
 
 {% include image.html align='alignright' url='/assets/media/pics/2016/docker-toolbox.svg' img='/assets/media/pics/2016/docker-toolbox.png' title='Handy Docker Tools' caption='Docker Tools' maxwidth='300px' %}
 
-As I'm working with Docker quite intensively it was about time to develop some tools that help me managing different tasks.
+As I'm working with [Docker](https://www.docker.com/) quite intensively it was about time to develop some tools that help me managing different tasks.
 Some of them have already been existing as functions in my environment or something, but now they are assembled in [a git repository at GitHub](https://github.com/binfalse/docker-tools).
 
 The toolbox currently consists of the following tools:.
