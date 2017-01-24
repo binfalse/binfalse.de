@@ -8,6 +8,7 @@ tags:
   - trick
   - ubuntu
   - userinteraction
+  - update
 categories:
   - debian
   - media

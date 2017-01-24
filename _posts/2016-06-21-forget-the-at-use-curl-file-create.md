@@ -10,7 +10,7 @@ categories:
   - web
   - programming
 tags:
-  - upgrade
+  - update
   - network
   - programming
 ---

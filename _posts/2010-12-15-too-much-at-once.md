@@ -11,6 +11,7 @@ tags:
   - trick
   - ugly
   - university
+  - update
 categories:
   - debian
   - software

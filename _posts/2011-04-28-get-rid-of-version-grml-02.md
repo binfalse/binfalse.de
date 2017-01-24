@@ -8,6 +8,7 @@ tags:
   - junk
   - kernel
   - sid
+  - update
 categories:
   - debian
   - software

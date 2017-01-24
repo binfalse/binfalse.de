@@ -10,13 +10,13 @@ tags:
   - security
   - ugly
   - university
+  - update
 categories:
   - debian
   - php
   - security
   - software
   - web
-
 ---
 
 I just had a confusing problem: instead of interpreting PHP-scripts in our webserver's <em>userdir</em> apache serves them for download!

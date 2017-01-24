@@ -16,6 +16,7 @@ tags:
   - security
   - simplification
   - ubuntu
+  - update
 ---
 
 {% include image.html align='alignright' url='/assets/media/pics/2016/automatic-os-update.svg' img='/assets/media/pics/2016/automatic-os-update.png' title='Updating System: automatically fixing security issues and installing latest features' caption='SysUpdate in Progress' maxwidth='300px' %}
