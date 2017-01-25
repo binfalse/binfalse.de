@@ -9,57 +9,70 @@ Here I publish some monitoring-plugins written by me, you can use them with <a h
 
 <dl>
 <dt><a href="/software/nagios/check_catalyst_fans-pl/">check_catalyst_fans.pl</a></dt>
-<dd>This script monitors the <em>fan</em> status of a Cisco catalyst via SNMP.</dd>
+<dd>monitors the <em>fan</em> status of a Cisco catalyst via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_catalyst_flash-pl/">check_catalyst_flash.pl</a></dt>
-<dd>This script monitors the <em>flash</em> status of a Cisco catalyst via SNMP.</dd>
+<dd>monitors the <em>flash</em> status of a Cisco catalyst via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_catalyst_load-pl/">check_catalyst_load.pl</a></dt>
-<dd>This script monitors the <em>load</em> of a Cisco catalyst via SNMP.</dd>
+<dd>monitors the <em>load</em> of a Cisco catalyst via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_catalyst_mem-pl/">check_catalyst_mem.pl</a></dt>
-<dd>This script monitors the <em>memory</em> of a Cisco catalyst via SNMP.</dd>
+<dd>monitors the <em>memory</em> of a Cisco catalyst via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_catalyst_temp-pl/">check_catalyst_temp.pl</a></dt>
-<dd>This script monitors the <em>temperature</em> of a Cisco catalyst via SNMP.</dd>
+<dd>monitors the <em>temperature</em> of a Cisco catalyst via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_extreme_fans-pl/">check_extreme_fans.pl</a></dt>
-<dd>This script monitors the <em>fans</em> of an Extreme Networks device via SNMP.</dd>
+<dd>monitors the <em>fans</em> of an Extreme Networks device via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_extreme_fdb-pl/">check_extreme_fdb.pl</a></dt>
-<dd>This script monitors the <em>FDB</em> of an Extreme Networks device via SNMP.</dd>
+<dd>monitors the <em>FDB</em> of an Extreme Networks device via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_extreme_mem-pl/">check_extreme_mem.pl</a></dt>
-<dd>This script monitors the <em>memory</em> of an Extreme Networks device via SNMP.</dd>
+<dd>monitors the <em>memory</em> of an Extreme Networks device via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_extreme_powersupply-pl/">check_extreme_powersupply.pl</a></dt>
-<dd>This script monitors the <em>power supply</em> of an Extreme Networks device via SNMP.</dd>
+<dd>monitors the <em>power supply</em> of an Extreme Networks device via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_extreme_temp-pl/">check_extreme_temp.pl</a></dt>
-<dd>This script monitors the <em>temperature</em> of an Extreme Networks device via SNMP.</dd>
+<dd>monitors the <em>temperature</em> of an Extreme Networks device via SNMP.</dd>
 
 <dt><a href="/software/nagios/check_hp_health-pl/">check_hp_health.pl</a></dt>
 <dd>Monitor the health state of you HP ProLiant.</dd>
 
 <dt><a href="/software/nagios/check_imapds-sh/">check_imapds.sh</a></dt>
-<dd>This script checks the number of imap-deamons and warns if it reaches the maximum number.</dd>
+<dd>checks the number of imap-deamons and warns if it reaches the maximum number.</dd>
 
 <dt><a href="/software/nagios/check_kernel-sh/">check_kernel.sh</a></dt>
-<dd>Monitor the state of your kernels</dd>
+<dd>monitors the state of your kernels</dd>
 
 <dt><a href="/software/nagios/check_mount-pl/">check_mount.pl</a></dt>
-<dd>A Nagios-plugin to check if a device is <em>mounted</em>.</dd>
+<dd>checks if a device is <em>mounted</em>.</dd>
 
 <dt><a href="/software/nagios/check_pykota-sh/">check_pykota.sh</a></dt>
-<dd>This script checks whether PyKota is running.</dd>
+<dd>checks whether PyKota is running.</dd>
 
 <dt><a href="/software/nagios/check_ubc-pl/">check_UBC.pl</a></dt>
-<dd>A Nagios-plugin to monitor fail-counts of OpenVZ containers.</dd>
+<dd>monitors fail-counts of OpenVZ containers.</dd>
 
 <dt><a href="/software/nagios/check_url_shortener-pl/">check_url_shortener.pl</a></dt>
-<dd>Check if an URL shortener does its job.</dd>
+<dd>checks if an URL shortener does its job.</dd>
 
 <dt><a href="/software/nagios/check_wp-php/">check_wp.php</a></dt>
-<dd>Monitoring the WordPress up-to-date status.</dd>
+<dd>monitors the WordPress up-to-date status.</dd>
 </dl>
 
+## Get + Install
+
+The source code of these [scripts is available from GitHub.](https://github.com/binfalse/monitoring)
+
+
+If you are running a Debian-based system you may want to [use my apt-repository to install the extra monitoring plugins](https://binfalse.de/software/apt-repo/).
+In that case you just need to run
+
+{% highlight bash %}
+aptitude install bf-monitoring
+{% endhighlight %}
+
+This will install the plugins to `/usr/lib/nagios/bf-plugins` and you'll always stay up-to-date with bug fixes and new features :)
