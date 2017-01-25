@@ -25,7 +25,7 @@ To create such a key pair, containing private and public key, just type  `ssh-ke
 
 
 
-{% highlight %}
+```
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 Created directory '/home/user/.ssh'.
@@ -47,7 +47,7 @@ The key's randomart image is:
 | . .o|
 | o. |
 +-----------------+
-{% endhighlight %}
+```
 
 
 
