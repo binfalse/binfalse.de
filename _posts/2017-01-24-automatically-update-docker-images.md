@@ -66,10 +66,11 @@ Thus, currently running tools and services won't be restarted..
 Therefore, I just developed a tool called **Docker Auto-Update** that combines the benefits of both approaches.
 It first calls `dupdate -s` to update all your images and then iterates over a pre-defined list of Docker Compose environments to call a `docker-compose up -d --remove-orphans`.
 
-The tool consists of two files:
+The tool consists of three files:
 
-* a `docker-updater.sh` in `/etc/cron.daily/` that does the regular update
-* a `/etc/docker-compose-auto-update.conf` that carries a list of Docker Compose config files, one per line
+* `docker-updater.sh` in `/etc/cron.daily` that reads the configuration in `/etc/default/docker-updater` and does the regular update
+* `docker-updater` in `/etc/default` stores the configuration. You need to set the `ENABLED` variable to `1`, otherwise the update tool won't run.
+* `/etc/docker-compose-auto-update.conf` carries a list of Docker Compose environments. Add the paths to the `docker-compose.yml` files on your system, one per line
 
 As it's installed in `/etc/cron.daily/`, [cron](https://en.wikipedia.org/wiki/Cron) will take care of the job and update your images and containers on a daily basis.
 If your system is configured properly, cron will send an email to the systems administrator when it updates an image or restarts a container.
@@ -80,9 +81,18 @@ You see, no magic, but a very convenient workflow! :)
 
 # Installation
 
-To install the Docker Auto-Update tool, you may clone the [git repository at GitHub](https://github.com/binfalse/docker-auto-update).
-Then move the `docker-updater.sh` script to `/etc/cron.daily/docker-updater.sh` and create a list of Docker Compose config files in `/etc/docker-compose-auto-update.conf` - one path to a `docker-compose.yml` per line.
+### Manual
 
+To install the Docker Auto-Update tool, you may clone the [git repository at GitHub](https://github.com/binfalse/docker-auto-update).
+Then,
+
+1. move the `docker-updater.sh` script to `/etc/cron.daily/docker-updater.sh`
+2. move the `docker-updater` config file to `/etc/default/docker-updater`
+3. update the setup in `/etc/default/docker-updater` -- at least set `ENABLED=1`
+4. create a list of Docker Compose config files in `/etc/docker-compose-auto-update.conf` - one path to a `docker-compose.yml` per line.
+
+
+### Debian Package
 
 If you're using a Debian based system you may install the Docker-Tools [through my apt-repository](/software/apt-repo/):
 
@@ -90,6 +100,7 @@ If you're using a Debian based system you may install the Docker-Tools [through 
 aptitude install bf-docker-tools
 {% endhighlight %}
 
+Afterwards, configure `/etc/default/docker-updater` and at least set `ENABLED=1`.
 This way, you'll stay up-to-date with bug fixes etc.
 
 
