@@ -94,6 +94,7 @@ You may pass the `-v` to `dupdate` to enable *verbose mode* and also get a repor
 This way, you can make sure that all images are checked.
 Similarly, you can pass `-s` to enable *silent mode* and suppress messages about images that cannot be found at the registry.
 
+You may also want to look at the [Docker-Update tool?](/2017/01/24/automatically-update-docker-images/)
 
 
 # Installation
