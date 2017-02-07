@@ -4,9 +4,16 @@ layout: post
 published: true
 date: 2017-02-06 15:04:58 +0100
 categories:
-  - uncategorized
+  - software
+  - administration
+  - linuxunix
+  - howto
 tags:
-  - untagged
+  - bash
+  - backup
+  - docker
+  - mysql
+  - 
 ---
 
 Even with Docker you need to care about backups.. ;-)
@@ -32,27 +39,73 @@ That of course only matches the original MySQL image names (if you have a good r
 For every matching `$container` the script will exec the following command:
 
 {% highlight bash %}
-docker exec "$container" sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' | ${GZIP} -9 > "${BACKUP_DIR}/${NOW}_complete.sql.gz"
+docker exec "$container" \
+	sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' \
+	| ${GZIP} -9 > "${BACKUP_DIR}/${NOW}_complete.sql.gz"
 {% endhighlight %}
 
 With the following variables:
 
-* `$BACKUP_DIR` is a concatenation of `$BACKUP_BASE` (can be configured in `/etc/default/docker-mysql-backup`) and the container name,
+* `$BACKUP_DIR` is a concatenation of `$BACKUP_BASE` (configured in `/etc/default/docker-mysql-backup`) and the container name,
 * `$NOW` is the current time stamp as `date +"%Y-%m-%d_%H-%M"`.
 
+Thus, the backups are compressed, organised in subdirectories of `$BACKUP_BASE`, and the SQL-dumps have a time stamp in their names.
+`$BACKUP_BASE` defaults to `/srv/backup/mysql/`, but can be configured in `/etc/default/docker-mysql-backup`.
+
+Last but not least, the script also cleans the backups itself.
+It will keep the backups of the last 30 days and all backups of days that end with a `2`.
+So you will keep the backups from the 2<sup>nd</sup>, the 12<sup>th</sup>, and the 22<sup>nd</sup> of every month.
+
+As the script is stored in `/etc/cron.daily/` the cron tool will execute the backup script on a daily basis.
 
 
+## Restore a dump
 
-{% include image.html align='alignright' url='/assets/media/pics/2017/' img='/assets/media/pics/2017/' title='ALT' caption='CAPTION' maxwidth='300px' %}
+Restoring the dump is quite easy.
+Let's assume your container's name is `$container` and the dump to restore carries the time stamp `$date`.
+Then you just need to run:
 
 {% highlight bash %}
-some code
+docker exec "$container" -v "${BACKUP_BASE}/docker_${container}":/srv sh -c \
+      'exec gunzip < /srv/${date}_complete.sql.gz | mysql -uroot -p"$MYSQL_ROOT_PASSWORD"'
 {% endhighlight %}
 
-*italics*
+This will mount the backup directory in `/srv` of the running container and then decompress and import the SQL-dump on the fly.
 
-**strong**
 
-[link](url)
+## Installation
+
+### Manual installation through GitHub
+
+Clone the [Docker MySQL-Backup repository:](https://github.com/binfalse/docker-mysql-backup)
+
+{% highlight bash %}
+git clone https://github.com/binfalse/docker-mysql-backup.git
+{% endhighlight %}
+
+Copy the [backup script](etc/cron.daily/docker-mysql-backup) to the `cron.daily` (most likely `/etc/cron.daily/`) directory on your system:
+
+{% highlight bash %}
+cp docker-mysql-backup/etc/cron.daily/docker-mysql-backup /etc/cron.daily/
+{% endhighlight %}
+
+Copy the [configuration](etc/default/docker-mysql-backup) to `/etc/default/`:
+
+{% highlight bash %}
+cp docker-mysql-backup/etc/default/docker-mysql-backup /etc/default/
+{% endhighlight %}
+
+### Installation from my Apt repository
+
+If you're running a Debian-based system you may want to [use my apt-repository to install the Docker MySQL-Backup tool.](https://binfalse.de/software/apt-repo/)
+In that case you just need to run
+
+{% highlight bash %}
+aptitude install bf-docker-mysql-backup
+{% endhighlight %}
+
+Afterwards, look into `/etc/default/docker-mysql-backup` for configuration options.
+This way, you'll always stay up-to-date with bug fixes and new features :)
+
 
 
