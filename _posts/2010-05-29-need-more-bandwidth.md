@@ -3,6 +3,7 @@ layout: post
 title: 'Need more bandwidth!'
 tags:
   - bash
+  - backup
   - debian
   - gnu
   - lenovo

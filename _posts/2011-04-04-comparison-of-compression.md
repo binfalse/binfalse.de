@@ -3,6 +3,7 @@ layout: post
 title: 'Comparison of compression'
 tags:
   - analyzed
+  - backup
   - explained
   - grml
   - media
