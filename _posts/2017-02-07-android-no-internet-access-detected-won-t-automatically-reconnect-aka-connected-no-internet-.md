@@ -18,8 +18,7 @@ Hands up: who knows what an android device does when it sees a WiFi network comi
 Exactly, since [Lollipo (Android 5)](https://en.wikipedia.org/wiki/Android_Lollipop) your phone or tablet *leaks* a quick [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) request to check if it has internet access.
 This check is, for example, done with `clients3.google.com/generate_204`, a "webpage" that always returns an [HTTP status code `204 No Content`](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success).
 Thus, if the phone receives a `204` it is connected to the internet, otherwise it assumes that this network does not provide proper internet access or is just a [captive portal.](https://en.wikipedia.org/wiki/Captive_portal)
-See also the [CaptivePortal at the android reference.](https://developer.android.com/reference/android/net/CaptivePortal.html)
-However, that way google of course always knows when you connect from where. And how often. etc... :(
+However, that way Google of course always knows when you connect from where. And how often. And which device you're using. etc... :(
 
 
 ## How to prevent the leak
@@ -32,7 +31,7 @@ You could use [AdAway](http://www.adaway.org/) ([available from F-Droid](https:/
 
 I already maintain a convenient configuration for AdAway at [stuff.lesscomplex.org/adaway.txt](https://stuff.lesscomplex.org/adaway.txt), which blocks Google's captive portal detection.
 
-However, blocking that "feature" also has some drawbacks...
+However, blocking that "feature" also comes with some drawbacks...
 
 
 ## The downside of blocking captive portal detection
@@ -47,7 +46,7 @@ And therefore, it wouldn't connect automatically, saying
 <small>see image on top</small>
 
 
-That will probably increase your mobile data usage, as you always need (to remember) to do it manually.
+That will probably increase your mobile data usage, as you always need (to remember) to do connect manually.
 And even if you manually connect to a network "without internet" the WiFi icon will get an exclamation mark and the phone says
 
 > Connected, no Internet.
@@ -62,7 +61,7 @@ Annoying...
 ### Disable captive portal detection
 
 With a rooted phone you can simply disable captive portal detection.
-Just get a root-shell from adb (or SSH etc) to run the following command:
+Just get a root-shell through [adb](https://developer.android.com/studio/command-line/adb.html) (or [SSH](http://web.archive.org/web/20161224202927/https://wiki.cyanogenmod.org/w/Doc:_sshd) etc) to run the following command:
 
 {% highlight bash %}
 settings put global captive_portal_detection_enabled 0
@@ -72,21 +71,22 @@ One small drawback of that approach: you need to execute that again after flashi
 However, I guess you'll anyway have a small workflow for re-flashing your phone -- just add that tiny bit to it ;-)
 
 Another drawback is that you loose the captive portal detection...
-Of course, that's what you intended to do, but sometimes it may be useful to have that feature in hotels etc..
+Of course, that's what you intended, but sometimes it may be useful to have that feature in hotels etc..
 
 
-### Change the server for captive portal detection using adb
+### Change the server for captive portal detection with the Android API
 
 You can also change the URL to the captive portal server to a server under your control.
-Let's say you have a site running at [scratch.binfalse.de/generate_204](https://scratch.binfalse.de/generate_204) that simulates a *captive portal detection server backend*(!?) and always returns `204`, no matter which request, then you can use that that URL for captive portal detection!
-Override the captive portal server on a root-shell from adb (or SSH etc) by calling
+Let's say you have a site running at [`scratch.binfalse.de/generate_204`](https://scratch.binfalse.de/generate_204) that simulates a *captive portal detection server backend*(!?) and always returns `204`, no matter what request.
+Then you can use that URL for captive portal detection!
+Override the captive portal server on a root-shell (adb or SSH etc) by calling:
 
 {% highlight bash %}
 settings put global captive_portal_server scratch.binfalse.de
 {% endhighlight %}
 
-This way you retain the captive portal detection without leaking data to google.
-However, you will loose the setting when flashing the phone again..
+This way you retain the captive portal detection without leaking data to Google.
+However, you will again loose the setting when flashing the phone again..
 
 
 ### Change the server for captive portal detection using AdAway
@@ -102,7 +102,7 @@ Let's say your captive portal detection server has the IP address `5.189.140.231
 
 The webserver at `5.189.140.231` should then of course accept requests for the foreign domains.
 
-This way, you also don't leak the data to google and you will also keep the settings after flashing the phone (as long as you leave AdAway installed).
+This way, you also don't leak the data to Google and you will also keep the settings after flashing the phone (as long as you leave AdAway installed).
 However, there are also some things to keep in mind:
 First, I could imagine that Google may be a bit upset if you redirect their domains to a different server?
 And second, you don't know if those are the only servers used for captive portal detection.
@@ -113,9 +113,11 @@ If Google at some point comes up with another domain for captive portal detectio
 
 ## Supplementary material
 
+See also the [CaptivePortal description at the android reference.](https://developer.android.com/reference/android/net/CaptivePortal.html)
+
 ### Create captive portal detection server with Nginx
 
-Just add the following to your Nginx configuration:
+Just add the following to your [Nginx](http://nginx.org/) configuration:
 
 {% highlight nginx %}
 location /generate_204 { return 204; }
@@ -124,7 +126,7 @@ location /generate_204 { return 204; }
 
 ### Create captive portal detection server with Apache
 
-If you're running an Apache web server you need to enable `mod_rewrite` and create a `.htaccess` in the do [DocumentRoot](https://httpd.apache.org/docs/current/mod/core.html#documentroot) containing:
+If you're running an [Apache web server](https://httpd.apache.org/) you need to enable `mod_rewrite`, then create a `.htaccess` in the [DocumentRoot](https://httpd.apache.org/docs/current/mod/core.html#documentroot) containing:
 
 {% highlight apache %}
 <IfModule mod_rewrite.c>
@@ -137,7 +139,7 @@ If you're running an Apache web server you need to enable `mod_rewrite` and crea
 
 ### Create captive portal detection server with PHP
 
-A simple PHP script will also do the trick:
+A [simple PHP script](http://php.net/manual/en/function.http-response-code.php) will also do the trick:
 
 {% highlight php %}
 <?php http_response_code (204); ?>
