@@ -4,11 +4,25 @@ layout: post
 published: true
 date: 2017-02-07 16:09:29 +0100
 categories:
-  - uncategorized
+  - network
+  - software
+  - web
+  - howto
+  - phone
+  - cyanogen
 tags:
   - android
   - http
   - smartwhatever
+  - apache
+  - config
+  - cyanogen
+  - google
+  - network
+  - phone
+  - php
+  - privacy
+  - ssh
 ---
 
 
