@@ -19,8 +19,8 @@ tags:
   - security
 ---
 
-You probably heard about the conflict between the fields *Common Name* (`CN`) and *Subject Alt Names* (`subjectAltName`) in SSL certificates.
-It seems best practise to compare CN with the server name, for quite some time.
+You probably heard about the conflict between the fields *Common Name* (`CN`) and *Subject Alt Names* (`subjectAltName`) in [SSL certificates](https://en.wikipedia.org/wiki/Transport_Layer_Security).
+It seems best practice for clients to compare the `CN` value with the server's name.
 However, [RFC 2818](https://tools.ietf.org/html/rfc2818) already advised against using the *Common Name* and google now takes the gloves off.
 Since [Chrome version 58](https://www.chromestatus.com/features/4981025180483584) they do [not support the CN anymore, but throw an error:](https://bugs.chromium.org/p/chromium/issues/detail?id=308330)
 
@@ -30,14 +30,14 @@ Good potential for some administrative work ;-)
 
 ## Check for a Subject Alternative Names
 
-You can use `openssl` to obtain a certificate, for example for `binfalse.de`:
+You can use [OpenSSL](https://www.openssl.org/) to obtain a certificate, for example for `binfalse.de`:
 
 {% highlight bash %}
 openssl s_client -showcerts -connect binfalse.de:443 </dev/null 2>/dev/null
 {% endhighlight %}
 
-Here, openssl will connect to the server behind `binfalse.de` at port `443` (HTTPS) to request the SSL certificate and dump it to your terminal.
-OpenSSL can also print the details about a certificate. You just need to pipe the certificate into:
+Here, `openssl` will connect to the server behind `binfalse.de` at port `443` (default port for [HTTPS](https://en.wikipedia.org/wiki/HTTPS)) to request the SSL certificate and dump it to your terminal.
+`openssl` can also print the details about a certificate. You just need to pipe the certificate into:
 
 {% highlight bash %}
 openssl x509 -text -noout
@@ -142,7 +142,7 @@ Certificate:
 {% endhighlight %}
 
 
-As you can see in the `X509v3` extension this server's SSL certificate does have a Subject Alternative Name: 
+As you can see in the [`X.509` extension](https://en.wikipedia.org/wiki/X.509) this server's SSL certificate does have a Subject Alternative Name: 
 
 
 {% highlight bash %}
@@ -151,7 +151,7 @@ X509v3 Subject Alternative Name:
 {% endhighlight %}
 
 
-To quick-check one of your websites you may want to use the following:
+To quick-check one of your websites you may want to use the following [`grep`](https://en.wikipedia.org/wiki/Grep) filter:
 
 {% highlight bash %}
 openssl s_client -showcerts -connect binfalse.de:443 </dev/null | openssl x509 -text -noout | grep -A 1 "Subject Alternative Name"
