@@ -2,9 +2,6 @@
 <div class"breadcrumbs">
     <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
     {% for crumb in breadcrumbs %}
-        {% if crumb.url == "/" %}
-            {% continue %}
-        {% endif %}
 
         {% assign caption = crumb.title %}
         {% assign position = position | plus: 1 %}

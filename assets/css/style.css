@@ -392,6 +392,7 @@ a.link-noborder:hover
 font-size: .8em;
 color: #999;
 background-color: #fff;
+padding-left: 0;
 }
 
 
