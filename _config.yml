@@ -29,6 +29,6 @@ rss_path: feed.xml
 categories_path: categories/
 tags_path: tags/
 
-mypages: ["about", "contact", "man-page", "opt", "software"]
+mypages: ["contact", "man-page", "opt", "software"]
 
 BASE_PATH:
