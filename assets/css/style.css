@@ -379,3 +379,19 @@ a.link-noborder:hover
     height: 500px;
 }
 
+
+
+.breadcrumb:before
+{
+ content: "You are here: ";
+ padding-right: 1em;
+}
+
+.breadcrumb
+{
+font-size: .8em;
+color: #999;
+background-color: #fff;
+}
+
+

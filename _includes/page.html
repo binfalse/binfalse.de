@@ -1,3 +1,24 @@
+{% if page.url != "/" %}
+<div class"breadcrumbs">
+    <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+    {% for crumb in breadcrumbs %}
+        {% if crumb.url == "/" %}
+            {% continue %}
+        {% endif %}
+
+        {% assign caption = crumb.title %}
+        {% assign position = position | plus: 1 %}
+        <li class="breadcrumb-item{% if crumb.url == page.url %} active{% endif %}" property="itemListElement" typeof="ListItem">
+            {% if crumb.url != page.url %}<a property="item" typeof="WebPage" href="{{ crumb.url | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+            <span property="name">{{ caption }}</span>
+            {% if crumb.url != page.url %}</a>{% endif %}
+             <meta property="position" content="{{ position }}" />
+        </li>
+    {% endfor %}
+    </ol>
+</div>
+{% endif %}
+
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
