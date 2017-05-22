@@ -4,9 +4,14 @@ layout: post
 published: true
 date: 2016-12-02 08:13:29 +0200
 categories:
-  - uncategorized
+  - web
+  - media
+  - private
 tags:
-  - untagged
+  - config
+  - firefox
+  - iceweasel
+  - media
 ---
 
 {% include image.html align='alignright' url='/assets/media/pics/2017/mute-tube.svg' img='/assets/media/pics/2017/mute-tube.png' title='Silence Firefox' caption='Silence Firefox' maxwidth='200px' %}
