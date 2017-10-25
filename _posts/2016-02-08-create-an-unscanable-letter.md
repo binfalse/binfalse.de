@@ -29,7 +29,7 @@ wanna scan my letter?
 \includegraphics[width=7mm]{EURion.pdf}
 {% endhighlight %}
 
-The whole $$LaTeX$$ environment can be found on GitHub, together with the EURion image and stuff. I also provide [the resulting letter](/assets/media/wp-content/uploads/stuff/tex/eurion/sample.pdf).
+The whole $$LaTeX$$ environment can be found [on GitHub, together with the EURion image and stuff](https://github.com/binfalse/stuff/tree/master/tex/eurion). I also provide [the resulting letter](/assets/media/wp-content/uploads/stuff/tex/eurion/sample.pdf).
 
 Of course I immediately asked some friends to try to scan the letter, but it turns out, that not all scanners/printers are aware of the EURion... So it's a bit disappointing, but I learned another thing. Good good.
 And to be honest, I do not have a good use case. Why should I prevent someone from printing my letters? Maybe photographers can use the EURion in their images. Copyright bullshit or something...
