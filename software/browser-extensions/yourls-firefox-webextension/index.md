@@ -19,7 +19,7 @@ The YOURLS extension integrates into Firefox as a toolbar button.
 Once it's clicked you will see a popup with some options to shorten the current page's URL:
 
 
-{% include image.html url="/assets/media/pics/2017/yourls-firefox/popup.png" img="/assets/media/pics/2017/yourls-firefox/popup.png" title="Through a popup window you can shorten the current URL. It shows the original (source) version and you may provide a keyword. A click on 'shorten' sends the job to your YOURLS server and shows you the resulting short URL in the lower text field. The result can be copied to the clipboard. Two more buttons provide quick access to the extension's settings page and the YOURLS admin interface." caption="Through a popup window you can shorten the current URL. It shows the original (source) version and you may provide a keyword. A click on 'shorten' sends the job to your YOURLS server and shows you the resulting short URL in the lower text field. The result can be copied to the clipboard. Two more buttons provide quick access to the extension's settings page and the YOURLS admin interface." %}
+{% include image.html align="aligncenter" url="/assets/media/pics/2017/yourls-firefox/popup.png" img="/assets/media/pics/2017/yourls-firefox/popup.png" title="Through a popup window you can shorten the current URL. It shows the original (source) version and you may provide a keyword. A click on 'shorten' sends the job to your YOURLS server and shows you the resulting short URL in the lower text field. The result can be copied to the clipboard. Two more buttons provide quick access to the extension's settings page and the YOURLS admin interface." caption="Through a popup window you can shorten the current URL. It shows the original (source) version and you may provide a keyword. A click on 'shorten' sends the job to your YOURLS server and shows you the resulting short URL in the lower text field. The result can be copied to the clipboard. Two more buttons provide quick access to the extension's settings page and the YOURLS admin interface." %}
 
 
 The extension also adds an entry to the context menu.
@@ -27,7 +27,7 @@ If you right click into the page you'll spot the logo:
 
 
 
-{% include image.html url="/assets/media/pics/2017/yourls-firefox/context-menu.png" img="/assets/media/pics/2017/yourls-firefox/context-menu.png" title="The context menu receives another item 'Shorten URL' that can be used to trigger the popup. If you selected some text on the web page the selection will be nominated as a keykowrd, see also following picture." caption="The context menu receives another item 'Shorten URL' that can be used to trigger the popup. If you selected some text on the web page the selection will be nominated as a keykowrd, see also following picture." %}
+{% include image.html align="aligncenter" url="/assets/media/pics/2017/yourls-firefox/context-menu.png" img="/assets/media/pics/2017/yourls-firefox/context-menu.png" title="The context menu receives another item 'Shorten URL' that can be used to trigger the popup. If you selected some text on the web page the selection will be nominated as a keykowrd, see also following picture." caption="The context menu receives another item 'Shorten URL' that can be used to trigger the popup. If you selected some text on the web page the selection will be nominated as a keykowrd, see also following picture." %}
 
 
 The extension is able to detect selected text on the page.
@@ -35,13 +35,13 @@ It will propose this selection as a keyword for shortening:
 
 
 
-{% include image.html url="/assets/media/pics/2017/yourls-firefox/selection.png" img="/assets/media/pics/2017/yourls-firefox/selection.png" title="Selected text will be suggested as a keyword. You can still change it before clicking 'shorten'!" caption="Selected text will be suggested as a keyword. You can still change it before clicking 'shorten'!" %}
+{% include image.html align="aligncenter" url="/assets/media/pics/2017/yourls-firefox/selection.png" img="/assets/media/pics/2017/yourls-firefox/selection.png" title="Selected text will be suggested as a keyword. You can still change it before clicking 'shorten'!" caption="Selected text will be suggested as a keyword. You can still change it before clicking 'shorten'!" %}
 
 
 Right-clicking a link will shorten it's target and not the current URL:
 
 
-{% include image.html url="/assets/media/pics/2017/yourls-firefox/link.png" img="/assets/media/pics/2017/yourls-firefox/link.png" title="Right-clicking a link offers a menu item to shorten the link's target. Thus, not the active page will be shortened, but the page that is linked to!" caption="Right-clicking a link offers a menu item to shorten the link's target. Thus, not the active page will be shortened, but the page that is linked to!" %}
+{% include image.html align="aligncenter" url="/assets/media/pics/2017/yourls-firefox/link.png" img="/assets/media/pics/2017/yourls-firefox/link.png" title="Right-clicking a link offers a menu item to shorten the link's target. Thus, not the active page will be shortened, but the page that is linked to!" caption="Right-clicking a link offers a menu item to shorten the link's target. Thus, not the active page will be shortened, but the page that is linked to!" %}
 
 
 ## Preferences
@@ -50,7 +50,7 @@ The extension can be configured through the AddOn manager at `about:addons` (*Me
 Double-click the YOURLS shorter and you will find the following menu:
 
 
-{% include image.html url="/assets/media/pics/2017/yourls-firefox/preferences.png" img="/assets/media/pics/2017/yourls-firefox/preferences-preview.png" title="Preferences of the YOURLS Firefox extension" caption="Preferences of the YOURLS Firefox extension" %}
+{% include image.html align="aligncenter" url="/assets/media/pics/2017/yourls-firefox/preferences.png" img="/assets/media/pics/2017/yourls-firefox/preferences-preview.png" title="Preferences of the YOURLS Firefox extension" caption="Preferences of the YOURLS Firefox extension" %}
 
 
 
