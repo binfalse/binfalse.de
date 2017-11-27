@@ -63,12 +63,18 @@ Following values can be configures:
 * **Max wait time:** There may always be a network issue or server downtime... How many seconds should we wait for an answer from the API before we give up?
 
 
-<h2>Download</h2>
+## Download
 
 This extension is licensed under <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a> and is developed at <a href="ihttps://github.com/binfalse/YOURLS-FirefoxExtension">GitHub/binfalse/YOURLS-FirefoxExtension</a>. It's of course available from <a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/"><abbr title="Addons.Mozilla.Org">Mozilla's Add-on Platform</abbr></a>.
 
 * [Extension at AMO](https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/)
 * [Releases at GitHub](https://github.com/binfalse/YOURLS-FirefoxExtension/releases)
 * [SourceCode at GitHub](https://github.com/binfalse/YOURLS-FirefoxExtension)
+
+
+## Issues
+
+If you experience any problems, doubts, or feature requests please do not hesitate to [contact me](https://binfalse.de/contact/) or file an issue at [the GitHub project](https://github.com/binfalse/YOURLS-FirefoxExtension/issues/).
+
 
 <small>(Please take a look at the <a href="/man-page/">man-page</a>. Browse <a href="https://github.com/binfalse/YOURLS-FirefoxExtension/issues">bugs and feature requests</a>.)</small>
