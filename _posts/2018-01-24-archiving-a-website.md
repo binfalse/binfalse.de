@@ -4,9 +4,26 @@ layout: post
 published: true
 date: 2018-01-24 09:08:15 +0100
 categories:
-  - uncategorized
+  - network
+  - software
+  - university
+  - wordpress
+  - administration
+  - php
+  - html
+  - howto
+  - monitoring
 tags:
-  - untagged
+  - backup
+  - config
+  - httrack
+  - monitoring
+  - network
+  - php
+  - ssl
+  - sync
+  - university
+  - wordpress
 ---
 
 
@@ -24,6 +41,8 @@ For example:
 * Disable unnecessary plugins.
 * Check for unpublished drafts in posts/pages. Those will be lost as soon as you close the CMS.
 * Recreate sitemap and rss feeds (if not created automatically)
+
+I also recommend to setup some monitoring, e.g. using [check_link](https://github.com/binfalse/check_links), to make sure all resources are afterwards accessible as expected!
 
 ## Mirror the website
 
