@@ -7,6 +7,7 @@ categories:
   - network
   - software
   - university
+  - website
   - wordpress
   - administration
   - php
