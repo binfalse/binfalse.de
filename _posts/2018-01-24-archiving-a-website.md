@@ -39,6 +39,7 @@ For example:
 * Remove the search box - it's useless without PHP. You may add a link to a search engine instead...?
 * Remove unnecessary trackers like Google analytics and Piwik. You probably don't need it anymore and users may be unnecessarily annoyed by tracking and/or 404s.
 * Disable unnecessary plugins.
+* Check that manual links (e.g. in widgets) are still up-to-date, also after archiving..
 * Check for unpublished drafts in posts/pages. Those will be lost as soon as you close the CMS.
 * Recreate sitemap and rss feeds (if not created automatically)
 
@@ -114,5 +115,22 @@ The back-end search helped a lot to find the HTTP links. When searching for `htt
 Also remember that links may also appear in post-excerpts!
 
 If nothing helps, you can still temporarily disable the HTTPS redirect for the time of mirroring.. ;-)
+
+
+
+## Finalising the archive
+
+To complete the mirror I also `rsync`'ed the files in `wp-content/uploads/`, as not all files are linked in through the web site.
+Sometimes we just uploaded files and shared them through e-mails or on other websites.
+
+I also manually grabbed the sitemap(s), as HTTrack apparently didn't see them:
+
+{% highlight bash %}
+wget --quiet https://sems.uni-rostock.de/sitemap.xml -O sems.uni-rostock.de/sitemap.xml
+wget --quiet https://sems.uni-rostock.de/sitemap.xml -O - | egrep -o "https?://[^<]+" | wget --directory-prefix=sems.uni-rostock.de -i -
+{% endhighlight %}
+
+
+
 
 
