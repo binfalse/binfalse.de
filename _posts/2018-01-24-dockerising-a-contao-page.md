@@ -254,24 +254,3 @@ For more information read [Mail support for Docker's php:fpm](https://binfalse.d
 
 
 
-
-content
-
-
-
-
-
-
-{% include image.html align='alignright' url='/assets/media/pics/2018/' img='/assets/media/pics/2018/' title='ALT' caption='CAPTION' maxwidth='300px' %}
-
-{% highlight bash %}
-some code
-{% endhighlight %}
-
-*italics*
-
-**strong**
-
-[link](url)
-
-
