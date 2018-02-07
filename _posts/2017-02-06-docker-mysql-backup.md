@@ -20,7 +20,7 @@ Even with Docker you need to care about backups.. ;-)
 
 As you usually mount all the persistent data into the container the files will actually be on your host.
 Thus, you can simply do the backup of these files.
-However, for MySQL I prefer having an actual SQL-dump.
+However, for [MySQL](https://www.mysql.com/)/[MariaDB](https://mariadb.org/) I prefer having an actual SQL-dump.
 Therefore I just developed the Docker MySQL-Backup tool.
 You will find the [sources at the corresponding GitHub repository.](https://github.com/binfalse/docker-mysql-backup)
 
@@ -34,8 +34,14 @@ The tool basically consists of two scripts:
 
 
 The script `/etc/cron.daily/docker-mysql-backup` parses the output of the `docker ps` command to find running containers of the MySQL image.
-More precisely, it looks for containers of images that start with `\smysql`.
-That of course only matches the original MySQL image names (if you have a good reason to derive an own version of that image please tell me!).
+More precisely, it looks for containers of images that start with either `\smysql` or `\smariadb`.
+The actual filter command is
+
+{% highlight bash %}
+docker ps --format '{{.Names}}\t{{.Image}}'  | /bin/grep '\s\(mysql\|mariadb\)' | awk '{print $1}'
+{% endhighlight %}
+
+That of course only matches the original MySQL/MariaDB image names (if you have a good reason to derive an own version of that image please tell me!).
 For every matching `$container` the script will exec the following command:
 
 {% highlight bash %}
