@@ -37,9 +37,9 @@ The script `/etc/cron.daily/docker-mysql-backup` parses the output of the `docke
 More precisely, it looks for containers of images that start with either `\smysql` or `\smariadb`.
 The actual filter command is
 
-{% highlight bash %}
+{% highlight bash %}{% raw %}
 docker ps --format '{{.Names}}\t{{.Image}}'  | /bin/grep '\s\(mysql\|mariadb\)' | awk '{print $1}'
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 That of course only matches the original MySQL/MariaDB image names (if you have a good reason to derive an own version of that image please tell me!).
 For every matching `$container` the script will exec the following command:
