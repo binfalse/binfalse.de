@@ -396,3 +396,12 @@ padding-left: 0;
 }
 
 
+
+.highlight table pre {
+    padding: 0;
+    word-break: normal;
+    border: none;
+}
+
+
+

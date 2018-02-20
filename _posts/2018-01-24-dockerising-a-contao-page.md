@@ -28,7 +28,7 @@ The company who built the website of course just delivered files and a database.
 The files contain the Contao installation next to Contao extensions next to configuration and customised themes..
 All merged into a blob...
 Thus, in the files it is hard to distinguish between Contao-based files and user generated content.
-So I needed to study Contao's documentation and reinstall the website to learn what files should go into the Docker image and which files to store outside.
+So I needed to study Contao's documentation and reinstall the website to learn what files should go into the [Docker](https://www.docker.com/) image and which files to store outside.
 
 However, I finally came up with a solution that is based on two Contao images :)
 
