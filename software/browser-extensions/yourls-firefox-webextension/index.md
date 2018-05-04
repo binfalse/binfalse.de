@@ -54,7 +54,7 @@ Double-click the YOURLS shorter and you will find the following menu:
 
 
 
-Following values can be configures:
+Following settings can be configures:
 
 * **Server URL:** The URL to your YOURLS installation. In my case it's [https://s.binfalse.de/](https://binfalse.de/). You don't need to add anything, just specify the URL to the admin interface. The extension will care about the rest.
 * **Signature:** The signature of your account. You will find this string on the *Tools* page in the *Secure passwordless API call* section.
