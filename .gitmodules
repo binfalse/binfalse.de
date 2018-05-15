@@ -10,3 +10,6 @@
 [submodule "assets/resources/stuff/jekyll-static-comments"]
 	path = assets/resources/stuff/jekyll-static-comments
 	url = https://github.com/binfalse/jekyll-static-comments.git
+[submodule "assets/resources/stuff/monitoring"]
+	path = assets/resources/stuff/monitoring
+	url = https://github.com/binfalse/monitoring
