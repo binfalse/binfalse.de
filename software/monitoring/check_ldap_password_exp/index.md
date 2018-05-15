@@ -16,8 +16,6 @@ You need to provide the LDAP server URL using `--ldapserver` and the base DN, wh
 The warning and critical thresholds can be configured in seconds using `--warning` (default: `30*24*60*60` = 30 days) and `--critical` (default: `5*24*60*60` = 5 days).
 
 
+Download the tool at [check_passwd_exp.pl](/assets/resources/stuff/monitoring/check_passwd_exp.pl) (or see [GitHub](https://github.com/binfalse/monitoring/blob/master/check_passwd_exp.pl))
 
-
-<a href='/assets/resources/stuff/monitoring/check_reboot.sh'>Here is the code</a>.
-
-Please consider to take a look at my [general setup notes](/software/nagios/plugin-setup-notes/).
+Please consider to take a look at my [general monitoring setup notes](/software/nagios/plugin-setup-notes/).
