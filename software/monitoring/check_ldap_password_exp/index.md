@@ -18,4 +18,4 @@ The warning and critical thresholds can be configured in seconds using `--warnin
 
 Download the tool at [check_passwd_exp.pl](/assets/resources/stuff/monitoring/check_passwd_exp.pl) (or see [GitHub](https://github.com/binfalse/monitoring/blob/master/check_passwd_exp.pl))
 
-Please consider to take a look at my [general monitoring setup notes](/software/nagios/plugin-setup-notes/).
+Please consider to take a look at my [general monitoring setup notes](/software/monitoring/plugin-setup-notes/).

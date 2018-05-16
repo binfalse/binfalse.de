@@ -15,4 +15,4 @@ You may also want to have a look at [check_kernel](/software/monitoring/check_ke
 
 Download the tool at [check_reboot.sh](/assets/resources/stuff/monitoring/check_reboot.sh) (or see [GitHub](https://github.com/binfalse/monitoring/blob/master/check_reboot.sh))
 
-Please consider to take a look at my [general monitoring setup notes](/software/nagios/plugin-setup-notes/).
+Please consider to take a look at my [general monitoring setup notes](/software/monitoring/plugin-setup-notes/).

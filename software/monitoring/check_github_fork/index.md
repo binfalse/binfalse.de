@@ -14,6 +14,6 @@ If your project is not up-to-date, the script will emit a warning.
 If you instead want a critical notification you can call it with `--critical`.
 
 
-Download the tool at [ccheck_github_fork](/assets/resources/stuff/monitoring/check_github_fork/check_github_fork) (or see [GitHub](https://github.com/binfalse/check_github_fork))
+Download the tool at [check_github_fork](/assets/resources/stuff/monitoring/check_github_fork/check_github_fork) (or see [GitHub](https://github.com/binfalse/check_github_fork))
 
-Please consider to take a look at my [general monitoring setup notes](/software/nagios/plugin-setup-notes/).
+Please consider to take a look at my [general monitoring setup notes](/software/monitoring/plugin-setup-notes/).
