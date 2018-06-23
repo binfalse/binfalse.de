@@ -83,6 +83,19 @@ article .share .gplus:hover {
 padding-bottom: 10px;
 }
 
+
+#srchbox #srchfld {
+    width: 200px;
+    display: block;
+    margin: 35px auto 5px;
+}
+#srchbox #srchbtn {
+    width: 200px;
+    display: block;
+    margin: 5px auto 35px;
+}
+
+
 .page-header {
 	color: #DE7D40;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
