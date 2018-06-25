@@ -1,0 +1,279 @@
+---
+layout: page
+title: Dispatcher
+
+---
+
+This page lists a few of my tools and methods in the following categories:
+
+<div id="dispatch-icons">
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="monitoring-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/monitoring.png" />
+    Monitoring
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="web-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/web.png" />
+    Web dev
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="biological-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/biological.png" />
+    Bio-Tools
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="shell-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/shell.png" />
+    Resources
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="apps-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/apps.png" />
+    Applications
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="profiles-link" class="dispatch-nav-link">
+        <img src="/assets/ico/dispatch/profiles.png" />
+        Profiles
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="contributions-link" class="dispatch-nav-link">
+        <img src="/assets/ico/dispatch/collaboration.png" />
+        Contributions
+    </a>
+</div>
+
+</div>
+
+<div style="clear:both"></div>
+
+<a name="detailsstart" id="detailsstart"></a>
+
+<div id="description">
+<h2>My Tools and Methods</h2>
+<p>
+I've been working on many different tools.
+Select a categroy from top to get a list of relevant links and brief descriptions that may be of interest in this scope.
+</p>
+
+<p>
+
+</p>
+
+</div>
+
+
+
+<div id="monitoring" class="dispatch-details">
+<h2>Monitoring tools and plugins</h2>
+<p>
+As administrator I'm of course using monitoring a lot.
+Typically, I use <a href="https://www.icinga.com/">Icinga</a> and the <a href="https://github.com/NagiosEnterprises/nrpe">NRPE server</a> or <a href="http://www.nsclient.org/">NSClient++</a>.
+As such, I developed a number of monitoring plugins.
+</p>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Cisco_logo.svg" class="image-wrapper alignleft" />
+<p>
+I developed tools to monitor Cisco's Catalyst switches &mdash; namely to check the
+<a href="/software/monitoring/check_catalyst_fans-pl/">fans</a>, the
+<a href="/software/monitoring/check_catalyst_flash-pl/">flash drives</a>, the
+<a href="/software/monitoring/check_catalyst_load-pl/">load</a>, the
+<a href="/software/monitoring/check_catalyst_mem-pl/">memory</a>, and the
+<a href="/software/monitoring/check_catalyst_temp-pl/">temperature</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Extreme_Networks_logo_-_new.png" class="image-wrapper alignleft" />
+<p>
+I furthermore developed plugins to monitor Extreme Networks devices  &mdash; namely to check the
+<a href="/software/monitoring/check_extreme_fans-pl/">fans</a>, the
+<a href="/software/monitoring/check_extreme_fdb-pl/">FDB table</a>, the
+<a href="/software/monitoring/check_extreme_mem-pl/">memory</a>, the
+<a href="/software/monitoring/check_extreme_powersupply-pl/">powersupplies</a>, and the
+<a href="/software/monitoring/check_extreme_temp-pl/">temperature</a>.
+See also <a href="/2016/02/05/monitoring-of-xos-devices">Monitoring of XOS devices</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Crystal_Clear_app_linneighborhood.svg" class="image-wrapper alignleft" />
+<p>
+I developed multple plugins to monitor resources on the internet.
+<a href="/software/monitoring/check_links/">Check::links</a>, for example, monitors all kinds of web resources, including content negotiation and support for special headers and cookies.
+<a href="/software/monitoring/check_wp-php/">Check::WordPress</a> checks WordPress blogs,
+<a href="/software/monitoring/check_github_fork/">Check::GitHub::form</a> checks if a forked project on GitHub is up-to-date with its master,
+and <a href="/software/monitoring/check_url_shortener-pl/">Check::URL Shortener</a> monitors web redirections, as provided by URL shorteners.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Tux.svg" class="image-wrapper alignleft" />
+<p>
+Several monitoring plugins check the state of linux systems and services running on linux. For example,
+<a href="/software/monitoring/check_kernel-sh/">Check::Kernel</a> checks if the system is booted into the latest kernel,
+<a href="/software/monitoring/check_mount-pl/">Check::Mount</a> makes sure all resources are mounted,
+<a href="/software/monitoring/check_reboot/">Check::Reboot</a> checks if a system needs a reboot,
+<a href="/software/monitoring/check_imapds-sh/">Check::Imap-Daemons</a> monitors the number of Imap processes,
+<a href="/software/monitoring/check_ubc-pl/">Check::UserBeanCounter</a> monitors the fail counts for OpenVZ containers,
+<a href="/software/monitoring/check_ldap_password_exp/">Check::LDAP Password expiration</a> notifies if an LDAP account is about to expire,
+<a href="/software/monitoring/check_pykota-sh/">Check::PyKota</a> checks if PyKota is running properly, and
+<a href="/software/monitoring/check_hp_health-pl/">Check::HP health</a> monitors the health state of HP Proliant machines.
+</p>
+</div>
+
+<p style="clear:both">
+<small>
+The logos are obtained from 
+<a href="https://commons.wikimedia.org/wiki/File:Cisco_logo.svg">Cisco_logo.svg</a>,
+<a href="https://commons.wikimedia.org/wiki/File:Extreme_Networks_logo_-_new.png">Extreme_Networks_logo_-_new.png</a>,
+<a href="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">Tux.svg</a>,
+and <a href="https://commons.wikimedia.org/wiki/File:Crystal_Clear_app_linneighborhood.svg">Crystal_Clear_app_linneighborhood.svg</a>.</small>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="web" class="dispatch-details">
+<h2>Web projects and Browser extensions</h2>
+
+
+<div class="icon-text">
+<img src="/assets/media/commons/Gnome-web-browser.svg" class="image-wrapper alignleft" />
+<p>
+I developed a web extension for the YOURLS tool, to shorten URLs immediately while browsing the web.
+It is available as a plugin for <a href="/software/browser-extensions/yourls-firefox-webextension/">Firefox</a>
+and for <a href="/software/browser-extensions/yourls-chrome-extension/">Chrome</a>.
+</p>
+</div>
+
+
+
+
+Deinwal
+
+wahlbilanz.de
+
+binfalse.de
+
+
+
+<p style="clear:both">
+<small>
+https://upload.wikimedia.org/wikipedia/commons/5/5e/Gnome-web-browser.svg
+</small>
+</p>
+
+</div>
+
+
+
+<div id="biological" class="dispatch-details">
+<h2>Tools and applications for natural sciences</h2>
+
+fcweb
+
+bives
+
+combine archive toolkit
+
+
+
+</div>
+
+<div id="shell" class="dispatch-details">
+<h2>Shell scripts and other snippets</h2>
+</div>
+
+
+<div id="apps" class="dispatch-details">
+<h2>General applications and tools</h2>
+</div>
+
+<div id="profiles" class="dispatch-details">
+<h2>My Profiles on the Web</h2>
+
+Nagios Exchange https://exchange.nagios.org/directory/Owner/binfalse/1
+
+</div>
+
+
+
+
+<div id="contributions" class="dispatch-details">
+<h2>Contributions to public projects</h2>
+
+I contributed to a number of projects, here are just the biggest projects
+
+Widoco
+
+contao
+
+jekyll
+
+SBSCL
+
+
+
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+$(function() {
+
+$('.dispatch-details').hide();
+
+
+$('.dispatch-nav-link').each(function(i, obj) {
+    $(obj).click (function (e) {
+        e.preventDefault()
+
+
+        $('#description').remove ();
+        $('.dispatch-details').hide();
+        var id = $(obj).attr('id').replace ("-link", "");
+        $('#' + id).show ();
+
+        // set selection on top
+        $('.dispatch-icon').removeClass("selected");
+        $(obj).parent ().addClass ("selected");
+
+        $('html,body').animate({
+            scrollTop: $("#detailsstart").offset().top
+            }, 400);
+    });
+});
+
+
+
+});
+</script>
+
+
