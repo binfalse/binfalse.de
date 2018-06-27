@@ -1,15 +1,9 @@
 ---
 layout: page
-title: Dispatcher
+title: "Dispatcher for binfalse.de"
 
 ---
 
-<form id="SiteSearch" action="/search" method="get" style="margin-bottom: 2.5em;">
-<div>
-<input name="q" value="" style="margin-right: 8px; width: 66%;" type="text">
-<input value="Search" type="submit">
-</div>
-</form>
 
 This page lists a few of my tools and methods in the following categories:
 
@@ -192,7 +186,7 @@ As such, it reached millions of people, and was used in school and research proj
 <img src="/assets/media/pics/2017/wahl-logo.jpg" class="image-wrapper alignleft" />
 <p>
 The website <a href="https://wahlbilanz.de/">wahlbilanz.de</a> analyses the political state and reports about events.
-
+It used to help use realising the <a href="https://deinwal.de/">DeinWal</a> project, but now also serves many other purposes.
 </p>
 </div>
 
@@ -208,15 +202,6 @@ and for <a href="/software/browser-extensions/yourls-chrome-extension/">Chrome</
 
 
 
-
-Deinwal
-
-wahlbilanz.de
-
-binfalse.de
-
-
-
 <p style="clear:both">
 <small>
 The logos are obtained from 
@@ -228,18 +213,95 @@ The logos are obtained from
 
 
 
+
+
+
+
 <div id="biological" class="dispatch-details">
 <h2>Tools and applications for natural sciences</h2>
+<p>
+As a bioinformatician I developed a handful tools that may be useful in that domain.
+Here you'll find a selection:
+</p>
 
-fcweb
+<div class="icon-text">
+<img src="/assets/media/pics/2018/fcweb-matrix.png" class="image-wrapper alignleft" />
+<p>
+The <a href="https://travis.cs.ox.ac.uk/FunctionalCuration/">Cardiac Electrophysiology Web Lab</a> is a web-based repository of simulation studies, which I developed during my internship in the <a href="https://www.cs.ox.ac.uk/research/compbio/index.html">Computational Biology Group</a> at the <a href="https://www.ox.ac.uk/">University of Oxford</a>.
+The Web Lab breaks with the antipattern of traditional simulation studies and explicitly distinguishes between models and protocols, which can be linked to each other dynamically (e.g. through semantic annotations).
+Thus, it is possible to analyse the same model in different environments and -vice versa- to benchmark a number of models under fixed conditions.
+Simulation results can be compared online, using sophisticated JavaScript techniques.
+</p>
+</div>
 
-bives
+<div class="icon-text">
+<img src="/assets/media/pics/2018/cat-screener.png" class="image-wrapper alignleft" />
+<p>
+The CombineArchiveToolkit (CAT) consists of a library and a web application:
+<br/>
+The <a href="https://sems.bio.informatik.uni-rostock.de/projects/combinearchive/index.html">CombineArchive library</a> is a Java library to read, write, create, and manipulate <a href="https://combinearchive.org/index/">COMBINE archives</a>.
+It is fully compliant with the latest <a href="http://identifiers.org/combine.specifications/omex">COMBINE archive specification</a>.
+It is developed at <a href="https://github.com/SemsProject/CombineArchive">GitHub</a> and an <a href="https://github.com/SemsProject/CombineArchive/blob/master/src/main/java/de/unirostock/sems/cbarchive/Example.java">example on how to create and read a COMBINE archives</a> is shipped with the code.
+<br/>
+The <a href="https://sems.bio.informatik.uni-rostock.de/projects/combinearchive/index.html">CombineArchiveWeb application</a> builds on the CombineArchive library and provides a platform to explore and share COMBINE archives.
+A public instance is available at <a href="https://cat.bio.informatik.uni-rostock.de">cat.bio.informatik.uni-rostock.de</a>.
+As it's also available as <a href="https://hub.docker.com/r/binfalse/webcat/">binfalse/webcat</a> from the Docker Hub, it's fairly easy to install/maintain an individual instance.
+</p>
+</div>
 
-combine archive toolkit
+<div class="icon-text">
+<img src="/assets/media/pics/2018/bives-logo-small-no-connections.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://sems.bio.informatik.uni-rostock.de/projects/bives/index.html">BiVeS</a> implements my algorithm to detect and communicate differences in computational models, see <a href="https://doi.org/10.1093/bioinformatics/btv484">publication in Bioinformatics</a>.
+It is written in Java and, thus, operating system independent.
+BiVeS also implements a web application, which is available as a Docker image from the Docker Hub as <a href="https://hub.docker.com/r/binfalse/bives-webapp">binfalse/bives-webapp</a>.
+A public instance of the application is available at <a href="https://bives.bio.informatik.uni-rostock.de/">bives.bio.informatik.uni-rostock.de</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/05/iso2l.png" class="image-wrapper alignleft" />
+<p>
+The <a href="https://binfalse.de/software/iso2l/">iso2l</a> (ˈaisəutuːl, spoken isotool) is a software to calculate the isotopic distribution of a chemical formula or an amino acid chain.
+It takes a  chemical formula or an amino acid chain and computes an isotopic distribution of that compound.
+iso2l is able to simulate a mass spectrometer (resolution can be configured), which makes it very easy to compare the results with actual experiments.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/08/msmapper-sample-heat.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://binfalse.de/software/ms-mapper/">MS-Mapper</a> is a Java application, designed to create 2D-heatmaps of mass spectrometry data.
+You can choose between different color maps, e.g. heat colors or a gray scale.
+It also supports various scaling: logarithmic scale, scale by square root and no scaling at all. In addition the figure can be surrounded by a legend.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/01/adjustPKL.png" class="image-wrapper alignleft" />
+<p>
+<a href="">adjustPKL</a> can be used to recalibrate PKL-Files derived from MS-experiments.
+It often happens that the output of mass spectrometry experiments is shifted by a constant ppm value (e.g. because of a different room temerature).
+With this tool you can reshift the data.
+You can decide to correct all spectra or just a single one of a PKL file.
+adjustPKL also contains a small spectrum viewer to visually validate the resulting spectra.
+</p>
+</div>
 
 
+
+
+<p style="clear:both">
+In addition, my <a href="/software/parseable-biodata/">ParseAble BioData</a> may also be of interest!? ;-)
+</p>
 
 </div>
+
+
+
+
+
+
 
 <div id="shell" class="dispatch-details">
 <h2>Shell scripts and other snippets</h2>
@@ -279,6 +341,10 @@ The logos are obtained from
 Nagios Exchange https://exchange.nagios.org/directory/Owner/binfalse/1
 
 docker hub
+
+linked in
+
+cv
 
 </div>
 
