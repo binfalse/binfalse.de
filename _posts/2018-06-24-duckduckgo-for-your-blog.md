@@ -2,7 +2,7 @@
 title: "Proper Search Engine for a Static Website powered by DuckDuckGo (and similar)"
 layout: post
 published: true
-date: 2018-06-26 15:35:21 +0200
+date: 2018-06-23 15:35:21 +0200
 categories:
   - network
   - software
@@ -38,7 +38,7 @@ But... As they are static, they cannot dynamically handle user input, which is a
 ## Outsource the task
 
 Lucky us, there are already other guys doing the search stuff pretty convincingly.
-So it would be plausible to not reinvent the wheel, but instead make use of their services.
+So it's just plausible to not reinvent the wheel, but instead make use of their services.
 There are a number of search engines, e.g.
 [Baidu](https://www.baidu.com/),
 [Bing](https://www.bing.com/),
@@ -90,7 +90,7 @@ As you see, the form just consists of a text field and a submit-button.
 The data will be submitted to `/search` on your website.
 
 Sure, `/search` doesn't exist on your website (if it exists you need to use a different endpoint), but we'll configure your web server to do the remaining work.
-The web server needs to do two things: it needs to prefix the phrase with `site:your.domain` and it needs to redirect the user to the search engine of your choice.
+The web server needs to do two things: (1) it needs to prefix the phrase with `site:your.domain` and (2) it needs to redirect the user to the search engine of your choice.
 Depending on the web server you're using the configuration of course differs.
 My Nginx configuration, for example, looks like this:
 
