@@ -445,7 +445,9 @@ padding-left: 0;
 @media(min-width:530px) {
     #dispatch-icons {
         width: 530px;
-    }
+				margin: 70px auto 70px;
+				display: block;
+		}
 }
 @media(max-width: 529px) {
     #dispatch-icons {
