@@ -1,0 +1,562 @@
+---
+layout: page
+title: "Dispatcher for binfalse.de"
+
+---
+
+
+This page lists a few of my tools and methods in the following categories:
+
+<div id="dispatch-icons">
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="monitoring-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/monitoring.png" />
+    Monitoring
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="web-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/web.png" />
+    Web dev
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="biological-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/biological.png" />
+    Bio-Tools
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="shell-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/shell.png" />
+    Resources
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="apps-link" class="dispatch-nav-link">
+    <img src="/assets/ico/dispatch/apps.png" />
+    Applications
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="profiles-link" class="dispatch-nav-link">
+        <img src="/assets/ico/dispatch/profiles.png" />
+        Profiles
+    </a>
+</div>
+
+<div class="dispatch-icon">
+    <a href="#detailsstart" id="contributions-link" class="dispatch-nav-link">
+        <img src="/assets/ico/dispatch/collaboration.png" />
+        Contributions
+    </a>
+</div>
+
+<div style="clear:both"></div>
+</div>
+
+
+<a name="detailsstart" id="detailsstart"></a>
+
+
+
+<div id="description">
+<h2>My Tools and Methods</h2>
+<p>
+I've been working on many different tools.
+Select a categroy from top to get a list of relevant links and brief descriptions that may be of interest in this scope.
+</p>
+<p>
+
+</p>
+</div>
+
+
+
+<div id="monitoring" class="dispatch-details">
+<h2>Monitoring tools and plugins</h2>
+<p>
+As administrator I'm of course using monitoring a lot.
+Typically, I use <a href="https://www.icinga.com/">Icinga</a> and the <a href="https://github.com/NagiosEnterprises/nrpe">NRPE server</a> or <a href="http://www.nsclient.org/">NSClient++</a>.
+I'm using many of the default monitoring plugins and some third party scripts from Nagios Exchange, but I also neede to develop a number of monitoring plugins myself.
+</p>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Cisco_logo.svg" class="image-wrapper alignleft" />
+<p>
+I developed tools to monitor Cisco's Catalyst switches &mdash; namely to check the
+<a href="/software/monitoring/check_catalyst_fans-pl/">fans</a>, the
+<a href="/software/monitoring/check_catalyst_flash-pl/">flash drives</a>, the
+<a href="/software/monitoring/check_catalyst_load-pl/">load</a>, the
+<a href="/software/monitoring/check_catalyst_mem-pl/">memory</a>, and the
+<a href="/software/monitoring/check_catalyst_temp-pl/">temperature</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Extreme_Networks_logo_-_new.png" class="image-wrapper alignleft" />
+<p>
+I furthermore developed plugins to monitor Extreme Networks devices  &mdash; namely to check the
+<a href="/software/monitoring/check_extreme_fans-pl/">fans</a>, the
+<a href="/software/monitoring/check_extreme_fdb-pl/">FDB table</a>, the
+<a href="/software/monitoring/check_extreme_mem-pl/">memory</a>, the
+<a href="/software/monitoring/check_extreme_powersupply-pl/">powersupplies</a>, and the
+<a href="/software/monitoring/check_extreme_temp-pl/">temperature</a>.
+See also <a href="/2016/02/05/monitoring-of-xos-devices">Monitoring of XOS devices</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Crystal_Clear_app_linneighborhood.svg" class="image-wrapper alignleft" />
+<p>
+I developed multple plugins to monitor resources on the internet.
+<a href="/software/monitoring/check_links/">Check::links</a>, for example, monitors all kinds of web resources, including content negotiation and support for special headers and cookies.
+<a href="/software/monitoring/check_wp-php/">Check::WordPress</a> checks WordPress blogs,
+<a href="/software/monitoring/check_github_fork/">Check::GitHub::fork</a> checks if a forked project on GitHub is up-to-date with its master,
+and <a href="/software/monitoring/check_url_shortener-pl/">Check::URL Shortener</a> monitors web redirections, as provided by URL shorteners.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/commons/Tux.svg" class="image-wrapper alignleft" />
+<p>
+Several monitoring plugins check the state of linux systems and services running on linux. For example,
+<a href="/software/monitoring/check_kernel-sh/">Check::Kernel</a> checks if the system is booted into the latest kernel,
+<a href="/software/monitoring/check_mount-pl/">Check::Mount</a> makes sure all resources are mounted,
+<a href="/software/monitoring/check_reboot/">Check::Reboot</a> checks if a system needs a reboot,
+<a href="/software/monitoring/check_imapds-sh/">Check::Imap-Daemons</a> monitors the number of Imap processes,
+<a href="/software/monitoring/check_ubc-pl/">Check::UserBeanCounter</a> monitors the fail counts for OpenVZ containers,
+<a href="/software/monitoring/check_ldap_password_exp/">Check::LDAP Password expiration</a> notifies if an LDAP account is about to expire,
+<a href="/software/monitoring/check_pykota-sh/">Check::PyKota</a> checks if PyKota is running properly, and
+<a href="/software/monitoring/check_hp_health-pl/">Check::HP health</a> monitors the health state of HP Proliant machines.
+</p>
+</div>
+
+<p style="clear:both">
+<small>
+The logos are obtained from 
+<a href="https://commons.wikimedia.org/wiki/File:Cisco_logo.svg">Cisco_logo.svg</a>,
+<a href="https://commons.wikimedia.org/wiki/File:Extreme_Networks_logo_-_new.png">Extreme_Networks_logo_-_new.png</a>,
+<a href="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg">Tux.svg</a>,
+and <a href="https://commons.wikimedia.org/wiki/File:Crystal_Clear_app_linneighborhood.svg">Crystal_Clear_app_linneighborhood.svg</a>.</small>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="web" class="dispatch-details">
+<h2>Web projects and Browser extensions</h2>
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/binfalse.de.png" class="image-wrapper alignleft" />
+<p>
+First of all, I'm running <a href="/">this blog, already since 2009!</a>
+I use it to primarily store some settings and solutions for myself, but I hope it also helps others in fixing and/or building things.
+The majority of articles deal about systems administration and free software in general.
+I also use this blog to announce and describe new tools.
+</p>
+</div>
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2017/wal.svg" class="image-wrapper alignleft" />
+<p>
+<a href="https://deinwal.de/">DeinWal</a> was a very successful project for the federal elections in Germany 2017.
+It helps voters to decide for a political party, based on past decisions of the parties in Bundestag.
+As such, it reached millions of people, and was used in school and research projects.
+</p>
+</div>
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2017/wahl-logo.jpg" class="image-wrapper alignleft" />
+<p>
+The website <a href="https://wahlbilanz.de/">wahlbilanz.de</a> analyses the political state and reports about events.
+It used to help use realising the <a href="https://deinwal.de/">DeinWal</a> project, but now also serves many other purposes.
+</p>
+</div>
+
+
+<div class="icon-text">
+<img src="/assets/media/commons/Gnome-web-browser.svg" class="image-wrapper alignleft" />
+<p>
+I developed a web extension for the YOURLS tool, to shorten URLs immediately while browsing the web.
+It is available as a plugin for <a href="/software/browser-extensions/yourls-firefox-webextension/">Firefox</a>
+and for <a href="/software/browser-extensions/yourls-chrome-extension/">Chrome</a>.
+</p>
+<p>
+In addition, a few <a href="/software/userscripts/">user-scripts for Greasemonkey</a> (and similar) improve the browsing experience :)
+</p>
+</div>
+
+
+
+<p style="clear:both">
+<small>
+The logos are obtained from 
+<a href="https://upload.wikimedia.org/wikipedia/commons/5/5e/Gnome-web-browser.svg">Gnome-web-browser.svg</a>.
+</small>
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div id="biological" class="dispatch-details">
+<h2>Tools and applications for natural sciences</h2>
+<p>
+As a bioinformatician I developed a handful tools that may be useful in that domain.
+Here you'll find a selection:
+</p>
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/fcweb-matrix.png" class="image-wrapper alignleft" />
+<p>
+The <a href="https://travis.cs.ox.ac.uk/FunctionalCuration/">Cardiac Electrophysiology Web Lab</a> is a web-based repository of simulation studies, which I developed during my internship in the <a href="https://www.cs.ox.ac.uk/research/compbio/index.html">Computational Biology Group</a> at the <a href="https://www.ox.ac.uk/">University of Oxford</a>.
+The Web Lab breaks with the antipattern of traditional simulation studies and explicitly distinguishes between models and protocols, which can be linked to each other dynamically (e.g. through semantic annotations).
+Thus, it is possible to analyse the same model in different environments and -vice versa- to benchmark a number of models under fixed conditions.
+Simulation results can be compared online, using sophisticated JavaScript techniques.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/cat-screener.png" class="image-wrapper alignleft" />
+<p>
+The CombineArchiveToolkit (CAT) consists of a library and a web application:
+<br/>
+The <a href="https://sems.bio.informatik.uni-rostock.de/projects/combinearchive/index.html">CombineArchive library</a> is a Java library to read, write, create, and manipulate <a href="https://combinearchive.org/index/">COMBINE archives</a>.
+It is fully compliant with the latest <a href="http://identifiers.org/combine.specifications/omex">COMBINE archive specification</a>.
+It is developed at <a href="https://github.com/SemsProject/CombineArchive">GitHub</a> and an <a href="https://github.com/SemsProject/CombineArchive/blob/master/src/main/java/de/unirostock/sems/cbarchive/Example.java">example on how to create and read a COMBINE archives</a> is shipped with the code.
+<br/>
+The <a href="https://sems.bio.informatik.uni-rostock.de/projects/combinearchive/index.html">CombineArchiveWeb application</a> builds on the CombineArchive library and provides a platform to explore and share COMBINE archives.
+A public instance is available at <a href="https://cat.bio.informatik.uni-rostock.de">cat.bio.informatik.uni-rostock.de</a>.
+As it's also available as <a href="https://hub.docker.com/r/binfalse/webcat/">binfalse/webcat</a> from the Docker Hub, it's fairly easy to install/maintain an individual instance.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/bives-logo-small-no-connections.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://sems.bio.informatik.uni-rostock.de/projects/bives/index.html">BiVeS</a> implements my algorithm to detect and communicate differences in computational models, see <a href="https://doi.org/10.1093/bioinformatics/btv484">publication in Bioinformatics</a>.
+It is written in Java and, thus, operating system independent.
+BiVeS also implements a web application, which is available as a Docker image from the Docker Hub as <a href="https://hub.docker.com/r/binfalse/bives-webapp">binfalse/bives-webapp</a>.
+A public instance of the application is available at <a href="https://bives.bio.informatik.uni-rostock.de/">bives.bio.informatik.uni-rostock.de</a>.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/05/iso2l.png" class="image-wrapper alignleft" />
+<p>
+The <a href="/software/iso2l/">iso2l</a> (ˈaisəutuːl, spoken isotool) is a software to calculate the isotopic distribution of a chemical formula or an amino acid chain.
+It takes a  chemical formula or an amino acid chain and computes an isotopic distribution of that compound.
+iso2l is able to simulate a mass spectrometer (resolution can be configured), which makes it very easy to compare the results with actual experiments.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/08/msmapper-sample-heat.png" class="image-wrapper alignleft" />
+<p>
+<a href="/software/ms-mapper/">MS-Mapper</a> is a Java application, designed to create 2D-heatmaps of mass spectrometry data.
+You can choose between different color maps, e.g. heat colors or a gray scale.
+It also supports various scaling: logarithmic scale, scale by square root and no scaling at all. In addition the figure can be surrounded by a legend.
+</p>
+</div>
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/01/adjustPKL.png" class="image-wrapper alignleft" />
+<p>
+<a href="/software/adjustpkl/">adjustPKL</a> can be used to recalibrate PKL-Files derived from MS-experiments.
+It often happens that the output of mass spectrometry experiments is shifted by a constant ppm value (e.g. because of a different room temerature).
+With this tool you can reshift the data.
+You can decide to correct all spectra or just a single one of a PKL file.
+adjustPKL also contains a small spectrum viewer to visually validate the resulting spectra.
+</p>
+</div>
+
+
+
+
+<p style="clear:both">
+In addition, my <a href="/software/parseable-biodata/">ParseAble BioData</a> may also be of interest!? ;-)
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div id="shell" class="dispatch-details">
+<h2>Shell scripts and other snippets</h2>
+
+<ul>
+<li>A collection of a few <a href="/software/command-lines/">useful shell commands.</a></li>
+<li>Some <a href="/software/snippets/">snippets and small scripts</a> may help you to survive in the terminal. Highlights:
+<ul>
+<li><a href="/software/snippets/backup/">backup</a> to quickly backup files and directories,</li>
+<li><a href="/software/snippets/unpack/">unpack</a> to extract various types of archives.</li>
+</ul>
+</li>
+<li>Some <a href="/software/conf-rc/">configuration files</a> make it easy to feel home in various software:
+<ul>
+<li><a href="/software/conf-rc/r-rc/">R.rc</a> contains useful hints to personalize Gnu R,</li>
+<li><a href="/software/conf-rc/screen-rc/">screen.rc</a> for a userfriendly screen session,</li>
+<li><a href="/software/conf-rc/sources-list/">sources.list</a> for apt(-itude)</li>
+</ul>
+</li>
+<li>Also heavy software needs configuration. These <a href="/opt/">resources may help to configure</a>:
+<ul>
+<li><a href="/opt/eclipse">Eclipse,</a></li>
+<li><a href="/opt/firefox">Firefox,</a></li>
+<li><a href="/opt/java">Java.</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+<div id="apps" class="dispatch-details">
+<h2>General applications and tools</h2>
+
+In the past years I also developed a few stand-alone applications.
+Here is a collection of some useful tools.
+
+
+
+<div class="icon-text">
+<img src="/assets/media/wp-content/uploads/2011/01/jabber-vs-twitter.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://github.com/binfalse/jatter">Jatter</a> is a Jabber-Twitter bridge.
+That is, you can interact with Twitter through your Jabber/XMPP chats.
+<br/>
+Jatter is basically a chat-bot. It uses the Twitter API to get updates of your timeline and sends them to your Jabber account. On the other side it listens to chat messages of your Jabber account and sends them as a status update to Twitter.
+<br/>
+Previous versions using legacy techniques exist as <a href="/software/xtb/">XTB</a> and <a href="/software/jabber-vs-twitter">Jabber -vs- Twitter</a>.
+</p>
+</div>
+
+
+
+<div class="icon-text">
+<img src="/assets/media/commons/Loading_icon.gif" class="image-wrapper alignleft" />
+<p>
+<a href="https://github.com/binfalse/pythumb">PyThumb</a> is Python library to create thumbnails of all sort of data.
+It supports image formats, office files, PDF, ebooks, websites, and so on..
+It can be used as a <a href="https://github.com/binfalse/pythumb#as-a-library">library for other Python software</a> or <a href="https://github.com/binfalse/pythumb#through-web">through a web interface,</a> which is for example available as a <a href="https://github.com/binfalse/pythumb#run-with-docker">Docker image</a>.
+</p>
+</div>
+
+
+
+<div class="icon-text">
+<img src="https://binfalse.de/assets/media/pics/2016/TEXPILE.jpg" class="image-wrapper alignleft" />
+<p>
+<a href="">TEXPILE</a> is a web application to compile LaTeX projects remotely.
+It's written in PHP and jailed in a Docker container, available as <a href="https://hub.docker.com/r/binfalse/texpile/">binfalse/texpile from the Docker Hub</a>.
+This way, you can generate beautiful PDF documents from low-end (IOT) hardware.
+</p>
+</div>
+
+
+
+<div class="icon-text">
+<img src="/assets/media/commons/Tor-logo-2011-flat.svg" class="image-wrapper alignleft" />
+<p>
+<a href="https://github.com/binfalse/tormate">TORMATE</a> is Tor's mate.
+Tor is a tool for annonymous communication over the internet. However, there are a number websites that block traffic from the Tor network (or require solving a captcha, which cannot be done by your RSS reader etc..). And that's why Tor needs a mate: TORMATE :)
+<br/>
+You can think of TORMATE as a gate into the web of Tor-blockers. TORMATE can deliver resources from the legacy web, that would otherwise be inaccessible from the Tor network.
+</p>
+</div>
+
+
+
+
+
+<div class="icon-text">
+<img src="/assets/media/commons/Docker_(container_engine)_logo.svg" class="image-wrapper alignleft" />
+<p>
+I developed many more Docker images.
+Most popular/interesting are probably the <a href="https://hub.docker.com/r/binfalse/bives-webapp/">BiVeS WebApp</a>, <a href="https://hub.docker.com/r/binfalse/webcat/">WebCAT</a>, <a href="https://hub.docker.com/r/binfalse/texpile/">Texpile</a>, <a href="https://hub.docker.com/r/binfalse/baikal/">Baïkal</a>, and <a href="https://hub.docker.com/r/binfalse/tormate/">Tormate</a>.
+You'll find most of my images at <a href="https://hub.docker.com/u/binfalse/">my Docker Hub page</a>.
+</p>
+</div>
+
+<p style="clear:both">
+Some more tiny stuff can be found at <a href="https://github.com/binfalse/stuff">GitHub: binfalse/stuff</a>
+</p>
+
+<p style="clear:both">
+<small>
+The logos are obtained from 
+<a href="https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.svg">Docker_(container_engine)_logo.svg</a>,
+<a href="https://commons.wikimedia.org/wiki/File:Loading_icon.gif">Loading_icon.gif</a>, and
+<a href="https://commons.wikimedia.org/wiki/File:Tor-logo-2011-flat.svg">Tor-logo-2011-flat.svg</a>.
+</small>
+</p>
+</div>
+
+
+
+
+
+
+
+
+<div id="profiles" class="dispatch-details">
+<h2>My Profiles on the Web</h2>
+<p>
+You can find me at different corners of the world wide internet.
+Some places are:
+<ul>
+<li><a href="https://github.com/binfalse">GitHub</a></li>
+<li><a href="https://twitter.com/binfalse">Twitter</a></li>
+<li><a href="https://hub.docker.com/u/binfalse/">Docker Hub</a></li>
+<li><a href="https://exchange.nagios.org/directory/Owner/binfalse/1">Nagios Exchange</a></li>
+<li><a href="https://stackexchange.com/users/373721/binfalse">Stack Exchange</a></li>
+<li><a href="https://www.sbi.uni-rostock.de/team/detail/martin-scharm">Research Group</a></li>
+<li><a href="https://linkedin.com/in/binfalse">LinkedIn</a></li>
+</ul>
+
+</p>
+</div>
+
+
+
+
+<div id="contributions" class="dispatch-details">
+<h2>Contributions to public projects</h2>
+<p>
+I contributed to a number of projects.
+This is a list of the most important ones:
+</p>
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/widoco.png" class="image-wrapper alignleft" />
+<p>
+<a href=""https://github.com/dgarijo/Widoco>WIDOCO</a> is a WIzard for DOCumenting Ontologies.
+It helps you to publish and create an enriched and customized documentation of your ontology.
+I also used it to publish <a href="http://purl.uni-rostock.de/comodi/">COMODI</a> and in this scope improved and fixed the tool.
+</p>
+</div>
+
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/contao_original_rgb.svg" class="image-wrapper alignleft" />
+<p>
+<a href="https://contao.org/">Contao</a> is a free content management system, which emerged as a fork from Typo3.
+I'm running the website of <a href="https://www.sbi.uni-rostock.de/">our department</a> on a Contao platform, and submitted and fixed a few issues.
+</p>
+</div>
+
+
+
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/jekyll-logo-black-red-transparent.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://jekyllrb.com/">Jekyll</a> is a tool to generate static websites from plain text files.
+I use it to run a few websites, such as <a href="https://binfalse.de/">this blog</a>.
+As such, I contributed a few fixes and plugins, for example <a href="https://github.com/binfalse/jekyll-cat">Unix' CAT for Jekyll</a> and a <a href="https://hub.docker.com/r/binfalse/jekyll/">Docker image to compile Jekyll pages.</a>
+</p>
+</div>
+
+
+
+
+
+
+
+<div class="icon-text">
+<img src="/assets/media/pics/2018/SBSCL.png" class="image-wrapper alignleft" />
+<p>
+<a href="https://github.com/draeger-lab/SBSCL">SBSCL</a> is the Systems Biology Simulation Core Library.
+I helped implementing support for COMBINE archives using the CombineArchiveToolkit.
+</p>
+</div>
+
+
+
+<p style="clear:both">
+<small>
+The logos are obtained from 
+<a href="https://github.com/dgarijo/Widoco/blob/master/src/main/resources/logo/logo2.png">widoco.png</a>,
+<a href="https://contao.org/en/media.html">contao_original_rgb.svg</a>,
+<a href="https://github.com/jekyll/brand">jekyll-logo-black-red-transparent.png</a>, and
+<a href="http://simulation-core.sourceforge.net/">SBSCL.png</a>.
+</small>
+</p>
+</div>
+
+
+
+
+
+<h2>See also</h2>
+<ul>
+<li><a href="https://cv.binfalse.de/">My CV.</a></li>
+<li><a href="https://binfalse.de/software/">My Software page.</a></li>
+</ul>
+
+<script type="text/javascript">
+
+$(function() {
+
+$('.dispatch-details').hide();
+
+
+$('.dispatch-nav-link').each(function(i, obj) {
+    $(obj).click (function (e) {
+        e.preventDefault()
+
+
+        $('#description').remove ();
+        $('.dispatch-details').hide();
+        var id = $(obj).attr('id').replace ("-link", "");
+        $('#' + id).show ();
+
+        // set selection on top
+        $('.dispatch-icon').removeClass("selected");
+        $(obj).parent ().addClass ("selected");
+
+        $('html,body').animate({
+            scrollTop: $("#detailsstart").offset().top
+            }, 400);
+    });
+});
+
+
+
+});
+</script>
+
+

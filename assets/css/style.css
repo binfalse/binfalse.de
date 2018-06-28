@@ -426,3 +426,52 @@ padding-left: 0;
 
 
 
+
+
+
+
+.dispatch-icon {
+    width: 120px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+.dispatch-icon.selected {
+    border: 1px solid black;
+    background: #eee;
+}
+.dispatch-icon img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.dispatch-icon a:hover
+{
+	text-decoration: none;
+	border: 0 none;
+}
+#dispatch-icons {
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon-text img {
+    width: 120px;
+}
+.icon-text p {
+    padding: 5px;
+}
+.icon-text {
+    clear: both;
+}
+@media(min-width:530px) {
+    #dispatch-icons {
+        width: 530px;
+				margin: 70px auto 70px;
+				display: block;
+		}
+}
+@media(max-width: 529px) {
+    #dispatch-icons {
+        width: 260px;
+    }
+}
