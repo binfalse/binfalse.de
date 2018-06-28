@@ -4,9 +4,24 @@ layout: post
 published: true
 date: 2018-06-07 16:42:12 +0200
 categories:
-  - uncategorized
+  - network
+  - software
+  - web
+  - administration
+  - private
+  - howto
 tags:
-  - untagged
+  - apache
+  - cloud
+  - config
+  - php
+  - docker
+  - webdav
+  - http
+  - mail
+  - network
+  - private
+  - sync
 ---
 
 [Baïkal](http://sabre.io/baikal/) is a quite popular Calendar+Contacts server.
