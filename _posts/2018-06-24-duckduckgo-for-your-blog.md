@@ -105,6 +105,12 @@ So it sends the user to `duckduckgo.com`, with the query string `site:binfalse.d
 If you're running an Apache web server, you probably know how to achieve the same over there.
 Otherwise it's a good opportunity to look again into the manual ;-)
 
+
+Furthermore, the results pages of DuckDuckGo can be customised to look more closely like your site.
+You just need to send a few more URL parameters with the query, such as `kj` for the header color or `k7` for the background color.
+The full list of available configuration options are available from [DuckDuckGo settings via URL parameters](https://duckduckgo.com/params).
+
+
 In conclusion, if you use my search form to search for `docker`, you'll be guided to `https://binfalse.de/search?q=docker`.
 The Nginx delivering my website will then redirect you to `https://duckduckgo.com/?q=site%3Abinfalse.de+docker`, try it yourself:
 [search for docker](/search?q=docker)!
