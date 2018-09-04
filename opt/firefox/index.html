@@ -29,7 +29,13 @@ The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:co
 * Just store the **latest 20 closed tabs in history**: Set  `browser.sessionstore.max_tabs_undo`  to  `20` .
 * Resume the **previous browser session**: Set  `browser.startup.page`  to  `3` .
 * Display only one **close button at the end of the tab bar**: Set  `browser.tabs.closebuttons`  to  `3` .
-
+* Set the **delay before the save-button becomes active** to only 1ms: Set `security.dialog_enable_delay` to `1`.
+* Configure default file name for print to PDF: Set `print.print_to_filename` to eg. `/tmp/mozilla.pdf`.
+* Mute media (autoplay etc): Set
+    * `media.block-play-until-visible` to `true`
+    * `media.autoplay.enabled` to `false`
+    * `dom.audiochannel.mutedByDefault` to `true`
+    * `plugins.click_to_play` to `true`
 
 
 <h2>Plugins</h2>
