@@ -1,5 +1,5 @@
 ---
-title: "An RSS feeds for the University of Rostock"
+title: "Regain RSS feeds for the University of Rostock"
 layout: post
 published: true
 date: 2018-09-03 08:18:32 +0200
