@@ -21,21 +21,21 @@ tags:
 {% include image.html align='alignright' url='/assets/media/commons/Generic_Feed-icon-blue.svg' img='/assets/media/commons/Generic_Feed-icon-blue.svg' title='RSS feeds for uni-rostock.de' caption='RSS feeds for uni-rostock.de' maxwidth='300px' %}
 
 I'm consuming quite some input from the internet everyday.
-A substantial amount of information arrives through podcasts, but much more essential are the 300+ RSS feeds that I subscribed to!
+A substantial amount of information arrives through podcasts, but much more essential are the 300+ RSS feeds that I'm subscribed to.
 I love RSS, it's one of the best inventions in the world wide web!
 
-However, there are alarming rumors and activities trying to get rid of it...
+However, there are alarming rumors and activities trying to get rid of RSS...
 We probably should all get our news filtered by Facebook or something..!?
 The importance of RSS, which allows users to keep track of updates on many different websites, seems to get continuously ignored..
 And so does the new website of our University, where official RSS feeds aren't provided anymore :(
 
-Apparently, many people were already asking for it.
+Apparently, many people were already asking for RSS feeds of the University's webpage.
 At least that's what they told me, when I asked...
 But the company who built the pages won't integrate RSS anymore - probably wasn't listed in the requirements..
-And the University wouldn't change the expensive product.
+And the University wouldn't touch the expensive website.
 
-"Fortunatelly," they stayed with Typo3 as the CMS, which we've been using before we decided to switch.
-And this Typo3 platform can output the page's content as RSS feed out of the box - you just need to know how! ;-)
+"Fortunatelly," they stayed with Typo3 as the CMS, which we've been using as well - before we decided to switch.
+And this Typo3 platform can output the page's content as RSS feed out of the box, you just need to know how! ;-)
 
 And... I'll tell you: Just append `?type=9818` to the URL.
 That's it! Really. It's so easy.
@@ -49,7 +49,7 @@ Here are a few examples:
 * [Events of the institute of computer science](https://www.informatik.uni-rostock.de/veranstaltungen/alle-veranstaltungen/) as RSS feed: [https://www.informatik.uni-rostock.de/veranstaltungen/alle-veranstaltungen/?type=9818](https://www.informatik.uni-rostock.de/veranstaltungen/alle-veranstaltungen/?type=9818)
 
 
-Sure, doesn't work everywhere.
+Sure, it doesn't work everywhere.
 If the editors maintain news as static HTML pages, Typo3 fails to export a proper RSS feed.
 It's still better than nothing.
 And maybe it helps a few people...
