@@ -6,11 +6,13 @@ categories:
   - phone
   - cyanogen
   - media
+  - lineageos
 tags:
   - cyanogen
   - phone
   - media
   - android
+  - lineageos
 ---
 
 {% include image.html align="alignleft" url="/assets/media/pics/2015/cmupdate/cm-updater.png" img="/assets/media/pics/2015/cmupdate/cm-updater.png" title="Screenshot of the Update Tool" caption="Screenshot of the Update Tool" maxwidth="150px" %}

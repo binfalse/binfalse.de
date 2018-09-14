@@ -4,9 +4,28 @@ layout: post
 published: true
 date: 2018-09-06 13:41:26 +0200
 categories:
-  - uncategorized
+  - network
+  - software
+  - security
+  - administration
+  - private
+  - operatingsystem
+  - howto
+  - phone
+  - cyanogen
+  - lineageos
 tags:
-  - untagged
+  - android
+  - backup
+  - config
+  - cyanogen
+  - lineageos
+  - network
+  - phone
+  - private
+  - remote
+  - ssh
+  - trick
 ---
 
 I finally trashed my shitty [Shift5.2](https://www.shiftphones.com/) and got a spare [OnePlus One](https://www.oneplus.com/de/one) from a good colleague.
@@ -77,7 +96,7 @@ chown shell:shell /data/.ssh/authorized_keys
 {% endhighlight %}
 
 
-### Create start script
+### Create a start script
 
 Last but not least, we need a script to start the SSH service.
 There is again a template available in `/system/bin/start-ssh`.

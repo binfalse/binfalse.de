@@ -10,6 +10,7 @@ categories:
   - howto
   - phone
   - cyanogen
+  - lineageos
 tags:
   - android
   - http
@@ -23,6 +24,7 @@ tags:
   - php
   - privacy
   - ssh
+  - lineageos
 ---
 
 

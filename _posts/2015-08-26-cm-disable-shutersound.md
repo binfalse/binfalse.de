@@ -6,6 +6,7 @@ categories:
   - phone
   - cyanogen
   - media
+  - lineageos
 tags:
   - cyanogen
   - phone
@@ -15,6 +16,7 @@ tags:
   - ssh
   - android
   - trick
+  - lineageos
 ---
 
 Everyone knows that annoying shutter sound of the camera app on [Android](https://en.wikipedia.org/wiki/Android_%28operating_system%29) phones. It's against the law to sell android phones which do not make sounds when taking pictures. And in general, it is a good feature as it improves other people privacies.
