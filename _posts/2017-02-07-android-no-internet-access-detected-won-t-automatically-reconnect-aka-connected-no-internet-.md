@@ -81,6 +81,8 @@ Just get a root-shell through [adb](https://developer.android.com/studio/command
 settings put global captive_portal_detection_enabled 0
 {% endhighlight %}
 
+<small><strong>Changed as of Android 7, see update below!</strong></small>
+
 One small drawback of that approach: you need to execute that again after flashing a new image...
 However, I guess you'll anyway have a small workflow for re-flashing your phone -- just add that tiny bit to it ;-)
 
@@ -98,6 +100,8 @@ Override the captive portal server on a root-shell (adb or SSH etc) by calling:
 {% highlight bash %}
 settings put global captive_portal_server scratch.binfalse.de
 {% endhighlight %}
+
+<small><strong>Changed as of Android 7, see update below!</strong></small>
 
 This way you retain the captive portal detection without leaking data to Google.
 However, you will again loose the setting when flashing the phone again..
@@ -159,5 +163,20 @@ A [simple PHP script](http://php.net/manual/en/function.http-response-code.php) 
 <?php http_response_code (204); ?>
 {% endhighlight %}
 
+
+## UPDATE
+
+As of Android 7 the settings have changes.
+To enable/disable captive portal detection you need to set `captive_portal_mode` to either
+
+* `0` Don't attempt to detect captive portals, see [CAPTIVE_PORTAL_MODE_IGNORE](https://android.googlesource.com/platform/frameworks/base/+/8760e60da528ed0dd1a956bb13b2c9e2e76afc82/core/java/android/provider/Settings.java#8042).
+* `1` When detecting a captive portal, display a notification that prompts the user to sign in, see [CAPTIVE_PORTAL_MODE_PROMPT](https://android.googlesource.com/platform/frameworks/base/+/8760e60da528ed0dd1a956bb13b2c9e2e76afc82/core/java/android/provider/Settings.java#8045).
+* `2` When detecting a captive portal, immediately disconnect from the network and do not reconnect to that network in the future, see [CAPTIVE_PORTAL_MODE_AVOID](https://android.googlesource.com/platform/frameworks/base/+/8760e60da528ed0dd1a956bb13b2c9e2e76afc82/core/java/android/provider/Settings.java#8053).
+
+To define the captive portal server you actually have three settings:
+
+* `captive_portal_use_https` should the phone use HTTPS for captive portal detection? (`0` = HTTP, `1` = HTTPS)
+* `captive_portal_http_url` URL to the captive portal w/o HTTPS.
+* `captive_portal_https_url` URL to the captive portal when using HTTPS.
 
 
