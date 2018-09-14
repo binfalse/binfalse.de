@@ -13,16 +13,20 @@ categories:
 
 ---
 
-<small>This is a translation of <a href="http://esmz-designz.com/index.php?site=blog&entry=36&title=SSHZugang_mit_Keys_absichern">my German entry.</a></small>
+<small>This is a translation of <a href="http://esmz-designz.com/index.php?site=blog&entry=36&title=SSHZugang_mit_Keys_absichern">my German article.</a></small>
 
-SSH is a secure way to connect to a remote system, for administration or working. The communication between these two workstations is encrypted, so an enemy isn't able to listen to the transferred data.
+SSH is a secure way to connect to a remote system, e.g. for administration or remote working.
+The communication between these two workstations is encrypted, so an enemy is not able to intercept/spy on the transferred data.
 
 
 
-Although the password that is sent to access the other system is encrypted it's possible to guess it via brute force. To decrease this risk one can turn off password authentication and just allow the authentication via keys, so that the access is only possible to people that have specific private keys. It is much harder to guess such a private key than guessing a password.
+Although the password that is sent to access the other system is encrypted, it's still possible to brute force it.
+To decrease this risk one can turn off password authentication and just allow the authentication via SSH keys, so that the access is only possible for people that have a specific private keys.
+It is much harder to guess such a private key than guessing a password.
 
-To create such a key pair, containing private and public key, just type  `ssh-keygen -t rsa -b 4096`  in your terminal. This command will create an RSA-key width 4096 bits (the more bits the harder to guess the key). The output may look like this:
-
+To create such a key pair, containing a private and a public key, just run `ssh-keygen -t rsa -b 4096` in your terminal.
+This command will create an [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))-key width `4096` bits (the more bits the harder to guess the key).
+The output may look like this:
 
 
 ```
@@ -51,13 +55,16 @@ The key's randomart image is:
 
 
 
-Congratulations, your are now owner of a 4096 bit SSH-key! It is not necessary to assign a passphrase, so you can connect to the server without any password. But if anyone can get access to your private key he is also able to connect to any server that knows your public key! So it is very insecure. For more options see  `man ssh-keygen` .
+Congratulations, your are now owner of a 4096 bit SSH-key!
+It is not necessary to assign a passphrase, so you can connect to the server without any password.
+But if anyone can get access to your private key he is also able to connect to any server that knows your public key!
+So it is very insecure and I recommend using a passphrase.
+For more options see  [`man ssh-keygen`](https://linux.die.net/man/1/ssh-keygen).
 
-If you now take a look in your  `$HOME/.ssh/`  directory you'll find two keys, a public key named  `id_rsa.pub`  and a private key  `id_rsa` . This private key is just for you, don't send it to anyone!
+If you now take a look in your  `$HOME/.ssh/`  directory you'll find two keys, a public key named  `id_rsa.pub`  and a private key  `id_rsa`.
+This private key is just for you, don't share it with anyone!
 
 To publish the public key, you can use the  `ssh-copy-id`  tool:
-
-
 
 {% highlight bash %}
 user@abakus ~ $ ssh-copy-id user@192.168.0.111
@@ -75,8 +82,10 @@ to make sure we haven't added extra keys that you weren't expecting.
 
 
 
-All that it does is appending the contents of your public key to the  `$HOME/.ssh/authorized_keys`  file of the user on the remote system. So if you don't have this tool, you can do it by hand.
-At the next login I don't have to provide the password to the remote account, I need only the passphrase for the private key:
+All that it does is appending the contents of your public key to the  `$HOME/.ssh/authorized_keys`  file of the user on the remote system (here remote is `192.168.0.111`).
+If you don't have the `ssh-copy-id` tool, you can do it manually but copying the contents of `id_rsa.pub` to the `authorized_keys` file of the remote user..
+
+At the next login I don't have to provide the password to the remote account, I only need the passphrase for the private key:
 
 
 
@@ -103,4 +112,4 @@ UsePAM no
 
 
 
-From now on only people that have private keys compatible to those public keys written in  `$HOME/.ssh/authorized_keys`  on the server can access it.
+From now on, only people that have private keys, compatible to those public keys stored in  `$HOME/.ssh/authorized_keys`  on the server, can access the remote machine.
