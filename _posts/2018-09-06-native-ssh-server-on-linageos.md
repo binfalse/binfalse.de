@@ -108,7 +108,7 @@ cp /system/bin/start-ssh /data/local/userinit.d/99sshd
 chmod 755 /data/local/userinit.d/99sshd
 {% endhighlight %}
 
-Finally, we just need to update the location of the `sshd_config` to `/data/ssh/sshd_config` in our newly created `/data/local/userinit.d/99sshd` script (there are 2 occurences).
+Finally, we just need to update the location of the `sshd_config` to `/data/ssh/sshd_config` in our newly created `/data/local/userinit.d/99sshd` script (in the template it points to `/system/etc/ssh/sshd_config`, there are 2 occurences: for running the daemon w/ and w/o debugging).
 
 
 ## That's it
