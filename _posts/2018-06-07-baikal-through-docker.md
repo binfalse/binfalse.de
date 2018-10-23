@@ -117,7 +117,7 @@ Basically, you only need to mount some persistent space to `/var/www/Specific`
 
     docker run -it --rm -p 80:80 -v /path/to/persistent:/var/www/Specific binfalse/baikal
 
-To start with, you can use [the original Specific directory from the Baïkal repository](TODO).
+To start with, you can use [the original Specific directory from the Baïkal repository](https://github.com/sabre-io/Baikal/tree/master/Specific).
 Then head to your Baikal instance (which will probably redirect to `BASEURL/admin/install`), and setup your server.
 Every configuration will be stored in the mounted volume at `/path/to/persistent`.
 
@@ -125,7 +125,7 @@ Every configuration will be stored in the mounted volume at `/path/to/persistent
 
 ### SSL
 
-To support encrypted connections you would need to mount the certificates as well as a modified [Apache](TODO) configuration into the container.
+To support encrypted connections you would need to mount the certificates as well as a modified [Apache](https://httpd.apache.org/) configuration into the container.
 However, I recommend to run it behind a reverse proxy, such as [binfalse/nginx-proxy](https://hub.docker.com/r/binfalse/nginx-proxy/), and let the proxy handle all SSL connections (as for all other containers).
 This way, you just need one proper SSL configuration.
 
