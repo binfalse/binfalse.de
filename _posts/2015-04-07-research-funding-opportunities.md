@@ -120,7 +120,7 @@ The [SPIEGEL](http://www.spiegel.de/unispiegel/studium/stipendium-fuers-studium-
 * [Fazit-Stiftung](http://www.fazit-stiftung.de): Habilitationstipendien sowie Reise- und Druckkostenzuschüsse für NachwuchswissenschaftlerInnen aller Fächer
 * [Deutsche Krebshilfe](http://www.krebshilfe.de): Projektförderung mit eigener Stelle Stiftungsprofessur Bereich Krebsforschung
 * [Adumed-Stiftung](): 
-* [Federation of European Microbiological Societies (FEMS)](www.fems-microbiology.org): Konferenzen, Workshops, Training, Anschubfinanzierung für Konferenzen und Kongresse der Mitgliedsorganisationen, Konferenzteilnahme im Bereich Mikrobiologie
+* [Federation of European Microbiological Societies (FEMS)](https://www.fems-microbiology.org): Konferenzen, Workshops, Training, Anschubfinanzierung für Konferenzen und Kongresse der Mitgliedsorganisationen, Konferenzteilnahme im Bereich Mikrobiologie
 * [European Molecular Biology Organization (EMBO)](http://www.embo.org): Workshop, Konferenzreihen -- Disziplinen: Molekularbiologie
 * [more foundations](http://www.stiftungen.org)
 
