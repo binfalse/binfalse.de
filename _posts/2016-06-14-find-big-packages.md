@@ -37,7 +37,7 @@ aptitude clean
 
 Packages often have dependencies.
 Thus, if you install a package you usually need to install other packages as well.
-For example, to install [gajim](https://gajim.org/) you also need [dnsutils](https://packages.debian.org/jessie/dnsutils), [python](https://www.python.org/) etc. (see also [https://packages.debian.org/sid/gajim](packages.debian.org on gajim)).
+For example, to install [gajim](https://gajim.org/) you also need [dnsutils](https://packages.debian.org/jessie/dnsutils), [python](https://www.python.org/) etc. (see also [packages.debian.org on gajim](https://packages.debian.org/sid/gajim)).
 If you then remove gajim, the dependencies may remain on your system.
 Especially if you're working with `apt-get` you may end up with orphaned packages, as `apt-get remove gajim` will not remove gajim's dependencies.
 To remove dependencies that are no longer required just call:
