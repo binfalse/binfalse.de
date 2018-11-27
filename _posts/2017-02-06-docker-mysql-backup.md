@@ -89,13 +89,13 @@ Clone the [Docker MySQL-Backup repository:](https://github.com/binfalse/docker-m
 git clone https://github.com/binfalse/docker-mysql-backup.git
 {% endhighlight %}
 
-Copy the [backup script](etc/cron.daily/docker-mysql-backup) to the `cron.daily` (most likely `/etc/cron.daily/`) directory on your system:
+Copy the [backup script](https://github.com/binfalse/docker-mysql-backup/blob/master/etc/cron.daily/docker-mysql-backup) to the `cron.daily` (most likely `/etc/cron.daily/`) directory on your system:
 
 {% highlight bash %}
 cp docker-mysql-backup/etc/cron.daily/docker-mysql-backup /etc/cron.daily/
 {% endhighlight %}
 
-Copy the [configuration](etc/default/docker-mysql-backup) to `/etc/default/`:
+Copy the [configuration](https://github.com/binfalse/docker-mysql-backup/blob/master/etc/default/docker-mysql-backup) to `/etc/default/`:
 
 {% highlight bash %}
 cp docker-mysql-backup/etc/default/docker-mysql-backup /etc/default/
