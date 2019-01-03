@@ -7,22 +7,16 @@ title: Firefox
 <a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a> is a web browser, in <a href="http://www.debian.org/">Debian</a>s world also known as <a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a>.
 
 
-<h2>Installation</h2>
-<a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a>/<a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a> can be found in the repository:
+## Installation
 
-    aptitude install iceweasel
+<a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a>/<a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a> can be installed from the repository:
 
-The version of Iceweasel in the repository is far too old, the stable branch (<a href="http://www.debian.org/releases/squeeze/amd64/release-notes/index.en.html">squeeze</a>) for example serves  `3.5.16`  while Mozilla actually calls  `11.0`  stable. But there is a group of people building more recent versions of Iceweasel for you. This project can be found at <a href="http://mozilla.debian.net/">mozilla.debian.net</a>. You just need to add the following line to your sources.list:
-
-    deb http://mozilla.debian.net/ squeeze-backports iceweasel-release
-
-If this is done, you need to install the keyring of the project (see <a href="http://mozilla.debian.net/">here</a>) an afterwards you are able to install Iceweasel with:
-
-    apt-get update
-    apt-get install -t squeeze-backports iceweasel
+    aptitude install firefox-esr
 
 
-<h2>Configuration</h2>
+
+
+## Configuration
 The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:config` . The following configuration reflect my preferences:
 
 * Just store the **latest 20 closed tabs in history**: Set  `browser.sessionstore.max_tabs_undo`  to  `30` .
@@ -36,7 +30,7 @@ The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:co
     * `plugins.click_to_play` to `true`
 
 
-<h2>AdddOns</h2>
+## AdddOns
 Here is a list of Firefox extensions that I find useful:
 
 * [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) brings you an RSS icon to the URL bar if the page provides a feed.
