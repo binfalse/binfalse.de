@@ -25,52 +25,34 @@ If this is done, you need to install the keyring of the project (see <a href="ht
 <h2>Configuration</h2>
 The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:config` . The following configuration reflect my preferences:
 
-* Insert a **new tab always at the end of the tab bar**: Set  `browser.tabs.insertRelatedAfterCurrent`  to  `false` .
-* Just store the **latest 20 closed tabs in history**: Set  `browser.sessionstore.max_tabs_undo`  to  `20` .
-* Resume the **previous browser session**: Set  `browser.startup.page`  to  `3` .
-* Display only one **close button at the end of the tab bar**: Set  `browser.tabs.closebuttons`  to  `3` .
+* Just store the **latest 20 closed tabs in history**: Set  `browser.sessionstore.max_tabs_undo`  to  `30` .
 * Set the **delay before the save-button becomes active** to only 1ms: Set `security.dialog_enable_delay` to `1`.
 * Configure default file name for print to PDF: Set `print.print_to_filename` to eg. `/tmp/mozilla.pdf`.
+* Do not play standalone media (such as `.mp4` files) directly in the browser: Set `media.play-stand-alone` to `false`.
 * Mute media (autoplay etc): Set
-    * `media.block-play-until-visible` to `true`
+    * `media.block-autoplay-until-in-foreground` to `true`
     * `media.autoplay.enabled` to `false`
     * `dom.audiochannel.mutedByDefault` to `true`
     * `plugins.click_to_play` to `true`
 
 
-<h2>Plugins</h2>
-Here is a list of useful plugins. I highlighted the ones which I consider essential. Most of them are available from the repository:
-<h4>General</h4>
+<h2>AdddOns</h2>
+Here is a list of Firefox extensions that I find useful:
 
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/" rel="external">**Classic Theme Restorer**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/cookies-manager-plus/" rel="external">Cookies Manager</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/domain-details/" rel="external">Domain Details</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/flashblock/" rel="external">**Flashblock**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/" rel="external">**FoxyProxy**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/its-all-text/" rel="external">**It's All Text!**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/refreshblocker/" rel="external">RefreshBlocker</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/tab-counter/" rel="external">Tab Counter</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/" rel="external">YOURLS shortener</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/" rel="external">DownThemAll</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/nagios-checker/" rel="external">Nagios Checker</a>
+* [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) brings you an RSS icon to the URL bar if the page provides a feed.
+* [Cookiebro](https://addons.mozilla.org/en-US/firefox/addon/cookiebro/) provides a cookie whitelist.
+* [Empty Cache Button](https://addons.mozilla.org/en-US/firefox/addon/empty-cache-button/) helps you to clean the cache.
+* [Download Star](https://addons.mozilla.org/en-US/firefox/addon/download-star/) to download all items in a webpage that match a pattern.
+* [FoxyProxy Standard](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) manages proxys including URL patterns.
+* [Ghostery](https://addons.mozilla.org/en-US/firefox/addon/ghostery/) to block ads, stop trackers and speed up websites.
+* [Open Tab Count](https://addons.mozilla.org/en-US/firefox/addon/open-tab-count-resurrected/) shows you the number of open tabs.
+* [Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/) lets you keep parts of your online life separated.
+* [Neat URL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) gets rid of URL parameter trash.
+* [Referer Control](https://addons.mozilla.org/en-US/firefox/addon/referercontrol/) to block/rewrite referrers.
+* [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) sohpisticated filter to block/allow requests to remote content.
+* [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) lets you spoof the user agent.
+* [YOURLS shortener](https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/) shorten URLs with your own YOURLS instance.
 
-<h4>Privacy</h4>
 
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/" rel="external">**Adblock Edge**</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/elemhidehelper/" rel="external">Element Hiding Helper</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-whitelist-with-buttons/" rel="external">**Cookie Whitelist**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/disconnect/" rel="external">**Disconnect**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/ghostery/" rel="external">**Ghostery**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/https://www.eff.org/https-everywhere/" rel="external">HTTPS Everywhere</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/" rel="external">NoScript</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/requestpolicy/" rel="external">**RequestPolicy**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/selectivecookiedelete/" rel="external">selectivecookiedelete</a>
 
-<h4>Dev | Work</h4>
-
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/" rel="external">Greasemonkey</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/javascript-deobfuscator/" rel="external">JavaScript Deobfuscator</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/header-spy/" rel="external">Header Spy</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/live-http-headers/" rel="external">Live HTTP headers</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/modify-headers/" rel="external">**Modify Headers**</a>
-* <a href="https://addons.mozilla.org/en-US/firefox/addon/tamper-data/" rel="external">**Tamper Data**</a>
 
