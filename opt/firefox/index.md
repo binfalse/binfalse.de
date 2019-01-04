@@ -4,15 +4,14 @@ title: Firefox
 
 ---
 
-<a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a> is a web browser, in <a href="http://www.debian.org/">Debian</a>s world also known as <a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a>.
+[Firefox](https://www.mozilla.org/en-US/firefox/) is a web browser, in [Debian](https://www.debian.org/)s world also known as [Iceweasel](https://en.wikipedia.org/wiki/Mozilla_software_rebranded_by_Debian)
 
 
 ## Installation
 
-<a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a>/<a href="http://en.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project">Iceweasel</a> can be installed from the repository:
+[Firefox](https://www.mozilla.org/en-US/firefox/)/[Iceweasel](https://en.wikipedia.org/wiki/Mozilla_software_rebranded_by_Debian) can be installed from the repository:
 
     aptitude install firefox-esr
-
 
 
 
@@ -30,7 +29,7 @@ The configuration of Firefox/Iceweasel can be accessed by browsing to  `about:co
     * `plugins.click_to_play` to `true`
 
 
-## AdddOns
+## AddOns
 Here is a list of Firefox extensions that I find useful:
 
 * [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) brings you an RSS icon to the URL bar if the page provides a feed.
