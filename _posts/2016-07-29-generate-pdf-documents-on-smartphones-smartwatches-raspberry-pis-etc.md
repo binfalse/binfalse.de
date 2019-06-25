@@ -19,6 +19,7 @@ tags:
   - pdf
   - remote
   - smartwhatever
+  - curl
 ---
 
 

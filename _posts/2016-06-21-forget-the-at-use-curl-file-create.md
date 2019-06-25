@@ -13,6 +13,7 @@ tags:
   - update
   - network
   - programming
+  - curl
 ---
 
 I just struggled uploading a file with PHP cURL. Basically, sending HTTP POST data is pretty easy. And to send a file you just needed to prefix it with an at sign (@). Adapted from the [most cited example](https://blog.derakkilgo.com/2009/06/07/send-a-file-via-post-with-curl-and-php/):
