@@ -117,6 +117,9 @@ Basically, you only need to mount some persistent space to `/var/www/Specific`
 
     docker run -it --rm -p 80:80 -v /path/to/persistent:/var/www/Specific binfalse/baikal
 
+Please make sure that the directory `/path/to/persistent` has proper permissions.
+In the container an [Apache2](https://httpd.apache.org/) is serving the contents, so make sure the user `www-data` ([UID](https://en.wikipedia.org/wiki/User_identifier) `33`) is [allowed to `rwx`](https://en.wikipedia.org/wiki/Chmod#Numerical_permissions) that directory.
+
 To start with, you can use [the original Specific directory from the Baïkal repository](https://github.com/sabre-io/Baikal/tree/master/Specific).
 Then head to your Baikal instance (which will probably redirect to `BASEURL/admin/install`), and setup your server.
 Every configuration will be stored in the mounted volume at `/path/to/persistent`.

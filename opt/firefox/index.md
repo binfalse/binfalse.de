@@ -43,7 +43,7 @@ Here is a list of Firefox extensions that I find useful:
 * [Neat URL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) gets rid of URL parameter trash.
 * [Referer Control](https://addons.mozilla.org/en-US/firefox/addon/referercontrol/) to block/rewrite referrers.
 * [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) sohpisticated filter to block/allow requests to remote content.
-* [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) lets you spoof the user agent.
+* [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/) lets you spoof the user agent.
 * [YOURLS shortener](https://addons.mozilla.org/en-US/firefox/addon/yourls-shortener/) shorten URLs with your own YOURLS instance.
 
 

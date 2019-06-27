@@ -74,20 +74,21 @@
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}&url=https%3A%2F%2Fbinfalse.de{{page.url|remove:'index.html'| url_encode}}"
-           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-          <i class="fa fa-twitter fa-lg"></i>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&amp;via={{site.author.twitter}}{% endif %}&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+          <i class="fab fa-twitter fa-lg"></i>
           Twitter
         </a>
-        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
-           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-          <i class="fa fa-facebook fa-lg"></i>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+          <i class="fab fa-facebook fa-lg"></i>
           Facebook
         </a>
-        <a class="btn btn-default btn-sm gplus"
-           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
-          <i class="fa fa-google-plus fa-lg"></i>
-          Google+
+        <a class="btn btn-default btn-sm linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
+          <i class="fab fa-linkedin fa-lg"></i>
+          LinkedIn
+        </a>
+        <a class="btn btn-default btn-sm reddit" href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
+          <i class="fab fa-reddit fa-lg"></i>
+          Reddit
         </a>
       </section>
 

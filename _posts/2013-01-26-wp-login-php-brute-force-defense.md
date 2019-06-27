@@ -19,7 +19,7 @@ categories:
   - software
   - web
   - wordpress
-
+  - curl
 ---
 
 Currently observing a lot of brute force attacks trying to get access to my WordPress installation. Fortunately, I've been aware of such cranks when I installed WordPress, and now I want to share my technique to prevent such attacks.
