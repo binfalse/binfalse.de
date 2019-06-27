@@ -11,10 +11,11 @@ categories:
   - java
   - media
   - software
-
+  - xfce
+  - config
 ---
 
-I was just contacted concerning this Java memory problem, here is how you can get rid of it.
+I was just contacted concerning this [Java](https://www.java.com/) memory problem, here is how you can get rid of it.
 
 
 The amount of Ram for an Java application is limited by the JVM. To provide more memory to a <strong>single application</strong> you can start your Java process with two more parameters, like:
@@ -41,7 +42,7 @@ alias java='java -Xms1024m -Xmx1024m'
 
 
 or better: <strong>Tell it to the Java Plugin Control Panel</strong>!
-Using XFCE you can find this tool in your panel's menu in the <em>Settings</em> section. Gnome users may look in <em>System > Preferences</em>. If you don't want to move your mouse you can also run  `ControlPanel`  from your terminal.
+Using [Xfce](https://xfce.org/) you can find this tool in your panel's menu in the <em>Settings</em> section. Gnome users may look in <em>System > Preferences</em>. If you don't want to move your mouse you can also run  `ControlPanel`  from your terminal.
 This opens a window, default parameters can be applied in the tab <em>Java</em>, click <em>View...</em> and add your parameters to the <em>Runtime Parameters</em> column. This tool afterwards writes something like the following line to  `$HOME/.java/deployment/deployment.properties` :
 
 

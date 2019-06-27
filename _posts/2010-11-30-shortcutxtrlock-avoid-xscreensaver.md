@@ -12,7 +12,7 @@ categories:
   - media
   - shortcut
   - software
-
+  - xfce
 ---
 
 By default <a href="http://www.xfce.org/">Xfce</a> provides screen-locking via <a href="http://www.jwz.org/xscreensaver/">Xscreensaver</a>. Here is how you change it.
