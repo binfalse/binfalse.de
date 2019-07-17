@@ -9,6 +9,9 @@ categories:
   - university
   - website
   - administration
+  - web
+  - php
+  - programming
 tags:
   - apache
   - config
@@ -20,6 +23,7 @@ tags:
   - university
 ---
 
+**This article is based on Contao 3. There is a new version, see [Dockerising Contao 4](/2019/07/17/dockerising-contao-4/)**
 
 I'm a fan of containerisation! It feels much cleaner and systems don't age that quickly.
 

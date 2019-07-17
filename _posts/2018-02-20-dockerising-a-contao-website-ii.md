@@ -34,6 +34,8 @@ tags:
   - trick
 ---
 
+**This article is based on Contao 3. There is a new version, see [Dockerising Contao 4](/2019/07/17/dockerising-contao-4/)**
+
 In a [previous post](/2018/01/24/dockerising-a-contao-page/) I explained how to run a [Contao](https://contao.org/en/) website in a [Docker](https://www.docker.com/) infrastructure.
 That was a good opening.
 However, after running that setup for some time I discovered a few issues...
@@ -99,6 +101,7 @@ if (isset ($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_F
 
 In addition, this will generate URLs including the port number (e.g. `https://example.com:443/etc`), but they are perfectly valid. (Not like `https://example.com:80/etc` or something that I saw during my tests... ;-)
 
+**This workaround doesn't work for Contao 4 anymore! To fix it see [Dockerising Contao 4](/2019/07/17/dockerising-contao-4/)**
 
 
 
