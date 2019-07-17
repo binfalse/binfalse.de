@@ -52,7 +52,7 @@ In addition, we need to
 * install [Composer,](https://getcomposer.org/)
 * and finally use Composer to install Contao.
 
-This time, I outsourced the installation of Composer into a seperate script [install-composer.sh](https://github.com/binfalse/docker-contao/blob/19b6ea5bf9e7b50796cf13becad3764a813954e1/install-composer.sh):
+This time, I outsourced the installation of Composer into a seperate script [install-composer.sh](https://github.com/binfalse/docker-contao/blob/1f562a56e594f74e72514beeaabe38d06c0ff037/install-composer.sh):
 
 
 {% highlight bash %}
@@ -84,7 +84,7 @@ exit $RESULT
 
 Thus, you'll find a current composer installation in `/composer`.
 
-The [Dockerfile for the general image](https://github.com/binfalse/docker-contao/blob/19b6ea5bf9e7b50796cf13becad3764a813954e1/Dockerfile) then boils down to the following:
+The [Dockerfile for the general image](https://github.com/binfalse/docker-contao/blob/1f562a56e594f74e72514beeaabe38d06c0ff037/Dockerfile) then boils down to the following:
 
 
 
@@ -143,7 +143,7 @@ It is also available from the [Docker Hub](https://hub.docker.com/) as [binfalse
 ## A personalised Contao 4 image
 
 Based on that general Docker image, you can now create your personalised Docker image.
-There is a [template in the corresponding Github repository.](https://github.com/binfalse/docker-contao/blob/19b6ea5bf9e7b50796cf13becad3764a813954e1/Dockerfile-personalised)
+There is a [template in the corresponding Github repository.](https://github.com/binfalse/docker-contao/blob/1f562a56e594f74e72514beeaabe38d06c0ff037/Dockerfile-personalised)
 
 A few things worth mentioning:
 
