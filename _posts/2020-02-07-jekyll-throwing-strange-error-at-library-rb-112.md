@@ -1,7 +1,7 @@
 ---
 title: "Jekyll throwing Strange Error at library.rb:112"
 layout: post
-published: false
+published: true
 date: 2020-02-07 18:25:25 +0100
 categories:
   - software
@@ -25,16 +25,37 @@ Pretty quickly it turned out, that [Jekyll](https://jekyllrb.com/) was broken..!
 The error was very cryptic and didn't provide any hint on how to fix things.
 The internet also didn't help much, that's why I'm logging it here.
 I just managed to fix it by chance: A (rather unsimilar) bug report was talking about `sassc`.
-As I did not have an idea on how to approach the problem, I just tried (re)installing the tool.
-And it did the trick...!? Not sure why, and not sure why it wasn't installed as a dependency with Jekyll, or ...!?
+~~As I did not have an idea on how to approach the problem, I just tried (re)installing the tool.
+And it did the trick...!? Not sure why, and not sure why it wasn't installed as a dependency with Jekyll, or ...!?~~
 
-However, running 
+~~However, running~~
 
 {% highlight bash %}
 gem install sassc
 {% endhighlight %}
 
-did fixed it for me ([patch for the corresponding Docker image](https://github.com/binfalse/docker-jekyll/commit/9904684ea07f383428bc50b1f49c7069fc909371)).
+~~did fixed it for me ([patch for the corresponding Docker image](https://github.com/binfalse/docker-jekyll/commit/9904684ea07f383428bc50b1f49c7069fc909371)).~~
+
+
+
+## Update
+
+The above didn't actually fully-solve the problem.
+It just re-installed `sassc` locally, which fixed the issue in the container on the current platform.
+However, when I compile the very same image at the Docker Hub and pull the new version it's broken again..!?
+The `sassc` compilation product seems to be plattform dependent!? #wtf
+
+Anyway. I finally got it fixed by installing `sassc` using `--disable-march-tune-native`, see also [github.com/sass/sassc-ruby/issues/146](https://github.com/sass/sassc-ruby/issues/146):
+
+{% highlight bash %}
+gem install sassc -- --disable-march-tune-native
+{% endhighlight %}
+
+The [updated patch for my Docker image](https://github.com/binfalse/docker-jekyll/commit/5644ffbadb5453a4a755f5c0147aac904beda92c) is available from GitHub.
+
+
+
+## Log
 
 Maybe that can be of help for somebody else?
 Here is the full error that was thrown:
