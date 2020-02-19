@@ -25,3 +25,37 @@
   </div>
 {% endif %}
 
+
+
+
+
+
+<!-- Start comment form -->
+  <div id="respond" class="comment__form">
+    <h2 class="title">Leave a comment</h2>
+    <form id="comment-form" method="POST" action="https://api.staticman.net/v2/entry/eduardoboucas/staticman/gh-pages/comments">
+      <div class="form-group">
+        <label for="comment-form-name">Name</label>
+          <input type="text" class="form-control" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
+        
+      </div>
+      <div class="form-group">
+        <label for="comment-form-url">Website (optional)</label>
+          <input type="url" class="form-control" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
+        
+      </div>
+      <div class="form__group">
+        <label for="comment-form-message">Comment</label>
+          <textarea type="text" class="form-control" rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message"></textarea>
+        
+      </div>
+      <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}#comments">
+      <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url }}#comments">
+      <input type="hidden" id="comment-replying-to" name="options[parent]" value>
+      <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+      <button type="submit" id="btn btn-primary" class="btn btn-primary mt-2">Send comment</button>
+    </form>
+    <div class="hidden js-notice notice">
+      <p class="js-notice-text"></p>
+    </div>
+  </div>

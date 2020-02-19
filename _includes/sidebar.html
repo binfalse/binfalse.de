@@ -17,71 +17,71 @@
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
 		{% if site.author.github %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}" rel="me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="https://github.com/{{ site.author.github }}" rel="me">
 				<i class="fab fa-github-alt fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.twitter %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}" rel="me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="https://twitter.com/{{ site.author.twitter }}" rel="me">
 				<i class="fab fa-twitter fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.mastodon %}
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.author.mastodon }}" rel="me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.author.mastodon }}" rel="me">
 				<i class="fab fa-mastodon fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.email %}
-		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}" rel="me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="mailto:{{ site.author.email }}" rel="me">
 				<i class="fab fa-envelope fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.pinterest %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
 				<i class="fab fa-pinterest fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.linkedin %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}" rel="me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}" rel="me">
 				<i class="fab fa-linkedin fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
 				<i class="fas fa-rss fa-lg"></i>
 			</a>
 		</li>
 	</ul>
 	<ul class="list-unstyled list-inline">
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/man-page" title="About this page">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.BASE_PATH }}/man-page" title="About this page">
 				<i class="far fa-question-circle fa-lg"></i>
 			</a>
 		</li>
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/contact" title="Contact me">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.BASE_PATH }}/contact" title="Contact me">
 				<i class="far fa-paper-plane fa-lg"></i>
 			</a>
 		</li>
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/dispatch" title="Dispatcher">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.BASE_PATH }}/dispatch" title="Dispatcher">
 				<i class="fas fa-link fa-flip-horizontal fa-lg"></i>
 			</a>
 		</li>
-		<li>
-			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/software" title="Software">
+		<li class="list-inline-item">
+			<a class="btn btn-dark btn-sm" href="{{ site.BASE_PATH }}/software" title="Software">
 				<i class="fas fa-code fa-lg"></i>
 			</a>
 		</li>
@@ -90,7 +90,7 @@
 <div id="srchbox" class="text-center">
     <form id="srchfrm" action="{{ site.BASE_PATH }}/search" method="get">
         <input id="srchfld" name="q" value="" type="text" placeholder="search binfalse.de" class="form-control" />
-        <button id="srchbtn" type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i> Search</button>
+        <button id="srchbtn" type="submit" class="btn btn-default btn-sm btn-dark"><i class="fa fa-search"></i> Search</button>
     </form>
 </div>
 <!-- sidebar.html end -->

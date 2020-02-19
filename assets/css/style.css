@@ -27,7 +27,15 @@ body{
 	color: #fff;
 	border-bottom:none;
 }
-
+.sidebar ul a,
+.sidebar ul a:active,
+.sidebar ul a:visited,
+#srchbtn {
+  color: #fff
+}
+.sidebar ul a:hover {
+  color: #3A608A
+}
 a.nav-link {
 	padding-bottom: 5px;
 	padding-top: 7px;
@@ -157,6 +165,10 @@ article.home h4 a:hover {
 	color: #BD5D21;
 	text-decoration:none;
 	border-bottom: 1px solid #BD5D21;
+}
+
+.author, .share {
+  float: left
 }
 
 .author .author-image {
@@ -482,4 +494,41 @@ padding-left: 0;
 
 abbr {
     text-decoration: none
+}
+
+
+
+
+.notice {
+  padding: 4px 12px;
+  background: #FDFEFB;
+  border-radius: 4px;
+  border: 1px solid #D7D8C8;
+  margin-bottom: 32px;
+  -webkit-box-shadow: 0.25em 0.25em 0 #D7D8C8;
+  box-shadow: 0.25em 0.25em 0 #D7D8C8;
+}
+
+.notice.danger {
+  border-color: #b11313;
+  color: #b11313;
+  -webkit-box-shadow: 0.25em 0.25em 0 #b11313;
+  box-shadow: 0.25em 0.25em 0 #b11313;
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+  opacity: 0;
+}
+
+
+.pagination {
+  display: block;
+}
+.pagination .previous {
+  float: left
+}
+.pagination .next {
+  float: right
 }
