@@ -1,0 +1,14 @@
+---
+_id: 963c3417c2c061567a21271115b24a64
+_parent: 963c3417c2c061567a21271115b24a64
+date: '2014-02-08 15:10:13'
+link: ''
+message: 'Thanks -- I was missing the ajp connector def in mine and the JkMount directive
+  also I had way too much in my workers.properties. So now mission complete : LAMP
+  on raspberry pi ...
+
+
+  Nick'
+name: Nick
+post_id: /2013/10/04/integrating-tomcat-with-apache
+---

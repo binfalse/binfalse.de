@@ -1,0 +1,13 @@
+---
+_id: d7e74ef72c4d9da4b41bcb05c6ab8116
+_parent: d7e74ef72c4d9da4b41bcb05c6ab8116
+date: '2016-09-07 16:33:08'
+link: https://binfalse.de
+message: "Hi Frank,\n\n\nthe `$post` variable is only an associative array. Thus,
+  you should be\nable to simply add whatever you want to send. Let's assume you have
+  an\narray called `$image_paths` that contains the paths to images, then you\nmay
+  do something like  `for ($i = 0; $i < count($image_paths);  ++$i) $post[\"upload-$i\"] = curl_file_create ($image_paths[$i]);` and afterwards send the the `$post` contents as usual.\nDoes
+  that help?\n\n\n\nBtw, the function is called `curl_file_create` ;-)"
+name: binfalse
+post_id: /2016/06/21/forget-the-at-use-curl-file-create
+---

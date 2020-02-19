@@ -1,0 +1,21 @@
+---
+_id: 5d4afd51b4cb46a568646167d0b2fbcf
+_parent: 5d4afd51b4cb46a568646167d0b2fbcf
+date: '2013-03-28 07:46:48'
+link: ''
+message: 'I got the MFC-9320CW and got it working as a printer over wireless so far.
+  CUPS gave me two automatically detected printers to choose from, one had a dnssd
+  URL and one had an lpd URL. I couldn''t get the dnssd one to work at all but the
+  lpd one works fine.
+
+
+  The working url is lpd://Brother/BINARY_P1
+
+
+  To try scanning next.
+
+
+  Also, how do I get it to do B&amp;W? I don''t always want to print in colour!'
+name: Nick Rout
+post_id: /2012/09/01/mfc-9120cn-setup
+---

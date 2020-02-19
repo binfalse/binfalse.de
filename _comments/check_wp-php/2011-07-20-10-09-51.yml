@@ -1,0 +1,20 @@
+---
+_id: 266171741e1e0373776b7a0163c03f80
+_parent: 266171741e1e0373776b7a0163c03f80
+date: '2011-07-20 10:09:51'
+link: http://blog.binfalse.de
+message: 'Hey BOK,
+
+
+  you are absolutely right, it was my fault. There was a bool bug but now it''s fixed!
+
+
+  Thanks for the report, hopefully now it will work for you.
+
+
+  Kind regards
+
+  Martin'
+name: Martin Scharm
+post_id: /software/nagios/check_wp-php
+---

@@ -1,0 +1,19 @@
+---
+_id: 2aa6702df20f07ea80d957c728a677f3
+_parent: 2aa6702df20f07ea80d957c728a677f3
+date: '2013-11-05 14:45:42'
+link: ''
+message: '@Swarga Bera
+
+  For windows operating system, I would suggest to check on the environment variable
+  of the windows operating system.
+
+  I believe there is something called PATH
+
+  and jri.dll should be searchable by the environment variable.
+
+
+  after changing the environment variable, do not forget to restart the machine.'
+name: icesource
+post_id: /2011/02/20/talking-r-through-java
+---

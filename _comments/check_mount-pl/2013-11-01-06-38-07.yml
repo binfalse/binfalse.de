@@ -1,0 +1,12 @@
+---
+_id: 3e3034ca5b69dcf8c9b52953449e8805
+_parent: 3e3034ca5b69dcf8c9b52953449e8805
+date: '2013-11-01 06:38:07'
+link: ''
+message: "Hello.\nFirst of all thank you for supplying very nice plugin though.\n\nI'm
+  the newbie of using nagios.\nI'd like to suggest you how about to change the line
+  number 14\nfrom  `use utils qw(%ERRORS); ` \nto  `use Nagios::Plugin qw(%ERRORS);`
+  \n\nDevelopment doc says that  `utils.pm`  is gonna deprecated soon or later."
+name: daehyung
+post_id: /software/nagios/check_mount-pl
+---

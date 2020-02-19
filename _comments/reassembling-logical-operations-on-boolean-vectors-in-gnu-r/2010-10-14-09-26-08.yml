@@ -1,0 +1,10 @@
+---
+_id: e08dc615c6a8cfddcef626eaea2b724c
+_parent: e08dc615c6a8cfddcef626eaea2b724c
+date: '2010-10-14 09:26:08'
+link: ''
+message: Michael is perfectly right, it's just the other way round (&amp;&amp; is
+  the logical "and", &amp; the bitwise).
+name: Nerd
+post_id: /2010/10/13/reassembling-logical-operations-on-boolean-vectors-in-gnu-r
+---

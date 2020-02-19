@@ -1,0 +1,16 @@
+---
+_id: fd0d92bb9037de3efc4903019d54ffc1
+_parent: fd0d92bb9037de3efc4903019d54ffc1
+date: '2011-07-29 13:30:07'
+link: http://blog.binfalse.de
+message: 'Hi Liju,
+
+
+  I expected to find the Nagios''  `utils.pm`  in  `/usr/lib/nagios/plugins` . I''ll
+  update my articles to supplement it with a note about this variable ;-)
+
+
+  Thanks for your advice!'
+name: Martin Scharm
+post_id: /software/nagios/check_mount-pl
+---

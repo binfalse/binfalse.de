@@ -1,0 +1,29 @@
+---
+_id: 2d90e3070676b6ff1161bbb8ff05fab2
+_parent: 2d90e3070676b6ff1161bbb8ff05fab2
+date: '2014-01-08 18:04:03'
+link: http://binfalse.de
+message: "I'm not sure how you're going to deploy the extension automatically!? However,
+  as far as i know you either:\n\n<ul>\n<li>need to configure each browser individually
+  in order to setup URL and signature according to your YOURLS server (in that case
+  it's not that much more effort to also tick the corresponding checkbox)</li>\n<li>or
+  you need to modify the sources. This plugin is open source, feel free to clone/fork
+  it from GitHub and include your defaults.</li>\n</ul>\n\nOne option to define defaults
+  is substituting the function  `RestoreOptions`  (defined in <a href=\"https://github.com/binfalse/YOURLS-ChromeExtension/blob/master/js/options.js#L27\">
+  js/options.js</a>) with:\n\n\n\n{% highlight javascript %}\nfunction RestoreOptions
+  ()\n{\n\tvar url   = document.getElementById ('url');\n\tvar secret = document.getElementById
+  ('secret');\n\tvar keyword = document.getElementById ('keyword');\n\tvar wait =
+  document.getElementById ('wait');\n\t\n\tif (typeof localStorage['yourls_url'] ==
+  'undefined')\n\t\tlocalStorage['yourls_url'] = \">>> default url <<<\";\n\tif (typeof
+  localStorage['yourls_secret'] == 'undefined')\n\t\tlocalStorage['yourls_secret']
+  = \">>> default secret <<<\";\n\tif (typeof localStorage['yourls_keyword'] == 'undefined')\n\t\tlocalStorage['yourls_keyword']
+  = \">>> default use keyword <<<\"; // you probably want to set this to true\n\tif
+  (typeof localStorage['yourls_wait'] == 'undefined')\n\t\tlocalStorage['yourls_wait']
+  = \">>> default wait time <<<\";\n\t\n\twait.value = localStorage['yourls_wait'];\n\turl.value
+  \  = localStorage['yourls_url'];\n\tsecret.value = localStorage['yourls_secret'];\n\tkeyword.checked
+  = localStorage['yourls_keyword'] === \"true\";\n}\n{% endhighlight %}\n\n\n\nDoes
+  this solve your problem? If you need help with building the extension I could modify
+  the code and compile a customized extension just for you and your customers.!?"
+name: Martin Scharm
+post_id: /software/browser-extensions/yourls-chrome-extension
+---

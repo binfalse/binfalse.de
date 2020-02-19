@@ -1,0 +1,14 @@
+---
+_id: f10e386b2e3b3f428a6583064b97fa6d
+_parent: f10e386b2e3b3f428a6583064b97fa6d
+date: '2012-08-29 17:17:53'
+link: ''
+message: 'Your "Binaries" test is invalid. The output of GPG is mathematically pseudo-random
+  and therefore incompressible (as demonstrated). Hence, the result is random noise,
+  identical to your "Rand" test.
+
+
+  Compression of actual binary code files yields substantially different results.'
+name: Foo Bar
+post_id: /2011/04/04/comparison-of-compression
+---

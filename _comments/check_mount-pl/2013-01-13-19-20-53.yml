@@ -1,0 +1,23 @@
+---
+_id: cee8ec1b8f1f2c9f10b94c58d779adbb
+_parent: cee8ec1b8f1f2c9f10b94c58d779adbb
+date: '2013-01-13 19:20:53'
+link: ''
+message: 'Hi.
+
+  Thank you for this plugin.
+
+  P.S. For getting this plugin work with SELnux you should set at least  `nagios_unconfined_plugin_exec_t`  type.
+
+  for e.g.
+
+
+
+  {% highlight bash %}
+
+  semanage fcontext -a -s system_u -t nagios_unconfined_plugin_exec_t -f -- ''/etc/nagios/plugins/check_mount.pl''
+
+  {% endhighlight %}'
+name: qazerr
+post_id: /software/nagios/check_mount-pl
+---

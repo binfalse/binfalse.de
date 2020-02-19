@@ -1,1 +1,0 @@
-../assets/resources/stuff/jekyll-static-comments/static_comments.rb

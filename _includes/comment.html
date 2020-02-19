@@ -1,0 +1,41 @@
+
+{% assign comment_id = id | prepend: '-' | url_encode%}
+<div class="comment {% unless include.parent == include.id %}child{% endunless %}" id="comment_{{comment_id}}">
+
+	<div class="comment_header">
+		<cite>
+			{% if include.url == blank or include.url == "" %}
+			{{include.name}}
+			{% else %}
+			<a href="{{include.url}}">{{include.name}}</a>
+			{% endif %}
+		</cite>
+		|
+		<a class="comment_permalink" href="{{site.url}}{{page.url}}#comment_{{comment_id}}" title="Permalink to this comment">Permalink</a>
+		|
+		<span class="comment_date"><time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date_to_long_string }}</time></span>
+	</div>
+
+
+	<div class="comment_body">
+		{{include.message | markdownify}}
+	</div>
+
+
+</div>
+
+
+
+{% if include.parent == include.id %}
+{% capture i %}{{ include.id }}{% endcapture %}
+{% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
+{% for reply in replies %}
+{% assign id          = reply[1]._id %}
+{% assign parent      = reply[1]._parent %}
+{% assign name        = reply[1].name %}
+{% assign url         = reply[1].url %}
+{% assign date        = reply[1].date %}
+{% assign message     = reply[1].message %}
+{% include comment.html id=id parent=parent avatar=avatar email=email name=name url=url date=date message=message %}
+{% endfor %}
+{% endif %}

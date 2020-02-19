@@ -1,0 +1,10 @@
+---
+_id: 92d787e494ae661aecf20ec7799e3689
+_parent: 92d787e494ae661aecf20ec7799e3689
+date: '2011-07-29 13:18:26'
+link: ''
+message: Make it worked by  adding nagios plug-ins directory in  that  script file
+  like this   `use lib '/usr/local/nagios/libexec';`
+name: Liju
+post_id: /software/nagios/check_mount-pl
+---

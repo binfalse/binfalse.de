@@ -1,0 +1,13 @@
+---
+_id: 445188b1069fea901d65eefa018e40a9
+_parent: 445188b1069fea901d65eefa018e40a9
+date: '2010-09-11 03:10:57'
+link: https://blog.binfalse.de/2010/09/jabber-meets-twitter/
+message: '<strong>Jabber meets Twitter...</strong>
+
+
+  This evening I implemented a XMPP bridge to twitter. So I&#8217;ll get all news
+  via IM and can update my status by sending an IM to a bot.......'
+name: binfalse
+post_id: /2010/09/02/twitter-disabled-basic-authentication
+---

@@ -1,0 +1,11 @@
+---
+_id: c95ae906284aab3cfa2b147184f74ce1
+_parent: c95ae906284aab3cfa2b147184f74ce1
+date: '2011-06-14 15:57:06'
+link: http://cbbl.imim.es
+message: "Hi Martin,\n\nI found the problem. It was just an issue of the order in
+  calling the ChemDoodleWeb libs. It is fixed now and it works perfect. I'll be implementing
+  some molecules in my web. Thanks for your nice post. \n\nJordi"
+name: Jordi Villà-Freixa
+post_id: /2011/06/04/displaying-compounds-with-webgl
+---

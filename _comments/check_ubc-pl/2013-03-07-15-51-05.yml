@@ -1,0 +1,9 @@
+---
+_id: d1b28b43a93b089b3084d2c52830eeac
+_parent: d1b28b43a93b089b3084d2c52830eeac
+date: '2013-03-07 15:51:05'
+link: ''
+message: looks like it depends on some nagios libs as well, which makes it less portable.
+name: non7top
+post_id: /software/nagios/check_ubc-pl
+---

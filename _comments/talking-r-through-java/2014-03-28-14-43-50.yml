@@ -1,0 +1,22 @@
+---
+_id: e90780cb00ffc6ef683b53ae69562394
+_parent: e90780cb00ffc6ef683b53ae69562394
+date: '2014-03-28 14:43:50'
+link: ''
+message: "hello\n\ni m using this configuration but when i m launching R its stop
+  immediatly with exit code 2\n\ni have set up  `-Djava.library.path`  correctly because
+  before setup this, i have the error that  `jri.dll`  coulnd'nt be found.\n\nnow
+  \ have done this:\n\n\n\n{% highlight java %}\nRengine.DEBUG = 5;\n\nSystem.out.println(\"Starting
+  Rengine..\");\nSystem.out.println(\"R_HOME =\" + System.getenv(\"R_HOME\"));\nSystem.out.println(\"java.library.path
+  =\" + System.getProperty(\"java.library.path\"));\nRengine re = new Rengine(new
+  String[] { \"--vanilla\" }, false, null);\nif (!re.waitForR()) {\n     System.out.println(\"Cannot
+  load R\");\n     return;\n}\n{% endhighlight %}\n\n\n\nand when i m running the
+  programm, on line  `Rengine re = new Rengine(new String[] { \"--vanilla\" }, false,
+  null);` \n it stop with exit code 2, in the console outpu i have :\n\n\n\n{% highlight
+  java %}\nStarting Rengine..\nR_HOME =D:\\Users\\pmancaux\\Desktop\\Dev\\R\\GNU_R\\R-3.0.2\\bin\njava.library.path
+  =D:\\Users\\pmancaux\\Desktop\\Dev\\R\\GNU_R\\R-3.0.2\\library\\rJava\\jri\nStarting
+  R...\n{% endhighlight %}\n\n\n\ni don t find any solution on internet! please help
+  me! thanks a lot\n\nPalex"
+name: palex
+post_id: /2011/02/20/talking-r-through-java
+---

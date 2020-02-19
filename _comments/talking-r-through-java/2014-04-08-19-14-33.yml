@@ -1,0 +1,17 @@
+---
+_id: 1a7c184463db566b0422cabc1ef2c113
+_parent: 1a7c184463db566b0422cabc1ef2c113
+date: '2014-04-08 19:14:33'
+link: ''
+message: 'same problem as Palex here.... everything used to work perfectly fine and
+  now application crashes when i set up the Rengine (Rengine re=new Rengine(args,
+  false, new TextConsole()); but i''ve used all syntax possible...)
+
+
+  no idea... its driving me nuts....
+
+
+  any help is dearly appreciated.'
+name: Irene
+post_id: /2011/02/20/talking-r-through-java
+---

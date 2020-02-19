@@ -1,0 +1,10 @@
+---
+_id: 05775f27b8182334497ece4ee051af1e
+_parent: 05775f27b8182334497ece4ee051af1e
+date: '2013-05-07 06:44:42'
+link: ''
+message: Right-clicked on a url on a page expecting the intuitive result of the link
+  target url to be shortened, but the page itself got shortened instead.
+name: zlel
+post_id: /software/browser-extensions/yourls-firefox-extension
+---
