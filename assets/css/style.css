@@ -342,6 +342,7 @@ cite
 {
 	margin: 0px 15px;
 	line-height: 1.3em;
+	overflow: auto;
 }
 
 

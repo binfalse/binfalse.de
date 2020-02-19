@@ -13,11 +13,7 @@ message: 'Hi.
 
 
 
-  {% highlight bash %}
-
-  semanage fcontext -a -s system_u -t nagios_unconfined_plugin_exec_t -f -- ''/etc/nagios/plugins/check_mount.pl''
-
-  {% endhighlight %}'
+  `semanage fcontext -a -s system_u -t nagios_unconfined_plugin_exec_t -f -- ''/etc/nagios/plugins/check_mount.pl''`'
 name: qazerr
 post_id: /software/nagios/check_mount-pl
 ---

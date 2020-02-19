@@ -11,11 +11,7 @@ message: 'Hi jesslim,
 
 
 
-  {% highlight bash %}
-
-  export R_HOME=/usr/lib64/R
-
-  {% endhighlight %}
+  `export R_HOME=/usr/lib64/R`
 
 
 
@@ -25,11 +21,7 @@ message: 'Hi jesslim,
 
 
 
-  {% highlight bash %}
-
-  netbeans
-
-  {% endhighlight %}
+  `netbeans`
 
 
 

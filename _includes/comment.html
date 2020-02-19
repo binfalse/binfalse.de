@@ -28,7 +28,7 @@
 
 {% if include.parent == include.id %}
 {% capture i %}{{ include.id }}{% endcapture %}
-{% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
+{% assign replies = site.data.comments[slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
 {% for reply in replies %}
 {% assign id          = reply[1]._id %}
 {% assign parent      = reply[1]._parent %}

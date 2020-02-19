@@ -1,13 +1,24 @@
-{% if site.data.comments[page.slug] %}
+TEST2: {{page.slug}}
+{% if page.slug %}
+{% assign slug = page.slug %}
+{% else %}
+{% assign slug = page.url  | split: "/" | last" %}
+{% endif %}
+TEST3: {{slug}}
+{{ page.name }}
+{{ page.dir }}
+{{ page.path }}
+{{ page.url  | split: "/" | last }}
+{% if site.data.comments[slug] %}
   <div id="comments" class="page__comments js-comments">
     <h2 class="title">
-      {% if site.data.comments[page.slug].size <= 1 %}
-        {{ site.data.comments[page.slug] | size | append: ' comment' }}
-      {% elsif site.data.comments[page.slug].size > 1 %}
-        {{ site.data.comments[page.slug] | size | append: ' comments' }}
+      {% if site.data.comments[slug].size <= 1 %}
+        {{ site.data.comments[slug] | size | append: ' comment' }}
+      {% elsif site.data.comments[slug].size > 1 %}
+        {{ site.data.comments[slug] | size | append: ' comments' }}
       {% endif %}
     </h2>
-    {% assign comments = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._parent == comment[1]._id' %}
+    {% assign comments = site.data.comments[slug] | sort | where_exp: 'comment', 'comment[1]._parent == comment[1]._id' %}
     {% for comment in comments %}
       {% assign id          = comment[1]._id %}
       {% assign parent      = comment[1]._parent %}

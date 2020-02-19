@@ -9,20 +9,13 @@ message: 'I''m having trouble with a site that has a Wordpress HTTPS plugin inst
 
 
 
-  {% highlight javascript %}
+  
 
-  <!-- WordPress HTTPS Proxy Check -->
+  `<!-- WordPress HTTPS Proxy Check -->`
 
-  function getCookie(a){var b=document.cookie;var c=a+"=";var d=b.indexOf("; "+c);if(d==-1){d=b.indexOf(c);if(d!=0)return
-  null}else{d+=2;var e=document.cookie.indexOf(";",d);if(e==-1){e=b.length}}return
-  unescape(b.substring(d+c.length,e))}if(getCookie("wp_proxy")!=true){if(window.location.protocol=="https:"){document.cookie="wp_proxy=1;
-  path=/; expires=Sun, 24-Apr-2022 13:03:46 GMT"}else if(getCookie("wp_proxy")==null){document.cookie="wp_proxy=0;
-  path=/; expires=Sun, 24-Apr-2022 13:03:46 GMT"}if(getCookie("wp_proxy")!=null){window.location.reload()}else{document.write("You
-  must enable cookies.")}}
+  `function getCookie(a){var b=document.cookie;var c=a+"=";var d=b.indexOf("; "+c);if(d==-1){d=b.indexOf(c);if(d!=0)return null}else{d+=2;var e=document.cookie.indexOf(";",d);if(e==-1){e=b.length}}return unescape(b.substring(d+c.length,e))}if(getCookie("wp_proxy")!=true){if(window.location.protocol=="https:"){document.cookie="wp_proxy=1;path=/; expires=Sun, 24-Apr-2022 13:03:46 GMT"}else if(getCookie("wp_proxy")==null){document.cookie="wp_proxy=0;path=/; expires=Sun, 24-Apr-2022 13:03:46 GMT" if(getCookie("wp_proxy")!=null){window.location.reload() else{document.write("You must enable cookies.")}}`
 
-  Your browser does not support JavaScript.
-
-  {% endhighlight %}'
+  `Your browser does not support JavaScript.`'
 name: Roy P
 post_id: /software/nagios/check_wp-php
 ---

@@ -15,11 +15,7 @@ message: 'If you provided a correct mail address you should find my mail in your
 
 
 
-  {% highlight java %}
-
-  re.eval(".libPaths(/DIR/OF/YOUR/LIB/)");
-
-  {% endhighlight %}
+  `re.eval(".libPaths(/DIR/OF/YOUR/LIB/)");`
 
 
 

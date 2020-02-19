@@ -6,10 +6,10 @@ link: ''
 message: "I am having troubles displaying the molecule. javascript works fine for
   me, but I cannot see the mol either in wordpress or in a reglar html file I have
   build adhoc. Maybe I need to change the permissions for the ChemDoodleWeb files,
-  maybe...\n\n\n\nTest page \n{% highlight javascript %}\n  document.write(\"\" +
+  maybe...\n\n\n\nTest page \n\n\tdocument.write(\"\" +
   Date() + \"\");  var app = new ChemDoodle.TransformCanvas3D(\"transformBallAndStick\",
   500, 500);  app.specs.set3DRepresentation(\"Stick\");  app.specs.backgroundColor
-  = \"white\";\n  var molFile = \"\\n  Marvin  02080816422D          \n\n 14 15  0
+  = \"white\";\n\t  var molFile = \"\\n  Marvin  02080816422D          \n\t\n\t 14 15  0
   \ 0  0  0            999 V2000\\n   -0.7145   -0.4125    0.0000 C   0  0  0  0  0
   \ 0  0  0  0  0  0  0\\n   -0.7145    0.4125    0.0000 N   0  0  0  0  0  0  0  0
   \ 0  0  0  0\\n    0.7145   -0.4125    0.0000 C   0  0  0  0  0  0  0  0  0  0  0
@@ -27,8 +27,7 @@ message: "I am having troubles displaying the molecule. javascript works fine fo
   \ 0  0  0\\n  7  4  1  0  0  0  0\\n  1  5  1  0  0  0  0\\n  5  3  1  0  0  0  0\\n
   12  5  1  0  0  0  0\\n  6  2  1  0  0  0  0\\n  6  4  1  0  0  0  0\\n 11  6  2
   \ 0  0  0  0\\n  9  7  1  0  0  0  0\\n 13  7  1  0  0  0  0\\n  9  8  2  0  0  0
-  \ 0\\nM  END\\n\";  var molecule = ChemDoodle.readMOL(molFile, 1);  app.loadMolecule(molecule);\n{%
-  endhighlight %}"
+  \ 0\\nM  END\\n\";  var molecule = ChemDoodle.readMOL(molFile, 1);  app.loadMolecule(molecule);"
 name: Jordi Villà-Freixa
 post_id: /2011/06/04/displaying-compounds-with-webgl
 ---
