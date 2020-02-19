@@ -1,14 +1,8 @@
-TEST2: {{page.slug}}
 {% if page.slug %}
 {% assign slug = page.slug %}
 {% else %}
 {% assign slug = page.url  | split: "/" | last" %}
 {% endif %}
-TEST3: {{slug}}
-{{ page.name }}
-{{ page.dir }}
-{{ page.path }}
-{{ page.url  | split: "/" | last }}
 {% if site.data.comments[slug] %}
   <div id="comments" class="page__comments js-comments">
     <h2 class="title">
