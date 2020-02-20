@@ -31,52 +31,35 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default d-block d-sm-none" role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
-			</a>
-			{% endif %}
-			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter"></i>
-			</a>
-			{% endif %}
-			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="{{ site.BASE_PATH }}/assets/ico/mainpic-2018.png" class="img-circle" />
-				{{ site.title }}
-			</a>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav mobile-nav">
-				<li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
-{% for p in site.mypages %}
-<li {% if page.url contains p %}class="active"{% endif %}><a href="/{{ p }}">{{ p }}</a></li>
-{% endfor %}
-<li>
-    <form id="srchfrm" action="{{ site.BASE_PATH }}/search" method="get">
-        <input id="srchfld" name="q" value="" type="text" placeholder="search binfalse.de" class="form-control" />
-        <button id="srchbtn" type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i> Search</button>
-    </form>
-</li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
+
+	<nav id="leftnav" class="navbar navbar-expend-lg fixed-top">
+		{% include sidebar.html %}
 	</nav>
 
+	<div id="maincontent" class="p-0">
+    <div class="">
+	
+		{{ content }}
+
+		<footer>
+			<hr/>
+			<p>
+				Copyright &copy; 2009-{{ site.time | date: '%Y' }}  <a href="/">{{ site.author.name }}</a>. Powered by <a href="http://jekyllrb.com/">Jekyll</a>. 
+				<br/>
+				This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+			</p>
+		</footer>
+	</div>
+	</div>
+
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+</body>
+</html>
+
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group d-none d-sm-block" id="nav-menu">
+	<!--div class="btn-group d-none d-sm-block" id="nav-menu">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-bars"></i>
 		</button>
@@ -94,26 +77,4 @@
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 		</ul>
-	</div>
-
-	<div class="col-sm-3 sidebar d-none d-sm-block">
-		{% include sidebar.html %}
-	</div>
-
-	<div class="col-sm-6 offset-sm-3 pt-5">
-		{{ content }}
-
-		<footer>
-			<hr/>
-			<p>
-				Copyright &copy; 2009-{{ site.time | date: '%Y' }}  <a href="/">{{ site.author.name }}</a>. Powered by <a href="http://jekyllrb.com/">Jekyll</a>. 
-				<br/>
-				This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-			</p>
-		</footer>
-	</div>
-
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
-</body>
-</html>
+	</div-->

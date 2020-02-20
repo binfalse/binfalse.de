@@ -1,3 +1,4 @@
+
 {% if page.url != "/" %}
 <div class"breadcrumbs">
     <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
@@ -16,33 +17,32 @@
 </div>
 {% endif %}
 
+<article>
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
-<article>
 
-        <div class="col-sm-10">
         <div class="article_body">
 {{ content | markdownify }}
           </div>
-                <hr>
+                <hr class="my-5">
 
 <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
-        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&amp;via={{site.author.twitter}}{% endif %}&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+        <a class="btn btn-outline-secondary btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&amp;via={{site.author.twitter}}{% endif %}&amp;url={{ site.url }}{{ page.url }}" target="_blank">
           <i class="fab fa-twitter fa-lg"></i>
           Twitter
         </a>
-        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+        <a class="btn btn-outline-secondary btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
           <i class="fab fa-facebook fa-lg"></i>
           Facebook
         </a>
-        <a class="btn btn-default btn-sm linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
+        <a class="btn btn-outline-secondary btn-sm linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
           <i class="fab fa-linkedin fa-lg"></i>
           LinkedIn
         </a>
-        <a class="btn btn-default btn-sm reddit" href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
+        <a class="btn btn-outline-secondary btn-sm reddit" href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&amp;title={{page.title | encode}}" target="_blank">
           <i class="fab fa-reddit fa-lg"></i>
           Reddit
         </a>
@@ -53,16 +53,11 @@
         <h4 class="section-title author-name">{{site.author.name}}</h4>
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
-    </div>
     <div class="clearfix"></div>
 
-<hr>
+<hr class="my-5">
 {% include comments.html %}
-        </div>
-
-        <div class="col-sm-2 sidebar-2">
-
-        </div>
+    
 </article>
 <div class="clearfix"></div>
 
