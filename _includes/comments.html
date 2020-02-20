@@ -40,6 +40,21 @@
 <!-- Start comment form -->
   <div id="respond" class="comment__form">
     <h2 class="title">Leave a comment</h2>
+    
+    <p>There are multiple options to leave a comment:</p>
+    
+    <ul>
+      <li><a href="/contact/">send me an email</a></li>
+         {% assign txt1 = 'Comment for article: '| url_encode %}
+         {% assign url = page.url|remove:'index.html'| url_encode %}
+         {% assign txt2 = '\nhaving id: '| url_encode %}
+         {% assign id = slug %}
+         {% assign txt3 = '\n------- PLEASE LEAVE THE ABOVE UNTOUCHED AND WRITE COMMENT BELOW -------\n------- IF YOU WANT ME TO INCLUDE CREDITS ADD YOUR NAME AND MAIL -------\n\n'| url_encode %}
+      <li>submit a comment through the <a href="http://fb.binfalse.de/?text={{txt1}}{{url}}{{txt2}}{{id}}{{txt3}}">feedback page</a> (<a href="http://3djgibyu5osi4na5.onion/?text={{txt1}}{{url}}{{txt2}}{{id}}{{txt3}}">anonymously via TOR</a>)</li>
+      <li><a href="https://github.com/binfalse/binfalse.de">Fork this repo</a> at GitHub, add your comment to the _data/comments directory and send me a pull request</li>
+      <li>Fill the following form and <a href="https://staticman.net/">Staticman</a> will automagically create a pull request for you:</li>
+    </ul>
+    
     <form id="comment-form" method="POST" action="https://dev.staticman.net/v3/entry/github/binfalse/binfalse.de/master">
       <div class="form-group">
         <label for="comment-form-name">Name</label>
