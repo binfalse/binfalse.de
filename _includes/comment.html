@@ -31,7 +31,11 @@
 {% assign replies = site.data.comments[slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
 {% for reply in replies %}
 {% assign id          = reply[1]._id %}
+{% if reply[1]._parent %}
 {% assign parent      = reply[1]._parent %}
+{% else %}
+{% assign parent      = reply[1]._id %}
+{% endif %}
 {% assign name        = reply[1].name %}
 {% assign url         = reply[1].url %}
 {% assign date        = reply[1].date %}

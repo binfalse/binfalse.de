@@ -12,10 +12,17 @@
         {{ site.data.comments[slug] | size | append: ' comments' }}
       {% endif %}
     </h2>
-    {% assign comments = site.data.comments[slug] | sort | where_exp: 'comment', 'comment[1]._parent == comment[1]._id' %}
+    {% assign comments = site.data.comments[slug] | sort %}
     {% for comment in comments %}
+      {% if comment[1]._parent %}
+        {% if comment[1]._parent != comment[1]._id %}
+            {% continue %}
+        {% endif %}
+        {% assign parent      = comment[1]._parent %}
+      {% else %}
+        {% assign parent      = comment[1]._id %}
+      {% endif %}
       {% assign id          = comment[1]._id %}
-      {% assign parent      = comment[1]._parent %}
       {% assign name        = comment[1].name %}
       {% assign url         = comment[1].link %}
       {% assign date        = comment[1].date %}
