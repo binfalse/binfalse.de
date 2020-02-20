@@ -75,8 +75,7 @@ article .share .btn {
 	-webkit-transition:color .2s ease-out, background 1s ease-in;
 	transition:color .2s ease-out, background 1s ease-in;
 }
-#contact-list li:hover .fa-twitter,
-article .share .twitter:hover {
+#contact-list li:hover .fa-twitter {
 	color: #00ACEE;
 	border-color: #00ACEE;
 }
@@ -92,15 +91,13 @@ color: #CC2127;
 #contact-list li:hover .fa-rss {
 color: #e74c3c;
 }
-article .share .facebook:hover {
-	color: #43609C;
-	border-color: #43609C;
-}
-article .share .gplus:hover {
-	color: #C13929;
-	border-color: #C13929;
-}
 
+article .share {
+  margin-bottom: 50px;
+}
+article .share .btn {
+  margin-bottom: 10px;
+}
 #contact-list-secondary {
 padding-bottom: 10px;
 }
