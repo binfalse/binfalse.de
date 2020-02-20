@@ -11,7 +11,7 @@ body{
 #leftnav {
   display: flex;
 /* 	padding-top: 10%; */
-  background-color: #3A608A;/*2c3e50;*/
+  background-color: #2A425E;/*2c3e50;*/
   color: #fff;
 /*     flex-flow: row nowrap; */
 }
@@ -208,7 +208,7 @@ article{
 	color: #777;
 }
 
-article {
+article, footer {
 	padding: 1em 5%;
 }
 
