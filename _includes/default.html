@@ -14,7 +14,7 @@
 	<!-- Le styles -->
 	<link rel="icon" type="image/png" href="{{ site.BASE_PATH }}/assets/ico/favicon.png">
 	<link rel="shortcut icon" href="{{ site.BASE_PATH }}/assets/ico/favicon.png">
-	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css?v=2020-02" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/all.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css?x={{ "now" | date: "%Y-%m-%d-%H-%M" }}" rel="stylesheet">
@@ -57,24 +57,3 @@
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 </body>
 </html>
-
-	<!-- nav-menu-dropdown -->
-	<!--div class="btn-group d-none d-sm-block" id="nav-menu">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			<i class="fa fa-bars"></i>
-		</button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
-		{% for p in site.mypages %}
-		<li {% if page.url contains p %}class="active"{% endif %}>
-			<a href="/{{ p }}">
-				{{ p }}
-			</a>
-		</li>
-		{% endfor %}
-			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
-		</ul>
-	</div-->
