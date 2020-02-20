@@ -94,22 +94,27 @@
 
 
 <div id="pages-list" class="collapse navbar-collapse">
-	<ul class="list-unstyled list-inline">
-				<li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+	<ul class="list-unstyled">
+				<li {% if page.url == "/" %}class="active"{% endif %}><a class="collink" href="{{ site.BASE_PATH }}/">Home</a></li>
+				<li><a class="collink" href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
+				<li><a class="collink" href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+  </ul>
+	<ul class="list-unstyled">
 {% for p in site.mypages %}
-<li {% if page.url contains p %}class="active"{% endif %}><a href="/{{ p }}">{{ p }}</a></li>
+<li {% if page.url contains p %}class="active"{% endif %}><a class="collink" href="/{{ p }}">{{ p }}</a></li>
 {% endfor %}
 <li>
 	</ul>
+	<div class="clearfix"></div>
 	<form class="srchfrm" action="{{ site.BASE_PATH }}/search" method="get">
     <input name="q" value="" type="text" placeholder="search binfalse.de" class="srchfld form-control" />
+        <p><small>You will be redirected to <a class="collink" href="https://duckduckgo.com/">DuckDuckGo</a> for searching. Please see my <a class="collink" href="/man-page/#4c-searching-through-duckduckgo">privacy policy</a>.</small></small></p>
   </form>
 </div>
 <div id="srchbox" class="text-center">
     <form class="srchfrm" action="{{ site.BASE_PATH }}/search" method="get">
         <input name="q" value="" type="text" placeholder="search binfalse.de" class="srchfld form-control" />
+        <p><small>You will be redirected to <a class="collink" href="https://duckduckgo.com/">DuckDuckGo</a>.<br>Please see my <a class="collink" href="/man-page/#4c-searching-through-duckduckgo">privacy policy</a>.</small></p>
         <button id="srchbtn" type="submit" class="btn btn-default btn-sm btn-dark"><i class="fa fa-search"></i> Search</button>
     </form>
 </div>

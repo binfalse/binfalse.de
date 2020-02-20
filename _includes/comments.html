@@ -1,3 +1,5 @@
+{% if page.comments or page.comments == empty  %}
+
 {% if page.slug %}
 {% assign slug = page.slug %}
 {% else %}
@@ -75,10 +77,12 @@
       <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url }}#comments">
       <input type="hidden" id="comment-replying-to" name="options[parent]" value>
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-      <p><strong>Please Note:</strong> By submitting your comment your browser will send the values of the form fields (and the typical browsing meta data) to the API of Staticman (<a href="/2020/02/20/say-hello-to-staticman/">read more</a>). If you don't want to connect to a third party, you should use one of the other options to send your comment, see the <a href="#comment-options">list above</a>.</p>
+      <p><strong>Please Note:</strong> By submitting your comment your browser will send the values of the form fields (and the typical browsing meta data) to the API of Staticman (<a href="/2020/02/20/say-hello-to-staticman/">read more</a>). If you don't want to connect to a third party, you should use one of the other options to send your comment, see the <a href="#comment-options">list above</a>. Please also check my <a href="/man-page/#4d-commenting-through-staticman">privacy policy</a>.</p>
       <button type="submit" id="send-comment" class="btn btn-secondary mt-2">Send comment</button>
     </form>
     <div class="hidden js-notice notice">
       <p class="js-notice-text"></p>
     </div>
   </div>
+
+{% endif %}

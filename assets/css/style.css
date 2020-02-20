@@ -35,6 +35,13 @@ body{
 #leftnav ul a:hover {
   color: #3A608A
 }
+
+#leftnav a.collink,
+#leftnav a.collink:active,
+#leftnav a.collink:hover,
+#leftnav a.collink:visited {
+  color: #DE7D40
+}
 a.nav-link {
 	padding-bottom: 5px;
 	padding-top: 7px;
@@ -111,7 +118,11 @@ padding-bottom: 10px;
     display: block;
     margin: 5px auto 35px;
 }
-
+/*#srchbox a,
+#srchbox a:hover,
+#srchbox a:visited {
+  color: #DE7D40
+}*/
 
 
 @media (max-width: 992px){
@@ -138,8 +149,9 @@ padding-bottom: 10px;
 .srchfld {
  max-width: 200px;
 }
-#leftnav #pages-list {
-padding: 10px
+#leftnav #pages-list ul {
+padding: 10px;
+float: left
 }
 .navbar-toggler {
   color: #fff!important;
@@ -632,3 +644,4 @@ abbr {
 .pagination .next {
   float: right
 }*/
+
