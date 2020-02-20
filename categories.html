@@ -5,34 +5,24 @@ header: Posts By Category
 group: navigation
 ---
 
-<div id="ctlist" class="col-sm-3 col-xs-6">
+<div id="ct-overview">
     <ul class="nav nav-tabs-vertical">
-      {% assign categories_list = site.categories %}
-      {% if categories_list.first[0] == null %}
+      {% assign categories_list = site.categories | sort %}
         {% for category in categories_list %}
             <li>
-                <a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category | replace:' ','-' }}-ref" data-toggle="tab">
-                  {{ category | capitalize }} <span class="badge pull-right">{{ site.categories[category].size }}</span>
-               </a>
-            </li>
-        {% endfor %}
-      {% else %}
-        {% for category in categories_list %}
-            <li>
-                <a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
-                    {{ category[0] | capitalize }} <span class="badge pull-right">{{ category[1].size }}</span>
+                <a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" class="btn m-2">
+                    {{ category[0] | capitalize }} <span class="text-muted">{{ category[1].size }}</span>
                 </a>
             </li>
         {% endfor %}
-      {% endif %}
       {% assign categories_list = nil %}
     </ul>
 </div>
 <!-- Tab panes -->
-<div class="tab-content col-sm-9 col-xs-6">
+<div class="ct-list">
   {% for category in site.categories %}
     <div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
-      <h2 style="margin-top: 0px">Posts in {{ category[0] | capitalize }}</h2>
+      <h2 style="margin-top: 0px">Posts in {{ category[0] | capitalize }} <small><a href="#ct-overview"><i class="fas fa-arrow-up" title="back to top"></i> TOP</a></small></h2>
       <ul class="list-unstyled">
         {% assign pages_list = category[1] %}
         {% for node in pages_list %}

@@ -1,5 +1,7 @@
 @import url(fonts.css);
-
+html {
+  scroll-behavior: smooth;
+}
 body{
 	color: #2c3e50;
 	font-family: "Open Sans",Helvetica,"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
@@ -257,7 +259,7 @@ footer {
 }
 
 /* nav-vertical-tabs component */
-.nav-tabs-vertical {
+/*.nav-tabs-vertical {
 	border-right: 1px solid #ddd;
 }
 
@@ -277,9 +279,8 @@ footer {
 	line-height: 1.428571429;
 	border: 1px solid transparent;
 	border-radius: 4px 0 0 4px;
-}
+}*/
 
-.badge { background: #CC4C41; }
 
 #nav-menu{
 position: fixed;
@@ -487,12 +488,22 @@ a.link-noborder:hover
 
 
 
-#ctlist
+.ct-list .tab-pane
 {
-    overflow-y: auto;
-    height: 500px;
+  margin-top: 50px;
+}
+.ct-list h2 small {
+  font-size: .5em;
+  float: right;
+	font-family: "Open Sans",Helvetica,"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-weight: bold;
+}
+#ct-overview .btn {
+  color: #4078c0!important;
+  border-color: #6c757d!important;
 }
 
+/* .badge { background: #CC4C41; } */
 
 
 .breadcrumb:before
