@@ -3,6 +3,7 @@ title: "Say »Hello« to Staticman"
 layout: post
 published: true
 date: 2020-02-20 14:17:59 +0100
+comments: on
 categories:
   - config
   - publication

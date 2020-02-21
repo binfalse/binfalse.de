@@ -1,4 +1,5 @@
-{% if page.comments or page.comments == empty  %}
+
+{% unless page.comments == "off" or page.comments == false  %}
 
 {% if page.slug %}
 {% assign slug = page.slug %}
@@ -85,4 +86,4 @@
     </div>
   </div>
 
-{% endif %}
+{% endunless %}
