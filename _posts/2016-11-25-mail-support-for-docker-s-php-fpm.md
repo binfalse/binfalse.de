@@ -23,6 +23,7 @@ tags:
   - network
   - snippet
   - ssl
+  - ssmtp
 ---
 
 {% include image.html align="alignright" url="/assets/media/pics/2016/docker-mail-delivery.svg" img="/assets/media/pics/2016/docker-mail-delivery.png" title="Sending Mails from within a Docker Container" caption="Sending Mails from within a Docker Container" maxwidth="300px" %}
@@ -76,6 +77,8 @@ For this example, let's call this image [binfalse/php-fpm-extended](https://hub.
 
 ### Setup for the sSMTP
 
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please swith to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
+
 Configuring the sSMTP is easy.
 Basically, all you need to do is to specify the address to the mail hub using the `mailhub` option.
 However, as my mail server is running on a different physical server I also want to enable encryption, so I set `UseTLS` and `UseSTARTTLS` to `YES`.
@@ -94,6 +97,8 @@ UseSTARTTLS=YES
 Just store that in a file, e.g. `/path/to/ssmtp.conf`. We'll mount that into the container later on.
 
 ### Configure mail for php:fpm
+
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please swith to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
 
 Even if we installed the sSMTP the PHP configuration is still invalid, we need to set the `sendmail_path` correctly.
 That's actually super easy, just create a file containing the following lines:
