@@ -105,12 +105,12 @@
 		  {% if page.previous %}
 		  <li class="page-item previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" class="page-link">&larr; Older Article</a></li>
 		  {% else %}
-		  <li class="page-item previous disabled"><a class="page-link">&larr; Previous</a></li>
+		  <li class="page-item previous disabled"><a class="page-link">No Previous Article</a></li>
 		  {% endif %}
 		  {% if page.next %}
 		  <li class="page-item next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" class="page-link">Newer Article &rarr;</a></li>
 		  {% else %}
-			<li class="page-item next disabled"><a class="page-link">Next &rarr;</a>
+			<li class="page-item next disabled"><a class="page-link">No Newer Article</a>
 		  {% endif %}
 		</ul>
 		
