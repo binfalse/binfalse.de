@@ -21,6 +21,7 @@ tags:
   - mail
   - network
   - university
+  - ssmtp
 ---
 
 **This article is based on Contao 3. There is a new version, see [Dockerising Contao 4](/2019/07/17/dockerising-contao-4/)**
@@ -39,6 +40,8 @@ However, I finally came up with a solution that is based on two Contao images :)
 
 
 ## A general Contao image
+
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please swith to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
 
 The general Contao image is supposed to contain a plain Conato installation.
 That is, the recipe just installs dependencies (such as curl, zip, and ssmtp) and downloads and extracts Contao's sources.
@@ -229,6 +232,8 @@ When everything is up running the Conato install will be available at port `8080
 
 ## Mail support 
 
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please swith to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
+
 The image above comes with [sSMTP](https://packages.qa.debian.org/s/ssmtp.html) installed.
 If you need support for email with your Contao installation, you just need to mount two more files into the container:
 
@@ -244,6 +249,8 @@ sendmail_path = "/usr/sbin/ssmtp -t"
 
 
 ### Configure sSMTP
+
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please swith to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
 
 The sSMTP configuration is very easy. The following few lines may already be sufficient, when mounted to `/etc/ssmtp/ssmtp.conf`:
 

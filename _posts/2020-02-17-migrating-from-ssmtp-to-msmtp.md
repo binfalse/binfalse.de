@@ -56,6 +56,7 @@ tls on
 account default
 auth off
 host RELAY
+domain HOSTNAME
 from webserver@HOSTNAME
 add_missing_date_header on
 {% endhighlight %}

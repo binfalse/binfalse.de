@@ -22,6 +22,7 @@ tags:
   - network
   - private
   - sync
+  - ssmtp
 ---
 
 [Baïkal](http://sabre.io/baikal/) is a quite popular Calendar+Contacts server.
@@ -191,10 +192,12 @@ services:
 
 ### Mail support
 
+
 I'm not sure why, but [Baikal's list of issues](http://sabre.io/baikal/docker-ready/) included support for mail.
 However, adding mail support should also be fairly easy if needed.
 I already wrote a [How-To for PHP-mail in Docker](/2016/11/25/mail-support-for-docker-s-php-fpm/).
 
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please switch to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
 
 
 

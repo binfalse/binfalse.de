@@ -29,6 +29,7 @@ tags:
   - snippet
   - ssl
   - mail
+  - ssmtp
 ---
 
 Last year, we moved the website of our department from Typo3 to [Contao](https://contao.org/en/) version 3.
@@ -129,6 +130,9 @@ USER www-data
 RUN php -d memory_limit=-1 /composer/composer.phar create-project contao/managed-edition /var/www/html '4.4.*'
 {% endhighlight %}
 
+
+
+> **PLEASE NOTE:** sSMTP is not maintained anymore! Please switch to `msmtp`, for example, as I explained in [Migrating from sSMTP to msmtp](/2020/02/17/migrating-from-ssmtp-to-msmtp/).
 
 This image includes the package for [sSMTP](https://packages.qa.debian.org/s/ssmtp.html) to enable support for mails.
 To learn how to configure sSMTP, have a look into my earlier article [Mail support for Docker's php:fpm](/2016/11/25/mail-support-for-docker-s-php-fpm/).
