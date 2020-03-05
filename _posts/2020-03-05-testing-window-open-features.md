@@ -106,5 +106,5 @@ You can then click the link below to test how your browser behaves when opening 
 The test should be browser independent, you just need to have Javascript enabled.
 However, let me know if it doesn't work for you!
 
-To see how I implemented the test tool take a look into the source code of this page, or [check the script on GitHub](https://github.com/binfalse/binfalse.de/blob/master/_posts/2020-03-05-testing-window-open-features.md).
+To see how I implemented the test tool take a look into the source code of this page, or [check the script on GitHub](https://github.com/binfalse/binfalse.de/commit/df884dff0b1cc50f1565fc062d83b039a495dab7#diff-2b56a0d205475684917f043114021f30R53).
 Remember? This blog is all open source :)
