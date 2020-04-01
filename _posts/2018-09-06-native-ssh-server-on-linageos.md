@@ -73,6 +73,15 @@ Just make sure you set the following things:
 * `ChallengeResponseAuthentication no`
 * `Subsystem sftp internal-sftp`
 
+
+**Update:** Ed Huott reported:
+
+> There was one additional step I needed to make it work.
+> It was necessary to set `StrictModes no` in `/data/ssh/sshd_config` in order to keep sshd from failing to start due to bad file ownership/permissions on the `/data/.ssh` directory and files as well as the parent `/data` directory.
+> 
+> This is because the owner:group of `/data` is system:system which doesn't match either `root` or `shell` owner:group used for `/data/.ssh` and its contents.
+> I felt that setting `StrictModes no` was a better solution than messing with the owner:group of the `/data` directory!
+
 ### Setup SSH keys
 
 We'll be using SSH-keys to authenticate to the phone.
