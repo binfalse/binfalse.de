@@ -2,7 +2,7 @@ BINFALSE -- Blog
 =====
 
 My blog at [binfalse.de](http://binfalse.de).
-Stylesheet based on [dbyll](https://github.com/dbtek/dbyll-ghost).
+Stylesheet based on [dbyll](https://github.com/dbtek/dbyll).
 Generated from Worpress using the [wordpress-to-jekyll converter](https://github.com/binfalse/wordpress-to-jekyll)
 
 ## Useful stuff for copy and paste
