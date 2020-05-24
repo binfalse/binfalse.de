@@ -99,7 +99,8 @@ color: #CC2127;
 color: #e74c3c;
 }
 
-article .share {
+article .share,
+article .author {
   margin-bottom: 50px;
 }
 article .share .btn {
@@ -225,8 +226,11 @@ article, footer {
 /*article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }*/
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: Alike,Georgia,"Bitstream Charter","Times New Roman",Times,serif;
-/*	color: #3A608A; */}
+h1,h2,h3,h4,h5,h6 {
+ font-family: Alike,Georgia,"Bitstream Charter","Times New Roman",Times,serif;
+ margin-top: 3rem;
+/*	color: #3A608A; */
+}
 article.home h1,
 article.home h2,
 article.home h3,
@@ -647,3 +651,10 @@ abbr {
   float: right
 }*/
 
+.meta-support {
+  display: inline-block;
+}
+.meta-support div {
+  float: left;
+  margin: 10px;
+}
