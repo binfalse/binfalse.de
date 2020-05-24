@@ -79,7 +79,7 @@
         <input type="text" class="form-control" id="comment-form-captcha" name="fields[captcha]" placeholder="type beer in upper case letters">
       </div>
       <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}#comments">
-      <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url }}#comments">
+      <input type="hidden" name="options[redirect]" value="https://binfalse.de/comment-success/">
       <input type="hidden" id="comment-replying-to" name="options[parent]" value>
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
       <button type="submit" id="send-comment" class="btn btn-secondary mt-2">Send comment</button>
