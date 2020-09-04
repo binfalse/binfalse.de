@@ -15,7 +15,7 @@ Packages are signed with my [GPG key 8D2DD9BD](http://binfalse.de/wp-content/upl
 For those as lazy as me:
 
     echo "deb http://apt.binfalse.de binfalse main" > /etc/apt/sources.list.d/binfalse.list
-    gpg --recv-keys 08E66E72A83A9871CD493441E81BC3078D2DD9BD --keyserver pgp.mit.edu
+    gpg --keyserver pool.sks-keyservers.net --recv-keys 08E66E72A83A9871CD493441E81BC3078D2DD9BD
     gpg --export 08E66E72A83A9871CD493441E81BC3078D2DD9BD | apt-key add -
     aptitude update
 
