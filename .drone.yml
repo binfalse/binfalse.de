@@ -7,6 +7,8 @@ steps:
   image: alpine/git
   commands:
   - git submodule update --init --recursive --remote
+  - cd assets/resources/MathJax
+  - git checkout $(git tag | /bin/grep '^2' | sort -V | tail -1)
 
 - name: docker
   pull: if-not-exists
