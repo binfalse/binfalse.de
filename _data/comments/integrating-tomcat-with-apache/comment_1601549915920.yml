@@ -1,0 +1,6 @@
+_id: 0dabc390-03d5-11eb-94c4-573655be9f1d
+name: Simon
+link: ''
+message: "Hi, this is JUST what I was looking for, and had great hopes I could finally finish my Apache/Tomcat set up, but despite following your tutorial to the letter (well, almost) I still get an error when I browse to http://web.me.local/sample/  (I didn't use the Rewrite rule).  It is a - \r\n\r\nService Unavailable\r\nThe server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.\r\n\r\n.... error.\r\n\r\nAny clues?  (I have left a connector in my server.xml for port 8080, and I can get to my site using web.me.local:8080/sample/ with no problems)\r\n\r\nThanks!\r\n\r\nP.S. Love the anti spam thing!"
+captcha: ''
+date: '2020-10-01T10:58:35.919Z'
