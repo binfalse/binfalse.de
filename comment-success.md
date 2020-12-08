@@ -4,7 +4,7 @@ title: Comment Submitted Successfully
 comments: off
 ---
 
-Thanks a lot for your feedback, you comment was submitted successfully! :)
+Thanks a lot for your feedback, your comment was submitted successfully! :)
 
 I will review the comment as soon as possible.
 
