@@ -1,6 +1,6 @@
 [submodule "assets/media/wp-content/uploads/stuff"]
 	path = assets/media/wp-content/uploads/stuff
-	url = git@github.com:binfalse/stuff.git
+	url = https://github.com/binfalse/stuff.git
 [submodule "assets/resources/MathJax"]
 	path = assets/resources/MathJax
 	url = https://github.com/mathjax/MathJax.git

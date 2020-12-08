@@ -2,6 +2,12 @@ kind: pipeline
 name: default
 
 steps:
+
+- name: submodules
+  image: alpine/git
+  commands:
+  - git submodule update --recursive --remote
+
 - name: docker
   pull: if-not-exists
   image: plugins/docker
