@@ -1,0 +1,10 @@
+_id: 9df093b0-3948-11eb-a97b-d3b4f55dd877
+name: Romax
+link: ''
+message: >-
+  Very helpful! One addition: in my case, I did not need the DNS entry on the
+  client, as apt connects to the configured proxy regardless of the hostname
+  from the sources.list. The Remap-rule on the caching proxy then resolves it to
+  the target.
+captcha: ''
+date: '2020-12-08T11:29:21.736Z'
