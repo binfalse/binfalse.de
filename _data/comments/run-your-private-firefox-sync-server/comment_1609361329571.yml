@@ -1,0 +1,9 @@
+_id: 6b065940-4ae0-11eb-9fdc-072df036e3c8
+name: Martin Scharm
+link: 'https://binfalse.de'
+message: >-
+  As I said, I have an nginx reverse proxy in front of the sync server
+  (https://github.com/nginx-proxy/nginx-proxy), which does the TLS stuff. That
+  should be pretty straight forward..?
+captcha: ''
+date: '2020-12-30T20:48:49.563Z'
