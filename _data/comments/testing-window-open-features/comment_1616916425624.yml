@@ -1,0 +1,6 @@
+_id: ff2a7110-8f96-11eb-acdb-9dbd76c1db9b
+name: Mr.T
+link: ''
+message: "Moin!\r\nIt looks like that this feature is not valid anymore for the recent FF 80. The new location in `about:config` is:  `browser.link.open_newwindow.restriction`. Set it to (zero) `0`.\r\nDone.\r\n\r\nGrüße\r\nMr.T"
+captcha: ''
+date: '2021-03-28T07:27:05.615Z'
