@@ -1,0 +1,10 @@
+_id: ca0fe280-1213-11ec-8b91-f3cc57c2a792
+name: opk
+link: ''
+message: >-
+  For a completely minimal MTA, I'd recommend the dragonfly mail agent - dma. It
+  has modern features such as being able to authenticate with client
+  certificates. It comes from dragonflybsd, is included in base on freebsd but
+  is also ported to Linux.
+captcha: ''
+date: '2021-09-10T08:47:54.753Z'
