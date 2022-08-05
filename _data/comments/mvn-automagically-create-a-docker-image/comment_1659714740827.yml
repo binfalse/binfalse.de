@@ -1,0 +1,6 @@
+_id: 96f2e110-14d6-11ed-aa25-0df86e9452c8
+name: Prasannjeet
+link: ''
+message: "Just a heads-up to everyone using this for spring-boot project:\r\nInstead of using ${project.version}, you have to use @project.version@.\r\nThe original way will not work as a special case in spring boot."
+captcha: ''
+date: '2022-08-05T15:52:20.823Z'
