@@ -1,0 +1,6 @@
+_id: c119c5d0-6008-11ed-a1f2-6fa6b3942df2
+name: Dirk Heinrichs
+link: ''
+message: "Hi,\r\n\r\nI still wonder why this is a problem for apt-cacher-ng.\r\n\r\nIt works like a charm in Nexus. I have an apt cache there for the main Debian repository, which caches \"https://deb.debian.org/debian\". sources.list entries look like\r\n\"deb https://nexus.server/repository/debian bullseye main contrib non-free\". No \"Acquire::http\" setting needed.\r\n\r\nSee also: https://help.sonatype.com/repomanager3/nexus-repository-administration/formats/apt-repositories"
+captcha: ''
+date: '2022-11-09T08:30:23.592Z'
