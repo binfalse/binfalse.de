@@ -1,0 +1,6 @@
+_id: 3af68740-66a7-11ed-abc3-25958282d931
+name: Brandon Walter
+link: ''
+message: "Great write up! I've been trying to get this working, but am having problems with permissions to the \"config\" folder. I'm using DSM 7.1 on Synology. I assigned the \"config\" directory to (www-data) 33 UID, but still not working. Permission denied. Not sure what else I can try to fix.\r\n\r\ndrwxr-xr-x+ 1   33       33   0 Nov 17 10:12 config"
+captcha: ''
+date: '2022-11-17T18:39:55.505Z'
