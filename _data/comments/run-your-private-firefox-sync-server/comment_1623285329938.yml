@@ -1,0 +1,10 @@
+_id: c1f6ae40-c983-11eb-ab6b-75b536dbeb42
+name: Tread
+link: ''
+message: >-
+  What I don't understand is how Mozilla can take such a simple concept and
+  create these abominations of server-side complexity. It shouldn't be this
+  hard. On the server you should be able to start a single process that accesses
+  a single database and be done with it.
+captcha: ''
+date: '2021-06-10T00:35:29.932Z'
