@@ -10,7 +10,7 @@ containing the following:
 
     deb http://apt.binfalse.de binfalse main
 
-Packages are signed with my [GPG key 8D2DD9BD](http://binfalse.de/wp-content/uploads/2010/04/MartinScharm-8D2DD9BD.asc).
+Packages are signed with my [GPG key 8D2DD9BD](https://binfalse.de/gpg-key/index.html).
 
 For those as lazy as me:
 
@@ -18,5 +18,10 @@ For those as lazy as me:
     gpg --keyserver pool.sks-keyservers.net --recv-keys 08E66E72A83A9871CD493441E81BC3078D2DD9BD
     gpg --export 08E66E72A83A9871CD493441E81BC3078D2DD9BD | apt-key add -
     aptitude update
+
+The new approach for getting the gpg key seems to be:
+
+    wget -O /etc/apt/trusted.gpg.d/binfalse.asc https://binfalse.de/gpg-key/index.html
+
 
 All packages I provide are prefixed with `bf-`.
