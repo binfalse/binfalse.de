@@ -1,0 +1,6 @@
+_id: 535a6120-bf59-11ed-831d-2d02e013dafa
+name: theO
+link: ''
+message: "Hi, I actually have a solution for home on btrfs raid 1 on luks devices:\r\njust use pam_exec:\r\n\r\nauth\t\tinclude\t\tsystem-auth\r\nauth\t\toptional   \tpam_exec.so expose_authtok /etc/pam_home.sh #< Add this line in /etc/pam.d/system-login\r\n\r\nin /etc/pam_home.sh you have to write a script which unlocks your dmcrypt devices and mounts the btrfs e.g. the script from Marc:\r\nhttps://marc.merlins.org/perso/btrfs/post_2014-04-27_Btrfs-Multi-Device-Dmcrypt.html\r\n\r\nCheers,\r\ntheO"
+captcha: ''
+date: '2023-03-10T15:36:29.170Z'
