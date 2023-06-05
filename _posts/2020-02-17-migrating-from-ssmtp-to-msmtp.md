@@ -4,9 +4,13 @@ layout: post
 published: true
 date: 2020-02-17 16:54:38 +0100
 categories:
-  - uncategorized
-tags:
   - howto
+  - config
+  - administration
+  - php
+  - software
+  - network
+tags:
   - migration
   - ssmtp
   - msmtp
@@ -14,6 +18,8 @@ tags:
   - mail
   - php
   - config
+  - docker
+  - network
 ---
 
 As I described earlier, [I've been using sSMTP for email support in Docker containers.](/2016/11/25/mail-support-for-docker-s-php-fpm/)

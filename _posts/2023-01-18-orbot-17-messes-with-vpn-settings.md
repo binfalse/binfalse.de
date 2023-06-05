@@ -4,9 +4,25 @@ layout: post
 published: true
 date: 2023-01-18 20:34:22 +0100
 categories:
-  - uncategorized
+  - config
+  - howto
+  - lineageos
+  - phone
+  - private
+  - software
+  - web
 tags:
-  - untagged
+  - tor
+  - android
+  - orbot
+  - linageos
+  - netguard
+  - vpn
+  - explained
+  - network
+  - phone
+  - trick
+  - web
 lang: en
 ref: orbot-17-messes-with-vpn-settings
 ---
