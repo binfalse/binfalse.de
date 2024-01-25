@@ -1,0 +1,6 @@
+_id: 87baa1a0-bb7f-11ee-a37e-ab3dafa3a42e
+name: K
+link: ''
+message: "Good morning,\r\nSame question for me, I have configured several Yourls servers whether I am in a professional (domain1.com), associative (domain2.org) or personal (domain3.fr) environment. The problem is that I use the same Firefox with the same Yourls extension to generate short links which each concern one of the 3 different activities and I cannot mix the domains. Users from the associative sector would be suspicious of using a short link with my personal domain for example. And I cannot use the domain of my activist community to share in my professional environment.\r\nIs there a possibility of configuring several servers with each their own key in the extension and choosing when generating the short link with which we want to run?\r\nThat would be fabulous \U0001F918\r\nIn any case thank you for the job, the extension works very well \U0001F618"
+captcha: ''
+date: '2024-01-25T12:44:50.947Z'
