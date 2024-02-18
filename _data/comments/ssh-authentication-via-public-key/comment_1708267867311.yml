@@ -1,0 +1,6 @@
+_id: 257a1920-ce6d-11ee-a10d-13fd3debafe0
+name: zeon
+link: ''
+message: "hi im following the native ssh server tutorial that youve made and im on the step of creating the keys.\r\nim using lineage os 11 on an galaxy s4 GT-I9515.\r\n\r\ni cannot find a \"$home\" path on the s4 or a file structure that comes close to the old fashioned linux like to where i can copy the ssh keys that i created in a makeshift folder in the root filesystem.\r\nthere seem to be \"user\" folders in /data/user and /data/user_de labeled by numbers with a bunch of \"com.android\" folders in them which seem to be only apps and no direct user create files such as \"test\" folders that ive created in one of the lineage users.\r\n\r\nmore so, i am also not able to copy the the keys to my windows machine with adb pull as the keys dont show up in any directory that i give it.\r\n\r\nwould you be willing to help out a soon-to-be IT hobbyist? :)"
+captcha: ''
+date: '2024-02-18T14:51:07.304Z'
