@@ -23,6 +23,10 @@ tags:
   - private
   - sync
   - ssmtp
+  - baikal
+  - caldav
+  - carddav
+  - calendar
 ---
 
 [Baïkal](http://sabre.io/baikal/) is a quite popular Calendar+Contacts server.
