@@ -35,7 +35,7 @@ error: Use `-vdebug` to see the full traceback.
 {% include image.html align='alignright' url='/assets/media/pics/2024/baikal-settings.png' img='/assets/media/pics/2024/baikal-settings.png' title='Baikal system settings page' caption='Baikal system settings page' maxwidth='300px' %}
 
 Also from the `-vdebug` messages I could not make sense of it, but eventually [NICO'S BLOG](https://www.ncartron.org/vdirsyncer-and-baikal.html) pointed into the correct direction:
-`vdirsyncer` is simply no yet able to do the `digest` auth...
+`vdirsyncer` is simply no able to do the `digest` auth... (and probably will never implement the [deprecated standard](https://en.m.wikipedia.org/wiki/Digest_access_authentication)) 
 
 So the solution is to change that to `basic auth` in baikal's settings.
 
