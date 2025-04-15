@@ -4,9 +4,13 @@ layout: post
 published: true
 date: 2024-05-31 10:23:57 +0200
 categories:
-  - uncategorized
+  - administration
+  - config
 tags:
-  - untagged
+  - docker
+  - config
+  - explained
+  - monitoring
 lang: en
 ref: docker-compose-quotation-pitfalls
 ---
