@@ -1,8 +1,11 @@
 kind: pipeline
 name: default
 
-steps:
+trigger:
+  branch:
+  - master
 
+steps:
 - name: submodules
   image: alpine/git
   commands:
