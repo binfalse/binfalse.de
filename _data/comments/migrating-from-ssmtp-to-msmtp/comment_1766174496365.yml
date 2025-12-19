@@ -1,0 +1,11 @@
+_id: 86143b90-dd15-11f0-ad95-55ac3fc707a4
+name: Brett Neumeier
+link: ''
+message: >-
+  Thanks for posting this! One thing you can do to simplify this configuration
+  is to create a symbolic link /usr/sbin/sendmail -> /usr/bin/msmtp -- if you do
+  that, you can skip the /usr/local/etc/php/conf.d/mail.ini configuration
+  entirely, since PHP will use /usr/sbin/sendmail by default, and msmtp's
+  command-line interface is identical to sendmail's.
+captcha: ''
+date: '2025-12-19T20:01:36.364Z'
