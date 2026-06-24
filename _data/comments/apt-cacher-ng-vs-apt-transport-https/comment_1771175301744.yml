@@ -1,0 +1,6 @@
+_id: ee5ce5f0-0a90-11f1-a243-a96bf45dedbf
+name: AlexHK
+link: ''
+message: "Just in case somebody is trying to implement this in 2026, there is no a much easier method built into apt-cacher-ng, which doesn't need remapping on apt-cacher-ng's side.\r\nhttps://www.unix-ag.uni-kl.de/~bloch/acng/html/howtos.html#ssluse\r\n\r\nThe \"tell-me-what-you-need method\": on the client side, modify the access URLs and change https to http and put the string \"HTTPS///\" between http:// and the host name. With this trick, the user client will access the proxy like going for a usual HTTP download and the proxy will access the remote URL with the https protocol. Caching (and file merging to repositories) will work and there is still enough flexibility for the users."
+captcha: ''
+date: '2026-02-15T17:08:21.743Z'
