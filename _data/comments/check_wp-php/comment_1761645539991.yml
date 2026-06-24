@@ -1,0 +1,6 @@
+_id: b97bf770-b3e4-11f0-9216-5903bfe9e521
+name: Christian Meier Martinez
+link: ''
+message: "Greetings,\r\n\r\nSorry to bother about this script, but I recently came across a bug that causes a fatal error in PHP8.\r\n\r\nOn line 215, it tries running the $plugin_msg variable instead of $themes_msg, which is not defined in that context. In previous versions the count() function would simply return zero, but since 8.0, it does return a fatal error.\r\n\r\nCorrecting the variable to $themes_msg should fix the issue.\r\n\r\nWarm regards."
+captcha: ''
+date: '2025-10-28T09:58:59.985Z'
